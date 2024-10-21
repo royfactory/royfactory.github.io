@@ -28,6 +28,7 @@ markdown: kramdown
 #Have to show future posts for future events.
 future: true
 
+permalink: /apps/:appname/privacy.html
 permalink: /event/:title.html
 
 #change your port on localhost
