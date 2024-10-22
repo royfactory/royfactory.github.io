@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Glas</title>
-    <description>your description.....
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 22 Oct 2024 13:59:39 +0900</pubDate>
+    <lastBuildDate>Tue, 22 Oct 2024 13:59:39 +0900</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-    <link>http://localhost:8000/</link>
-    <atom:link href="http://localhost:8000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Dec 2017 01:49:07 -0300</pubDate>
-    <lastBuildDate>Mon, 04 Dec 2017 01:49:07 -0300</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+        <pubDate>Tue, 22 Oct 2024 12:00:29 +0900</pubDate>
+        <link>http://localhost:4000/jekyll/update/2024/10/22/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2024/10/22/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Create Commandline Node.js</title>
@@ -27,14 +58,14 @@
 // we lift the app that lives in the same directory as this script
 process.chdir(__dirname);
 // Get an instance of Sails
-var sails = require('sails');
+var sails = require(&apos;sails&apos;);
 // Lift the Sails app in the current working directory
        console.log(&quot;Start The GITLIST App&quot;);
         console.log(&quot;To see your app. visit:&quot;);
-        console.log(clc.xterm(39).bgBlack.underline('http://127..0.0.1'));
+        console.log(clc.xterm(39).bgBlack.underline(&apos;http://127..0.0.1&apos;));
         console.log(&quot;To Clone the Repository and Open Source:&quot;);
-        console.log(clc.xterm(39).bgBlack.underline('see: http://www.github.com/spaceg/github.io'));
-        console.log(&quot;Bash The Universe by Lucas Gatsas.&quot;);
+        console.log(clc.xterm(39).bgBlack.underline(&apos;see: http://www.github.com/spaceg/github.io&apos;));
+        console.log(&quot;Bash The Universe by Hello World&quot;);
         console.log(&quot;©.2016 by Gitlist OS&quot;);
 
         console.log(&quot;press c to stop the app&quot;);
@@ -42,7 +73,7 @@ var sails = require('sails');
 
 sails.lift({log:{noShip: true}});
 
-/*  sails.lift(rc('sails'));*/
+/*  sails.lift(rc(&apos;sails&apos;));*/
 
 &lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -160,7 +191,7 @@ process.chdir(__dirname);
         console.log(&quot;press c to stop the app&quot;);
 
 // Get an instance of Sails
-var sails = require('sails');
+var sails = require(&apos;sails&apos;);
 // Lift the Sails app in the current working directory
 sails.lift({log:{noShip: true}});
 
@@ -185,9 +216,9 @@ sails.lift({log:{noShip: true}});
 &lt;p&gt;Seconds: Clone Tilda : &lt;a href=&quot;https://www.npmjs.com/package/tilda&quot;&gt;Tilda&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 11 May 2016 00:00:00 -0300</pubDate>
-        <link>http://localhost:8000/event/create-commandline-for-your-app-sails.js.html</link>
-        <guid isPermaLink="true">http://localhost:8000/event/create-commandline-for-your-app-sails.js.html</guid>
+        <pubDate>Wed, 11 May 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2016/05/11/create-commandline-for-your-app-sails.js.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/11/create-commandline-for-your-app-sails.js.html</guid>
         
         
       </item>
@@ -197,7 +228,7 @@ sails.lift({log:{noShip: true}});
         <description>&lt;h2 class=&quot;section-heading&quot;&gt; Gitlist Nasa Collaboration&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;&quot;&gt;
-    &lt;img src=&quot;/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg&quot; style=&quot;width:100%&quot; alt=&quot;Lucas Gatsas&quot; /&gt;
+    &lt;img src=&quot;/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg&quot; style=&quot;width:100%&quot; alt=&quot;image&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;On 28. April 2016 i will have a meeting with jason from the Nasa. We talking about the OpenSource, Future and Details about the Gitlist App and OpenSource Project.&lt;/p&gt;
@@ -220,9 +251,9 @@ More Features will next Step. We will write some Api. More to follow soon.&lt;/p
 &lt;p&gt;&lt;code&gt; $ npm install sails-mongo --save  &lt;/code&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 17 Apr 2016 00:00:00 -0300</pubDate>
-        <link>http://localhost:8000/event/gitlist-opensource-meets-nasa-april-2016.html</link>
-        <guid isPermaLink="true">http://localhost:8000/event/gitlist-opensource-meets-nasa-april-2016.html</guid>
+        <pubDate>Sun, 17 Apr 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2016/04/17/gitlist-opensource-meets-nasa-april-2016.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/17/gitlist-opensource-meets-nasa-april-2016.html</guid>
         
         
       </item>
@@ -246,8 +277,8 @@ RubyGems is the official packaging system for &lt;a href=&quot;https://www.ruby-
 &lt;div style=&quot;overflow:auto; height=200; width=100%;&quot;&gt;
 &lt;pre style=&quot;color:black;background:white;&quot;&gt;&lt;pre&gt;
 
-require 'json'        # aktuelle Version
-gem 'rake', '= 10.1.0' # mit Versionsangabe
+require &apos;json&apos;        # aktuelle Version
+gem &apos;rake&apos;, &apos;= 10.1.0&apos; # mit Versionsangabe
 
 
 &lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt; 
@@ -261,7 +292,7 @@ Download and install rake with the following.
 
 &lt;strong&gt; Example : &lt;/strong&gt; 
 
-First, you must write a “Rakefile” file which contains the build rules. Here's a simple example:
+First, you must write a “Rakefile” file which contains the build rules. Here&apos;s a simple example:
 
 &lt;div style=&quot;overflow:auto; height=200; width=100%;&quot;&gt;
 &lt;pre style=&quot;color:black;background:white;&quot;&gt;&lt;pre&gt;
@@ -302,9 +333,9 @@ Link: &lt;a href=&quot;https://rubygems.org/&quot;&gt;rubygems.org&lt;/a&gt;  Li
 
 &lt;/stromg&gt;
 </description>
-        <pubDate>Sun, 18 Oct 2015 00:00:00 -0300</pubDate>
-        <link>http://localhost:8000/event/gem-npm-ruby-gems-node.js.html</link>
-        <guid isPermaLink="true">http://localhost:8000/event/gem-npm-ruby-gems-node.js.html</guid>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2015/10/18/gem-npm-ruby-gems-node.js.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/10/18/gem-npm-ruby-gems-node.js.html</guid>
         
         
       </item>
@@ -463,9 +494,9 @@ Link:
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Domain_Name_System&quot;&gt;Domian Name Systems&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 03 Mar 2015 00:00:00 -0300</pubDate>
-        <link>http://localhost:8000/event/dns-cname.html</link>
-        <guid isPermaLink="true">http://localhost:8000/event/dns-cname.html</guid>
+        <pubDate>Tue, 03 Mar 2015 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2015/03/03/dns-cname.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/03/03/dns-cname.html</guid>
         
         
       </item>
