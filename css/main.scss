@@ -18,8 +18,8 @@ $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: #AEAEAE; // lighten($grey-color, 40%);
+$grey-color-dark:  #6a6a6a; // darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -45,9 +45,7 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "buttons"
-;
+@import url("base");
+@import url("layout");
+@import url("syntax-highlighting");
+@import url("buttons");
