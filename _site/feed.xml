@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Oct 2024 17:54:56 +0900</pubDate>
-    <lastBuildDate>Fri, 25 Oct 2024 17:54:56 +0900</lastBuildDate>
+    <pubDate>Fri, 25 Oct 2024 18:00:16 +0900</pubDate>
+    <lastBuildDate>Fri, 25 Oct 2024 18:00:16 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
