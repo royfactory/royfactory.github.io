@@ -3,12 +3,12 @@ layout: post
 
 #event information
 title:  "Gitlist Nasa Collaboration"
-cover: "img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
+cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 date:   2016-04-17
 
 
 #event organiser details
-organiser: "Lucas Gatsas"
+organiser: "Royfactory"
 
 
 ---

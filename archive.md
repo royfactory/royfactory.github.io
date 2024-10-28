@@ -1,9 +1,9 @@
 ---
 layout: archive
 navigation_title: Archive
-title: Archive Page
+title: Archive - Royfactory
 permalink: /archive/
-organiser: "Lucas Gatsas"
+organiser: "Royfactory"
 ---
 
 

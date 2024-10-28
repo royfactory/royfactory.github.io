@@ -1,7 +1,7 @@
 ---
 layout: apps
 navigation_title: Apps
-title: About Glas
+title: Applications
 permalink: /apps/
 ---
 
