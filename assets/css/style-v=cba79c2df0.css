@@ -1389,7 +1389,7 @@ pre .storage {
 	background-color: #111;
 	color: #fff;
 	display: table;
-	height: 100vh;
+	min-height: 300px;
 	margin-bottom: 60px;
 	position: relative;
 	width: 100%;
