@@ -5,8 +5,8 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Oct 2024 17:46:56 +0900</pubDate>
-    <lastBuildDate>Mon, 28 Oct 2024 17:46:56 +0900</lastBuildDate>
+    <pubDate>Mon, 28 Oct 2024 23:18:48 +0900</pubDate>
+    <lastBuildDate>Mon, 28 Oct 2024 23:18:48 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -114,9 +114,145 @@
 &lt;hr /&gt;
 </description>
         <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2024/10/28/how-to-use-rpa.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/10/28/how-to-use-rpa.html</guid>
+        <link>http://localhost:4000/linux/2024/10/28/how-to-use-rpa.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-rpa.html</guid>
         
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>리눅스 사용자 관리</title>
+        <description>&lt;h1 id=&quot;사용자-관리-명령어&quot;&gt;사용자 관리 명령어&lt;/h1&gt;
+&lt;p&gt;리눅스에서는 사용자를 생성, 수정 및 삭제하는 다양한 명령어를 제공합니다. 그 중 가장 기본이 되는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usermod&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userdel&lt;/code&gt; 명령어에 대해 알아보겠습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#useradd---사용자-생성&quot;&gt;useradd - 사용자 생성&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#usermod---사용자-수정&quot;&gt;usermod - 사용자 수정&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#userdel---사용자-삭제&quot;&gt;userdel - 사용자 삭제&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;useradd---사용자-생성&quot;&gt;useradd - 사용자 생성&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt; 명령어는 새로운 사용자를 생성할 때 사용합니다. 사용자의 홈 디렉토리, UID, 기본 쉘 등을 설정할 수 있습니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;기본-사용법&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;주요-옵션&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d [경로]&lt;/code&gt; : 홈 디렉토리 경로를 지정합니다. 기본값은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/사용자이름&lt;/code&gt; 입니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; : 홈 디렉토리를 생성합니다. 홈 디렉토리 경로를 지정하지 않으면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/사용자이름&lt;/code&gt;에 생성됩니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s [쉘]&lt;/code&gt; : 기본 쉘을 지정합니다. 기본값은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/bin/bash&lt;/code&gt;입니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-u [UID]&lt;/code&gt; : 사용자 ID를 지정합니다. UID는 고유해야 합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-g [그룹]&lt;/code&gt; : 기본 그룹을 지정합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;예제&quot;&gt;예제&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 기본 설정으로 사용자 생성&lt;/span&gt;
+useradd user1
+
+&lt;span class=&quot;c&quot;&gt;# 홈 디렉토리를 `/home/user1`으로 생성하고 기본 쉘을 `/bin/bash`로 설정&lt;/span&gt;
+useradd &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/bash user1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;usermod---사용자-수정&quot;&gt;usermod - 사용자 수정&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usermod&lt;/code&gt; 명령어는 기존 사용자의 정보를 수정할 때 사용합니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;기본-사용법-1&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;usermod &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;주요-옵션-1&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d [경로]&lt;/code&gt; : 홈 디렉토리 경로를 변경합니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; 옵션과 함께 사용하면 홈 디렉토리 내의 파일도 이동됩니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s [쉘]&lt;/code&gt; : 기본 쉘을 변경합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-u [UID]&lt;/code&gt; : 사용자 ID를 변경합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-g [그룹]&lt;/code&gt; : 기본 그룹을 변경합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-G [그룹1,그룹2,...]&lt;/code&gt; : 추가 그룹을 변경합니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-aG [그룹]&lt;/code&gt; : 사용자를 추가 그룹에 추가합니다. (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-G&lt;/code&gt;와 달리 기존 그룹을 유지하고 추가합니다.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;예제-1&quot;&gt;예제&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 사용자의 홈 디렉토리 경로를 `/home/newhome`으로 변경하고 파일도 이동&lt;/span&gt;
+usermod &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; /home/newhome &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; user1
+
+&lt;span class=&quot;c&quot;&gt;# 사용자의 기볼 쉘을 `/bin/zsh`로 지정&lt;/span&gt;
+usermod &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/zsh user1
+
+&lt;span class=&quot;c&quot;&gt;# 사용자 user1에게 그룹 `sudo`를 추가&lt;/span&gt;
+usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;user1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;userdel---사용자-삭제&quot;&gt;userdel - 사용자 삭제&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userdel&lt;/code&gt; 명령어는 사용자를 삭제할 때 사용합니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;기본-사용법-2&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;userdel &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;주요-옵션-2&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt; : 사용자의 홈 디렉토리 및 메일 스풀도 삭제합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;예제-2&quot;&gt;예제&lt;/h4&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 사용자 user1 삭제&lt;/span&gt;
+userdel user1
+
+&lt;span class=&quot;c&quot;&gt;# 사용자 user1과 해당 홈 디렉토리 및 메일 스풀 삭제&lt;/span&gt;
+userdel &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; user1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;요약&quot;&gt;요약&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;명령어&lt;/th&gt;
+      &lt;th&gt;기능&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;새로운 사용자 생성&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usermod&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;기존 사용자 정보 수정&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userdel&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;사용자 삭제&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;각 명령어의 옵션을 적절히 활용하면 사용자 계정 관리가 훨씬 수월해집니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/10/28/how-to-use-account.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-account.html</guid>
+        
+        
+        <category>linux</category>
         
       </item>
     

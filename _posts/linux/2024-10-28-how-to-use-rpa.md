@@ -4,6 +4,7 @@ layout: post
 #event information
 title:  "RPM 명령 및 옵션"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
+categories: linux
 date:   2024-10-28
 
 #event organiser details
