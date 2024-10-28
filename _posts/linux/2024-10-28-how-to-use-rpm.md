@@ -7,6 +7,8 @@ cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
 date:   2024-10-28
 
+toc: true
+
 #event organiser details
 organiser: "Royfactory"
 
@@ -14,15 +16,6 @@ organiser: "Royfactory"
 ---
 # RPM 패키지 관리자 소개
 RPM(Red Hat Package Manager)은 Red Hat 계열의 리눅스 배포판에서 사용하는 패키지 관리 도구로, 소프트웨어의 설치, 업그레이드, 제거, 쿼리 등을 쉽게 수행할 수 있습니다. 이 블로그에서는 RPM의 기본 개념부터 설치 및 관리 방법까지 알아보겠습니다.
-
----
-## 목차
-1. [RPM이란?](#rpm이란)
-2. [RPM의 동작 방식](#rpm의-동작-방식)
-3. [RPM 패키지 설치](#rpm-패키지-설치)
-4. [RPM 패키지 제거](#rpm-패키지-제거)
-5. [RPM 패키지 정보 확인](#rpm-패키지-정보-확인)
-6. [RPM 패키지 검증 및 문제 해결](#rpm-패키지-검증-및-문제-해결)
 
 ---
 

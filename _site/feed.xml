@@ -5,29 +5,145 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Oct 2024 23:46:11 +0900</pubDate>
-    <lastBuildDate>Mon, 28 Oct 2024 23:46:11 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2024 00:30:16 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2024 00:30:16 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
-        <title>리눅스 사용자 설정 파일 (/etc/default/useradd)</title>
+        <title>리눅스 파일 시스템 검사 도구</title>
+        <description>&lt;h1 id=&quot;리눅스-파일-시스템-검사-도구-&quot;&gt;리눅스 파일 시스템 검사 도구 :&lt;/h1&gt;
+
+&lt;p&gt;파일 시스템은 데이터를 저장하고 관리하는 중요한 구성 요소입니다. 그러나 갑작스러운 시스템 종료, 디스크 오류, 하드웨어 문제 등으로 인해 파일 시스템이 손상될 수 있습니다. 이러한 경우 파일 시스템의 무결성을 검사하고, 문제를 수정하기 위해 Linux에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt; 명령어를 사용합니다. 이 글에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt; 명령어의 개념, 사용 방법, 다양한 옵션을 다뤄보겠습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-fsck란-무엇인가&quot;&gt;1. fsck란 무엇인가?&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;는 &lt;strong&gt;File System Consistency Check&lt;/strong&gt;의 약자로, 파일 시스템의 무결성을 검사하고 문제가 있는 경우 복구하는 명령어입니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;는 파일 시스템의 구조를 검사하며, 블록과 inode(파일 시스템에서 파일 및 디렉토리를 나타내는 데이터 구조)를 검증하여 데이터 일관성을 유지합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-fsck-사용법&quot;&gt;2. fsck 사용법&lt;/h2&gt;
+
+&lt;p&gt;기본적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;는 루트 사용자만 사용할 수 있으며, 다음과 같은 기본 구문을 갖습니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fsck &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] &amp;lt;파일 시스템&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;예를 들어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sda&lt;/code&gt; 파일 시스템을 검사하려면 다음과 같이 입력합니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fsck /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-fsck의-주요-옵션&quot;&gt;3. fsck의 주요 옵션&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt; 명령어는 다양한 옵션을 제공하여 파일 시스템 검사를 유연하게 수행할 수 있습니다. 주요 옵션은 다음과 같습니다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;옵션&lt;/th&gt;
+      &lt;th&gt;내용&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--auto&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;문제를 자동으로 수정합니다. (비교적 오래된 버전의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;에서 사용)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-y&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;모든 질문에 ‘yes’로 응답하여 자동으로 복구합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-n&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;모든 질문에 ‘no’로 응답하여 검사만 수행하고 복구는 하지 않습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-C&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;진행 상태를 보여줍니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-f&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;강제로 파일 시스템을 검사합니다.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;대화형 모드로 검사 진행 중 문제에 대한 사용자 입력을 받습니다.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sda1&lt;/code&gt;을 강제로 검사하고 모든 오류를 자동으로 수정하려면 다음 명령어를 사용할 수 있습니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fsck &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-파일-시스템-종류에-따른-검사-방법&quot;&gt;4. 파일 시스템 종류에 따른 검사 방법&lt;/h2&gt;
+
+&lt;p&gt;다양한 파일 시스템이 존재하며, 각 파일 시스템마다 적합한 검사 도구가 있습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;는 파일 시스템에 맞는 도구를 자동으로 호출합니다. 예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ext4&lt;/code&gt; 파일 시스템에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e2fsck&lt;/code&gt;를 사용하고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xfs&lt;/code&gt; 파일 시스템에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xfs-repair&lt;/code&gt; 명령어를 사용합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;파일-시스템에-따른-fsck-도구&quot;&gt;파일 시스템에 따른 fsck 도구&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ext2/ext3/ext4: e2fsck&lt;/li&gt;
+  &lt;li&gt;xfs: xfs_repair&lt;/li&gt;
+  &lt;li&gt;btrfs: btrfsck&lt;/li&gt;
+  &lt;li&gt;reiserfs: reiserfsck&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;주의&lt;/strong&gt;: 일부 파일 시스템(XFS 등)에서는 fsck가 파일 시스템을 직접 수정하지 않고, 별도의 복구 도구를 제공합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-시스템-부팅-시-자동-fsck-실행-설정&quot;&gt;5. 시스템 부팅 시 자동 fsck 실행 설정&lt;/h2&gt;
+
+&lt;p&gt;시스템이 부팅될 때 자동으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;를 실행하도록 설정할 수 있습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt; 파일에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pass&lt;/code&gt; 값을 설정하여, 부팅 시 파일 시스템 검사를 제어할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UUID=... /    ext4    default    1    1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;여기서 마지막 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;이 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;가 부팅 중 실행될 순서를 의미합니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;으로 설정하면 파일 시스템 검사가 비활성화됩니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;6-fsck-사용-시-주의-사항&quot;&gt;6. fsck 사용 시 주의 사항&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;마운트된 파티션 검사 금지&lt;/strong&gt;: fsck는 마운트된 파일 시스템을 검사하는 것은 권장되지 않습니다. 루트 파티션을 검사하려면 라이브 CD나 복구 모드에서 fsck를 수행하는 것이 좋습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;데이터 백업&lt;/strong&gt;: 복구 과정에서 데이터 손상이 발생할 수 있으므로, 중요한 데이터를 백업한 후 fsck를 실행하는 것이 안전합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;7-결론&quot;&gt;7. 결론&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;는 파일 시스템의 무결성을 유지하는 데 필수적인 도구입니다. 시스템 오류나 예기치 않은 종료로 인해 파일 시스템이 손상될 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt;를 사용하여 문제를 해결할 수 있습니다. 주의 사항을 잘 숙지하고 적절한 옵션을 사용하여 파일 시스템을 점검하고 복구해 보세요.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Tue, 29 Oct 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/10/29/how-to-use-fsck.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/29/how-to-use-fsck.html</guid>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>리눅스 사용자 설정 파일</title>
         <description>&lt;h1 id=&quot;리눅스-사용자-설정-파일-&quot;&gt;리눅스 사용자 설정 파일 :&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/default/useradd&lt;/code&gt;
 리눅스 시스템에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt; 명령어를 통해 사용자를 생성할 때 기본적으로 적용되는 설정값을 지정할 수 있는 파일이 바로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/default/useradd&lt;/code&gt;입니다. 이 파일을 통해 사용자 계정 생성 시 기본 옵션을 설정할 수 있어, 일관성 있고 효율적인 사용자 계정 관리를 할 수 있습니다.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#파일의-역할&quot;&gt;파일의 역할&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#주요-설정-항목&quot;&gt;주요 설정 항목&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#설정-예제&quot;&gt;설정 예제&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#요약&quot;&gt;요약&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;파일의-역할&quot;&gt;파일의 역할&lt;/h3&gt;
+&lt;h2 id=&quot;파일의-역할&quot;&gt;파일의 역할&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/default/useradd&lt;/code&gt; 파일은 새 사용자 계정을 생성할 때 적용되는 기본 설정값을 정의합니다. 시스템 관리자는 이 파일을 통해 사용자가 생성될 때 적용되는 홈 디렉토리 위치, 만료 기간, 기본 그룹 등을 미리 지정할 수 있습니다.&lt;/p&gt;
 
@@ -35,9 +151,9 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;주요-설정-항목&quot;&gt;주요 설정 항목&lt;/h3&gt;
+&lt;h2 id=&quot;주요-설정-항목&quot;&gt;주요 설정 항목&lt;/h2&gt;
 
-&lt;h4 id=&quot;1-group&quot;&gt;1. GROUP&lt;/h4&gt;
+&lt;h3 id=&quot;1-group&quot;&gt;1. GROUP&lt;/h3&gt;
 
 &lt;p&gt;새로 생성되는 사용자의 기본 그룹 ID(GID)를 지정합니다.&lt;/p&gt;
 
@@ -48,14 +164,14 @@
   &lt;li&gt;설명 : 기본 그룹 ID를 설정합니다. 만약 이 값을 지정하지 않으면 시스템에서 자동으로 새로운 그룹을 생성합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;2-home&quot;&gt;2. HOME&lt;/h4&gt;
+&lt;h3 id=&quot;2-home&quot;&gt;2. HOME&lt;/h3&gt;
 
 &lt;p&gt;사용자의 홈 디렉토리 루트 경로를 지정합니다. 예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;/code&gt;으로 설정하면 사용자의 홈 디렉토리는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/사용자이름&lt;/code&gt;으로 생성됩니다.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;3-inactive&quot;&gt;3. INACTIVE&lt;/h4&gt;
+&lt;h3 id=&quot;3-inactive&quot;&gt;3. INACTIVE&lt;/h3&gt;
 
 &lt;p&gt;비밀번호가 만료된 후 계정을 비활성화하기까지의 일수를 설정합니다. -1로 설정하면 비활성화되지 않습니다.&lt;/p&gt;
 
@@ -66,7 +182,7 @@
   &lt;li&gt;설명 : 비밀번호 만료 후 계정 비활성화까지의 기간을 일수로 지정합니다. 기본값은 -1로, 비활성화되지 않음을 의미합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;4-expire&quot;&gt;4. EXPIRE&lt;/h4&gt;
+&lt;h3 id=&quot;4-expire&quot;&gt;4. EXPIRE&lt;/h3&gt;
 
 &lt;p&gt;사용자의 계정 만료일을 설정합니다. 날짜 형식은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD&lt;/code&gt;입니다.&lt;/p&gt;
 
@@ -77,7 +193,7 @@
   &lt;li&gt;설명 : 계정의 만료일을 2024년 12월 31일로 설정하며, 특정 날짜 이후 계정이 만료되도록 설정할 수 있습니다. 기본값은 빈 칸으로, 만료일이 없음을 의미합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;5-shell&quot;&gt;5. SHELL&lt;/h4&gt;
+&lt;h3 id=&quot;5-shell&quot;&gt;5. SHELL&lt;/h3&gt;
 
 &lt;p&gt;사용자의 기본 쉘을 설정합니다. 일반적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/bin/bash&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/bin/sh&lt;/code&gt;가 기본으로 설정됩니다.&lt;/p&gt;
 
@@ -88,7 +204,7 @@
   &lt;li&gt;설명 : 새로 생성된 사용자가 사용할 기본 쉘을 지정합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;6-skel&quot;&gt;6. SKEL&lt;/h4&gt;
+&lt;h3 id=&quot;6-skel&quot;&gt;6. SKEL&lt;/h3&gt;
 
 &lt;p&gt;사용자의 초기 설정 파일을 가져오는 디렉토리를 지정합니다. 기본적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/skel&lt;/code&gt;을 사용합니다.&lt;/p&gt;
 
@@ -99,7 +215,7 @@
   &lt;li&gt;설명 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/skel&lt;/code&gt; 디렉토리에 있는 파일들은 새로 생성된 사용자의 홈 디렉토리에 복사됩니다. 이를 통해 기본적인 환경 설정 파일(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.profile&lt;/code&gt; 등)을 제공할 수 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;7-create_mail_spool&quot;&gt;7. CREATE_MAIL_SPOOL&lt;/h4&gt;
+&lt;h3 id=&quot;7-create_mail_spool&quot;&gt;7. CREATE_MAIL_SPOOL&lt;/h3&gt;
 
 &lt;p&gt;사용자 계정을 생성할 때 메일 스풀 파일 생성 여부를 결정합니다. 일반적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yes&lt;/code&gt; 또는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;no&lt;/code&gt;로 설정됩니다.&lt;/p&gt;
 
@@ -112,7 +228,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;설정-예제&quot;&gt;설정 예제&lt;/h3&gt;
+&lt;h2 id=&quot;설정-예제&quot;&gt;설정 예제&lt;/h2&gt;
 
 &lt;p&gt;다음은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/default/useradd&lt;/code&gt;의 예제 설정입니다.&lt;/p&gt;
 
@@ -140,7 +256,7 @@
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;요약&quot;&gt;요약&lt;/h3&gt;
+&lt;h2 id=&quot;요약&quot;&gt;요약&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -198,17 +314,6 @@
         <title>RPM 명령 및 옵션</title>
         <description>&lt;h1 id=&quot;rpm-패키지-관리자-소개&quot;&gt;RPM 패키지 관리자 소개&lt;/h1&gt;
 &lt;p&gt;RPM(Red Hat Package Manager)은 Red Hat 계열의 리눅스 배포판에서 사용하는 패키지 관리 도구로, 소프트웨어의 설치, 업그레이드, 제거, 쿼리 등을 쉽게 수행할 수 있습니다. 이 블로그에서는 RPM의 기본 개념부터 설치 및 관리 방법까지 알아보겠습니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm이란&quot;&gt;RPM이란?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm의-동작-방식&quot;&gt;RPM의 동작 방식&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm-패키지-설치&quot;&gt;RPM 패키지 설치&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm-패키지-제거&quot;&gt;RPM 패키지 제거&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm-패키지-정보-확인&quot;&gt;RPM 패키지 정보 확인&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rpm-패키지-검증-및-문제-해결&quot;&gt;RPM 패키지 검증 및 문제 해결&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 
 &lt;hr /&gt;
 
@@ -299,8 +404,8 @@
 &lt;hr /&gt;
 </description>
         <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/linux/2024/10/28/how-to-use-rpa.html</link>
-        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-rpa.html</guid>
+        <link>http://localhost:4000/linux/2024/10/28/how-to-use-rpm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-rpm.html</guid>
         
         
         <category>linux</category>
@@ -313,24 +418,16 @@
 &lt;p&gt;리눅스에서는 사용자를 생성, 수정 및 삭제하는 다양한 명령어를 제공합니다. 그 중 가장 기본이 되는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usermod&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userdel&lt;/code&gt; 명령어에 대해 알아보겠습니다.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;h2 id=&quot;목차&quot;&gt;목차&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#useradd---사용자-생성&quot;&gt;useradd - 사용자 생성&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#usermod---사용자-수정&quot;&gt;usermod - 사용자 수정&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#userdel---사용자-삭제&quot;&gt;userdel - 사용자 삭제&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;useradd---사용자-생성&quot;&gt;useradd - 사용자 생성&lt;/h3&gt;
+&lt;h2 id=&quot;useradd---사용자-생성&quot;&gt;useradd - 사용자 생성&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useradd&lt;/code&gt; 명령어는 새로운 사용자를 생성할 때 사용합니다. 사용자의 홈 디렉토리, UID, 기본 쉘 등을 설정할 수 있습니다.&lt;/p&gt;
 
-&lt;h4 id=&quot;기본-사용법&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;h3 id=&quot;기본-사용법&quot;&gt;기본 사용법&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;useradd &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;주요-옵션&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;h3 id=&quot;주요-옵션&quot;&gt;주요 옵션&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d [경로]&lt;/code&gt; : 홈 디렉토리 경로를 지정합니다. 기본값은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/사용자이름&lt;/code&gt; 입니다.&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; : 홈 디렉토리를 생성합니다. 홈 디렉토리 경로를 지정하지 않으면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home/사용자이름&lt;/code&gt;에 생성됩니다.&lt;/li&gt;
@@ -339,7 +436,7 @@
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-g [그룹]&lt;/code&gt; : 기본 그룹을 지정합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;예제&quot;&gt;예제&lt;/h4&gt;
+&lt;h3 id=&quot;예제&quot;&gt;예제&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 기본 설정으로 사용자 생성&lt;/span&gt;
 useradd user1
 
@@ -349,15 +446,15 @@ useradd &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nt
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;usermod---사용자-수정&quot;&gt;usermod - 사용자 수정&lt;/h3&gt;
+&lt;h2 id=&quot;usermod---사용자-수정&quot;&gt;usermod - 사용자 수정&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;usermod&lt;/code&gt; 명령어는 기존 사용자의 정보를 수정할 때 사용합니다.&lt;/p&gt;
 
-&lt;h4 id=&quot;기본-사용법-1&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;h3 id=&quot;기본-사용법-1&quot;&gt;기본 사용법&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;usermod &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;주요-옵션-1&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;h3 id=&quot;주요-옵션-1&quot;&gt;주요 옵션&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d [경로]&lt;/code&gt; : 홈 디렉토리 경로를 변경합니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; 옵션과 함께 사용하면 홈 디렉토리 내의 파일도 이동됩니다.&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s [쉘]&lt;/code&gt; : 기본 쉘을 변경합니다.&lt;/li&gt;
@@ -367,7 +464,7 @@ useradd &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nt
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-aG [그룹]&lt;/code&gt; : 사용자를 추가 그룹에 추가합니다. (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-G&lt;/code&gt;와 달리 기존 그룹을 유지하고 추가합니다.)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;예제-1&quot;&gt;예제&lt;/h4&gt;
+&lt;h3 id=&quot;예제-1&quot;&gt;예제&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 사용자의 홈 디렉토리 경로를 `/home/newhome`으로 변경하고 파일도 이동&lt;/span&gt;
 usermod &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; /home/newhome &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; user1
 
@@ -380,20 +477,20 @@ usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; &lt;span class=&quot;n
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;userdel---사용자-삭제&quot;&gt;userdel - 사용자 삭제&lt;/h3&gt;
+&lt;h2 id=&quot;userdel---사용자-삭제&quot;&gt;userdel - 사용자 삭제&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;userdel&lt;/code&gt; 명령어는 사용자를 삭제할 때 사용합니다.&lt;/p&gt;
 
-&lt;h4 id=&quot;기본-사용법-2&quot;&gt;기본 사용법&lt;/h4&gt;
+&lt;h3 id=&quot;기본-사용법-2&quot;&gt;기본 사용법&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;userdel &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] 사용자이름
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;주요-옵션-2&quot;&gt;주요 옵션&lt;/h4&gt;
+&lt;h3 id=&quot;주요-옵션-2&quot;&gt;주요 옵션&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-r&lt;/code&gt; : 사용자의 홈 디렉토리 및 메일 스풀도 삭제합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;예제-2&quot;&gt;예제&lt;/h4&gt;
+&lt;h3 id=&quot;예제-2&quot;&gt;예제&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 사용자 user1 삭제&lt;/span&gt;
 userdel user1
 
@@ -403,7 +500,7 @@ userdel &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; user1
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;요약&quot;&gt;요약&lt;/h3&gt;
+&lt;h2 id=&quot;요약&quot;&gt;요약&lt;/h2&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
