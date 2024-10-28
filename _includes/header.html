@@ -1,4 +1,3 @@
-
 {% assign organiser = site.data.organisers.[page.organiser] %}
 
 <header class="site-header">
@@ -56,8 +55,8 @@
                 <h2 class="widget-title">Contact</h2>
                 <p>{{ organiser.descsidebartext2 }}</p>
                 <ul class="contacts">
-                    <li><span class="icon icon-envelope" aria-hidden="true"></span> {{ organiser.sidebaremail }}</li>
-                    <li><span class="icon icon-map-marker" aria-hidden="true"></span> {{ organiser.sidebarcountry }}</li>
+                    <li><span class="icon icon-envelope" aria-hidden="true"></span> {{ site.email }}</li>
+                    <li><span class="icon icon-map-marker" aria-hidden="true"></span> {{ site.contry }}</li>
                 </ul>
             </aside><!-- .widget -->
         </div><!-- .widget-area -->
