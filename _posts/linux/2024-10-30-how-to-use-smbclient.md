@@ -99,7 +99,7 @@ smb: \> put upload.txt
 smb: \> cd 폴더이름
 ```
 
-옐르 들어, `documents` 폴더로 이동하려면 다음과 같이 입력합니다.
+예를 들어, `documents` 폴더로 이동하려면 다음과 같이 입력합니다.
 
 ```bash
 smb: \> cd documents
