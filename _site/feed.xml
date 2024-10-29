@@ -5,8 +5,8 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Oct 2024 09:23:08 +0900</pubDate>
-    <lastBuildDate>Tue, 29 Oct 2024 09:23:08 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2024 09:27:44 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2024 09:27:44 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -35,6 +35,29 @@
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logrotate&lt;/code&gt;의 기본 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.conf&lt;/code&gt;에 위치하며, 개별 애플리케이션의 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.d/&lt;/code&gt; 디렉터리에 배치할 수 있습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;logrotate-설정-파일-구조&quot;&gt;Logrotate 설정 파일 구조&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logrotate&lt;/code&gt;의 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;global&lt;/code&gt; 설정과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;per-logfile&lt;/code&gt; 설정으로 구분됩니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;global&lt;/code&gt; 설정은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.conf&lt;/code&gt;에 위치하며, 개별 로그 파일에 대한 세부 설정은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.d/&lt;/code&gt; 내 각 파일에서 정의할 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;기본-설정-파일-예제-etclogrotateconf&quot;&gt;기본 설정 파일 예제 (/etc/logrotate.conf)&lt;/h3&gt;
+
+&lt;div class=&quot;language-conf highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 주간 회전
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weekly&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 로그 파일을 4회전까지 유지
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 오래된 로그 파일 압축
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compress&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 빈 로그 파일은 무시
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notifempty&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 로테이션으로 생성되는 로그 파일에 해당 날짜를 &quot;YYYYMMDD&quot;형식으로 덧붙여 저장
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dateext&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 소유그룹(webserver)의 소유권자(admin)에게 읽기, 쓰기 권한만 지정 하고 다른 사용자에게 권한 부여 안함
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0600&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;admin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;webserver&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0900</pubDate>

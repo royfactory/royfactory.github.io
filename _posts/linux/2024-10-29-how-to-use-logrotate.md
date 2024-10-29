@@ -41,3 +41,27 @@ sudo yum install logrotate
 
 ## Logrotate 설정 파일 구조
 
+`logrotate`의 설정 파일은 `global` 설정과 `per-logfile` 설정으로 구분됩니다. `global` 설정은 `/etc/logrotate.conf`에 위치하며, 개별 로그 파일에 대한 세부 설정은 `/etc/logrotate.d/` 내 각 파일에서 정의할 수 있습니다.
+
+### 기본 설정 파일 예제 (/etc/logrotate.conf)
+
+```conf
+# 주간 회전
+weekly
+
+# 로그 파일을 4회전까지 유지
+rotate 4
+
+# 오래된 로그 파일 압축
+compress
+
+# 빈 로그 파일은 무시
+notifempty
+
+# 로테이션으로 생성되는 로그 파일에 해당 날짜를 "YYYYMMDD"형식으로 덧붙여 저장
+dateext
+
+# 소유그룹(webserver)의 소유권자(admin)에게 읽기, 쓰기 권한만 지정 하고 다른 사용자에게 권한 부여 안함
+create 0600 admin webserver
+```
+
