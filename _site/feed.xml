@@ -5,9 +5,281 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Oct 2024 18:32:59 +0900</pubDate>
-    <lastBuildDate>Tue, 29 Oct 2024 18:32:59 +0900</lastBuildDate>
+    <pubDate>Wed, 30 Oct 2024 08:56:48 +0900</pubDate>
+    <lastBuildDate>Wed, 30 Oct 2024 08:56:48 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>리눅스에서 VSFTP 서버를 설정하는 방법</title>
+        <description>&lt;h1 id=&quot;리눅스에서-vsftp-서버를-설정하는-방법&quot;&gt;리눅스에서 VSFTP 서버를 설정하는 방법&lt;/h1&gt;
+
+&lt;p&gt;VSFTP(Very Secure FTP)는 빠르고 안전한 FTP 서버 프로그램으로, Linux에서 손쉽게 설정할 수 있습니다. 이 글에서는 Linux 환경에서 VSFTP 서버를 설치하고 설정하는 방법을 다룹니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;vsftp-서버-설치&quot;&gt;VSFTP 서버 설치&lt;/h2&gt;
+
+&lt;p&gt;먼저, 터미널에서 VSFTP를 설치합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;설치가 완료되면 VSFTP 서버가 자동으로 시작됩니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;vsftp-서비스-상태-확인&quot;&gt;VSFTP 서비스 상태 확인&lt;/h2&gt;
+
+&lt;p&gt;설치 후 서버가 정상 작동하는지 확인합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl status vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;정상 작동 중이라면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;active (running)&lt;/code&gt; 상태로 표시됩니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;기본-설정-파일-수정&quot;&gt;기본 설정 파일 수정&lt;/h2&gt;
+
+&lt;p&gt;VSFTP의 기본 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/vsftpd.conf&lt;/code&gt;입니다. 이 파일을 편집하여 기본적인 FTP 서버 설정을 변경할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /etc/vsftpd.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;주요-설정-항목&quot;&gt;주요 설정 항목&lt;/h3&gt;
+
+&lt;h4 id=&quot;익명-접속-비활성화&quot;&gt;익명 접속 비활성화&lt;/h4&gt;
+
+&lt;p&gt;보안을 위해 익명 접속을 비활성화 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;anonymous_enable=NO
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;로컬-사용자-허용&quot;&gt;로컬 사용자 허용&lt;/h4&gt;
+
+&lt;p&gt;로컬 사용자의 FTP 접속을 허용하려면 다음 옵션을 활성화합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;local_enable=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;쓰기-권한-부여&quot;&gt;쓰기 권한 부여&lt;/h4&gt;
+
+&lt;p&gt;로컬 사용자에게 파일을 업로드하거나 수정할 수 있는 권한을 부여합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;write_enable=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;chroot-활성화&quot;&gt;chroot 활성화&lt;/h4&gt;
+
+&lt;p&gt;사용자가 자신의 홈 디렉토리 외부로 이동하지 못하도록 제한할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chroot_local_user=YES
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;사용자-전용-ftp-디렉토리-설정&quot;&gt;사용자 전용 FTP 디렉토리 설정&lt;/h2&gt;
+
+&lt;p&gt;보안 및 관리 용이성을 위해 FTP 전용 디렉토리를 만들고 설정하는 것이 좋습니다. 예를 들어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ftpuser&lt;/code&gt;라는 사용자를 생성하여 전용 디렉토리를 할당할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;adduser ftpuser
+&lt;span class=&quot;nb&quot;&gt;sudo mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /home/ftpuser/ftp/upload
+&lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;nobody:nogroup /home/ftpuser/ftp
+&lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;ftpuser:ftpuser /home/ftpuser/ftp/upload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ftp&lt;/code&gt; 폴더는 읽기 전용, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;upload&lt;/code&gt; 폴더는 업로드 전용으로 설정됩니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;vsftpdconf-설정-파일에-사용자-정의-추가&quot;&gt;vsftpd.conf 설정 파일에 사용자 정의 추가&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;user_sub_token=$USER
+local_root=/home/$USER/ftp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;방화벽-설정&quot;&gt;방화벽 설정&lt;/h2&gt;
+
+&lt;p&gt;FTP 기본 포트(21번)를 방화벽에서 허용해줍니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw allow 21/tcp
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;ufw reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;vsftp-서비스-재시작&quot;&gt;VSFTP 서비스 재시작&lt;/h2&gt;
+
+&lt;p&gt;설정이 완료되었으면 VSFTP 서비스를 재시작하여 변경 사항을 반영합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl restart vsftpd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ftp-서버-테스트&quot;&gt;FTP 서버 테스트&lt;/h2&gt;
+
+&lt;p&gt;FTP 클라이언트를 사용하여 서버에 접속해보세요. 로컬 네트워크에서 다음과 같이 접속할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ftp localhost
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;사용자명과 비밀번호를 입력하여 로그인합니다. 업로드 및 다운로드가 정상적으로 이루어지는지 확인하세요.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/10/30/how-to-use-vsftp.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/30/how-to-use-vsftp.html</guid>
+        
+        <category>linux</category>
+        
+        <category>vsftp</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>리눅스에서 smbclient를 사용하는 방법</title>
+        <description>&lt;h1 id=&quot;리눅스에서-smbclient를-사용하는-방법&quot;&gt;리눅스에서 smbclient를 사용하는 방법&lt;/h1&gt;
+
+&lt;p&gt;Windows 파일 공유는 많은 회사와 가정에서 사용하는 중요한 기능입니다. 리눅스에서도 윈도우 파일 서버와 쉽게 연동하여 파일을 관리할 수 있는데, smbclient는 이러한 작업에 유용한 도구입니다. 이 글에서는 리눅스에서 smbclient를 사용하여 SMB 프로토콜을 통해 파일 서버에 접근하고 파일을 전송하는 방법을 안내합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;smbclient란&quot;&gt;smbclient란?&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;는 SMB/CIFS 프로토콜을 통해 네트워크 상에서 윈도우 파일 서버에 접근할 수 있게 해주는 CLI 기반 클라이언트입니다. SMB는 Server Message Block의 약자로, Microsoft 네트워크에서 널리 사용되는 파일 공유 프로토콜입니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;는 이를 지원하여 리눅스 환경에서도 윈도우와 호환되는 파일 공유를 할 수 있도록 도와줍니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;smbclient-설치-방법&quot;&gt;smbclient 설치 방법&lt;/h2&gt;
+
+&lt;p&gt;대부분의 리눅스 배포판에는 기본 패키지 저장소에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;가 포함되어 있습니다. 배포판에 따라 다음 명령어로 설치할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Debian/Ubuntu&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;smbclient
+
+&lt;span class=&quot;c&quot;&gt;# RHEL/CentOS&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;samba-client
+
+&lt;span class=&quot;c&quot;&gt;# Fedora&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;samba-client
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;설치가 완료되면 터미널에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt; 명령을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;기본-명령어-사용법&quot;&gt;기본 명령어 사용법&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;를 이용해 특정 파일 서버에 연결하려면, 서버 주소와 공유 폴더 이름을 입력해야 합니다. 기본 구문은 다음과 같습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smbclient //서버주소/공유폴더 &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; 사용자이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;연결 후에는 비밀번호를 입력하라는 프롬프트가 나타납니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;smbclient-명령어의-기본-동작&quot;&gt;smbclient 명령어의 기본 동작&lt;/h3&gt;
+
+&lt;p&gt;연결이 성공하면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smb:&lt;/code&gt;로 시작하는 프롬프트가 표시됩니다. 이 상태에서 다양한 명령어를 사용하여 서버 상의 파일을 관리할 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;디렉토리-나열&quot;&gt;디렉토리 나열&lt;/h3&gt;
+
+&lt;p&gt;현재 디렉토리의 파일과 폴더 목록을 확인하려면 다음과 같이 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;파일-다운로드&quot;&gt;파일 다운로드&lt;/h3&gt;
+
+&lt;p&gt;서버에서 로컬 컴퓨터로 파일을 다운로드하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get&lt;/code&gt; 명령을 사용합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; get 파일이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;파일-업로드&quot;&gt;파일 업로드&lt;/h3&gt;
+
+&lt;p&gt;로컬 파일을 서버에 업로드하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;put&lt;/code&gt; 명령을 사용합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; put 파일이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;예를 들어, 로컬에 있는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;upload.txt&lt;/code&gt;파일을 서버에 업로드하려면 다음과 같이 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; put upload.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;디렉토리-이동&quot;&gt;디렉토리 이동&lt;/h3&gt;
+
+&lt;p&gt;서버에서 디렉토리를 이동하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt; 명령을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;폴더이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;documents&lt;/code&gt; 폴더로 이동하려면 다음과 같이 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;documents
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;파일-삭제&quot;&gt;파일 삭제&lt;/h3&gt;
+
+&lt;p&gt;서버 상의 파일을 삭제하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;del&lt;/code&gt; 명령을 사용합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; del 파일이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;old_file.txt&lt;/code&gt;를 삭제하려면 다음과 같이 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; del old_file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;연결-종료&quot;&gt;연결 종료&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt; 세션을 종료하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exit&lt;/code&gt;를 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smb: &lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;인증-문제-해결하기&quot;&gt;인증 문제 해결하기&lt;/h2&gt;
+
+&lt;p&gt;연결 시 인증 오류가 발생할 경우, SMB 프로토콜 버전 설정을 변경해보세요. SMB1, SMB2, SMB3 중 일부 서버는 특정 버전만 지원할 수 있습니다. 프로토콜 버전을 지정하여 연결하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-m&lt;/code&gt; 옵션을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어, SMB2를 사용하려면 다음과 같이 입력합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;smbclient //192.168.1.100/shared &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; user &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; SMB2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;마무리&quot;&gt;마무리&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;는 리눅스 환경에서 윈도우 파일 서버와 통신할 수 있는 강력한 도구입니다. 다양한 명령어를 활용하여 파일 다운로드, 업로드, 삭제 등 여러 작업을 수행할 수 있으며, 스크립트를 통해 자동화할 수도 있습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smbclient&lt;/code&gt;를 잘 활용하면 리눅스와 윈도우 간의 파일 공유가 훨씬 수월해집니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Wed, 30 Oct 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/10/30/how-to-use-smbclient.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/10/30/how-to-use-smbclient.html</guid>
+        
+        <category>linux</category>
+        
+        <category>smbclient</category>
+        
+        <category>samba</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
     
       <item>
         <title>리눅스에서 로그를 관리하는 방법</title>
