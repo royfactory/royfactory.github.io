@@ -17,8 +17,8 @@ layout: default
         
 
 
-<article class="post tag-space space-science" itemscope itemtype="http://schema.org/BlogPosting" style="background-color:#111111;">
-    <header class="cover post-header" style="height: 50px;border-bottom: 1px dashed #fff;margin: 0;">
+<article class="post tag-space space-science" itemscope itemtype="http://schema.org/BlogPosting" style="background-color:#fff;">
+    <header class="cover post-header" style="height: 50px;">
         <div class="post-bg"></div>
         <div class="cover-content">
             <div class="inner">
@@ -31,51 +31,4 @@ layout: default
         <p>{{ content }}</p>
         <div id="disqus_thread"></div>
     </div><!-- .post-content -->
-    <footer class="post-footer inner">
-        <!--
-        <div class="share-post">
-            <span>Share</span>
-            <a class="icon-twitter square" target="_blank" href="http://twitter.com/share?text={{ post.url | prepend: site.baseurl }}&url="><span class="screen-reader-text">Twitter</span></a>
-            <a class="icon-facebook square" target="_blank" href="http://wwww.facebook.com/sharer.php?"><span class="screen-reader-text">Facebook</span></a>
-            <a class="icon-google square" target="_blank" href="http://plus.google.com/share?url=/"><span class="screen-reader-text">Google+</span></a>
-        </div>
-        -->
-        <div class="author-box">
-                {% if organiser.photo %}
-                    <img src="{{organiser.photo}}" alt="Jane Doe" class="author-avatar" />
-                {% endif %}
-                    {% if organiser.photo %}
-            <h4 class="author-title">About 
-                <a href=""> {{organiser.name}}</a>
-            </h4>
-                {% endif %}
-            <p class="author-description">{{ site.description }}</p>
-            <p class="author-links">
-                <span class="author-location">
-                <i class="icon-map-marker" aria-hidden="true"></i> 
-                {{organiser.country}}
-                </span>
-                    <span class="author-website">
-                    <i class="icon-chain" aria-hidden="true"></i> 
-                    <a href="{{ organiser.web }}" target="_blank">{{ organiser.web }}</a>
-                </span> 
-                <span class="author-website">
-                    <i class="icon-chain" aria-hidden="true"></i> 
-                    <a href="mailto:{{ organiser.email }}" target="_blank">{{ organiser.email }}</a>
-                </span> 
-            </p>
-        </div>
-        <ul class="pager">
-            {% if page.previous.url %}
-            <li class="previous">
-                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}" id="pagehove">&larr; Previous Post</a>
-            </li>
-            {% endif %}
-            {% if page.next.url %}
-            <li class="next">
-                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}" id="pagehove">Next Post &rarr;</a>
-            </li>
-            {% endif %}
-        </ul>
-    </footer><!-- .post-footer -->
 </article><!-- .post -->
