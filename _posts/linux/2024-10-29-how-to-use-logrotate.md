@@ -38,3 +38,6 @@ sudo yum install logrotate
 ```
 
 `logrotate`의 기본 설정 파일은 `/etc/logrotate.conf`에 위치하며, 개별 애플리케이션의 설정 파일은 `/etc/logrotate.d/` 디렉터리에 배치할 수 있습니다.
+
+## Logrotate 설정 파일 구조
+

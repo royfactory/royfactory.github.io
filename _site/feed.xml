@@ -5,8 +5,8 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Oct 2024 08:31:28 +0900</pubDate>
-    <lastBuildDate>Tue, 29 Oct 2024 08:31:28 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2024 09:23:08 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2024 09:23:08 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -33,6 +33,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logrotate&lt;/code&gt;의 기본 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.conf&lt;/code&gt;에 위치하며, 개별 애플리케이션의 설정 파일은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/logrotate.d/&lt;/code&gt; 디렉터리에 배치할 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;logrotate-설정-파일-구조&quot;&gt;Logrotate 설정 파일 구조&lt;/h2&gt;
+
 </description>
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/linux/2024/10/29/how-to-use-logrotate.html</link>
