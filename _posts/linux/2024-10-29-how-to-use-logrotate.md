@@ -2,10 +2,11 @@
 layout: post
 
 #event information
-title:  "로그 관리를 위한 자동화 도구"
+title: "리눅스에서 로그를 관리하는 방법"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
-date:   2024-10-29
+date: 2024-10-29
+tags: linux logrotate logging log
 
 toc: true
 

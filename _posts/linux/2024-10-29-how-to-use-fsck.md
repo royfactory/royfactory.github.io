@@ -2,10 +2,11 @@
 layout: post
 
 #event information
-title:  "리눅스 파일 시스템 검사 도구"
+title: "리눅스 파일 시스템 검사 도구"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
-date:   2024-10-29
+date: 2024-10-29
+tags: linux filesystem fsck
 
 toc: true
 

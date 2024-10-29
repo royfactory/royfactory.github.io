@@ -2,10 +2,11 @@
 layout: post
 
 #event information
-title:  "리눅스에서 smbclient를 사용하는 방법"
+title: "리눅스에서 smbclient를 사용하는 방법"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
-date:   2024-10-30
+date: 2024-10-30
+tags: linux smbclient samba
 
 toc: true
 

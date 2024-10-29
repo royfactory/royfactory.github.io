@@ -5,12 +5,12 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Oct 2024 15:56:39 +0900</pubDate>
-    <lastBuildDate>Tue, 29 Oct 2024 15:56:39 +0900</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2024 17:14:35 +0900</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2024 17:14:35 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
-        <title>로그 관리를 위한 자동화 도구</title>
+        <title>리눅스에서 로그를 관리하는 방법</title>
         <description>&lt;h1 id=&quot;logrotate-로그-관리를-위한-자동화-도구&quot;&gt;Logrotate: 로그 관리를 위한 자동화 도구&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logrotate&lt;/code&gt;는 서버 및 애플리케이션 로그 파일의 용량을 효과적으로 관리하기 위해 사용되는 Linux 유틸리티입니다. 로그 파일이 일정 크기에 도달하거나 일정 기간이 경과했을 때, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;logrotate&lt;/code&gt;를 통해 로그를 자동으로 순환(rotating)하고 필요 시 압축, 삭제할 수 있습니다. 이를 통해 시스템의 로그 저장 공간을 절약하고, 로그 관리에 대한 부담을 줄일 수 있습니다.&lt;/p&gt;
@@ -151,6 +151,14 @@
         <link>http://localhost:4000/linux/2024/10/29/how-to-use-logrotate.html</link>
         <guid isPermaLink="true">http://localhost:4000/linux/2024/10/29/how-to-use-logrotate.html</guid>
         
+        <category>linux</category>
+        
+        <category>logrotate</category>
+        
+        <category>logging</category>
+        
+        <category>log</category>
+        
         
         <category>linux</category>
         
@@ -275,6 +283,12 @@
         <pubDate>Tue, 29 Oct 2024 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/linux/2024/10/29/how-to-use-fsck.html</link>
         <guid isPermaLink="true">http://localhost:4000/linux/2024/10/29/how-to-use-fsck.html</guid>
+        
+        <category>linux</category>
+        
+        <category>filesystem</category>
+        
+        <category>fsck</category>
         
         
         <category>linux</category>
@@ -452,6 +466,12 @@
         <link>http://localhost:4000/linux/2024/10/28/how-to-use-useradd-config.html</link>
         <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-useradd-config.html</guid>
         
+        <category>linux</category>
+        
+        <category>useradd</category>
+        
+        <category>config</category>
+        
         
         <category>linux</category>
         
@@ -553,6 +573,12 @@
         <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/linux/2024/10/28/how-to-use-rpm.html</link>
         <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-rpm.html</guid>
+        
+        <category>linux</category>
+        
+        <category>rpm</category>
+        
+        <category>redhat</category>
         
         
         <category>linux</category>
@@ -679,6 +705,16 @@ userdel &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; user1
         <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/linux/2024/10/28/how-to-use-account.html</link>
         <guid isPermaLink="true">http://localhost:4000/linux/2024/10/28/how-to-use-account.html</guid>
+        
+        <category>linux</category>
+        
+        <category>account</category>
+        
+        <category>useradd</category>
+        
+        <category>usermod</category>
+        
+        <category>userdel</category>
         
         
         <category>linux</category>

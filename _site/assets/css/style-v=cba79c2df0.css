@@ -412,52 +412,27 @@ h6 {
 	text-rendering: optimizeLegibility;
 }
 
-h1 {
-	font-size: 40px;
-}
-
-h2 {
-	font-size: 34px;
-}
-
-h3 {
-	font-size: 28px;
-}
-
-h4 {
-	font-size: 24px;
-}
-
+h1 { font-size: 34px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
 h5,
-h6 {
-	font-size: 18px;
-}
+h6 { font-size: 16px; }
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code { font-size:1em; }
 
-p {
-	margin: 0 0 30px;
-}
+p { margin: 0 0 30px; }
 
-address {
-	font-style: italic;
-	margin: 0 0 30px;
-}
-
-mark {
-	background-color: #fffac4;
-	color: #666;
-	padding: 0 3px;
-}
-
-ins {
-	background-color: #fffac4;
-	padding: 0 3px;
-	text-decoration: none;
-}
-
-code { font-size: 16px;padding: 1px 3px;white-space: pre-wrap; }
-
+address { font-style: italic; margin: 0 0 30px; }
+mark { background-color: #fffac4; color: #666; padding: 0 3px; }
+ins { background-color: #fffac4;padding: 0 3px;text-decoration: none; }
+code { font-size: 16px;padding: 1px 3px;white-space: pre-wrap;background-color:#f1f2f3;padding:2px 5px;border-radius:5px; }
 pre { background-color: #111;color: #ccc;font-size: 16px;margin: 0 0 30px;padding: 15px;white-space: pre;border-radius: 5px; }
-pre code { border: 0;font-size: inherit;padding: 0; }
+pre code { border: 0;font-size: inherit;padding: 0;background:none;padding:0;border-radius:0; }
 blockquote { border-bottom: 1px solid #eee;border-top: 3px solid #eee;color: #111;font-size: 24px;font-weight: bold;line-height: 1.5;margin: 0 -90px 30px;padding: 30px 0 40px; }
 blockquote.alignleft,
 blockquote.alignright { font-size: 20px; }

@@ -2,10 +2,11 @@
 layout: post
 
 #event information
-title:  "리눅스 사용자 관리"
+title: "리눅스 사용자 관리"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
-date:   2024-10-28
+date: 2024-10-28
+tags: linux account useradd usermod userdel
 
 toc: true
 

@@ -5,7 +5,8 @@ layout: post
 title:  "리눅스에서 VSFTP 서버를 설정하는 방법"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
-date:   2024-10-30
+date: 2024-10-30
+tags: linux vsftp
 
 toc: true
 
