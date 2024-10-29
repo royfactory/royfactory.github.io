@@ -65,3 +65,8 @@ dateext
 create 0600 admin webserver
 ```
 
+---
+
+## 주요 설정 옵션
+
+다양한 `logrotate` 옵션을 통해 로그 파일 관리 정책을 세부적으로 조정할 수 있습니다.
