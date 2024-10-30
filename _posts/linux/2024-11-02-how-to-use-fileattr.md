@@ -62,10 +62,26 @@ chattr [옵션] [속성] [파일/디렉토리]
 
 - **주요속성**
 
-|옵션|내용|
-|---|-----|
-|`a` (append only)|파일이 추가 모드로만 열리게 되어 내용을 덧붙이기만 할 수 있습니다.|
-|`i` (immutable)|파일이 불변 상태가 되어 삭제, 수정, 이름 변경 등이 불가능해집니다.|
+|Flag|속성|내용|
+|---|---|-----|
+|`A`|No atime Update|atime 레코드가 수정되지 않습니다.|
+|`a`|Append Only|파일이 추가 모드로만 열리게 되어 내용을 덧붙이기만 할 수 있습니다.|
+|`c`|Compressed|파일이 커널에 의해 자동적으로 압축됨<br>파일을 읽을 때는 압축을 해제하여 보여주며, 쓰기 작업 시에는 디스크에 저장하기 전에 압축부터 진행|
+|`D`|Synchronous directory updates|디렉토리의 변경 사항이 디스크에 동기식으로 저장됩니다.|
+|`d`|No Dump|dump 프로그램을 실행 될 때 해당 파일이 백업되지 않습니다.|
+|`E`|Compression error|Experimental compression patch에 사용되며, 압축된 데이터가 오류를 가지고 있음을 의미합니다.|
+|`e`|Extent format|파일이 디스크 클록에 매핑될 때 Extents를 사용합니다.|
+|`h`|Huge file|파일을 저장할 때 섹터 단위 대신 블록사이즈 단위로 저장합니다.<br>파일이 2TB 이상의 크기를 가지고 있음을 의미합니다.|
+|`I`|Indexed directory|디렉터리가 htree(Hashed tree)로 인덱싱 중 임을 의미합니다.|
+|`i`|immutable|파일이 불변 상태가 되어 삭제, 수정, 이름 변경 등이 불가능해집니다.|
+|`j`|Data Journaling|파일에 데이터를 쓰기 전에 ext3에 journal에 먼저 씀을 의미합니다.|
+|`S`|Shnchronous updates|파일의 변경 사항이 디스크에 동기식으로 저장됩니다.|
+|`s`|Secure deletion|파일을 제거했을 때 해당 블록은 zeroed되며, 디스크에 쓰여집니다.|
+|`T`|Top of directory hierarchy|T 속성이 부여된 디렉토리는 가장 상위 디렉토리로 여겨집니다.|
+|`t`|No tail-merging|파일에 Partial black fragmentation이 발새하지 않습니다.(tail-merging이 발생하지 않습니다.)|
+|`u`|Undeletable|파일이 삭제되더라도 내용은 저장되어 있으며, 복구가 가능합니다.|
+|`X`|Compression raw access|Experimental compression patch에 사용되며, 압축된 파일의 실제 내용을 직접 접근할 수 있음을 의미합니다.|
+|`Z`|Compressed dirty file|Experimental compression patch에 사용되며, 압축된 데이터가 손상되었음을 의미합니다.|
 
 - **주요옵션**
 
