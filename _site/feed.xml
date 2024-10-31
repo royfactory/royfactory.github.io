@@ -5,9 +5,320 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Oct 2024 13:57:22 +0900</pubDate>
-    <lastBuildDate>Thu, 31 Oct 2024 13:57:22 +0900</lastBuildDate>
+    <pubDate>Fri, 01 Nov 2024 08:52:59 +0900</pubDate>
+    <lastBuildDate>Fri, 01 Nov 2024 08:52:59 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>리눅스에서 접근 권한 관리하는 방법</title>
+        <description>&lt;h1 id=&quot;리눅스에서-접근-권한-관리하는-방법&quot;&gt;리눅스에서 접근 권한 관리하는 방법&lt;/h1&gt;
+
+&lt;p&gt;파일 및 디렉토리 접근 권한은 Linux나 Unix 환경에서 중요한 역할을 합니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt;는 이러한 접근 권한을 설정하거나 변경할 수 있는 중요한 명령어입니다. 이번 글에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-파일-시스템-권한의-기본-개념&quot;&gt;1. 파일 시스템 권한의 기본 개념&lt;/h2&gt;
+
+&lt;p&gt;Linux나 Unix 기반 시스템에서 모든 파일과 디렉토리는 &lt;strong&gt;소유자&lt;/strong&gt;, &lt;strong&gt;그룹&lt;/strong&gt;, &lt;strong&gt;기타 사용자&lt;/strong&gt;로 구분된 권한 체계를 가지고 있습니다. 각 파일 또는 디렉토리에는 세 가지 접근 권한이 설정됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;읽기 권한 (r)&lt;/strong&gt;: 파일 내용을 읽을 수 있는 권한입니다. 디렉토리의 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; 명령어로 디렉토리 안의 파일 목록을 볼 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;쓰기 권한 (w)&lt;/strong&gt;: 파일을 수정하거나 삭제할 수 있는 권한입니다. 디렉토리의 경우 파일을 추가하거나 삭제할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;실행 권한 (x)&lt;/strong&gt;: 파일을 실행할 수 있는 권한입니다. 디렉토리의 경우 해당 디렉토리로 이동(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;)할 수 있는 권한을 의미합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;파일의 권한은 총 세 가지 그룹에 각각 할당할 수 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;소유자 (User, u)&lt;/strong&gt;: 파일을 소유한 사용자에게 부여된 권한&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;그룹 (Group, g)&lt;/strong&gt;: 파일이 속한 그룹의 사용자에게 부여된 권한&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;기타 사용자 (Others, o)&lt;/strong&gt;: 시스템의 나머지 모든 사용자에게 부여된 권한&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;권한-표기-방식&quot;&gt;권한 표기 방식&lt;/h3&gt;
+
+&lt;p&gt;권한은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rwx&lt;/code&gt; 형식으로 나타내며, 다음과 같이 숫자로 표현될 수도 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;읽기 (r)&lt;/strong&gt; : 4&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;쓰기 (w)&lt;/strong&gt; : 2&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;실행 (x)&lt;/strong&gt; : 1&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;없음 (-)&lt;/strong&gt; : 0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예를 들어, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rwx&lt;/code&gt; 권한은 7로, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rw-&lt;/code&gt;는 6으로, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r--&lt;/code&gt;는 4로 표현됩니다. 이 방식은 &lt;strong&gt;8진수 표기법&lt;/strong&gt;으로, 각 권한 그룹의 값을 더해 나타냅니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-chmod-명령어-기본-사용법&quot;&gt;2. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; 명령어 기본 사용법&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt;는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;파일 권한을 수정할 때 사용하는 명령어&lt;/code&gt;로, 다음과 같이 사용합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;옵션] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;권한] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;파일 이름]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;옵션&lt;/strong&gt; : chmod 명령의 다양한 옵션 (예: -R은 재귀적으로 모든 하위 디렉토리 및 파일에 권한을 적용)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;권한&lt;/strong&gt; : 설정하고자 하는 권한 (예: 755 또는 u+x)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;파일 이름&lt;/strong&gt; : 권한을 변경할 파일 또는 디렉토리 이름&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;숫자-방식으로-권한-설정&quot;&gt;숫자 방식으로 권한 설정&lt;/h3&gt;
+
+&lt;p&gt;일반적으로 세 자릿수 8진수 숫자를 사용하여 권한을 설정합니다. 예를 들어:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;755 filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 명령은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt; 파일에 대해 다음과 같은 권한을 부여합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;소유자 (User)&lt;/strong&gt; : rwx (7)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;그룹 (Group)&lt;/strong&gt; : r-x (5)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;기타 사용자 (Others)&lt;/strong&gt; : r-x (5)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;기호-방식으로-권한-설정&quot;&gt;기호 방식으로 권한 설정&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt;는 기호 방식으로도 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;u&lt;/strong&gt; : 소유자&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;g&lt;/strong&gt; : 그룹&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;o&lt;/strong&gt; : 기타 사용자&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;a&lt;/strong&gt; : 모두 (all)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예를 들어, 다음과 같은 명령어가 있습니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+x filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 명령어는 소유자(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u&lt;/code&gt;)에게 실행 권한 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+x&lt;/code&gt;)을 추가로 부여합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-chmod-심화-옵션-및-사용-예시&quot;&gt;3. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; 심화 옵션 및 사용 예시&lt;/h2&gt;
+
+&lt;h3 id=&quot;재귀-옵션--r&quot;&gt;재귀 옵션 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt;)&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt; 옵션을 사용하면 해당 디렉토리와 하위 디렉토리 내 모든 파일의 권한을 한 번에 변경할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; 755 /path/to/directory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 명령어는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/path/to/directory&lt;/code&gt; 안의 모든 파일과 디렉토리에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;755&lt;/code&gt; 권한을 설정합니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;특정-권한만-추가-또는-제거하기&quot;&gt;특정 권한만 추가 또는 제거하기&lt;/h3&gt;
+
+&lt;p&gt;권한을 추가하거나 제거할 때 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;를 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;+&lt;/strong&gt; : 권한 추가&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-&lt;/strong&gt; : 권한 제거&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;예를 들어, 다음 명령어는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt;에 대해 그룹과 기타 사용자에게 실행 권한을 추가합니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;go+x filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;기본-권한을-설정하는-umask&quot;&gt;기본 권한을 설정하는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;umask&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;파일이나 디렉토리가 생성될 때 기본적으로 부여되는 권한을 결정하려면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;umask&lt;/code&gt;를 설정할 수 있습니다. 기본 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;umask&lt;/code&gt; 값은 022로, 이는 새 파일 생성 시 644 권한을 의미합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;4-권한-변경의-실제-예시&quot;&gt;4. 권한 변경의 실제 예시&lt;/h2&gt;
+
+&lt;h3 id=&quot;웹-서버에-필요한-권한-설정-예시&quot;&gt;웹 서버에 필요한 권한 설정 예시&lt;/h3&gt;
+
+&lt;p&gt;웹 서버에서 파일과 디렉토리에 대해 안전한 권한 설정이 필요합니다. 일반적으로 다음과 같은 권한을 권장합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;파일&lt;/strong&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;644&lt;/code&gt; (읽기 및 쓰기 권한을 소유자에게만 부여)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;디렉토리&lt;/strong&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;755&lt;/code&gt; (실행 권한을 모든 사용자에게 부여)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;644 /var/www/html/index.html
+&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; 755 /var/www/html/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;스크립트-파일에-실행-권한-부여하기&quot;&gt;스크립트 파일에 실행 권한 부여하기&lt;/h3&gt;
+
+&lt;p&gt;Bash 스크립트 파일을 실행하려면 소유자에게 실행 권한이 있어야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+x script.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;보안이-중요한-파일-권한-설정-예시&quot;&gt;보안이 중요한 파일 권한 설정 예시&lt;/h3&gt;
+
+&lt;p&gt;비밀번호 파일이나 인증서 파일 등 민감한 파일은 소유자에게만 접근 권한을 설정하는 것이 좋습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;600 sensitive_data.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 명령은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sensitive_data.txt&lt;/code&gt; 파일에 대해 소유자만 읽기 및 쓰기 권한을 부여합니다&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-chmod와-관련된-주의사항&quot;&gt;5. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt;와 관련된 주의사항&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;과도한 권한 설정 금지&lt;/strong&gt; : 특히 서버 환경에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;777&lt;/code&gt;처럼 과도한 권한을 부여하지 않도록 주의해야 합니다. 이는 보안상의 위험을 초래할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;재귀 설정 사용 시 주의&lt;/strong&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-R&lt;/code&gt; 옵션을 사용할 때는 설정이 의도한 대로 반영되는지 확인하세요. 잘못된 설정은 예상치 못한 접근 문제를 발생시킬 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;6-마무리&quot;&gt;6. 마무리&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt;는 Linux/Unix 시스템에서 필수적인 파일 권한을 설정하는 도구입니다. 각 상황에 맞는 적절한 권한을 설정하고, 보안에 유의하여 사용함으로써 시스템의 안전성을 높일 수 있습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; 명령어에 익숙해지면 더욱 효율적이고 안전하게 파일 시스템을 관리할 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Fri, 01 Nov 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/11/01/how-to-use-chmod.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/11/01/how-to-use-chmod.html</guid>
+        
+        <category>linux</category>
+        
+        <category>chmod</category>
+        
+        <category>permission</category>
+        
+        <category>umask</category>
+        
+        <category>rwx</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>리눅스에서 blkid를 사용하는 방법</title>
+        <description>&lt;h1 id=&quot;blkid---리눅스-파일시스템-uuid와-타입-확인-명령어&quot;&gt;blkid - 리눅스 파일시스템 UUID와 타입 확인 명령어&lt;/h1&gt;
+
+&lt;p&gt;리눅스 시스템에서 디스크와 파티션을 관리할 때, 특히 마운트 정보를 확인하거나 파티션을 식별하기 위해 UUID나 파일시스템 타입을 조회하는 경우가 많습니다. 이때 유용하게 사용할 수 있는 명령어 중 하나가 바로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;입니다. 이번 글에서는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어의 사용법과 옵션들에 대해 자세히 설명하겠습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1-blkid란&quot;&gt;1. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;란?&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;는 &lt;strong&gt;블록 디바이스(block device)&lt;/strong&gt;의 UUID와 파일시스템 타입을 조회할 수 있는 리눅스 명령어입니다. 이 명령어는 디스크나 파티션에 대한 정보를 제공하며, 주로 시스템 관리자가 파일시스템을 식별하거나 마운트할 때 유용하게 사용됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;는 단순히 장치 이름만으로는 알 수 없는 UUID, LABEL(레이블), TYPE(파일시스템 유형) 정보를 보여주기 때문에 디스크 관리와 관련된 작업에서 중요한 도구입니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;2-blkid-명령어-기본-사용법&quot;&gt;2. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어 기본 사용법&lt;/h2&gt;
+
+&lt;p&gt;기본적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어를 실행하면 현재 시스템에 연결된 모든 블록 디바이스의 정보를 출력합니다. 다음과 같은 기본 형식을 사용합니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이 명령어를 입력하면 시스템에 있는 모든 블록 장치의 정보를 출력하며, 각 장치의 UUID, 파일시스템 타입(TYPE), 레이블(LABEL) 등을 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;blkid
+/dev/sda1: &lt;span class=&quot;nv&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;12345abc-6789-def0-1234-56789abcdef0&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ext4&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PARTUUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0001&quot;&lt;/span&gt;
+/dev/sda2: &lt;span class=&quot;nv&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;23456bcd-789a-ef01-2345-6789abcdef01&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;swap&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;PARTUUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0002&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 출력 결과에서 볼 수 있듯이, 각 파티션의 UUID와 파일시스템 타입을 한눈에 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3-blkid의-주요-옵션&quot;&gt;3. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;의 주요 옵션&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어는 다양한 옵션을 제공하여 원하는 정보를 효율적으로 조회할 수 있습니다. 주요 옵션은 다음과 같습니다:&lt;/p&gt;
+
+&lt;h3 id=&quot;특정-장치-정보-조회&quot;&gt;특정 장치 정보 조회&lt;/h3&gt;
+&lt;p&gt;특정 장치에 대한 정보만 확인하고 싶을 때는 장치 경로를 추가하여 실행합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;32-캐시-파일-새로-고침--c-옵션&quot;&gt;3.2 캐시 파일 새로 고침 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-c&lt;/code&gt; 옵션)&lt;/h3&gt;
+
+&lt;p&gt;일반적으로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;는 정보를 빠르게 조회하기 위해 캐시를 사용합니다. 하지만 파일시스템이 변경되었거나 새 장치가 연결되었을 때, 최신 정보를 위해 캐시를 무시할 필요가 있습니다. 이 경우, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-c&lt;/code&gt; 옵션을 사용하여 캐시 파일을 새로 고칠 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;33-출력-형식-지정--o-옵션&quot;&gt;3.3 출력 형식 지정 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-o&lt;/code&gt; 옵션)&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;의 출력 형식을 지정할 수 있습니다. 기본적으로는 short 형식을 사용하며, export 형식을 지정하면 환경 변수 형식으로 출력됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;34-파일시스템-정보-필터링--t-옵션&quot;&gt;3.4 파일시스템 정보 필터링 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; 옵션)&lt;/h3&gt;
+
+&lt;p&gt;특정 파일시스템 타입이나 UUID에 맞는 장치만 표시하고자 할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; 옵션을 사용할 수 있습니다. 예를 들어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UUID=12345abc-6789-def0-1234-56789abcdef0&lt;/code&gt;인 장치만 보고 싶다면 다음과 같이 실행합니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;12345abc-6789-def0-1234-56789abcdef0&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;또는 특정 파일시스템 타입, 예를 들어 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ext4&lt;/code&gt; 파일시스템만 보고 싶다면 다음과 같이 사용합니다:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;TYPE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ext4&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;blkid-사용-예제&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 사용 예제&lt;/h2&gt;
+
+&lt;h3 id=&quot;41-시스템의-모든-블록-장치-uuid-및-파일시스템-타입-확인&quot;&gt;4.1 시스템의 모든 블록 장치 UUID 및 파일시스템 타입 확인&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;특정-장치-devsdb1의-정보-확인&quot;&gt;특정 장치 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdb1&lt;/code&gt;의 정보 확인&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid /dev/sdb1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;캐시-무시하고-최신-정보-조회&quot;&gt;캐시 무시하고 최신 정보 조회&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;44-특정-uuid에-맞는-장치-검색&quot;&gt;4.4 특정 UUID에 맞는 장치 검색&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blkid &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;example-uuid&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;5-마무리&quot;&gt;5. 마무리&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어는 리눅스에서 디스크와 파티션을 관리할 때 필수적인 도구입니다. 파일시스템 식별, UUID 관리, 특정 파일시스템 타입 필터링 등 다양한 기능을 제공하므로, 이를 잘 활용하면 시스템 디스크 관리 작업을 더욱 효율적으로 수행할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;파일시스템 관련 작업에서 실수를 줄이기 위해 언제든지 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt; 명령어를 사용해 디바이스 정보를 정확하게 확인하는 습관을 들이시기 바랍니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Fri, 01 Nov 2024 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/linux/2024/11/01/how-to-use-blkid.html</link>
+        <guid isPermaLink="true">http://localhost:4000/linux/2024/11/01/how-to-use-blkid.html</guid>
+        
+        <category>linux</category>
+        
+        <category>blkid</category>
+        
+        <category>uuid</category>
+        
+        <category>filesystem</category>
+        
+        <category>filetype</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
     
       <item>
         <title>리눅스에서 TCP Wrapper를 사용하는 방법</title>
