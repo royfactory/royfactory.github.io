@@ -6,7 +6,7 @@ title: "리눅스에서 사용자 비밀번호 만료 및 수명 관리하는 �
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
 date: 2024-11-04
-tags: linux chmod permission umask rwx
+tags: linux chage password expire changeage
 
 toc: true
 
