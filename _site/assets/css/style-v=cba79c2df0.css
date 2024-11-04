@@ -1766,102 +1766,29 @@ pre .storage {
  */
 
 @media only screen and (min-width: 1400px) {
-	h1 {
-		font-size: 48px;
-	}
-
-	h2 {
-		font-size: 36px;
-	}
-
+	h1 { font-size: 40px; }
+	h2 { font-size: 36px; }
 	h3,
-	.nav-title {
-		font-size: 30px;
-	}
-
-	blockquote {
-		font-size: 30px;
-		line-height: 1.33333;
-		margin-left: -180px;
-		margin-right: -180px;
-		padding-bottom: 60px;
-	}
-
+	.nav-title { font-size: 30px; }
+	blockquote { font-size: 30px;line-height: 1.33333;margin-left: -180px;margin-right: -180px;padding-bottom: 60px; }
 	blockquote.alignleft,
-	blockquote.alignright {
-		font-size: 24px;
-	}
-
-	.alignleft {
-		margin-left: -180px;
-	}
-
-	.alignright {
-		margin-right: -180px;
-	}
-
-	.full-width {
-		margin-left: -180px;
-		margin-right: -180px;
-	}
-
-	.button {
-		padding: 9px 20px;
-	}
-
-	.square {
-		font-size: 18px;
-		height: 46px;
-		width: 46px;
-	}
-
-	.site-title {
-		font-size: 30px;
-		margin-right: 45px;
-	}
-
-	.sidebar {
-		width: 740px;
-	}
-
+	blockquote.alignright { font-size: 24px; }
+	.alignleft { margin-left: -180px; }
+	.alignright { margin-right: -180px; }
+	.full-width { margin-left: -180px;margin-right: -180px; }
+	.button { padding: 9px 20px; }
+	.square { font-size: 18px;height: 46px;width: 46px; }
+	.site-title { font-size: 30px;margin-right: 45px; }
+	.sidebar { width: 740px; }
 	.sidebar .site-navigation,
-	.sidebar .widget {
-		padding-left: 90px;
-		padding-right: 90px;
-	}
-
-	.post-title {
-		font-size: 36px;
-		margin-bottom: 15px;
-	}
-
-	.tag-links a {
-		padding: 2px 5px;
-	}
-
+	.sidebar .widget { padding-left: 90px;padding-right: 90px; }
+	.post-title { font-size: 36px;margin-bottom: 15px; }
+	.tag-links a { padding: 2px 5px; }
 	.tag-links,
 	.nav-before,
 	.widget-recent-posts span,
-	.site-info {
-		font-size: 12px;
-	}
-
-	button,
-	input[type="submit"],
-	input[type="button"],
-	input[type="reset"],
-	.site-navigation .menu-item,
-	.post-meta,
-	.share-post,
-	.post-count,
-	.pagination {
-		/*font-size: 14px;*/
-	}
-
-	.author-box .author-description {
-		font-size: 16px;
-	}
-
+	.site-info { font-size: 12px; }
+	.author-box .author-description { font-size: 16px; }
 	blockquote small,
 	blockquote cite,
 	.author-template .post-content,
@@ -1869,78 +1796,33 @@ pre .storage {
 	.comments-title,
 	.widget-area .screen-reader-text,
 	.widget-title,
-	.widget-recent-posts a {
-		font-size: 18px;
-	}	
-
+	.widget-recent-posts a { font-size: 18px; }
 	.grid-item,
 	.home-template .grid-item:nth-child(3n+1),
-	.cover.page-header {
-		height: 500px;
-    height: 450px;
-    width: 50%;
-}
-	}
+	.cover.page-header { height: 500px;height: 450px;width: 50%; }
 
 	.grid-item:nth-child(3n+1),
 	.home-template .grid-item:nth-child(3n+3),
-	.cover.hero {
-		height: 800px;
-	}
+	.cover.hero { height: 800px; }
 
 	.author-template .grid-item,
-	.tag-template .grid-item {
-		height: auto;
-	}
+	.tag-template .grid-item { height: auto; }
 
 	.grid-item:nth-child(3n+1) .post-inside .post-title,
 	.home-template .grid-item:nth-child(3n+3) .post-title,
 	.page-title,
-	.post-template .post-title {
-		font-size: 48px;
-	}
+	.post-template .post-title { font-size: 48px; }
 
-	.home-template .grid-item:nth-child(3n+1) .post-title {
-		font-size: 36px;
-	}
-
-	.cover .scroll-down {
-		margin-left: -25px;
-	}
-
-	.hero-wrap {
-		padding-left: 60px;
-	}
-
-	.hero-title {
-		font-size: 60px;
-	}
-
-	.hero-text {
-		font-size: 20px;
-	}
-
-	.pagination {
-		padding-bottom: 15px;
-		padding-top: 15px;
-	}
-
+	.home-template .grid-item:nth-child(3n+1) .post-title { font-size: 36px; }
+	.cover .scroll-down { margin-left: -25px; }
+	.hero-wrap { padding-left: 60px; }
+	.hero-title { font-size: 60px; }
+	.hero-text { font-size: 20px;}
+	.pagination { padding-bottom: 15px;padding-top: 15px; }
 	.nav-previous,
-	.nav-next {
-		padding-bottom: 450px;
-	}
-
-	.footer-widgets .footer-col {
-		padding-bottom: 60px;
-		padding-top: 90px;
-	}
-
-	.offsite-links a {
-		font-size: 18px;
-		height: 50px;
-		line-height: 2.77777;
-		width: 50px;
-	}
+	.nav-next { padding-bottom: 450px; }
+	.footer-widgets .footer-col { padding-bottom: 60px;padding-top: 90px; }
+	.offsite-links a {font-size: 18px;height: 50px;line-height: 2.77777;width: 50px; }
 }
 
 @media only screen and (min-width: 1281px) {
