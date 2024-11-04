@@ -1766,10 +1766,6 @@ pre .storage {
  */
 
 @media only screen and (min-width: 1400px) {
-	h1 { font-size: 40px; }
-	h2 { font-size: 36px; }
-	h3,
-	.nav-title { font-size: 30px; }
 	blockquote { font-size: 30px;line-height: 1.33333;margin-left: -180px;margin-right: -180px;padding-bottom: 60px; }
 	blockquote.alignleft,
 	blockquote.alignright { font-size: 24px; }
