@@ -24,7 +24,7 @@ contry: Korea
 description: >- # this means to ignore newlines until "baseurl:"
   Development-related tech blog. Base is coding and posts servers and other information related to it.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://royfactory.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: royfactory
 github_username:  royfactory
 
