@@ -99,7 +99,7 @@ rsync -av -e ssh /home/user/source/ remote_user@remote_host:/home/remote_user/ba
 ```
 
 ### 8. `-u` : 최신 파일만 복사 (update)
-- **설명** : 대상에 이미 존재하는 팡리보다 최신 파일만 복사합니다.
+- **설명** : 대상에 이미 존재하는 파일보다 최신 파일만 복사합니다.
 - **예시** :
 ```bash
 rsync -avu /home/user/source/ /home/user/backup/

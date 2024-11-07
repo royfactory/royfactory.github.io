@@ -100,7 +100,7 @@ sudo firewall-cmd --zone=public --remove-service=http --permanent
 
 - `--permanent` 옵션을 사용하면 방화벽 규칙이 영구적으로 적용됩니다. 옵션을 생략하면 일시적으롬나 적용됩니다.
 
-변경 사항을 적용하려면 다음 명령어를 실행하빈다.
+변경 사항을 적용하려면 다음 명령어를 실행합니다.
 
 ```bash
 sudo firewall-cmd --reload
