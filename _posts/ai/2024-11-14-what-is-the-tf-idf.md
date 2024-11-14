@@ -6,7 +6,7 @@ title: "TF-IDF란 무엇인가?"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
 date: 2024-11-14
-tags: ai rag tf-idf
+tags: ai rag tf-idf algorithm
 
 toc: true
 

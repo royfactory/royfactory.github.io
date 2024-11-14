@@ -69,7 +69,7 @@ sudo nano /etc/slysctl.conf
 net.ipv4.tcp_rmem = 4096 87380 6291456
 ```
 
-수정이 완료되면 `sysctl` 명령어를 사용하여 변경 사항을 저굥ㅇ할 수 있습니다.
+수정이 완료되면 `sysctl` 명령어를 사용하여 변경 사항을 적용할 수 있습니다.
 
 ```bash
 # sysctl로 변경 사항 적용

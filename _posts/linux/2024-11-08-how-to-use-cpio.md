@@ -40,7 +40,7 @@ organiser: "Royfactory"
 - **`-o` / `--create` (아카이브 생성)**
   - 파일 목록을 입력받아 아카이브 파일을 생성합니다.
   - 예시: `find . -name "*.txt" | cpio -o > archive.cpio
-    - 현재 디렉토리에서 모든 `.txt` 파일ㅇ르 찾아 `archive.cpio`라는 아카이브를 만듭니다.
+    - 현재 디렉토리에서 모든 `.txt` 파일을 찾아 `archive.cpio`라는 아카이브를 만듭니다.
 - **`-i` / `--extract` (아카이브 추출)**
   - 아카이브 파일에서 파일을 추출합니다.
   - 예시: `cpio -i < archive.cpio`
