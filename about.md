@@ -52,6 +52,13 @@ licenses : [
 ]
 
 experiences : [
+    [   '2024. 10',
+        '',
+        'Sales Inventory & Guest Feedback',
+        'Project Manager',
+        'AI + API를 이용한 매장 매출 정보 분석 및 리뷰 감정 분석 시스템 개발 진행',
+        [React, Mongo DB, Huggingface, ko-sent5-classification]
+    ],
     [   '2023. 10',
         '',
         'Product Manufacture Library 구축 및 운영',
