@@ -5,9 +5,160 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Jun 2025 23:20:38 +0900</pubDate>
-    <lastBuildDate>Tue, 24 Jun 2025 23:20:38 +0900</lastBuildDate>
+    <pubDate>Tue, 24 Jun 2025 23:30:34 +0900</pubDate>
+    <lastBuildDate>Tue, 24 Jun 2025 23:30:34 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>What is RNN (Recurrent Neural Network)?</title>
+        <description>&lt;h1 id=&quot;what-is-rnn-recurrent-neural-network&quot;&gt;What is RNN (Recurrent Neural Network)?&lt;/h1&gt;
+&lt;p&gt;In many real-world applications, especially in natural language processing and time series prediction, data comes in sequences. Unlike traditional neural networks, which treat each input independently, RNNs are designed to handle sequential data by maintaining memory of previous inputs. This makes them useful for understanding the context in tasks like speech recognition, language modeling, and more.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;concept-of-rnn&quot;&gt;Concept of RNN&lt;/h2&gt;
+
+&lt;p&gt;RNN stands for &lt;strong&gt;Recurrent Neural Network&lt;/strong&gt;. It is a type of neural network where connections between nodes form a directed cycle. This cycle allows information to persist, making it ideal for sequential data.&lt;/p&gt;
+
+&lt;p&gt;In simpler terms, RNNs work by passing information from one step of the sequence to the next. At each step, the network considers the current input and what it learned from the previous steps.&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-flow&quot;&gt;Basic Flow:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Input (xₜ):&lt;/strong&gt; Current input at time step &lt;em&gt;t&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hidden state (hₜ):&lt;/strong&gt; Captures memory from previous inputs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Output (yₜ):&lt;/strong&gt; Final prediction or classification at time step &lt;em&gt;t&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Mathematically:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+hₜ = f(Wₓxₜ + Wₕhₜ₋₁ + b)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f&lt;/code&gt; is an activation function (usually tanh or ReLU),&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Wₓ&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Wₕ&lt;/code&gt; are weights,&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt; is bias.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;real-world-example-predicting-the-next-word&quot;&gt;Real-World Example: Predicting the Next Word&lt;/h2&gt;
+
+&lt;p&gt;Imagine you’re typing a message on your phone. After you type “How are”, your keyboard suggests the next word might be “you”. This is a classic use case of RNN:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Input sequence: “How”, “are”&lt;/li&gt;
+  &lt;li&gt;RNN processes the sequence while remembering the previous words&lt;/li&gt;
+  &lt;li&gt;Output: Predicts the next word “you”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This memory-like behavior is what makes RNNs powerful for tasks involving sequences.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;applications-of-rnn&quot;&gt;Applications of RNN&lt;/h2&gt;
+
+&lt;p&gt;RNNs are used in various domains where context and sequence matter:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Language Modeling&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Predict the next word or sentence (used in predictive keyboards or translators).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Speech Recognition&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Convert audio waves into text while maintaining temporal dependencies.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Time Series Forecasting&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Stock prices, weather predictions, or any data that changes over time.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Music Generation&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Generate music notes based on previous sequences.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;limitations-of-rnn&quot;&gt;Limitations of RNN&lt;/h2&gt;
+
+&lt;p&gt;Despite their usefulness, RNNs come with several limitations:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Vanishing/Exploding Gradients&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;When training on long sequences, gradients can become too small or too large, making training unstable.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Short-Term Memory&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Basic RNNs struggle with long-range dependencies. They can forget information from many steps ago.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Training Difficulty&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Compared to feedforward networks, RNNs are harder to train due to sequential processing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;improvements-lstm-and-gru&quot;&gt;Improvements: LSTM and GRU&lt;/h2&gt;
+
+&lt;p&gt;To solve the short-term memory problem, advanced versions of RNNs were developed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;LSTM (Long Short-Term Memory)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Introduces memory cells and gates to control what information is kept or forgotten.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;GRU (Gated Recurrent Unit)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A simplified version of LSTM that also handles long-term dependencies more efficiently.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both LSTM and GRU have become standard in modern NLP tasks due to their performance and reliability.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;RNNs are a fundamental building block for processing sequential data in machine learning. While they have some limitations, especially with long sequences, their core idea of remembering the past makes them incredibly valuable in language, audio, and time-based applications. For better performance, variants like LSTM and GRU are commonly used today.&lt;/p&gt;
+
+&lt;p&gt;Understanding RNNs is essential for diving deeper into modern AI applications like translation, summarization, and voice assistants.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 24 Jun 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/ai/2025/06/24/rnn-recurrent-neural-network.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ai/2025/06/24/rnn-recurrent-neural-network.html</guid>
+        
+        <category>ai</category>
+        
+        <category>rnn</category>
+        
+        <category>recurrent-neural-network</category>
+        
+        <category>deep-learning</category>
+        
+        <category>sequence-modeling</category>
+        
+        <category>lstm</category>
+        
+        <category>nlp</category>
+        
+        
+        <category>ai</category>
+        
+      </item>
     
       <item>
         <title>FAISS란 무엇인가?</title>
