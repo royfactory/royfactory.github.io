@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 
@@ -10,6 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic%7CMontserrat:400,700" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="/assets/css/style-v=cba79c2df0.css" />
 	<link rel="shortcut icon" href="/img/favicon.ico">
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -21,24 +28,29 @@
 	<![endif]-->
 
 
-<style>
+	<style>
+		@media only screen and (min-width: 1400px) {
 
-@media only screen and (min-width: 1400px){
-.grid-item, .home-template .grid-item:nth-child(3n+1), .cover.page-header-1 {
-    height: 500px;
-    height: 450px;
-    width: 100%;
-}
-}
-</style>
+			.grid-item,
+			.home-template .grid-item:nth-child(3n+1),
+			.cover.page-header-1 {
+				height: 500px;
+				height: 450px;
+				width: 100%;
+			}
+		}
+	</style>
 </head>
+
 <body class="author-template author-jane-doe">
 	<div id="page" class="site">
-    
+		
 
 <header class="site-header">
     <div class="inner-wide">
-        <h1 class="site-title"><a href="/" id="glas-logo-1">    <img src="/img/ic_logo.png" style="width:100%" alt="image"></a><!--Roy's Factory--></a></h1>
+        <div class="site-title" style="color: #ADADAD;font-family: 'Open Sans', sans-serif;font-weight: bold;line-height: 1.2;margin: 0 0 30px;text-rendering: optimizeLegibility;">
+            <a href="/" id="glas-logo-1"><img src="/img/ic_logo.png" style="width:100%" alt="image"></a><!--Roy's Factory--></a>
+        </div>
         <nav class="site-navigation" role="navigation">
     <h2 class="screen-reader-text">hello</h2>
     <ul class="menu">
@@ -62,8 +74,6 @@
             
                 <a class="page-link" href="/archive/">Archive</a>
             
-          
-        
           
         
           
@@ -138,43 +148,459 @@
         <a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
     </div><!-- .sidebar-scrollable -->
 </div><!-- .sidebar -->
-<main class="site-main" role="main">
-	<section class="site-content">
-	
-		<header class="cover page-header-1">
-			<div class="cover-bg" style="background-image: url('/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg?id=1080')"></div>
-			<div class="cover-content">
-				<div class="inner">
-					<div class="post-count"></div>
-					<h1 class="page-title">Roy's Factory </h1>
+		<main class="site-main" role="main">
+			<section class="site-content">
+				<header class="cover page-header-1">
+					<div class="cover-bg"
+						style="background-image: url('/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg?id=1080')">
+					</div>
+					<div class="cover-content">
+						<div class="inner">
+							<div class="post-count"></div>
+							<h1 class="page-title">Roy's Factory </h1>
+							<p><img src="/img/ic_logo.png" alt="Jane Doe" class="author-avatar" /></p>
+							<p class="author-links">
+								<span class="author-location"><i class="icon-map-marker" aria-hidden="true"></i> South Korea</span>
+								<span class="author-website">
+									<i class="icon-chain" aria-hidden="true"></i>
+									<a href="https://royzero.tistory.com" target="_blank" style="color:white;">https://royzero.tistory.com</a>
+								</span>
+							</p>
+						</div><!-- .inner -->
+					</div><!-- .cover-content -->
+				</header><!-- .cover -->
 
-				
-					<p>    
-                            <img src="/img/ic_logo.png" alt="Jane Doe" class="author-avatar" />
-                        </p>
-					<p class="page-description">Your Text about your and so on!</p>
-					<p class="author-links">
-						<span class="author-location"><i class="icon-map-marker" aria-hidden="true"></i> South Korea</span>
-						<span class="author-website"><i class="icon-chain" aria-hidden="true"></i> <a href="https://blog.royfactory.net" target="_blank" style="color:white;">https://blog.royfactory.net</a></span>
-					</p>
-				</div><!-- .inner -->
-			</div><!-- .cover-content -->
-		</header><!-- .cover -->
+				<div class="inner-wide">
+					<div id="profile">
+						<!-- 기본 정보 -->
+						<dl class="box-basic">
+							<!-- photo -->
+							<!--
+							<dt></dt>
+							-->
+							<!-- //photo -->
+							<dd class="tit">장진용<span>(ROY)</span></dd>
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fas"
+									data-icon="envelope"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<path fill="currentColor"
+										d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+									</path>
+								</svg>
+								<a href="mailto:worry1318@naver.com" target="_blank" rel="noreferrer noopener">worry1318@naver.com</a>
+							</dd>
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fas"
+									data-icon="phone"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<path fill="currentColor"
+										d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+									</path>
+								</svg>
+								<em>Please contact me by email</em>
+							</dd>
+							<!--
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fas"
+									data-icon="pen"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512">
+									<path fill="currentColor"
+										d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z">
+									</path>
+								</svg>
+								<a href="https://royzero.tistory.com" target="_blank" rel="noreferrer noopener">https://royzero.tistory.com</a>
+							</dd>
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fab"
+									data-icon="github"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 496 512"
+								>
+									<path fill="currentColor"
+										d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+									</path>
+								</svg>
+								<a href="https://github.com/royfactory" target="_blank" rel="noreferrer noopener">https://github.com/royfactory</a>
+							</dd>
+							-->
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fab"
+									data-icon="facebook"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<path fill="currentColor"
+										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+									</path>
+								</svg>
+								<a href="https://fb.com/ROYZEROY24" target="_blank" rel="noreferrer noopener">https://fb.com/ROYZEROY24</a>
+							</dd>
+							<dd>
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="fas"
+									data-icon="rss"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512">
+									<path fill="currentColor"
+										d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z">
+									</path>
+								</svg>
+								<a href="https://royzero.tistory.com" target="_blank" rel="noreferrer noopener">https://royzero.tistory.com</a>
+							</dd>
+							<dd class="noti">
+								<svg
+									aria-hidden="true"
+									focusable="false"
+									data-prefix="far"
+									data-icon="bell"
+									role="img"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512"
+								>
+									<path fill="currentColor"
+										d="M439.39 362.29c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71zM67.53 368c21.22-27.97 44.42-74.33 44.53-159.42 0-.2-.06-.38-.06-.58 0-61.86 50.14-112 112-112s112 50.14 112 112c0 .2-.06.38-.06.58.11 85.1 23.31 131.46 44.53 159.42H67.53zM224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64z">
+									</path>
+								</svg>
+								휴대전화나 페이스북 메시지 아닌 이메일로 연락 부탁드립니다.
+							</dd>
+						</dl>
+						<!-- // 기본 정보 -->
+						<!-- 기본 소개 -->
+						<dl class="box-introduce">
+							<dt>INTRODUCE</dt>
+							<dd>
+								<p>다년간 개발 및 유지보수, 관리 등 온·오프라인 유통 프로젝트 경험으로 폭넓고 심도 있는 IT에 대한 지식을 겸비한 개발자입니다.<br/> 대학을 졸업하고 쉴 틈 없이 바로 고객의 쉼에 대해 많은 관심을 두는 핫트랙스라는 회사에 입사하여 바로 쇼핑몰 리뉴얼이라는 큰 프로젝트의 일원으로 해야 할 역할을 다하였습니다. 저는 이 프로젝트에서 처음으로 학업에서 배운 많은 기술을 실무에 처음 적용해 보는 뜻깊은 프로젝트였습니다. 또한, 개발하는 과정에서 스프링프레임워크 뿐만 아니라 스토리 보드, 테스트케이스 작성 등 프로젝트 개발에 필요한 기술들을 배웠고, 그것이 저의 첫 개발자로서의 방향을 잡게 해 준 의미 있는 프로젝트였습니다. 저는 이후 프로젝트 대부분에서 이때 경험한 내용을 기반으로 진행했으며 때로는 실패도, 때로는 성공도 겪을 수 있었습니다.<br/><br/> 또한, 저는 끊임 없는 탐구심을 통하여 회사에 적용 가능한 무인안내 시스템, 로케이션 모니터링 시스템 등 많은 프로세스를 부분을 개선하였고, 이를 인정받아 우수사원이 되기도 하였습니다.<br/> 저는 이런 저의 경험을 홀로 간직하기보다는 공유하는 교육의 장을 만들었고, 이를 통하여 서로의 실력 배양뿐만 아니라 개발자 간의 의사소통이 더욱 원활할 수 있도록 하여 프로젝트 함으로써 성공적으로 이바지할 수 있도록 하였습니다.<br/> 저는 개발자입니다. 프로그램의 개발뿐만 아니라 사람 간의 관계, 회사의 방향을 함께 고민하고 개발해 가는 개발자입니다.</p>
 
-		<div class="inner-wide">
-			<div class="post-grid">
+								<p class="date">
+									<small>Latest Updated</small>
+									<span class="badge">2024. 11. 12</span>
+								</p>
+								<p class="sign">Jinyong</p>
+							</dd>
+						</dl>
+						<!-- // 기본 소개 -->
+						<!-- SKILL -->
+						<div class="box-skill">
+							<h2>SKILL</h2>
+							 
+								<dl>
+									<dt>Languages</dt>
+									<dd>
+										<ul>
+											
+											<li>Java</li>
+											
+											<li>Kotlin</li>
+											
+											<li>HTML/CSS</li>
+											
+											<li>Javascript</li>
+											
+											<li>Python</li>
+											
+											<li>Android</li>
+											
+										</ul>
+									</dd>
+								</dl>
+                            
+							 
+								<dl>
+									<dt>Fameworks & Libraries</dt>
+									<dd>
+										<ul>
+											
+											<li>Spring Framework</li>
+											
+											<li>Node.js</li>
+											
+											<li>Express.js</li>
+											
+											<li>React.js</li>
+											
+											<li>Nexacro 17</li>
+											
+											<li>NexacroN</li>
+											
+										</ul>
+									</dd>
+								</dl>
+                            
+							 
+								<dl>
+									<dt>Infrastructure & Databases</dt>
+									<dd>
+										<ul>
+											
+											<li>Linux</li>
+											
+											<li>Apache</li>
+											
+											<li>Resin</li>
+											
+											<li>JEUS</li>
+											
+											<li>Nginx</li>
+											
+											<li>Redis</li>
+											
+											<li>Oracle</li>
+											
+											<li>MS-SQL</li>
+											
+											<li>Redis</li>
+											
+											<li>MongoDB</li>
+											
+										</ul>
+									</dd>
+								</dl>
+                            
+							
+							 
+								<dl>
+									<dt>ETC</dt>
+									<dd>
+										<ul>
+											
+											<li>OZ Report</li>
+											
+											<li>AIReport</li>
+											
+											<li>Diquest 4</li>
+											
+											<li>Hyper-V</li>
+											
+										</ul>
+									</dd>
+								</dl>
+                            
+						</div>
+						<!-- // SKILL -->
+						<!-- EXPERIENCE -->
+						<div class="box-comm">
+							<h2>EXPERIENCE</h2>
+							
+							<dl>
+								<dt>2024. 10 ~ </dt>
+								<dd>
+									<h3>Sales Inventory & Guest Feedback</h3>
+									<p class="role">Project Manager</p>
+									<ul>
+										<li>AI + API를 이용한 매장 매출 정보 분석 및 리뷰 감정 분석 시스템 개발 진행</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">React</em><em class="badge">Mongo DB</em><em class="badge">Huggingface</em><em class="badge">ko-sent5-classification</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2023. 10 ~ </dt>
+								<dd>
+									<h3>Product Manufacture Library 구축 및 운영</h3>
+									<p class="role">Project Leader</p>
+									<ul>
+										<li>Product Specification Asset Library 시스템 구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">Nexacro 17</em><em class="badge">MS-SQL</em><em class="badge">OZ Report</em><em class="badge">Resin</em><em class="badge">Nginx</em><em class="badge">SubVersion</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2023. 10 ~ </dt>
+								<dd>
+									<h3>업무 자동화 설계 및 운영 (RPA)</h3>
+									<p class="role">운영자</p>
+									<ul>
+										<li>업무 자동화 프로세스 설계 및 개발, 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Power Automate</em><em class="badge">Python</em><em class="badge">Node.js</em><em class="badge">GitHub</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2022. 06 ~ </dt>
+								<dd>
+									<h3>PLM 구축 및 운영</h3>
+									<p class="role">Project Leader</p>
+									<ul>
+										<li>Product Lifecycle Management 시스템 구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Nexacro N</em><em class="badge">MS-SQL</em><em class="badge">eChart</em><em class="badge">SubVersion</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2021. 03 ~ </dt>
+								<dd>
+									<h3>Proudct Develop & Design Library 구축 및 운영</h3>
+									<p class="role">Project Manager</p>
+									<ul>
+										<li>Product Material Asset Library 시스템 구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">Nexacro 17</em><em class="badge">MS-SQL</em><em class="badge">OZ Report</em><em class="badge">SubVersion</em><em class="badge">Hyper-V</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2021. 01 ~ 2021. 03</dt>
+								<dd>
+									<h3>재택근무 현황 모니터링 시스템 구축</h3>
+									<p class="role">Project Developer</p>
+									<ul>
+										<li>코로나 기간 내 재택 근무 관리 시스템 구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Log4J</em><em class="badge">jQuery</em><em class="badge">Vanilla JS</em><em class="badge">JSTL</em><em class="badge">MS-SQL</em><em class="badge">SubVersion</em><em class="badge">CentOS</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2020. 12 ~ 2020. 01</dt>
+								<dd>
+									<h3>HR 평가관리 시스템 구축</h3>
+									<p class="role">Project Leader</p>
+									<ul>
+										<li>HR 평가관리 시스템 플랫폼 도입</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">HCG Jade</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2019. 04 ~ 2020. 12</dt>
+								<dd>
+									<h3>MES System 구축</h3>
+									<p class="role">Project Developer</p>
+									<ul>
+										<li>MES IoT Gateway 개발</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Go</em><em class="badge">Redis</em><em class="badge">MariaDB</em><em class="badge">CentOS</em><em class="badge">MQTT</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2019. 04 ~ 2020. 08</dt>
+								<dd>
+									<h3>제조 모니터링 시스템 구축</h3>
+									<p class="role">Project Developer</p>
+									<ul>
+										<li>봉제 공정 내 제조 현황 모니터링 시스템 구축</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Log4J</em><em class="badge">jQuery</em><em class="badge">Vanilla JS</em><em class="badge">JSTL</em><em class="badge">MariaDB</em><em class="badge">SubVersion</em><em class="badge">CentOS</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2015. 12 ~ 2016. 02</dt>
+								<dd>
+									<h3>모바일 유통관리 시스템 구축 및 운영</h3>
+									<p class="role">Project Leader</p>
+									<ul>
+										<li>모바일 기반 창고 및 매장 내 상품 및 재고 관리 시스템 구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">iBatis</em><em class="badge">Log4j</em><em class="badge">jQuery</em><em class="badge">FreeMarker</em><em class="badge">JSTL</em><em class="badge">resin</em><em class="badge">Sybase</em><em class="badge">SubVersion</em><em class="badge">HTML5</em><em class="badge">android</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2012. 12 ~ 2018. 04</dt>
+								<dd>
+									<h3>제휴몰 연동 시스템 구축 및 운영</h3>
+									<p class="role">Project Leader</p>
+									<ul>
+										<li>제휴몰 상품 / 주문 연동 구축 및 운영 (옥션 / G마켓 / 네이버쇼핑 등)</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Batch</em><em class="badge">SubVersion</em><em class="badge">SOAP</em><em class="badge">Restful</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+							<dl>
+								<dt>2011. 02 ~ 2019. 03</dt>
+								<dd>
+									<h3>온라인 쇼핑몰 운영</h3>
+									<p class="role">Project Developer</p>
+									<ul>
+										<li>쇼핑몰 재구축 및 운영</li>
+										<li>
+											Skill Keywords
+											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">iBatis</em><em class="badge">Log4j</em><em class="badge">jQuery</em><em class="badge">FreeMarker</em><em class="badge">JSTL</em><em class="badge">Resin</em><em class="badge">Oracls</em><em class="badge">Mariner 3</em><em class="badge">Subversion</em><em class="badge">android</em></span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							
+						</div>
+						<!-- // EXPERIENCE -->
+					</div>
+				</div><!-- .inner-wide -->
 
-</div><!-- .post-grid -->
-
-
-		</div><!-- .inner-wide -->
-
-	</section><!-- .site-content -->
-</main><!-- .site-main -->
+			</section><!-- .site-content -->
+		</main><!-- .site-main -->
 
 
 
-    
+		
 
 <footer class="site-footer">
   <div class="footer-top">
@@ -227,3 +653,49 @@
 
   gtag('config', 'G-DTMKCDB1FE');
 </script>
+
+	</div>
+<style type="text/css">
+#profile { font-family:Pretendard, sans-serif;font-weight:300;word-wrap:break-word;word-break:keep-all;line-height:1.8; }
+#profile .badge { display: inline-block;padding: .25em .4em;font-size: 0.75rem;font-weight: 700;line-height: 1em;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25rem;color: #fff;background-color: #8c8c8c; }
+#profile .badge + .badge { margin-left:.25rem; }
+#profile .box-basic { margin-bottom:5rem; }
+#profile .box-basic dt { }
+#profile .box-basic dd { display:flex;align-items:baseline;margin:0 0 0.5rem; }
+#profile .box-basic dd.tit { color:#0969da; font-size:2.5rem;font-weight:500; }
+#profile .box-basic dd.tit span { font-size:2rem;font-weight:normal;margin-left:0.5rem; }
+#profile .box-basic dd svg { width:1rem;margin-right:1rem;color:#202020; }
+#profile .box-basic dd a,
+#profile .box-basic dd a:hover,
+#profile .box-basic dd a:visited { color:#0969da; }
+#profile .box-basic dd em { font-size:0.8em;font-style:normal;}
+#profile .box-basic dd.noti { margin-top: 1rem; border: 1px solid #dadada; background-color:#eaeaea; border-radius: .25rem;padding:.75rem 1.25rem; }
+#profile .box-introduce { display:flex;flex-direction:row; }
+#profile .box-introduce dt { font-size:2rem;font-weight:500;color:#0969da;margin-right:2rem; }
+#profile .box-introduce dd { flex:1;padding-top:.5rem; }
+#profile .box-introduce dd .date { text-align:right;margin:0; }
+#profile .box-introduce dd .date small { font-size: .8rem;font-weight: 400; }
+#profile .box-introduce dd .sign { text-align:right;font-family:'Parisienne', cursive;font-size:1.5em }
+#profile .box-skill { margin-bottom:5rem; }
+#profile .box-skill h2 { font-size:2rem;font-weight:400;color:#0969da;margin-bottom:1rem; }
+#profile .box-skill dl { display:flex; }
+#profile .box-skill dl + dl { border-top:1px solid #e2e3e5;padding-top:30px; }
+#profile .box-skill dl dt { font-size:1.5rem;font-weight:500;color:#9e9e9e;width:20%;text-align:right;padding-right:3rem; }
+#profile .box-skill dl dd { flex:1;padding-top:.25rem; }
+#profile .box-skill dl dd ul { display:flex;flex-direction:row;flex-wrap:wrap;margin:0; }
+#profile .box-skill dl dd ul li { width:25%; }
+#profile .box-comm { margin-bottom:5rem; }
+#profile .box-comm h2 { font-size:2rem;font-weight:500;color:#0969da;margin-bottom:1rem; }
+#profile .box-comm h3 { font-size:1.5rem;font-weight:500;color:#202020;margin-bottom:.5rem; }
+#profile .box-comm dl { display:flex; }
+#profile .box-comm dl + dl { border-top:1px solid #e2e3e5;padding-top:30px; }
+#profile .box-comm dl dt { font-size:1.5rem;font-weight:400;color:#9e9e9e;width:20%;text-align:right;padding-right:3rem; }
+#profile .box-comm dl dt span { display:block;text-align:right; }
+#profile .box-comm dl dt span .badge { background-color:#17a2b8; }
+#profile .box-comm dl dt span .badge.now { background-color:#0969da; }
+#profile .box-comm dl dd { flex:1;padding-top:.25rem;font-weight:300;color:#202020; }
+#profile .box-comm dl dd .role { color:#9e9e9e;font-style:italic;margin:0; }
+#profile .box-comm dl dd .skills { display:block; }
+</style>
+</body>
+</html>

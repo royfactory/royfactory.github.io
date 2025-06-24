@@ -1,0 +1,456 @@
+{
+  "categories": {
+    "000001": {
+      "categoryId": "000001",
+      "title": "스피킹 필수 명사",
+      "wordCount": 5
+    },
+    "000002": {
+      "categoryId": "000002",
+      "title": "일반 단어",
+      "wordCount": 10
+    }
+  },
+  "words": {
+    "000001": [
+        {
+          "EN": "human",
+          "KR": "인간의, 사람의, 인간, 사람"
+        },
+        {
+          "EN": "neighbor",
+          "KR": "이웃사람, 근처사람; 옆에 있는 물건"
+        },
+        {
+          "EN": "citizen",
+          "KR": "시민, (한 나라의) 국민"
+        },
+        {
+          "EN": "group",
+          "KR": "떼, 그룹, 무리, 집단 ; (물건의) 집단, 덩어리, 모임"
+        },
+        {
+          "EN": "race",
+          "KR": "인종, 민족; (생물의) 종족, 혈통"
+        }
+      ],
+    "000002": [
+      {
+        "EN": "appointment",
+        "KR": "약속"
+      },
+      {
+        "EN": "attend",
+        "KR": "참석하다"
+      },
+      {
+        "EN": "available",
+        "KR": "이용 가능한"
+      },
+      {
+        "EN": "cancel",
+        "KR": "취소하다"
+      },
+      {
+        "EN": "colleague",
+        "KR": "동료"
+      },
+      {
+        "EN": "confirm",
+        "KR": "확인하다"
+      },
+      {
+        "EN": "conference",
+        "KR": "회의"
+      },
+      {
+        "EN": "customer",
+        "KR": "고객"
+      },
+      {
+        "EN": "deliver",
+        "KR": "배달하다"
+      },
+      {
+        "EN": "department",
+        "KR": "부서"
+      },
+      {
+        "EN": "discount",
+        "KR": "할인"
+      },
+      {
+        "EN": "employee",
+        "KR": "직원"
+      },
+      {
+        "EN": "equipment",
+        "KR": "장비"
+      },
+      {
+        "EN": "feedback",
+        "KR": "피드백"
+      },
+      {
+        "EN": "introduce",
+        "KR": "소개하다"
+      },
+      {
+        "EN": "issue",
+        "KR": "문제"
+      },
+      {
+        "EN": "location",
+        "KR": "위치"
+      },
+      {
+        "EN": "meeting",
+        "KR": "회의"
+      },
+      {
+        "EN": "presentation",
+        "KR": "발표"
+      },
+      {
+        "EN": "purchase",
+        "KR": "구매하다"
+      },
+      {
+        "EN": "recommend",
+        "KR": "추천하다"
+      },
+      {
+        "EN": "report",
+        "KR": "보고서"
+      },
+      {
+        "EN": "reservation",
+        "KR": "예약"
+      },
+      {
+        "EN": "schedule",
+        "KR": "일정"
+      },
+      {
+        "EN": "service",
+        "KR": "서비스"
+      },
+      {
+        "EN": "supervisor",
+        "KR": "상사"
+      },
+      {
+        "EN": "transportation",
+        "KR": "교통"
+      },
+      {
+        "EN": "update",
+        "KR": "업데이트하다"
+      },
+      {
+        "EN": "visit",
+        "KR": "방문하다"
+      },
+      {
+        "EN": "warehouse",
+        "KR": "창고"
+      },
+      {
+        "EN": "advertisement",
+        "KR": "광고"
+      },
+      {
+        "EN": "agenda",
+        "KR": "의제"
+      },
+      {
+        "EN": "announce",
+        "KR": "발표하다"
+      },
+      {
+        "EN": "apply",
+        "KR": "신청하다"
+      },
+      {
+        "EN": "approve",
+        "KR": "승인하다"
+      },
+      {
+        "EN": "arrange",
+        "KR": "배열하다"
+      },
+      {
+        "EN": "arrive",
+        "KR": "도착하다"
+      },
+      {
+        "EN": "assess",
+        "KR": "평가하다"
+      },
+      {
+        "EN": "assistant",
+        "KR": "조수"
+      },
+      {
+        "EN": "budget",
+        "KR": "예산"
+      },
+      {
+        "EN": "catalog",
+        "KR": "목록"
+      },
+      {
+        "EN": "client",
+        "KR": "고객"
+      },
+      {
+        "EN": "complain",
+        "KR": "불평하다"
+      },
+      {
+        "EN": "confirm",
+        "KR": "확인하다"
+      },
+      {
+        "EN": "contract",
+        "KR": "계약서"
+      },
+      {
+        "EN": "cooperate",
+        "KR": "협력하다"
+      },
+      {
+        "EN": "deadline",
+        "KR": "마감일"
+      },
+      {
+        "EN": "deliver",
+        "KR": "배달하다"
+      },
+      {
+        "EN": "document",
+        "KR": "문서"
+      },
+      {
+        "EN": "efficient",
+        "KR": "효율적인"
+      },
+      {
+        "EN": "estimate",
+        "KR": "견적"
+      },
+      {
+        "EN": "executive",
+        "KR": "임원"
+      },
+      {
+        "EN": "expansion",
+        "KR": "확장"
+      },
+      {
+        "EN": "experience",
+        "KR": "경험"
+      },
+      {
+        "EN": "extend",
+        "KR": "연장하다"
+      },
+      {
+        "EN": "facilities",
+        "KR": "시설"
+      },
+      {
+        "EN": "firm",
+        "KR": "회사"
+      },
+      {
+        "EN": "frequent",
+        "KR": "빈번한"
+      },
+      {
+        "EN": "goal",
+        "KR": "목표"
+      },
+      {
+        "EN": "growth",
+        "KR": "성장"
+      },
+      {
+        "EN": "handle",
+        "KR": "처리하다"
+      },
+      {
+        "EN": "improve",
+        "KR": "개선하다"
+      },
+      {
+        "EN": "incentive",
+        "KR": "장려금"
+      },
+      {
+        "EN": "income",
+        "KR": "수입"
+      },
+      {
+        "EN": "increase",
+        "KR": "증가하다"
+      },
+      {
+        "EN": "inform",
+        "KR": "알리다"
+      },
+      {
+        "EN": "inventory",
+        "KR": "재고"
+      },
+      {
+        "EN": "invoice",
+        "KR": "송장"
+      },
+      {
+        "EN": "job",
+        "KR": "일"
+      },
+      {
+        "EN": "launch",
+        "KR": "출시하다"
+      },
+      {
+        "EN": "leave",
+        "KR": "휴가"
+      },
+      {
+        "EN": "manage",
+        "KR": "관리하다"
+      },
+      {
+        "EN": "marketing",
+        "KR": "마케팅"
+      },
+      {
+        "EN": "materials",
+        "KR": "자료"
+      },
+      {
+        "EN": "negotiate",
+        "KR": "협상하다"
+      },
+      {
+        "EN": "notify",
+        "KR": "알리다"
+      },
+      {
+        "EN": "offer",
+        "KR": "제안하다"
+      },
+      {
+        "EN": "operation",
+        "KR": "운영"
+      },
+      {
+        "EN": "order",
+        "KR": "주문하다"
+      },
+      {
+        "EN": "organize",
+        "KR": "조직하다"
+      },
+      {
+        "EN": "payment",
+        "KR": "지불"
+      },
+      {
+        "EN": "performance",
+        "KR": "성과"
+      },
+      {
+        "EN": "policy",
+        "KR": "정책"
+      },
+      {
+        "EN": "prepare",
+        "KR": "준비하다"
+      },
+      {
+        "EN": "produce",
+        "KR": "생산하다"
+      },
+      {
+        "EN": "profit",
+        "KR": "이익"
+      },
+      {
+        "EN": "promotion",
+        "KR": "승진"
+      },
+      {
+        "EN": "proposal",
+        "KR": "제안서"
+      },
+      {
+        "EN": "provide",
+        "KR": "제공하다"
+      },
+      {
+        "EN": "purchase",
+        "KR": "구매"
+      },
+      {
+        "EN": "quality",
+        "KR": "품질"
+      },
+      {
+        "EN": "receive",
+        "KR": "받다"
+      },
+      {
+        "EN": "reduce",
+        "KR": "줄이다"
+      },
+      {
+        "EN": "refund",
+        "KR": "환불"
+      },
+      {
+        "EN": "require",
+        "KR": "필요하다"
+      },
+      {
+        "EN": "result",
+        "KR": "결과"
+      },
+      {
+        "EN": "retail",
+        "KR": "소매"
+      },
+      {
+        "EN": "shipment",
+        "KR": "배송"
+      },
+      {
+        "EN": "strategy",
+        "KR": "전략"
+      },
+      {
+        "EN": "suggest",
+        "KR": "제안하다"
+      },
+      {
+        "EN": "target",
+        "KR": "목표"
+      },
+      {
+        "EN": "training",
+        "KR": "훈련"
+      },
+      {
+        "EN": "update",
+        "KR": "업데이트"
+      },
+      {
+        "EN": "vacation",
+        "KR": "휴가"
+      }  
+    ]
+  }
+}
