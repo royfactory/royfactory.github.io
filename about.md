@@ -4,19 +4,17 @@ navigation_title: About
 title: About - Royfactory
 permalink: /about/
 
-wname: 장진용
 wnick: ROY
 wmail: worry1318@naver.com
 wfacebook: https://fb.com/ROYZEROY24
 wblog: https://royzero.tistory.com
 wsign: Jinyong
-wdate: 2024. 11. 12
+wdate: 2025. 06. 25
 
 introduce: '<p>다년간 개발 및 유지보수, 관리 등 온·오프라인 유통 프로젝트 경험으로 폭넓고 심도 있는 IT에 대한 지식을 겸비한 개발자입니다.<br/>
-대학을 졸업하고 쉴 틈 없이 바로 고객의 쉼에 대해 많은 관심을 두는 핫트랙스라는 회사에 입사하여 바로 쇼핑몰 리뉴얼이라는 큰 프로젝트의 일원으로 해야 할 역할을 다하였습니다. 저는 이 프로젝트에서 처음으로 학업에서 배운 많은 기술을 실무에 처음 적용해 보는 뜻깊은 프로젝트였습니다. 또한, 개발하는 과정에서 스프링프레임워크 뿐만 아니라 스토리 보드, 테스트케이스 작성 등 프로젝트 개발에 필요한 기술들을 배웠고, 그것이 저의 첫 개발자로서의 방향을 잡게 해 준 의미 있는 프로젝트였습니다. 저는 이후 프로젝트 대부분에서 이때 경험한 내용을 기반으로 진행했으며 때로는 실패도, 때로는 성공도 겪을 수 있었습니다.<br/><br/>
-또한, 저는 끊임 없는 탐구심을 통하여 회사에 적용 가능한 무인안내 시스템, 로케이션 모니터링 시스템 등 많은 프로세스를 부분을 개선하였고, 이를 인정받아 우수사원이 되기도 하였습니다.<br/>
-저는 이런 저의 경험을 홀로 간직하기보다는 공유하는 교육의 장을 만들었고, 이를 통하여 서로의 실력 배양뿐만 아니라 개발자 간의 의사소통이 더욱 원활할 수 있도록 하여 프로젝트 함으로써 성공적으로 이바지할 수 있도록 하였습니다.<br/>
-저는 개발자입니다. 프로그램의 개발뿐만 아니라 사람 간의 관계, 회사의 방향을 함께 고민하고 개발해 가는 개발자입니다.</p>'
+실무에서 다양한 시스템의 개발과 기획, 운영을 경험하며 사용자의 입장을 이해하고 기술을 적절히 해석하는 법을 배웠습니다. 특히 최근에는 AI, RPA, 데이터 기반 시스템을 주도적으로 구축하며 디지털 전환의 중심 역할을 수행했습니다.<br/><br/>
+프로젝트 리더로서 기획자 이탈 상황에서도 TF를 조직하여 PLM 시스템을 재정립한 경험이 있으며, 리뷰 및 매출 분석 기반 AI 인사이트 시스템, 자산 디지털화 플랫폼 등 실질적인 성과를 이끈 바 있습니다.<br/>
+저는 개발뿐 아니라 문제 정의와 개선에 적극적인 개발자이며, 사람과 기술을 잇는 가교 역할에 자부심을 가지고 일하고 있습니다.</p>'
 
 skills_lang : [Java, Kotlin, HTML/CSS, Javascript, Python, Android]
 skills_frame : [Spring Framework, Node.js, Express.js, React.js, Nexacro 17, NexacroN]
@@ -28,15 +26,14 @@ educations : [
         '2011. 02',
         '한국외국어대학교',
         '컴퓨터공학과 학사 졸업',
-    ],
-    [   '2001. 03',
-        '2004. 02',
-        '장성고등학교',
-        '자연계 졸업 (전라남도 장성군)',
     ]
 ]
 
 licenses : [
+    [   '2025. 06',
+        'ADsP',
+        '한국데이터베이스진흥원',
+    ],
     [   '2022. 12',
         'SQLD',
         '한국데이터베이스진흥원',
@@ -56,88 +53,85 @@ experiences : [
         '',
         'Sales Inventory & Guest Feedback',
         'Project Manager',
-        'AI + API를 이용한 매장 매출 정보 분석 및 리뷰 감정 분석 시스템 개발 진행',
+        '유통사 매출 데이터 및 리뷰 데이터를 API로 수집하여 시각화 및 감정 분석 수행. AI를 활용한 매출 예측 모델과 리뷰 키워드 추출을 통해 제조사와 바이어 간 인사이트 기반 제안을 가능케 한 시스템 구축.',
         [React, Mongo DB, Huggingface, ko-sent5-classification]
     ],
     [   '2023. 10',
         '',
         'Product Manufacture Library 구축 및 운영',
         'Project Leader',
-        'Product Specification Asset Library 시스템 구축 및 운영',
+        '제조 제품에 대한 사양 및 이미지 등 자산을 관리하는 디지털 플랫폼 구축. 바이어 대상 마케팅 지원 및 내부 정보 재활용 기반 확보.',
         [Spring Framework, Nexacro 17, MS-SQL, OZ Report, Resin, Nginx, SubVersion]
     ],
     [   '2023. 10',
         '',
         '업무 자동화 설계 및 운영 (RPA)',
         '운영자',
-        '업무 자동화 프로세스 설계 및 개발, 운영',
+        '업무 반복 요소를 발굴하여 RPA 도구 기반으로 자동화. Power Automate 및 Python을 활용한 API 기반 연계 자동화 운영.',
         [Power Automate, Python, Node.js, GitHub]
     ],
     [   '2022. 06',
         '',
         'PLM 구축 및 운영',
         'Project Leader',
-        'Product Lifecycle Management 시스템 구축 및 운영',
+        '기획자 이탈 이후 TF 구성부터 시스템 재기획, 구현, 운영까지 리딩. 제품 기획~개발~승인 전 과정을 관리하는 플랫폼 구축.',
         [Spring Framework, MyBatis, Nexacro N, MS-SQL, eChart, SubVersion]
     ],
     [   '2021. 03',
         '',
-        'Proudct Develop & Design Library 구축 및 운영',
+        'Product Develop & Design Library 구축 및 운영',
         'Project Manager',
-        'Product Material Asset Library 시스템 구축 및 운영',
+        '소재, 원단, 디자인 등 개발 소스를 디지털 자산으로 관리할 수 있는 내부 플랫폼 구축. 바이어 평가 화면 및 이력 조회 기능 구현.',
         [Spring Framework, Nexacro 17, MS-SQL, OZ Report, SubVersion, Hyper-V]
     ],
     [   '2021. 01',
         '2021. 03',
         '재택근무 현황 모니터링 시스템 구축',
         'Project Developer',
-        '코로나 기간 내 재택 근무 관리 시스템 구축 및 운영',
+        '코로나 기간 내 재택근무 현황을 실시간 파악하기 위한 웹 기반 대시보드 시스템 개발.',
         [Spring Framework, MyBatis, Log4J, jQuery, Vanilla JS, JSTL, MS-SQL, SubVersion, CentOS]
     ],
     [   '2020. 12',
         '2020. 01',
         'HR 평가관리 시스템 구축',
         'Project Leader',
-        'HR 평가관리 시스템 플랫폼 도입',
+        'HR 성과 평가 시스템 도입 시 IT 기술 검토 및 사내 적합성 판단 및 협업 진행.',
         [HCG Jade]
     ],
     [   '2019. 04',
         '2020. 12',
         'MES System 구축',
         'Project Developer',
-        'MES IoT Gateway 개발',
+        'MES용 IoT Gateway 및 공장 장비 데이터 수집기 개발. Go 언어와 Redis, MQTT 기반 서버 운영.',
         [Go, Redis, MariaDB, CentOS, MQTT]
     ],
     [   '2019. 04',
         '2020. 08',
         '제조 모니터링 시스템 구축',
         'Project Developer',
-        '봉제 공정 내 제조 현황 모니터링 시스템 구축',
+        '공장 내 봉제 실적과 설비 가동률을 실시간 시각화하여 모니터링하는 시스템 개발.',
         [Spring Framework, MyBatis, Log4J, jQuery, Vanilla JS, JSTL, MariaDB, SubVersion, CentOS]
     ],
     [   '2015. 12',
         '2016. 02',
         '모바일 유통관리 시스템 구축 및 운영',
         'Project Leader',
-        '모바일 기반 창고 및 매장 내 상품 및 재고 관리 시스템 구축 및 운영',
+        '모바일 기반 상품 입출고 및 재고 관리 시스템 개발. PDA 및 웹 모바일 병행 지원.',
         [Spring Framework, iBatis, Log4j, jQuery, FreeMarker, JSTL, resin, Sybase, SubVersion, HTML5, android]
     ],
     [   '2012. 12',
         '2018. 04',
         '제휴몰 연동 시스템 구축 및 운영',
         'Project Leader',
-        '제휴몰 상품 / 주문 연동 구축 및 운영 (옥션 / G마켓 / 네이버쇼핑 등)',
+        'G마켓, 옥션, 네이버쇼핑 등 제휴몰 상품/주문 API 연동 및 스케줄링 시스템 구축 및 운영.',
         [Spring Batch, SubVersion, SOAP, Restful]
     ],
     [   '2011. 02',
         '2019. 03',
         '온라인 쇼핑몰 운영',
         'Project Developer',
-        '쇼핑몰 재구축 및 운영',
+        '핫트랙스몰 및 모바일몰 구축 및 리뉴얼, 검색엔진 적용, 음반 청음기 시스템 등 다양한 고객 편의 기능 개발.',
         [Spring Framework, iBatis, Log4j, jQuery, FreeMarker, JSTL, Resin, Oracls, Mariner 3, Subversion, android]
     ]
 ]
 ---
-
-
-

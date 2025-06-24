@@ -93,7 +93,7 @@
     </ul><!-- .menu -->
 </nav><!-- .site-navigation -->
 
-        <a class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+        <a href="#" class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon" aria-hidden="true"></span></a>
     </div><!-- .inner-wide -->
 </header><!-- .site-header -->
         
@@ -108,36 +108,126 @@
 </nav><!-- .site-navigation -->
 
             <aside class="widget widget-text">
-                <h2 class="widget-title">This is my Developer Blog New.</h2>
-                <p>you can modify this sidebar in the organisers.yml file.</p>
+                <h2 class="widget-title">About Developer Blog</h2>
+                <p>A developer blog sharing practical experience and knowledge about Linux, AI, and development technologies. Covering various technical topics including system administration, machine learning, and web development.</p>
             </aside><!-- .widget -->
-            <aside class="widget widget-newsletter">
-                <h2 class="widget-title">My  Newsletter</h2>
-                <p>you can modify this sidebar in the organisers.yml file.</p>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup-->
+            <aside class="widget widget-categories">
+                <h2 class="widget-title">Categories</h2>
+                <ul class="category-list">
+                    <li><a href="/linux/">Linux & System Admin</a></li>
+                    <li><a href="/ai/">AI & Machine Learning</a></li>
+                    <li><a href="/archive/">All Posts</a></li>
+                </ul>
+            </aside><!-- .widget -->
+            <aside class="widget widget-recent-posts">
+                <h2 class="widget-title">Recent Posts</h2>
+                <ul class="recent-posts-list">
+                    
+                    <li>
+                        <a href="/ai/2025/06/24/rnn-recurrent-neural-network.html">What is RNN (Recurrent Neural Network)?</a>
+                        <span class="post-date">2025-06-24</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/03/what-is-the-faiss.html">FAISS란 무엇인가?</a>
+                        <span class="post-date">2024-12-03</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/03/what-is-the-cos-similarity.html">코사인 유사도란 무엇인가?</a>
+                        <span class="post-date">2024-12-03</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/02/what-is-the-vector-db.html">벡터 데이터베이스란 무엇인가?</a>
+                        <span class="post-date">2024-12-02</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/02/what-is-the-euclidean-distance.html">유클리디안 거리(Euclidean Distance)란 무엇인가?</a>
+                        <span class="post-date">2024-12-02</span>
+                    </li>
+                    
+                </ul>
             </aside><!-- .widget -->
             <aside class="widget widget-text">
                 <h2 class="widget-title">Contact</h2>
-                <p>Hello, Here some Text Already, you can modify this sidebar in the organisers.yml file!</p>
+                <p>Feel free to reach out for technical inquiries or collaboration opportunities. Let's grow together as developers!</p>
                 <ul class="contacts">
                     <li><span class="icon icon-envelope" aria-hidden="true"></span> royzero0717@gmail.com</li>
                     <li><span class="icon icon-map-marker" aria-hidden="true"></span> Korea</li>
                 </ul>
             </aside><!-- .widget -->
         </div><!-- .widget-area -->
-        <a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+        <a href="#" class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
     </div><!-- .sidebar-scrollable -->
 </div><!-- .sidebar -->
+
+<style>
+/* 사이드바 카테고리 스타일 */
+.widget-categories .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-categories .category-list li {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.widget-categories .category-list li:hover {
+    background: #e9ecef;
+}
+
+.widget-categories .category-list a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+}
+
+.widget-categories .category-list a:hover {
+    color: #007bff;
+}
+
+/* 최근 포스트 스타일 */
+.widget-recent-posts .recent-posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-recent-posts .recent-posts-list li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.widget-recent-posts .recent-posts-list li:last-child {
+    border-bottom: none;
+}
+
+.widget-recent-posts .recent-posts-list a {
+    display: block;
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.widget-recent-posts .recent-posts-list a:hover {
+    color: #007bff;
+}
+
+.widget-recent-posts .post-date {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+</style>
     <main class="site-main" role="main">
 	    <section class="site-content">
         <article class="post tag-music tag-science" itemscope itemtype="http://schema.org/BlogPosting">            
@@ -159,292 +249,398 @@
                             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                                 <div class="site-heading">
                                     <!--  <span class="subheading" id="textfloat"></span> -->
-                                    <h2>This Years Archive.</h2>
-                                    
-                                    
-                                    <ul class="this">
-                                    
-                                    <li><a href="/ai/2025/06/24/rnn-recurrent-neural-network.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">What is RNN (Recurrent Neural Network)?</a> <time>2025-06-24</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    </ul>
-                                    <h2>2024</h2>
-                                    <ul class="past">
-                                    
-                                    
-                                    <li><a href="/ai/2024/12/03/what-is-the-faiss.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">FAISS란 무엇인가?</a> <time>2024-12-03</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/12/03/what-is-the-cos-similarity.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">코사인 유사도란 무엇인가?</a> <time>2024-12-03</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/12/02/what-is-the-vector-db.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">벡터 데이터베이스란 무엇인가?</a> <time>2024-12-02</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/12/02/what-is-the-euclidean-distance.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">유클리디안 거리(Euclidean Distance)란 무엇인가?</a> <time>2024-12-02</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/11/15/what-is-the-bm25.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">BM25란 무엇인가?</a> <time>2024-11-15</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/11/14/what-is-the-tf-idf.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">TF-IDF란 무엇인가?</a> <time>2024-11-14</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/ai/2024/11/14/what-is-the-rag.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">RAG (Retrieval-Augmented Generation)란 무엇인가?</a> <time>2024-11-14</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/12/how-to-use-apache-access.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Apahce의 웹사이트 접근제한을 설정하는 방법</a> <time>2024-11-12</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/11/how-to-use-passwd.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 passwd를 사용하는 방법</a> <time>2024-11-11</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/11/how-to-use-httpd.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Apache HTTP Server 설정하는 방법</a> <time>2024-11-11</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/10/how-to-use-nmap.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 nmap으로 네트워크 분석하기</a> <time>2024-11-10</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/10/how-to-use-netstat.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 netstat를 사용하는 방법</a> <time>2024-11-10</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/09/how-to-use-stickybit.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 특수권한을 부여하는 방법</a> <time>2024-11-09</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/09/how-to-use-logger.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 로그에 메시지를 기록하는 방법</a> <time>2024-11-09</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/08/how-to-use-sysctl.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 커널 매개변수를 제어하는 방법</a> <time>2024-11-08</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/08/how-to-use-cpio.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 파일을 백업하고 복원하는 방법</a> <time>2024-11-08</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/07/how-to-use-mail-aliases.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Mail Alias 설정하는 방법</a> <time>2024-11-07</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/07/how-to-use-firewalld.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 firewalld 사용하는 방법</a> <time>2024-11-07</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/06/how-to-use-samba.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Samba 서버 설정하는 방법</a> <time>2024-11-06</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/06/how-to-use-rsync.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 rsync를 사용하는 방법</a> <time>2024-11-06</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/05/how-to-use-quota.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 디스크 쿼터 관리하는 방법</a> <time>2024-11-05</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/05/how-to-use-print.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 프린트 사용하는 방법</a> <time>2024-11-05</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/04/how-to-use-telnet.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Telnet 서버 설정하는 방법</a> <time>2024-11-04</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/04/how-to-use-chage.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 사용자 비밀번호 만료 및 수명 관리하는 방법</a> <time>2024-11-04</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/03/how-to-use-iptables.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 방화벽을 관리하는 방법</a> <time>2024-11-03</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/03/how-to-use-elasticsearch.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">엘라스틱 서치 사용하는 방법</a> <time>2024-11-03</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/02/how-to-use-zonefile.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 DNS 서버에 사용되는 Zone 파일 작성하는 방법</a> <time>2024-11-02</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/02/how-to-use-fileattr.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 파일 속성을 관리하는 방법</a> <time>2024-11-02</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/01/how-to-use-chmod.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 접근 권한 관리하는 방법</a> <time>2024-11-01</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/11/01/how-to-use-blkid.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 blkid를 사용하는 방법</a> <time>2024-11-01</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/31/how-to-use-tcp-wrapper.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 TCP Wrapper를 사용하는 방법</a> <time>2024-10-31</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/31/how-to-set-dns-server.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 DNS 서버 설정하는 방법</a> <time>2024-10-31</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/30/how-to-use-vsftp.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 VSFTP 서버를 설정하는 방법</a> <time>2024-10-30</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/30/how-to-use-smbclient.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 smbclient를 사용하는 방법</a> <time>2024-10-30</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/29/how-to-use-logrotate.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 로그를 관리하는 방법</a> <time>2024-10-29</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/29/how-to-use-fsck.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 파일 시스템 검사 도구</a> <time>2024-10-29</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/28/how-to-use-useradd-config.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 사용자 설정 파일</a> <time>2024-10-28</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/28/how-to-use-rpm.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">RPM 명령 및 옵션</a> <time>2024-10-28</time></li>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <li><a href="/linux/2024/10/28/how-to-use-account.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 사용자 관리</a> <time>2024-10-28</time></li>
-                                    
-                                    </ul>
-                                    <!--    <hr class="small"> -->
+                                    <h2>전체 포스트 아카이브</h2>
+                                                     
+                    
+                    
+                    
+                    
+                                    
+                                    <!-- 페이지 정보 (JavaScript로 동적 업데이트) -->
+                                    <div class="page-info">
+                                        <p>총 40개의 포스트 | <span id="current-page-info">1</span> / 2 페이지</p>
+                                    </div>
+                                    
+                                    <!-- 모든 포스트를 출력 (JavaScript로 숨김/표시 제어) -->
+                                    
+                                    
+                                        
+                                        
+                                            
+                                            <h3>2025년</h3>
+                                            <ul class="post-year-2025">
+                                            
+                                        
+                                        <li class="post-item" data-index="0">
+                                            <a href="/ai/2025/06/24/rnn-recurrent-neural-network.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">What is RNN (Recurrent Neural Network)?</a> 
+                                            <time>2025-06-24</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                            </ul>
+                                            <h3>2024년</h3>
+                                            <ul class="post-year-2024">
+                                            
+                                        
+                                        <li class="post-item" data-index="1">
+                                            <a href="/ai/2024/12/03/what-is-the-faiss.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">FAISS란 무엇인가?</a> 
+                                            <time>2024-12-03</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="2">
+                                            <a href="/ai/2024/12/03/what-is-the-cos-similarity.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">코사인 유사도란 무엇인가?</a> 
+                                            <time>2024-12-03</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="3">
+                                            <a href="/ai/2024/12/02/what-is-the-vector-db.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">벡터 데이터베이스란 무엇인가?</a> 
+                                            <time>2024-12-02</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="4">
+                                            <a href="/ai/2024/12/02/what-is-the-euclidean-distance.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">유클리디안 거리(Euclidean Distance)란 무엇인가?</a> 
+                                            <time>2024-12-02</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="5">
+                                            <a href="/ai/2024/11/15/what-is-the-bm25.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">BM25란 무엇인가?</a> 
+                                            <time>2024-11-15</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="6">
+                                            <a href="/ai/2024/11/14/what-is-the-tf-idf.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">TF-IDF란 무엇인가?</a> 
+                                            <time>2024-11-14</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="7">
+                                            <a href="/ai/2024/11/14/what-is-the-rag.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">RAG (Retrieval-Augmented Generation)란 무엇인가?</a> 
+                                            <time>2024-11-14</time>
+                                            <span class="post-category">[Ai]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="8">
+                                            <a href="/linux/2024/11/12/how-to-use-apache-access.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Apahce의 웹사이트 접근제한을 설정하는 방법</a> 
+                                            <time>2024-11-12</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="9">
+                                            <a href="/linux/2024/11/11/how-to-use-passwd.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 passwd를 사용하는 방법</a> 
+                                            <time>2024-11-11</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="10">
+                                            <a href="/linux/2024/11/11/how-to-use-httpd.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Apache HTTP Server 설정하는 방법</a> 
+                                            <time>2024-11-11</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="11">
+                                            <a href="/linux/2024/11/10/how-to-use-nmap.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 nmap으로 네트워크 분석하기</a> 
+                                            <time>2024-11-10</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="12">
+                                            <a href="/linux/2024/11/10/how-to-use-netstat.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 netstat를 사용하는 방법</a> 
+                                            <time>2024-11-10</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="13">
+                                            <a href="/linux/2024/11/09/how-to-use-stickybit.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 특수권한을 부여하는 방법</a> 
+                                            <time>2024-11-09</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="14">
+                                            <a href="/linux/2024/11/09/how-to-use-logger.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 로그에 메시지를 기록하는 방법</a> 
+                                            <time>2024-11-09</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="15">
+                                            <a href="/linux/2024/11/08/how-to-use-sysctl.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 커널 매개변수를 제어하는 방법</a> 
+                                            <time>2024-11-08</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="16">
+                                            <a href="/linux/2024/11/08/how-to-use-cpio.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 파일을 백업하고 복원하는 방법</a> 
+                                            <time>2024-11-08</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="17">
+                                            <a href="/linux/2024/11/07/how-to-use-mail-aliases.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Mail Alias 설정하는 방법</a> 
+                                            <time>2024-11-07</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="18">
+                                            <a href="/linux/2024/11/07/how-to-use-firewalld.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 firewalld 사용하는 방법</a> 
+                                            <time>2024-11-07</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="19">
+                                            <a href="/linux/2024/11/06/how-to-use-samba.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Samba 서버 설정하는 방법</a> 
+                                            <time>2024-11-06</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="20">
+                                            <a href="/linux/2024/11/06/how-to-use-rsync.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 rsync를 사용하는 방법</a> 
+                                            <time>2024-11-06</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="21">
+                                            <a href="/linux/2024/11/05/how-to-use-quota.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 디스크 쿼터 관리하는 방법</a> 
+                                            <time>2024-11-05</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="22">
+                                            <a href="/linux/2024/11/05/how-to-use-print.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 프린트 사용하는 방법</a> 
+                                            <time>2024-11-05</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="23">
+                                            <a href="/linux/2024/11/04/how-to-use-telnet.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 Telnet 서버 설정하는 방법</a> 
+                                            <time>2024-11-04</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="24">
+                                            <a href="/linux/2024/11/04/how-to-use-chage.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 사용자 비밀번호 만료 및 수명 관리하는 방법</a> 
+                                            <time>2024-11-04</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="25">
+                                            <a href="/linux/2024/11/03/how-to-use-iptables.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 방화벽을 관리하는 방법</a> 
+                                            <time>2024-11-03</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="26">
+                                            <a href="/linux/2024/11/03/how-to-use-elasticsearch.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">엘라스틱 서치 사용하는 방법</a> 
+                                            <time>2024-11-03</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="27">
+                                            <a href="/linux/2024/11/02/how-to-use-zonefile.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 DNS 서버에 사용되는 Zone 파일 작성하는 방법</a> 
+                                            <time>2024-11-02</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="28">
+                                            <a href="/linux/2024/11/02/how-to-use-fileattr.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 파일 속성을 관리하는 방법</a> 
+                                            <time>2024-11-02</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="29">
+                                            <a href="/linux/2024/11/01/how-to-use-chmod.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 접근 권한 관리하는 방법</a> 
+                                            <time>2024-11-01</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="30">
+                                            <a href="/linux/2024/11/01/how-to-use-blkid.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 blkid를 사용하는 방법</a> 
+                                            <time>2024-11-01</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="31">
+                                            <a href="/linux/2024/10/31/how-to-use-tcp-wrapper.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 TCP Wrapper를 사용하는 방법</a> 
+                                            <time>2024-10-31</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="32">
+                                            <a href="/linux/2024/10/31/how-to-set-dns-server.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 DNS 서버 설정하는 방법</a> 
+                                            <time>2024-10-31</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="33">
+                                            <a href="/linux/2024/10/30/how-to-use-vsftp.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 VSFTP 서버를 설정하는 방법</a> 
+                                            <time>2024-10-30</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="34">
+                                            <a href="/linux/2024/10/30/how-to-use-smbclient.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 smbclient를 사용하는 방법</a> 
+                                            <time>2024-10-30</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="35">
+                                            <a href="/linux/2024/10/29/how-to-use-logrotate.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스에서 로그를 관리하는 방법</a> 
+                                            <time>2024-10-29</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="36">
+                                            <a href="/linux/2024/10/29/how-to-use-fsck.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 파일 시스템 검사 도구</a> 
+                                            <time>2024-10-29</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="37">
+                                            <a href="/linux/2024/10/28/how-to-use-useradd-config.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 사용자 설정 파일</a> 
+                                            <time>2024-10-28</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="38">
+                                            <a href="/linux/2024/10/28/how-to-use-rpm.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">RPM 명령 및 옵션</a> 
+                                            <time>2024-10-28</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        
+                                    
+                                        
+                                        
+                                        <li class="post-item" data-index="39">
+                                            <a href="/linux/2024/10/28/how-to-use-account.html" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme">리눅스 사용자 관리</a> 
+                                            <time>2024-10-28</time>
+                                            <span class="post-category">[Linux]</span>
+                                        </li>
+                                        </ul>
+                                    
+                                    
+                                    <!-- 페이징 네비게이션 -->
+                                    <div class="pagination-wrapper">
+                                        <nav class="pagination" role="navigation" id="pagination-nav">
+                                            <!-- JavaScript로 동적 생성 -->
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +718,7 @@
 
 <script src="/assets/js/plugins-v=cba79c2df0.js"></script>
 <script src="/assets/js/html5-v=cba79c2df0.js"></script>
-<!-- <script src="/assets/js/custom-v=cba79c2df0.js"></script> -->
+<script src="/assets/js/custom-v=cba79c2df0.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTMKCDB1FE"></script>
@@ -536,6 +732,189 @@
 
         </div>
 
+<script>
+// 전역 변수 (Jekyll 변수를 안전하게 JavaScript로 전달)
+const POSTS_PER_PAGE = 20;
+const TOTAL_POSTS = parseInt('40') || 0;
+const TOTAL_PAGES = Math.max(1, Math.ceil(TOTAL_POSTS / POSTS_PER_PAGE));
+
+console.log('총 포스트 수:', TOTAL_POSTS, '총 페이지 수:', TOTAL_PAGES);
+
+// URL에서 페이지 파라미터 읽기
+function getPageFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = parseInt(urlParams.get('page')) || 1;
+    return Math.max(1, Math.min(page, TOTAL_PAGES)); // 1과 TOTAL_PAGES 사이로 제한
+}
+
+// 페이지 로드 시 실행
+document.addEventListener('DOMContentLoaded', function() {
+    // TOTAL_POSTS가 0이면 에러 방지
+    if (TOTAL_POSTS === 0) {
+        console.warn('포스트가 없습니다.');
+        return;
+    }
+    
+    const currentPage = getPageFromUrl();
+    console.log('현재 페이지:', currentPage, '총 페이지:', TOTAL_PAGES);
+    
+    // 페이지 정보 업데이트
+    updatePageInfo(currentPage);
+    
+    // 현재 페이지에 맞는 포스트들만 표시
+    showPostsForPage(currentPage);
+    
+    // 페이징 버튼 생성
+    createPaginationButtons(currentPage);
+});
+
+function updatePageInfo(currentPage) {
+    const pageInfoElement = document.getElementById('current-page-info');
+    if (pageInfoElement) {
+        pageInfoElement.textContent = currentPage;
+    }
+}
+
+function showPostsForPage(page) {
+    const allPosts = document.querySelectorAll('.post-item');
+    
+    if (allPosts.length === 0) {
+        console.warn('포스트 아이템을 찾을 수 없습니다.');
+        return;
+    }
+    
+    const startIndex = (page - 1) * POSTS_PER_PAGE;
+    const endIndex = startIndex + POSTS_PER_PAGE;
+    
+    console.log(`페이지 ${page}: ${startIndex} ~ ${endIndex-1} 포스트 표시 (총 ${allPosts.length}개)`);
+    
+    // 모든 연도 헤더 숨기기
+    const yearHeaders = document.querySelectorAll('section#archive h3');
+    yearHeaders.forEach(header => {
+        header.style.display = 'none';
+    });
+    
+    // 현재 페이지에 표시될 연도들을 추적
+    const visibleYears = new Set();
+    
+    // 모든 포스트 처리
+    allPosts.forEach((post, index) => {
+        if (index >= startIndex && index < endIndex) {
+            post.style.display = 'flex';
+            
+            // 해당 포스트의 연도 헤더 찾기 및 표시
+            const ul = post.closest('ul');
+            if (ul) {
+                const yearHeader = ul.previousElementSibling;
+                if (yearHeader && yearHeader.tagName === 'H3') {
+                    const year = yearHeader.textContent.trim();
+                    if (!visibleYears.has(year)) {
+                        yearHeader.style.display = 'block';
+                        visibleYears.add(year);
+                    }
+                }
+            }
+        } else {
+            post.style.display = 'none';
+        }
+    });
+    
+    console.log('표시된 연도:', Array.from(visibleYears));
+}
+
+function createPaginationButtons(currentPage) {
+    const paginationNav = document.getElementById('pagination-nav');
+    
+    if (!paginationNav) {
+        console.warn('페이징 네비게이션 요소를 찾을 수 없습니다.');
+        return;
+    }
+    
+    if (TOTAL_PAGES <= 1) {
+        paginationNav.innerHTML = '';
+        return;
+    }
+    
+    let html = '';
+    
+    // 이전 버튼
+    if (currentPage > 1) {
+        html += `<a href="?page=${currentPage - 1}" class="prev-page">« 이전</a>`;
+    }
+    
+    html += '<div class="page-numbers">';
+    
+    // 페이지 번호 계산
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(TOTAL_PAGES, startPage + 4);
+    
+    if (endPage - startPage < 4) {
+        startPage = Math.max(1, endPage - 4);
+    }
+    
+    // 첫 페이지 링크
+    if (startPage > 1) {
+        html += '<a href="?page=1" class="page-number">1</a>';
+        if (startPage > 2) {
+            html += '<span class="page-dots">...</span>';
+        }
+    }
+    
+    // 페이지 번호 링크
+    for (let i = startPage; i <= endPage; i++) {
+        if (i === currentPage) {
+            html += `<span class="page-number current">${i}</span>`;
+        } else {
+            html += `<a href="?page=${i}" class="page-number">${i}</a>`;
+        }
+    }
+    
+    // 마지막 페이지 링크
+    if (endPage < TOTAL_PAGES) {
+        if (endPage < TOTAL_PAGES - 1) {
+            html += '<span class="page-dots">...</span>';
+        }
+        html += `<a href="?page=${TOTAL_PAGES}" class="page-number">${TOTAL_PAGES}</a>`;
+    }
+    
+    html += '</div>';
+    
+    // 다음 버튼
+    if (currentPage < TOTAL_PAGES) {
+        html += `<a href="?page=${currentPage + 1}" class="next-page">다음 »</a>`;
+    }
+    
+    paginationNav.innerHTML = html;
+    
+    // 페이지 변경 시 부드러운 스크롤
+    const pageLinks = paginationNav.querySelectorAll('a');
+    pageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            setTimeout(() => {
+                const archiveSection = document.querySelector('section#archive');
+                if (archiveSection) {
+                    archiveSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        });
+    });
+}
+
+// URL 변경 감지 (뒤로가기/앞으로가기 버튼 대응)
+window.addEventListener('popstate', function() {
+    if (TOTAL_POSTS === 0) return;
+    
+    const currentPage = getPageFromUrl();
+    console.log('페이지 변경됨:', currentPage);
+    
+    updatePageInfo(currentPage);
+    showPostsForPage(currentPage);
+    createPaginationButtons(currentPage);
+});
+</script>
+
 </body>
 </html>
 <style>
@@ -545,4 +924,105 @@ section#archive .site-heading li:hover { background-color:#fffac4; }
 section#archive .site-heading li + li { margin-top: 5px;border-top:1px solid #f1f2f3; }
 section#archive .site-heading li a { flex:1;font-weight:bold; }
 section#archive .site-heading li time { font-size:0.8em; }
+
+/* 페이징 스타일 */
+.page-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.page-info p {
+    margin: 0;
+    color: #666;
+}
+
+.post-category {
+    font-size: 0.75em;
+    color: #888;
+    margin-left: 10px;
+}
+
+.pagination-wrapper {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.prev-page,
+.next-page {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.prev-page:hover,
+.next-page:hover {
+    background: #0056b3;
+    color: white;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.page-number {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.page-number:hover {
+    background: #e9ecef;
+    color: #0056b3;
+}
+
+.page-number.current {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+.page-dots {
+    padding: 8px 4px;
+    color: #6c757d;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .pagination {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .page-numbers {
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+    
+    .prev-page,
+    .next-page,
+    .page-number {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
 </style>

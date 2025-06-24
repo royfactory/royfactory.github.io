@@ -103,7 +103,7 @@
     </ul><!-- .menu -->
 </nav><!-- .site-navigation -->
 
-        <a class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+        <a href="#" class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon" aria-hidden="true"></span></a>
     </div><!-- .inner-wide -->
 </header><!-- .site-header -->
         
@@ -121,20 +121,44 @@
                 <h2 class="widget-title"></h2>
                 <p></p>
             </aside><!-- .widget -->
-            <aside class="widget widget-newsletter">
-                <h2 class="widget-title">My  Newsletter</h2>
-                <p></p>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup-->
+            <aside class="widget widget-categories">
+                <h2 class="widget-title">Categories</h2>
+                <ul class="category-list">
+                    <li><a href="/linux/">Linux & System Admin</a></li>
+                    <li><a href="/ai/">AI & Machine Learning</a></li>
+                    <li><a href="/archive/">All Posts</a></li>
+                </ul>
+            </aside><!-- .widget -->
+            <aside class="widget widget-recent-posts">
+                <h2 class="widget-title">Recent Posts</h2>
+                <ul class="recent-posts-list">
+                    
+                    <li>
+                        <a href="/ai/2025/06/24/rnn-recurrent-neural-network.html">What is RNN (Recurrent Neural Network)?</a>
+                        <span class="post-date">2025-06-24</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/03/what-is-the-faiss.html">FAISS란 무엇인가?</a>
+                        <span class="post-date">2024-12-03</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/03/what-is-the-cos-similarity.html">코사인 유사도란 무엇인가?</a>
+                        <span class="post-date">2024-12-03</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/02/what-is-the-vector-db.html">벡터 데이터베이스란 무엇인가?</a>
+                        <span class="post-date">2024-12-02</span>
+                    </li>
+                    
+                    <li>
+                        <a href="/ai/2024/12/02/what-is-the-euclidean-distance.html">유클리디안 거리(Euclidean Distance)란 무엇인가?</a>
+                        <span class="post-date">2024-12-02</span>
+                    </li>
+                    
+                </ul>
             </aside><!-- .widget -->
             <aside class="widget widget-text">
                 <h2 class="widget-title">Contact</h2>
@@ -145,9 +169,75 @@
                 </ul>
             </aside><!-- .widget -->
         </div><!-- .widget-area -->
-        <a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+        <a href="#" class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
     </div><!-- .sidebar-scrollable -->
 </div><!-- .sidebar -->
+
+<style>
+/* 사이드바 카테고리 스타일 */
+.widget-categories .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-categories .category-list li {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.widget-categories .category-list li:hover {
+    background: #e9ecef;
+}
+
+.widget-categories .category-list a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+}
+
+.widget-categories .category-list a:hover {
+    color: #007bff;
+}
+
+/* 최근 포스트 스타일 */
+.widget-recent-posts .recent-posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-recent-posts .recent-posts-list li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.widget-recent-posts .recent-posts-list li:last-child {
+    border-bottom: none;
+}
+
+.widget-recent-posts .recent-posts-list a {
+    display: block;
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.widget-recent-posts .recent-posts-list a:hover {
+    color: #007bff;
+}
+
+.widget-recent-posts .post-date {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+</style>
 		<main class="site-main" role="main">
 			<section class="site-content">
 				<header class="cover page-header-1">
@@ -179,7 +269,7 @@
 							<dt></dt>
 							-->
 							<!-- //photo -->
-							<dd class="tit">장진용<span>(ROY)</span></dd>
+							<dd class="tit">ROY</span></dd>
 							<dd>
 								<svg
 									aria-hidden="true"
@@ -298,11 +388,11 @@
 						<dl class="box-introduce">
 							<dt>INTRODUCE</dt>
 							<dd>
-								<p>다년간 개발 및 유지보수, 관리 등 온·오프라인 유통 프로젝트 경험으로 폭넓고 심도 있는 IT에 대한 지식을 겸비한 개발자입니다.<br/> 대학을 졸업하고 쉴 틈 없이 바로 고객의 쉼에 대해 많은 관심을 두는 핫트랙스라는 회사에 입사하여 바로 쇼핑몰 리뉴얼이라는 큰 프로젝트의 일원으로 해야 할 역할을 다하였습니다. 저는 이 프로젝트에서 처음으로 학업에서 배운 많은 기술을 실무에 처음 적용해 보는 뜻깊은 프로젝트였습니다. 또한, 개발하는 과정에서 스프링프레임워크 뿐만 아니라 스토리 보드, 테스트케이스 작성 등 프로젝트 개발에 필요한 기술들을 배웠고, 그것이 저의 첫 개발자로서의 방향을 잡게 해 준 의미 있는 프로젝트였습니다. 저는 이후 프로젝트 대부분에서 이때 경험한 내용을 기반으로 진행했으며 때로는 실패도, 때로는 성공도 겪을 수 있었습니다.<br/><br/> 또한, 저는 끊임 없는 탐구심을 통하여 회사에 적용 가능한 무인안내 시스템, 로케이션 모니터링 시스템 등 많은 프로세스를 부분을 개선하였고, 이를 인정받아 우수사원이 되기도 하였습니다.<br/> 저는 이런 저의 경험을 홀로 간직하기보다는 공유하는 교육의 장을 만들었고, 이를 통하여 서로의 실력 배양뿐만 아니라 개발자 간의 의사소통이 더욱 원활할 수 있도록 하여 프로젝트 함으로써 성공적으로 이바지할 수 있도록 하였습니다.<br/> 저는 개발자입니다. 프로그램의 개발뿐만 아니라 사람 간의 관계, 회사의 방향을 함께 고민하고 개발해 가는 개발자입니다.</p>
+								<p>다년간 개발 및 유지보수, 관리 등 온·오프라인 유통 프로젝트 경험으로 폭넓고 심도 있는 IT에 대한 지식을 겸비한 개발자입니다.<br/> 실무에서 다양한 시스템의 개발과 기획, 운영을 경험하며 사용자의 입장을 이해하고 기술을 적절히 해석하는 법을 배웠습니다. 특히 최근에는 AI, RPA, 데이터 기반 시스템을 주도적으로 구축하며 디지털 전환의 중심 역할을 수행했습니다.<br/><br/> 프로젝트 리더로서 기획자 이탈 상황에서도 TF를 조직하여 PLM 시스템을 재정립한 경험이 있으며, 리뷰 및 매출 분석 기반 AI 인사이트 시스템, 자산 디지털화 플랫폼 등 실질적인 성과를 이끈 바 있습니다.<br/> 저는 개발뿐 아니라 문제 정의와 개선에 적극적인 개발자이며, 사람과 기술을 잇는 가교 역할에 자부심을 가지고 일하고 있습니다.</p>
 
 								<p class="date">
 									<small>Latest Updated</small>
-									<span class="badge">2024. 11. 12</span>
+									<span class="badge">2025. 06. 25</span>
 								</p>
 								<p class="sign">Jinyong</p>
 							</dd>
@@ -416,7 +506,7 @@
 									<h3>Sales Inventory & Guest Feedback</h3>
 									<p class="role">Project Manager</p>
 									<ul>
-										<li>AI + API를 이용한 매장 매출 정보 분석 및 리뷰 감정 분석 시스템 개발 진행</li>
+										<li>유통사 매출 데이터 및 리뷰 데이터를 API로 수집하여 시각화 및 감정 분석 수행. AI를 활용한 매출 예측 모델과 리뷰 키워드 추출을 통해 제조사와 바이어 간 인사이트 기반 제안을 가능케 한 시스템 구축.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">React</em><em class="badge">Mongo DB</em><em class="badge">Huggingface</em><em class="badge">ko-sent5-classification</em></span>
@@ -431,7 +521,7 @@
 									<h3>Product Manufacture Library 구축 및 운영</h3>
 									<p class="role">Project Leader</p>
 									<ul>
-										<li>Product Specification Asset Library 시스템 구축 및 운영</li>
+										<li>제조 제품에 대한 사양 및 이미지 등 자산을 관리하는 디지털 플랫폼 구축. 바이어 대상 마케팅 지원 및 내부 정보 재활용 기반 확보.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">Nexacro 17</em><em class="badge">MS-SQL</em><em class="badge">OZ Report</em><em class="badge">Resin</em><em class="badge">Nginx</em><em class="badge">SubVersion</em></span>
@@ -446,7 +536,7 @@
 									<h3>업무 자동화 설계 및 운영 (RPA)</h3>
 									<p class="role">운영자</p>
 									<ul>
-										<li>업무 자동화 프로세스 설계 및 개발, 운영</li>
+										<li>업무 반복 요소를 발굴하여 RPA 도구 기반으로 자동화. Power Automate 및 Python을 활용한 API 기반 연계 자동화 운영.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Power Automate</em><em class="badge">Python</em><em class="badge">Node.js</em><em class="badge">GitHub</em></span>
@@ -461,7 +551,7 @@
 									<h3>PLM 구축 및 운영</h3>
 									<p class="role">Project Leader</p>
 									<ul>
-										<li>Product Lifecycle Management 시스템 구축 및 운영</li>
+										<li>기획자 이탈 이후 TF 구성부터 시스템 재기획, 구현, 운영까지 리딩. 제품 기획~개발~승인 전 과정을 관리하는 플랫폼 구축.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Nexacro N</em><em class="badge">MS-SQL</em><em class="badge">eChart</em><em class="badge">SubVersion</em></span>
@@ -473,10 +563,10 @@
 							<dl>
 								<dt>2021. 03 ~ </dt>
 								<dd>
-									<h3>Proudct Develop & Design Library 구축 및 운영</h3>
+									<h3>Product Develop & Design Library 구축 및 운영</h3>
 									<p class="role">Project Manager</p>
 									<ul>
-										<li>Product Material Asset Library 시스템 구축 및 운영</li>
+										<li>소재, 원단, 디자인 등 개발 소스를 디지털 자산으로 관리할 수 있는 내부 플랫폼 구축. 바이어 평가 화면 및 이력 조회 기능 구현.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">Nexacro 17</em><em class="badge">MS-SQL</em><em class="badge">OZ Report</em><em class="badge">SubVersion</em><em class="badge">Hyper-V</em></span>
@@ -491,7 +581,7 @@
 									<h3>재택근무 현황 모니터링 시스템 구축</h3>
 									<p class="role">Project Developer</p>
 									<ul>
-										<li>코로나 기간 내 재택 근무 관리 시스템 구축 및 운영</li>
+										<li>코로나 기간 내 재택근무 현황을 실시간 파악하기 위한 웹 기반 대시보드 시스템 개발.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Log4J</em><em class="badge">jQuery</em><em class="badge">Vanilla JS</em><em class="badge">JSTL</em><em class="badge">MS-SQL</em><em class="badge">SubVersion</em><em class="badge">CentOS</em></span>
@@ -506,7 +596,7 @@
 									<h3>HR 평가관리 시스템 구축</h3>
 									<p class="role">Project Leader</p>
 									<ul>
-										<li>HR 평가관리 시스템 플랫폼 도입</li>
+										<li>HR 성과 평가 시스템 도입 시 IT 기술 검토 및 사내 적합성 판단 및 협업 진행.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">HCG Jade</em></span>
@@ -521,7 +611,7 @@
 									<h3>MES System 구축</h3>
 									<p class="role">Project Developer</p>
 									<ul>
-										<li>MES IoT Gateway 개발</li>
+										<li>MES용 IoT Gateway 및 공장 장비 데이터 수집기 개발. Go 언어와 Redis, MQTT 기반 서버 운영.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Go</em><em class="badge">Redis</em><em class="badge">MariaDB</em><em class="badge">CentOS</em><em class="badge">MQTT</em></span>
@@ -536,7 +626,7 @@
 									<h3>제조 모니터링 시스템 구축</h3>
 									<p class="role">Project Developer</p>
 									<ul>
-										<li>봉제 공정 내 제조 현황 모니터링 시스템 구축</li>
+										<li>공장 내 봉제 실적과 설비 가동률을 실시간 시각화하여 모니터링하는 시스템 개발.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">MyBatis</em><em class="badge">Log4J</em><em class="badge">jQuery</em><em class="badge">Vanilla JS</em><em class="badge">JSTL</em><em class="badge">MariaDB</em><em class="badge">SubVersion</em><em class="badge">CentOS</em></span>
@@ -551,7 +641,7 @@
 									<h3>모바일 유통관리 시스템 구축 및 운영</h3>
 									<p class="role">Project Leader</p>
 									<ul>
-										<li>모바일 기반 창고 및 매장 내 상품 및 재고 관리 시스템 구축 및 운영</li>
+										<li>모바일 기반 상품 입출고 및 재고 관리 시스템 개발. PDA 및 웹 모바일 병행 지원.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">iBatis</em><em class="badge">Log4j</em><em class="badge">jQuery</em><em class="badge">FreeMarker</em><em class="badge">JSTL</em><em class="badge">resin</em><em class="badge">Sybase</em><em class="badge">SubVersion</em><em class="badge">HTML5</em><em class="badge">android</em></span>
@@ -566,7 +656,7 @@
 									<h3>제휴몰 연동 시스템 구축 및 운영</h3>
 									<p class="role">Project Leader</p>
 									<ul>
-										<li>제휴몰 상품 / 주문 연동 구축 및 운영 (옥션 / G마켓 / 네이버쇼핑 등)</li>
+										<li>G마켓, 옥션, 네이버쇼핑 등 제휴몰 상품/주문 API 연동 및 스케줄링 시스템 구축 및 운영.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Batch</em><em class="badge">SubVersion</em><em class="badge">SOAP</em><em class="badge">Restful</em></span>
@@ -581,7 +671,7 @@
 									<h3>온라인 쇼핑몰 운영</h3>
 									<p class="role">Project Developer</p>
 									<ul>
-										<li>쇼핑몰 재구축 및 운영</li>
+										<li>핫트랙스몰 및 모바일몰 구축 및 리뉴얼, 검색엔진 적용, 음반 청음기 시스템 등 다양한 고객 편의 기능 개발.</li>
 										<li>
 											Skill Keywords
 											<span class="skills"><em class="badge">Spring Framework</em><em class="badge">iBatis</em><em class="badge">Log4j</em><em class="badge">jQuery</em><em class="badge">FreeMarker</em><em class="badge">JSTL</em><em class="badge">Resin</em><em class="badge">Oracls</em><em class="badge">Mariner 3</em><em class="badge">Subversion</em><em class="badge">android</em></span>
@@ -642,7 +732,7 @@
 
 <script src="/assets/js/plugins-v=cba79c2df0.js"></script>
 <script src="/assets/js/html5-v=cba79c2df0.js"></script>
-<!-- <script src="/assets/js/custom-v=cba79c2df0.js"></script> -->
+<script src="/assets/js/custom-v=cba79c2df0.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTMKCDB1FE"></script>

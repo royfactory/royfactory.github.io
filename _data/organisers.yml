@@ -4,10 +4,10 @@ Royfactory:
     photo: "/img/ic_logo.png"
     country: Korea
     web: royfactory.github.io
-    descsidebartitle: This is my Developer Blog New.
-    descsidebartext: you can modify this sidebar in the organisers.yml file.
-    sidebarnewsletter: you can modify this sidebar in the organisers.yml file.
-    descsidebartext2: Hello, Here some Text Already, you can modify this sidebar in the organisers.yml file! 
+    descsidebartitle: About Developer Blog
+    descsidebartext: A developer blog sharing practical experience and knowledge about Linux, AI, and development technologies. Covering various technical topics including system administration, machine learning, and web development.
+    sidebarnewsletter: Subscribe to receive new tech posts and development tips via email. We regularly share useful development insights and tutorials.
+    descsidebartext2: Feel free to reach out for technical inquiries or collaboration opportunities. Let's grow together as developers!
     sidebaremail: "royzero0717@gmail.com"
     sidebarcountry: Korea
 
