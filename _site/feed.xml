@@ -5,9 +5,195 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Jun 2025 00:32:17 +0900</pubDate>
-    <lastBuildDate>Wed, 25 Jun 2025 00:32:17 +0900</lastBuildDate>
+    <pubDate>Wed, 25 Jun 2025 23:22:17 +0900</pubDate>
+    <lastBuildDate>Wed, 25 Jun 2025 23:22:17 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Why Lasso is Essential in High-Dimensional Machine Learning</title>
+        <description>&lt;h1 id=&quot;what-is-lasso-regression&quot;&gt;What is Lasso Regression?&lt;/h1&gt;
+
+&lt;p&gt;Lasso Regression is an extension of linear regression designed to reduce &lt;strong&gt;overfitting&lt;/strong&gt; and improve &lt;strong&gt;model simplicity&lt;/strong&gt;. It’s especially helpful when dealing with high-dimensional data by automatically &lt;strong&gt;eliminating irrelevant features&lt;/strong&gt;, making the model more interpretable and efficient.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;concept-of-lasso-regression&quot;&gt;Concept of Lasso Regression&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Lasso&lt;/strong&gt; stands for &lt;em&gt;Least Absolute Shrinkage and Selection Operator&lt;/em&gt;. It is a linear regression model that includes an &lt;strong&gt;L1 regularization term&lt;/strong&gt; to penalize large coefficients.&lt;/p&gt;
+
+&lt;h3 id=&quot;standard-linear-regression-equation&quot;&gt;Standard Linear Regression Equation:&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+y = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ + ε
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;lasso-regression-loss-function&quot;&gt;Lasso Regression Loss Function:&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+Loss = RSS + λ \* Σ|βᵢ|
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RSS&lt;/code&gt;: Residual Sum of Squares&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;λ&lt;/code&gt;: Regularization strength (higher λ means more shrinkage)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Σ|βᵢ|&lt;/code&gt;: Sum of the absolute values of the coefficients (L1 norm)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The L1 penalty causes some coefficients to shrink to &lt;strong&gt;exactly zero&lt;/strong&gt;, which effectively &lt;strong&gt;removes those variables&lt;/strong&gt; from the model.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;real-world-example-house-price-prediction&quot;&gt;Real-World Example: House Price Prediction&lt;/h2&gt;
+
+&lt;p&gt;Imagine you’re building a model to predict house prices with features like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Size (sqft)&lt;/li&gt;
+  &lt;li&gt;Number of rooms&lt;/li&gt;
+  &lt;li&gt;Elevator availability&lt;/li&gt;
+  &lt;li&gt;Year built&lt;/li&gt;
+  &lt;li&gt;Complex name&lt;/li&gt;
+  &lt;li&gt;Maintenance fee&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of these variables may not significantly impact the price. Lasso Regression automatically &lt;strong&gt;eliminates less important features&lt;/strong&gt; by assigning their coefficients to zero, leaving only the most relevant predictors.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;when-to-use-lasso&quot;&gt;When to Use Lasso?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;High-dimensional datasets&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Especially useful when the number of features is large or features are correlated.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Need for feature selection&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Lasso automatically performs variable selection.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interpretability&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;It produces simpler, more interpretable models by reducing the number of active features.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;limitations-of-lasso&quot;&gt;Limitations of Lasso&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Unstable when features &amp;gt; samples&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;It may not select the correct variables in such cases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Biased estimation&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Coefficients are biased due to the shrinkage effect.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sensitivity to correlated variables&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Among highly correlated features, Lasso tends to select one and ignore the others.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;comparison-lasso-vs-ridge-vs-elasticnet&quot;&gt;Comparison: Lasso vs Ridge vs ElasticNet&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Model&lt;/th&gt;
+      &lt;th&gt;Regularization&lt;/th&gt;
+      &lt;th&gt;Feature Elimination&lt;/th&gt;
+      &lt;th&gt;Key Feature&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ridge&lt;/td&gt;
+      &lt;td&gt;L2 (squared)&lt;/td&gt;
+      &lt;td&gt;✗&lt;/td&gt;
+      &lt;td&gt;Shrinks all coefficients&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Lasso&lt;/td&gt;
+      &lt;td&gt;L1 (absolute)&lt;/td&gt;
+      &lt;td&gt;✓&lt;/td&gt;
+      &lt;td&gt;Eliminates some coefficients to 0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ElasticNet&lt;/td&gt;
+      &lt;td&gt;L1 + L2&lt;/td&gt;
+      &lt;td&gt;✓&lt;/td&gt;
+      &lt;td&gt;Hybrid of Ridge and Lasso&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;scikit-learn-example&quot;&gt;Scikit-Learn Example&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sklearn.linear_model&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lasso&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_boston&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_squared_error&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Load data
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;load_boston&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;return_X_y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Split train/test
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Train model
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Predict and evaluate
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;MSE:&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mean_squared_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Coefficients:&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lasso&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coef_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Lasso Regression is a powerful technique that enhances linear regression by &lt;strong&gt;simplifying models&lt;/strong&gt; and reducing overfitting through L1 regularization. Its ability to &lt;strong&gt;perform automatic feature selection&lt;/strong&gt; makes it particularly useful in real-world applications involving many variables.&lt;/p&gt;
+
+&lt;p&gt;For interpretable, efficient, and generalizable models, Lasso Regression is a go-to method in the machine learning toolbox.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Wed, 25 Jun 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/ai/2025/06/25/lasso-regression-explained.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ai/2025/06/25/lasso-regression-explained.html</guid>
+        
+        <category>ai</category>
+        
+        <category>regression</category>
+        
+        <category>lasso</category>
+        
+        <category>machine-learning</category>
+        
+        <category>regularization</category>
+        
+        <category>linear-model</category>
+        
+        <category>sklearn</category>
+        
+        
+        <category>ai</category>
+        
+      </item>
     
       <item>
         <title>What is RNN (Recurrent Neural Network)?</title>
