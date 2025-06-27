@@ -5,7 +5,7 @@ layout: post
 title: "What is Scikit-Learn (sklearn)?"
 cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
-date: 2025-06-25
+date: 2025-06-26
 tags: ai machine-learning sklearn python supervised-learning unsupervised-learning model-selection
 
 toc: true
