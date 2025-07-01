@@ -5,9 +5,144 @@
     <description>Development-related tech blog. Base is coding and posts servers and other information related to it.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Jun 2025 22:55:53 +0900</pubDate>
-    <lastBuildDate>Mon, 30 Jun 2025 22:55:53 +0900</lastBuildDate>
+    <pubDate>Tue, 01 Jul 2025 23:21:37 +0900</pubDate>
+    <lastBuildDate>Tue, 01 Jul 2025 23:21:37 +0900</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>What is H2O AutoML? Train ML Models Without Coding</title>
+        <description>&lt;h1 id=&quot;what-is-h2o-automl-train-ml-models-without-coding&quot;&gt;What is H2O AutoML? Train ML Models Without Coding&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;H2O AutoML&lt;/strong&gt; is an open-source tool that automates the machine learning process—from data preprocessing to model training, tuning, and selection. It’s built by &lt;a href=&quot;https://www.h2o.ai/&quot;&gt;H2O.ai&lt;/a&gt; and is designed for both beginners and experts who want to save time and get powerful models without diving deep into code.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re analyzing customer churn or predicting sales, H2O AutoML can help you build production-ready models in minutes.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why-h2o-automl&quot;&gt;Why H2O AutoML?&lt;/h2&gt;
+
+&lt;p&gt;Imagine you have a CSV file full of customer data and want to predict who will buy again. Normally, you’d need to:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Clean and preprocess the data&lt;/li&gt;
+  &lt;li&gt;Choose and train multiple models&lt;/li&gt;
+  &lt;li&gt;Tune hyperparameters&lt;/li&gt;
+  &lt;li&gt;Evaluate and compare results&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s a lot of work—even for a data scientist.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;H2O AutoML automates all of this&lt;/strong&gt; with just a few lines of code or through a web UI called &lt;strong&gt;H2O Flow&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;key-features-of-h2o-automl&quot;&gt;Key Features of H2O AutoML&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-automatic-model-training&quot;&gt;1. Automatic Model Training&lt;/h3&gt;
+
+&lt;p&gt;H2O AutoML trains multiple models like GBM, XGBoost, Random Forest, Deep Learning, and combines the best via &lt;strong&gt;stacked ensembles&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h2o&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h2o.automl&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;H2OAutoML&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;h2o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h2o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;import_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;customer_data.csv&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split_frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratios&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;aml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;H2OAutoML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;aml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;training_frame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-model-leaderboard&quot;&gt;2. Model Leaderboard&lt;/h3&gt;
+
+&lt;p&gt;AutoML automatically ranks models by performance metrics such as AUC or RMSE.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;lb&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;leaderboard&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-web-ui-h2o-flow&quot;&gt;3. Web UI: H2O Flow&lt;/h3&gt;
+
+&lt;p&gt;Don’t want to code? Use the &lt;strong&gt;H2O Flow&lt;/strong&gt; web interface to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Upload data&lt;/li&gt;
+  &lt;li&gt;Run AutoML&lt;/li&gt;
+  &lt;li&gt;Visualize performance&lt;/li&gt;
+  &lt;li&gt;Download models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Accessible at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:54321&lt;/code&gt; after running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;h2o.init()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;real-world-use-cases&quot;&gt;Real-World Use Cases&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Customer Churn Prediction&lt;/strong&gt; – Who is likely to leave your service?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Credit Scoring&lt;/strong&gt; – Should a loan be approved?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sales Forecasting&lt;/strong&gt; – How much will we sell next month?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Marketing Targeting&lt;/strong&gt; – Who should receive this ad?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;benefits-of-h2o-automl&quot;&gt;Benefits of H2O AutoML&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;No Coding Required:&lt;/strong&gt; Use Python, R, or a web UI&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fast Prototyping:&lt;/strong&gt; Build models in minutes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Powerful Models:&lt;/strong&gt; Includes ensemble and deep learning&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Explainability:&lt;/strong&gt; SHAP &amp;amp; variable importance plots supported&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Enterprise-Ready:&lt;/strong&gt; Used by companies like AT\&amp;amp;T, PayPal, and NASA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;limitations&quot;&gt;Limitations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Black-box models:&lt;/strong&gt; May be hard to interpret for regulated industries&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hardware usage:&lt;/strong&gt; Can be memory-intensive&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Less control:&lt;/strong&gt; Advanced users may want more tuning flexibility&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;H2O AutoML lets you focus on your data, not the algorithms.&lt;/strong&gt; It’s perfect for beginners starting out in machine learning or professionals who need to build high-performing models quickly.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re a business analyst or data scientist, H2O AutoML helps you go from raw data to production-ready predictions—&lt;strong&gt;without writing complex code&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ready to try it?
+Install H2O today and see what machine learning automation can do for you.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jul 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/ai/2025/07/01/automl-h2o-intro.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ai/2025/07/01/automl-h2o-intro.html</guid>
+        
+        <category>ai</category>
+        
+        <category>automl</category>
+        
+        <category>h2o</category>
+        
+        <category>machine-learning</category>
+        
+        <category>no-code</category>
+        
+        <category>data-science</category>
+        
+        <category>gbm</category>
+        
+        <category>xgboost</category>
+        
+        <category>ensemble</category>
+        
+        
+        <category>ai</category>
+        
+      </item>
     
       <item>
         <title>What is LangChain? Build LLM Apps Easily with Python</title>
