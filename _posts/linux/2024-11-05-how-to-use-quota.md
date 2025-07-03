@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title:  "리눅스에서 디스크 쿼터 관리하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-05
+description: 디스크 공간을 효율적으로 관리하고 각 사용자별로 사용할 수 있는 용량을 제한하고자 할 때, 리눅스에서는 디스크 쿼터(Disk
+  Quota)를 사용할 수 있습니다. 이 글에서는 리눅스에서 디스크 쿼터를 설정하고 관리하는 방법을 단계별로 설명하겠습니다. --- 디스크 쿼터는
+  특정 사용자...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, command line, equota, grpquota, linux, quota, quotacheck, quotaoff,
+  quotaon, repquota, server management, shell scripting, system administration, terminal,
+  unix, usrquota, warnquota, 관리하는, 디스크, 리눅스에서, 방법, 쿼터
+layout: post
+organiser: Royfactory
 tags: linux quota usrquota grpquota quotacheck quotaon equota repquota quotaoff warnquota
-
+title: 리눅스에서 디스크 쿼터 관리하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # 리눅스에서 디스크 쿼터 관리하기

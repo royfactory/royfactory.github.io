@@ -1,19 +1,18 @@
 ---
-layout: post
-
-#event information
-title: "리눅스 사용자 설정 파일"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-28
+description: '`/etc/default/useradd` 리눅스 시스템에서 `useradd` 명령어를 통해 사용자를 생성할 때 기본적으로
+  적용되는 설정값을 지정할 수 있는 파일이 바로 `/etc/default/useradd`입니다. 이 파일을 통해 사용자 계정 생성 시 기본 옵션을
+  설정할 수 있어...'
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, command line, config, linux, server management, shell scripting, system
+  administration, terminal, unix, useradd, 리눅스, 사용자, 설정, 파일
+layout: post
+organiser: Royfactory
 tags: linux useradd config
-
+title: 리눅스 사용자 설정 파일
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 # 리눅스 사용자 설정 파일 :
 

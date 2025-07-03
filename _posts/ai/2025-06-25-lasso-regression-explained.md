@@ -1,17 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "Why Lasso is Essential in High-Dimensional Machine Learning"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-25
+description: Lasso Regression is an extension of linear regression designed to reduce
+  **overfitting** and improve **model simplicity**. It’s especially helpful when deali...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, artificial intelligence, data science, deep
+  learning, dimensional, essential, high, in, is, lasso, learning, linear-model, machine,
+  machine learning, machine-learning, neural networks, python, regression, regularization,
+  sklearn, why
+layout: post
+organiser: Royfactory
 tags: ai regression lasso machine-learning regularization linear-model sklearn
-
+title: Why Lasso is Essential in High-Dimensional Machine Learning
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is Lasso Regression?

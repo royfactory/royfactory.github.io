@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "리눅스에서 DNS 서버에 사용되는 Zone 파일 작성하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-02
+description: 리눅스 서버에서 DNS 서버를 설정할 때, **zone 파일**은 도메인의 각종 정보(IP 주소, 도메인 정보 등)를 정의하는
+  중요한 파일입니다. 이 글에서는 zone 파일의 설정 방법과 각 항목의 의미에 대해 자세히 설명하겠습니다. --- 리눅스에서 DNS 서버는 보통
+  **BIN...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: BIND, bash, command line, dns, dnsserver, linux, server management, setting,
+  shell scripting, system administration, terminal, unix, zone, 리눅스에서, 방법, 사용되는, 서버에,
+  작성하는, 파일
+layout: post
+organiser: Royfactory
 tags: linux dnsserver dns zone setting BIND
-
+title: 리눅스에서 DNS 서버에 사용되는 Zone 파일 작성하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # 리눅스에서 DNS Zone 파일 설정 방법

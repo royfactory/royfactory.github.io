@@ -1,17 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "Exploratory Data Analysis in Python: A Beginner’s Guide"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-27
+description: Analyzing data is a lot like cooking. **EDA (Exploratory Data Analysis)**
+  is the part where you unpack your ingredients, check what’s fresh, what’s expired,
+  ...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, a, ai, analysis, artificial intelligence, beginner,
+  data, data science, data-analysis, datavisualization, deep learning, eda, exploratory,
+  guide, in, machine learning, matplotlib, neural networks, pandas, python, s, seaborn
+layout: post
+organiser: Royfactory
 tags: ai eda data-analysis pandas matplotlib seaborn datavisualization python
-
+title: 'Exploratory Data Analysis in Python: A Beginner’s Guide'
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is EDA (Exploratory Data Analysis)?

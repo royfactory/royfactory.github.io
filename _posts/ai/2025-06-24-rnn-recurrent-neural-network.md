@@ -1,17 +1,18 @@
 ---
-layout: post
-
-#event information
-title: "What is RNN (Recurrent Neural Network)?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-24
+description: In many real-world applications, especially in natural language processing
+  and time series prediction, data comes in sequences. Unlike traditional neural net...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, artificial intelligence, data science, deep
+  learning, deep-learning, is, lstm, machine learning, network, neural, neural networks,
+  nlp, python, recurrent, recurrent-neural-network, rnn, sequence-modeling, what
+layout: post
+organiser: Royfactory
 tags: ai rnn recurrent-neural-network deep-learning sequence-modeling lstm nlp
-
+title: What is RNN (Recurrent Neural Network)?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is RNN (Recurrent Neural Network)?

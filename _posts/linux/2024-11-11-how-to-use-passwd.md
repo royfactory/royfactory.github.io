@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title:  "리눅스에서 passwd를 사용하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-11
+description: '`passwd` 명령어는 리눅스에서 사용자 계정의 비밀번호를 설정하거나 변경할 때 사용하는 명령어입니다. 특히 시스템 관리자가
+  여러 계정의 비밀번호를 설정하거나 정책을 관리할 때 유용합니다. 이번 글에서는 `passwd` 명령어의 다양한 옵션과 실제 사용 예시를 살펴보겠습니다.
+  -...'
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, command line, linux, passwd를, samba, sambaserver, server management,
+  setting, shell scripting, smbpasswd, system administration, terminal, unix, 리눅스에서,
+  방법, 사용하는
+layout: post
+organiser: Royfactory
 tags: linux samba sambaserver setting smbpasswd
-
+title: 리눅스에서 passwd를 사용하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # 리눅스에서 `passwd`를 사용하는 방법

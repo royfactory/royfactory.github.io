@@ -22,7 +22,8 @@ title: Roy's Factory
 email: royzero0717@gmail.com
 contry: Korea
 description: >- # this means to ignore newlines until "baseurl:"
-  Development-related tech blog. Base is coding and posts servers and other information related to it.
+  AI and Data Analysis blog featuring Python tutorials, Machine Learning insights, and Stock Analysis guides. 
+  GitHub Pages powered tech blog with EDA examples, AutoML tutorials, and programming tips.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://royfactory.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: royfactory

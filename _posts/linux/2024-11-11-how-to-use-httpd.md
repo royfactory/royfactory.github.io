@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title:  "리눅스에서 Apache HTTP Server 설정하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-11
+description: Apache HTTP Server(`httpd`)는 리눅스에서 널리 사용되는 웹 서버입니다. `httpd.conf` 설정 파일을
+  통해 다양한 서버 옵션을 조정할 수 있는데, 이번 글에서는 서버를 설정할 때 자주 사용하는 주요 항목들과 그 예시를 소개하겠습니다. --- 서버의
+  루트 ...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: apache, bash, command line, config, http, httpd, httpd.conf, linux, server,
+  server management, shell scripting, system administration, terminal, unix, 리눅스에서,
+  방법, 설정하는
+layout: post
+organiser: Royfactory
 tags: linux apache http httpd config httpd.conf
-
+title: 리눅스에서 Apache HTTP Server 설정하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # 리눅스에서 Apache HTTP Server 설정하는 방법

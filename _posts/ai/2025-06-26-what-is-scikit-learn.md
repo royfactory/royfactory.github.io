@@ -1,17 +1,20 @@
 ---
-layout: post
-
-#event information
-title: "What is Scikit-Learn (sklearn)?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-26
-tags: ai machine-learning sklearn python supervised-learning unsupervised-learning model-selection
-
+description: Scikit-learn, often imported as `sklearn`, is one of the most popular
+  and powerful **machine learning libraries in Python**. It provides a wide range
+  of tool...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, artificial intelligence, data science, deep
+  learning, is, learn, machine learning, machine-learning, model-selection, neural
+  networks, python, scikit, sklearn, supervised-learning, unsupervised-learning, what
+layout: post
+organiser: Royfactory
+tags: ai machine-learning sklearn python supervised-learning unsupervised-learning
+  model-selection
+title: What is Scikit-Learn (sklearn)?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is Scikit-Learn (sklearn)?

@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "리눅스에서 사용자 비밀번호 만료 및 수명 관리하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-04
+description: 리눅스에서 사용자 관리란 단순히 사용자 계정을 생성하거나 삭제하는 것 이상의 작업입니다. 보안 강화를 위해 비밀번호 정책을
+  제어하는 것도 중요한데, `chage` 명령어는 이러한 비밀번호 수명 및 만료 정책을 사용자의 계정에 맞춰 설정할 수 있는 강력한 도구입니다.
+  이 글에서는 `...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, chage, changeage, command line, expire, linux, password, server management,
+  shell scripting, system administration, terminal, unix, 관리하는, 리눅스에서, 만료, 및, 방법,
+  비밀번호, 사용자, 수명
+layout: post
+organiser: Royfactory
 tags: linux chage password expire changeage
-
+title: 리눅스에서 사용자 비밀번호 만료 및 수명 관리하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 # 리눅스 `chage` 명령어: 사용자 비밀번호 만료 및 수명 관리
 

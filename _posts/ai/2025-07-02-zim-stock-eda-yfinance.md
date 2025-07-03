@@ -1,17 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "EDA Tutorial: Analyzing ZIM Stock Data from Yahoo Finance"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-02
-tags: ai eda data-analysis pandas finance stock-market zim yfinance datavisualization python
-
+description: Complete guide to exploratory data analysis (EDA) on ZIM shipping stock
+  using Python, Yahoo Finance API, pandas, and data visualization. Learn stock market
+  analysis techniques.
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: EDA, exploratory data analysis, ZIM stock, Yahoo Finance, Python, pandas,
+  stock market analysis, data visualization, yfinance, financial data
+layout: post
+organiser: Royfactory
+tags: ai eda data-analysis pandas finance stock-market zim yfinance datavisualization
+  python
+title: 'EDA Tutorial: Analyzing ZIM Stock Data from Yahoo Finance'
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # EDA Tutorial: Analyzing ZIM Stock Data from Yahoo Finance

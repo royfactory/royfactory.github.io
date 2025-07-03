@@ -1,17 +1,18 @@
 ---
-layout: post
-
-#event information
-title: "What is H2O AutoML? Train ML Models Without Coding"
-cover: "/img/cover-h2o-automl.jpg"
 categories: ai
+cover: /img/cover-h2o-automl.jpg
 date: 2025-07-01
+description: Learn H2O AutoML for automated machine learning without coding. Complete
+  guide covering data science automation, model training, ensemble methods, and practical
+  implementation.
+image: /img/cover-h2o-automl.jpg
+keywords: H2O AutoML, automated machine learning, no-code ML, data science automation,
+  ensemble methods, XGBoost, GBM, model training, H2O.ai
+layout: post
+organiser: Royfactory
 tags: ai automl h2o machine-learning no-code data-science gbm xgboost ensemble
-
+title: What is H2O AutoML? Train ML Models Without Coding
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is H2O AutoML? Train ML Models Without Coding

@@ -1,17 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "What is AutoML? Learn Automated Machine Learning with Python"
-cover: "/img/cover-automl-mlpipeline.jpg"
 categories: ai
+cover: /img/cover-automl-mlpipeline.jpg
 date: 2025-06-29
+description: AutoML (Automated Machine Learning) refers to technologies that **automate
+  the entire machine learning pipeline**, including data preprocessing, model select...
+image: /img/cover-automl-mlpipeline.jpg
+keywords: AI tutorial, ML algorithms, ai, artificial intelligence, automated, automl,
+  autosklearn, data science, deep learning, h2o, is, learn, learning, machine, machine
+  learning, machine-learning, mlops, model-automation, neural networks, python, tpot,
+  what, with
+layout: post
+organiser: Royfactory
 tags: ai automl machine-learning mlops model-automation python h2o tpot autosklearn
-
+title: What is AutoML? Learn Automated Machine Learning with Python
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
 ---
 
 # What is AutoML? Learn Automated Machine Learning with Python

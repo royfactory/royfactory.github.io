@@ -1,18 +1,20 @@
 ---
-layout: post
-
-#event information
-title: "유클리디안 거리(Euclidean Distance)란 무엇인가?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-02
+description: 유클리디안 거리(Euclidean Distance)는 두 점 사이의 "직선 거리"를 측정하는 수학적 척도입니다. 이는 우리가
+  일상적으로 사용하는 "직선 거리" 개념과 동일하며, 가장 간단하고 직관적인 거리 계산 방법 중 하나입니다. 이 개념은 **피타고라스의 정리**에서
+  유래하며,...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, data
+  science, deep learning, distance, educlidean, educlidean-distance, euclidean, machine
+  learning, neural networks, python, search, vector-database, vector-db, 거리, 란, 무엇인가,
+  유클리디안
+layout: post
+organiser: Royfactory
 tags: ai vector-db vector-database educlidean educlidean-distance algorithm search
-
+title: 유클리디안 거리(Euclidean Distance)란 무엇인가?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
 ---
 
 ## 1. 유클리디안 거리란?

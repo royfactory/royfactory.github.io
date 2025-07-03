@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "FAISS란 무엇인가?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-03
+description: FAISS(Facebook AI Similarity Search)는 Facebook AI Research에서 개발한 **고차원
+  벡터 유사성 검색과 최근접 이웃 탐색(Nearest Neighbor Search, NNS)**을 위한 라이브러리입니다. 벡터 데이터를 효율적으로
+  처리하고,...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, artificial intelligence, data science, database,
+  deep learning, facebook, facebook-ai-similarity-search, faiss란, index, machine learning,
+  neural networks, python, vector-database, vector-db, 무엇인가
+layout: post
+organiser: Royfactory
 tags: ai vector-db vector-database database index facebook facebook-ai-similarity-search
-
+title: FAISS란 무엇인가?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 ## 1. FAISS란?

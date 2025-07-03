@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title: "코사인 유사도란 무엇인가?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-03
+description: 코사인 유사도(Cosine Similarity)는 두 벡터 간의 **각도(Cosine of the Angle)**를 기반으로
+  유사성을 측정하는 방법입니다. 벡터의 크기(길이)가 아니라 방향에 초점을 맞추기 때문에, 데이터의 크기가 다르더라도 유사성을 계산하는 데 유용합니다.
+  코사인...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, cos-similarity,
+  cosine-similarity, data science, deep learning, machine learning, neural networks,
+  python, vector-database, vector-db, 무엇인가, 유사도란, 코사인
+layout: post
+organiser: Royfactory
 tags: ai vector-db vector-database cos-similarity cosine-similarity algorithm
-
+title: 코사인 유사도란 무엇인가?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 ## 1. 코사인 유사도란?

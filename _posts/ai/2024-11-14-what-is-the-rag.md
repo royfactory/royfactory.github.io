@@ -1,19 +1,17 @@
 ---
-layout: post
-
-#event information
-title: "RAG (Retrieval-Augmented Generation)란 무엇인가?"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: ai
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-14
+description: RAG (Retrieval-Augmented Generation) 완벽 가이드. 대규모 언어모델의 한계를 극복하는 정보 검색
+  증강 생성 기술과 실제 구현 방법을 학습하세요.
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: RAG, Retrieval-Augmented Generation, 정보검색 증강생성, 대규모언어모델, LLM, 자연어처리, NLP,
+  벡터데이터베이스, 임베딩
+layout: post
+organiser: Royfactory
 tags: ai rag
-
+title: RAG (Retrieval-Augmented Generation)란 무엇인가?
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # RAG (Retrieval-Augmented Generation)란 무엇인가?

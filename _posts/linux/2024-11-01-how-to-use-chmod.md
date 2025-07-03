@@ -1,19 +1,17 @@
 ---
-layout: post
-
-#event information
-title: "리눅스에서 접근 권한 관리하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-01
+description: 파일 및 디렉토리 접근 권한은 Linux나 Unix 환경에서 중요한 역할을 합니다. `chmod`는 이러한 접근 권한을 설정하거나
+  변경할 수 있는 중요한 명령어입니다. 이번 글에서는 `chmod` 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다. --- Linux나...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, chmod, command line, linux, permission, rwx, server management, shell
+  scripting, system administration, terminal, umask, unix, 관리하는, 권한, 리눅스에서, 방법, 접근
+layout: post
+organiser: Royfactory
 tags: linux chmod permission umask rwx
-
+title: 리눅스에서 접근 권한 관리하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 # 리눅스에서 접근 권한 관리하는 방법
 

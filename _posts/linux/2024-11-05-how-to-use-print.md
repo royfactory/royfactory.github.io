@@ -1,19 +1,19 @@
 ---
-layout: post
-
-#event information
-title:  "리눅스에서 프린트 사용하는 방법"
-cover: "/img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg"
 categories: linux
+cover: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-05
+description: '리눅스 환경에서 프린터를 관리하고 설정하는 데 유용한 명령어들을 알아보겠습니다. 리눅스는 다양한 프린터와 호환되며, 터미널
+  명령어를 사용하여 프린터를 관리할 수 있습니다. --- 현재 시스템에 연결된 프린터 목록을 확인할 수 있습니다. lpstat -p -d - `-p`
+  : 시스템...'
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, command line, linux, lp, lpadminn, lpoptions, lpr, lpstat, print,
+  server management, shell scripting, system administration, terminal, unix, 리눅스에서,
+  방법, 사용하는, 프린트
+layout: post
+organiser: Royfactory
 tags: linux print lp lpr lpstat lpadminn lpoptions
-
+title: 리눅스에서 프린트 사용하는 방법
 toc: true
-
-#event organiser details
-organiser: "Royfactory"
-
-
 ---
 
 # 리눅스에서 프린터 관련 명령어 모음
