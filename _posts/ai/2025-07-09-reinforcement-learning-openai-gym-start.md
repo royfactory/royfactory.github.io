@@ -2,7 +2,7 @@
 
 categories: ai
 cover: /img/openai-gym-cover.jpg
-date: 2025-07-08
+date: 2025-07-09
 description: Reinforcement Learning can seem intimidating, but it's easier than you think. In this beginner-friendly guide, learn what RL is and how to build your first AI agent using OpenAI Gym and Python.
 image: /img/openai-gym-cover.jpg
 keywords: reinforcement learning, OpenAI Gym, AI agent, Python, CartPole, RL tutorial, Q-learning, DQN, machine learning beginner
