@@ -1,5 +1,4 @@
 ---
-
 categories: ai
 cover: /img/openai-gym-cover.jpg
 date: 2025-07-09
