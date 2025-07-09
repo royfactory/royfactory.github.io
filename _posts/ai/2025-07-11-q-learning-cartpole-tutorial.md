@@ -10,7 +10,7 @@ organiser: Royfactory
 tags: ai reinforcement-learning q-learning openai-gym python ai-agents ml-tutorial cartpole beginner
 title: 'Q-Learning and CartPole: Your First Reinforcement Learning Agent'
 toc: true
----------
+---
 
 # Q-Learning and CartPole: Your First Reinforcement Learning Agent
 
