@@ -1,5 +1,4 @@
 ---
-
 categories: ai
 cover: /img/openai-gym-cover.jpg
 date: 2025-07-09
@@ -11,7 +10,7 @@ organiser: Royfactory
 tags: ai reinforcement-learning openai-gym python cartpole ai-agents ml-tutorial beginner-friendly
 title: 'Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym'
 toc: true
----------
+---
 
 # Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym
 
