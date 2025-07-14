@@ -33,7 +33,6 @@ github_username:  royfactory
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-toc
 

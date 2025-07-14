@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_site/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
 Sitemap: https://royfactory.github.io/sitemap.xml
