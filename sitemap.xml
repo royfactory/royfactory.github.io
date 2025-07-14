@@ -1,0 +1,57 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.last_modified_at %}
+        <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  {% endfor %}
+  
+  {% for page in site.pages %}
+    {% unless page.url contains '/assets/' or page.url contains '/css/' or page.url contains '/js/' or page.url contains '/_site/' %}
+    {% if page.layout != null and page.layout != '' %}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    {% endif %}
+    {% endunless %}
+  {% endfor %}
+  
+  <!-- Static important pages -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  {% if site.pages contains 'about.md' %}
+  <url>
+    <loc>{{ site.url }}/about/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endif %}
+  
+  {% if site.pages contains 'archive.md' %}
+  <url>
+    <loc>{{ site.url }}/archive/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}
+</urlset>
