@@ -11,12 +11,16 @@ layout: null
   </url>
   
   {% for post in site.posts %}
+    {% assign post_date = post.date | date: "%s" %}
+    {% assign current_date = site.time | date: "%s" %}
+    {% if post_date <= current_date %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+    {% endif %}
   {% endfor %}
   
   {% for page in site.pages %}
