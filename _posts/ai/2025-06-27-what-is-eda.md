@@ -29,8 +29,7 @@ Just like you wouldn’t prescribe medicine without first examining a patient’
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

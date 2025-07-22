@@ -22,8 +22,7 @@ TCP Wrapper는 Linux와 Unix 시스템에서 네트워크 서비스 접근을 �
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

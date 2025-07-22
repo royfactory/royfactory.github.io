@@ -26,8 +26,7 @@ Whether you're a beginner experimenting with classification or a data scientist 
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

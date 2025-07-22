@@ -23,8 +23,7 @@ Apache 웹 서버를 운영하다 보면 특정 디렉토리나 파일에 대해
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

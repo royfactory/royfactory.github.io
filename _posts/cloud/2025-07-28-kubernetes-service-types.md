@@ -23,8 +23,7 @@ In this post, we will explore **ClusterIP, NodePort, LoadBalancer, and ExternalN
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

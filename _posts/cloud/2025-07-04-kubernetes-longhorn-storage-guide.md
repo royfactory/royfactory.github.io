@@ -21,8 +21,7 @@ You’ll learn what Longhorn is, how it works, how to install it using Helm, and
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

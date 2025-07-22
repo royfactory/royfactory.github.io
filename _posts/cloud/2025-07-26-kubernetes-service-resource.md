@@ -29,8 +29,7 @@ In this post, you will learn:
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

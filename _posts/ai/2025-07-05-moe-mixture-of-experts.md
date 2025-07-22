@@ -21,8 +21,7 @@ In recent years, **model scaling** has become a major driver in the evolution of
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

@@ -23,8 +23,7 @@ Kubernetes solves this problem with **ConfigMaps** and **Secrets**, which allow 
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

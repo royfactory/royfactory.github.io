@@ -22,8 +22,7 @@ BM25는 정보 검색(IR, Information Retrieval) 분야에서 널리 사용되�
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

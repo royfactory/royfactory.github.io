@@ -18,8 +18,7 @@ toc: true
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

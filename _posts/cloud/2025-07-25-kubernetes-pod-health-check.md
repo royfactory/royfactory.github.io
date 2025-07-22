@@ -23,8 +23,7 @@ To handle these scenarios, Kubernetes provides **health checks (probes)**: **Liv
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

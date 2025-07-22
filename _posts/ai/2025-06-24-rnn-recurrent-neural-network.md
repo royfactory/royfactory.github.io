@@ -21,8 +21,7 @@ In many real-world applications, especially in natural language processing and t
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

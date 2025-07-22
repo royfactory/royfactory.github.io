@@ -30,8 +30,7 @@ In this post, we’ll cover:
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

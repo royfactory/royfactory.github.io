@@ -37,9 +37,8 @@ social:
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap 
   - jekyll-seo-tag
-  - jekyll-redirect-from
+  - jekyll-toc
 
 # SEO 플러그인 설정
 defaults:

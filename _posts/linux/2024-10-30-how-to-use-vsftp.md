@@ -22,8 +22,7 @@ VSFTP(Very Secure FTP)는 빠르고 안전한 FTP 서버 프로그램으로, Lin
 ---
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

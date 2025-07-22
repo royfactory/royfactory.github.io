@@ -21,8 +21,7 @@ Linux에서 네트워크 보안을 위해 자주 사용되는 방화벽 서비�
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

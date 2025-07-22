@@ -23,8 +23,7 @@ Kubernetes supports this pattern with **multi-container Pods**.
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

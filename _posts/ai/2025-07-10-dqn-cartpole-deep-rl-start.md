@@ -23,8 +23,7 @@ In this guide, we’ll explain what DQN is, why it was a breakthrough in RL, and
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

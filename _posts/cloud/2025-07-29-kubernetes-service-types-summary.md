@@ -22,8 +22,7 @@ In this post, we summarize the four main Service types — **ClusterIP, NodePort
 
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

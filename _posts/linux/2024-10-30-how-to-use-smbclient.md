@@ -22,8 +22,7 @@ Windows 파일 공유는 많은 회사와 가정에서 사용하는 중요한 �
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 

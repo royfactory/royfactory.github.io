@@ -25,8 +25,7 @@ We’ll use the Python `yfinance` package to pull data directly, making the proc
 --
 ## Table of Contents
 
-* TOC
-{:toc}
+{% toc %}
 
 ---
 
