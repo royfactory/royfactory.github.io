@@ -1,3 +1,10 @@
+---
+schema_type: TechnicalArticle
+breadcrumb: Home > Kubernetes > Networking
+difficulty_level: Intermediate
+estimated_reading_time: 8 minutes
+---
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -20,38 +27,52 @@
 
 title: Roy's Factory
 email: royzero0717@gmail.com
-contry: Korea
-description: >- # this means to ignore newlines until "baseurl:"
+country: Korea  # 오타 수정: contry -> country
+description: >-
   AI and Data Analysis blog featuring Python tutorials, Machine Learning insights, and Stock Analysis guides. 
   GitHub Pages powered tech blog with EDA examples, AutoML tutorials, and programming tips.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://royfactory.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://royfactory.github.io"
 twitter_username: royfactory
-github_username:  royfactory
+github_username: royfactory
+
+# SEO 개선 설정 추가
+locale: en_US
+timezone: Asia/Seoul
+author:
+  name: Royfactory
+  email: royzero0717@gmail.com
+  twitter: royfactory
+
+# Social Media
+social:
+  twitter: royfactory
+  github: royfactory
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap 
   - jekyll-seo-tag
   - jekyll-toc
+  - jekyll-redirect-from  # 추가 권장
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# SEO 플러그인 설정
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Royfactory"
+      show_excerpts: true
+      
+# Jekyll SEO Tag 설정
+twitter:
+  username: royfactory
+  card: summary_large_image
+
+facebook:
+  app_id: # Facebook App ID
+  publisher: # Facebook Page URL
