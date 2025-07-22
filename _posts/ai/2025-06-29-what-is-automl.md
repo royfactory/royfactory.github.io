@@ -20,7 +20,14 @@ toc: true
 
 AutoML (Automated Machine Learning) refers to technologies that **automate the entire machine learning pipeline**, including data preprocessing, model selection, hyperparameter tuning, and evaluation. With AutoML, even beginners can build accurate ML models without deep technical expertise.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## Why AutoML?
 

@@ -20,7 +20,14 @@ toc: true
 FAISS(Facebook AI Similarity Search)는 Facebook AI Research에서 개발한 **고차원 벡터 유사성 검색과 최근접 이웃 탐색(Nearest Neighbor Search, NNS)**을 위한 라이브러리입니다. 벡터 데이터를 효율적으로 처리하고, 대규모 데이터셋에서 빠른 검색 성능을 제공하도록 설계되었습니다.
 FAISS는 특히 고차원 벡터를 다루는 머신러닝 및 딥러닝 응용 프로그램에서 중요한 역할을 합니다. 이미지 검색, 자연어 처리(NLP), 추천 시스템 등에서 널리 사용됩니다.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 2. 주요 특징
 ### 1) 빠른 유사성 검색

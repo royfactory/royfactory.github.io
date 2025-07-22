@@ -25,7 +25,14 @@ This post will guide you through the complete architecture of a Kubernetes clust
 
 Let’s get started.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Kubernetes Is Cluster-Based
 

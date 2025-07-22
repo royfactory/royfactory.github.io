@@ -18,7 +18,14 @@ In this guide, we’ll explore **Longhorn**, a lightweight, reliable, and open-s
 
 You’ll learn what Longhorn is, how it works, how to install it using Helm, and how to monitor it with Grafana and Prometheus.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What is Longhorn?
 

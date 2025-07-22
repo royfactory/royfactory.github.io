@@ -22,7 +22,14 @@ In this tutorial, we'll perform **exploratory data analysis (EDA)** using real-t
 
 We’ll use the Python `yfinance` package to pull data directly, making the process repeatable and easy to update.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Install yfinance
 

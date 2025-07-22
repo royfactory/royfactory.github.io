@@ -28,16 +28,9 @@ In this post, you will learn:
 ---
 
 ## Table of Contents
-1. [What Is a Kubernetes Service?](#1-what-is-a-kubernetes-service)
-2. [Why Do We Need a Service?](#2-why-do-we-need-a-service)
-3. [Key Features of a Service](#3-key-features-of-a-service)
-4. [ClusterIP: Internal Service](#4-clusterip-internal-service)
-5. [NodePort: External Access](#5-nodeport-external-access)
-6. [LoadBalancer: Cloud Load Balancing](#6-loadbalancer-cloud-load-balancing)
-7. [Service YAML Example](#7-service-yaml-example)
-8. [FAQ (Answer Engine Optimization)](#8-faq-answer-engine-optimization)
-9. [Key Takeaways](#9-key-takeaways)
-10. [Final Thoughts](#10-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

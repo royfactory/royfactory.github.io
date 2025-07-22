@@ -20,7 +20,14 @@ toc: true
 
 리눅스 시스템에서 DNS 서버를 설정할 때, 가장 중요한 설정 파일 중 하나가 바로 `named.conf`입니다. 이 파일은 BIND (Berkeley Internet Name Domain) DNS 서버의 설정 파일로, 네임 서버의 동작 방식을 정의하는 다양한 옵션을 포함하고 있습니다. `named.conf` 파일을 설정하는 방법과 주요 설정 요소들을 하나씩 살펴보겠습니다.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## `named.conf` 파일의 위치
 

@@ -18,7 +18,14 @@ As AI agents become more complex and conversational, traditional linear workflow
 
 Built on top of **LangChain**, LangGraph brings structure, clarity, and flexibility to how you build AI-powered applications.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What is LangGraph?
 

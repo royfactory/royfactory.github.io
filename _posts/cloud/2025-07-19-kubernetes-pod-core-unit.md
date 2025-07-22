@@ -25,7 +25,14 @@ In this post, we’ll explore:
 - How to create and inspect a Pod
 - Differences between single and multi-container Pods
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is a Pod?
 

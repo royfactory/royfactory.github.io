@@ -1,10 +1,3 @@
----
-schema_type: TechnicalArticle
-breadcrumb: Home > Kubernetes > Networking
-difficulty_level: Intermediate
-estimated_reading_time: 8 minutes
----
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -14,20 +7,11 @@ estimated_reading_time: 8 minutes
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
+# Site settings
 title: Roy's Factory
 email: royzero0717@gmail.com
-country: Korea  # 오타 수정: contry -> country
+country: Korea
 description: >-
   AI and Data Analysis blog featuring Python tutorials, Machine Learning insights, and Stock Analysis guides. 
   GitHub Pages powered tech blog with EDA examples, AutoML tutorials, and programming tips.
@@ -55,8 +39,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap 
   - jekyll-seo-tag
-  - jekyll-toc
-  - jekyll-redirect-from  # 추가 권장
+  - jekyll-redirect-from
 
 # SEO 플러그인 설정
 defaults:
@@ -76,3 +59,8 @@ twitter:
 facebook:
   app_id: # Facebook App ID
   publisher: # Facebook Page URL
+
+# TOC 설정 (jekyll-toc 플러그인 대신)
+kramdown:
+  parse_block_html: true
+  toc_levels: 1..3

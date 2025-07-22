@@ -20,7 +20,14 @@ Hardcoding configuration values or secrets inside container images is a **bad pr
 
 Kubernetes solves this problem with **ConfigMaps** and **Secrets**, which allow you to manage application configuration and sensitive data securely.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is a ConfigMap?
 

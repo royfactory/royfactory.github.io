@@ -25,7 +25,14 @@ In this post, you’ll learn:
 - How to create a production-style cluster using **kubeadm**
 - Tips for working with cloud-based Kubernetes
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Why Is Installing Kubernetes Hard?
 

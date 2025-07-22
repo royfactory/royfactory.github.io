@@ -22,16 +22,9 @@ To handle these scenarios, Kubernetes provides **health checks (probes)**: **Liv
 ---
 
 ## Table of Contents
-1. [What Is Pod Health Management?](#1-what-is-pod-health-management)
-2. [Types of Probes and Their Roles](#2-types-of-probes-and-their-roles)
-3. [Configuring a Liveness Probe](#3-configuring-a-liveness-probe)
-4. [Configuring a Readiness Probe](#4-configuring-a-readiness-probe)
-5. [Configuring a Startup Probe](#5-configuring-a-startup-probe)
-6. [Practical YAML Example](#6-practical-yaml-example)
-7. [Best Practices for Health Checks](#7-best-practices-for-health-checks)
-8. [FAQ (Answer Engine Optimization)](#8-faq-answer-engine-optimization)
-9. [Key Takeaways](#9-key-takeaways)
-10. [Final Thoughts](#10-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

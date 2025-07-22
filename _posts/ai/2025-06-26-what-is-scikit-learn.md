@@ -23,7 +23,14 @@ Scikit-learn, often imported as `sklearn`, is one of the most popular and powerf
 
 Whether you're a beginner experimenting with classification or a data scientist fine-tuning pipelines, **scikit-learn offers a consistent and easy-to-use API** across algorithms.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## Key Features of Scikit-Learn
 

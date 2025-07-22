@@ -25,7 +25,14 @@ This post introduces **real-world kubectl productivity tips** that will:
 
 Let’s dive in.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Enable Auto-Completion
 

@@ -21,7 +21,14 @@ toc: true
 
 Whether you're analyzing customer churn or predicting sales, H2O AutoML can help you build production-ready models in minutes.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## Why H2O AutoML?
 

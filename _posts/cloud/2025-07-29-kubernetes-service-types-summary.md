@@ -21,16 +21,9 @@ In this post, we summarize the four main Service types — **ClusterIP, NodePort
 ---
 
 ## Table of Contents
-1. [Service Types Overview](#1-service-types-overview)
-2. [ClusterIP Summary](#2-clusterip-summary)
-3. [NodePort Summary](#3-nodeport-summary)
-4. [LoadBalancer Summary](#4-loadbalancer-summary)
-5. [ExternalName Summary](#5-externalname-summary)
-6. [How to Choose the Right Service Type](#6-how-to-choose-the-right-service-type)
-7. [Hands-On: Changing a Service Type](#7-hands-on-changing-a-service-type)
-8. [FAQ (Answer Engine Optimization)](#8-faq-answer-engine-optimization)
-9. [Key Takeaways](#9-key-takeaways)
-10. [Final Thoughts](#10-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

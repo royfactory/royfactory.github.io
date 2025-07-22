@@ -22,15 +22,9 @@ Kubernetes supports this pattern with **multi-container Pods**.
 ---
 
 ## Table of Contents
-1. [What Are Multi-Container Pods?](#1-what-are-multi-container-pods)
-2. [Why Use Multi-Container Pods?](#2-why-use-multi-container-pods)
-3. [Common Multi-Container Pod Patterns](#3-common-multi-container-pod-patterns)
-4. [Sidecar Pattern Example](#4-sidecar-pattern-example)
-5. [Multi-Container Pod YAML Example](#5-multi-container-pod-yaml-example)
-6. [Operational Considerations](#6-operational-considerations)
-7. [FAQ (Answer Engine Optimization)](#7-faq-answer-engine-optimization)
-8. [Key Takeaways](#8-key-takeaways)
-9. [Final Thoughts](#9-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

@@ -16,7 +16,14 @@ toc: true
 
 **In a bold move blending entertainment and engineering**, China has kicked off its first **humanoid robot soccer league**, showcasing what happens when AI-controlled machines hit the field. The matches are chaotic, clumsy, and oddly captivating — and they reveal the growing potential of robotics in real-world environments.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. The Players: AI-Powered Humanoid Robots
 

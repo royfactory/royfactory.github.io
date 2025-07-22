@@ -26,7 +26,14 @@ In this post, you will learn:
 - How to configure PersistentVolumes (PV) and PersistentVolumeClaims (PVC)
 - Practical YAML examples for Pod storage
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is a Volume in Kubernetes?
 

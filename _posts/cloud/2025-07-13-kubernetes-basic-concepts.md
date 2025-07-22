@@ -18,7 +18,14 @@ In the first post, we explored what Kubernetes is and why it's such a big deal i
 
 If terms like Pod, Node, Deployment, or Namespace sound confusing — don’t worry. This guide will explain each concept with simple analogies and real-world examples to help you grasp the basics with confidence.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is a Cluster?
 

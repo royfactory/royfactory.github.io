@@ -26,7 +26,14 @@ Another real-life analogy? A health check-up.
 
 Just like you wouldn’t prescribe medicine without first examining a patient’s condition, you shouldn’t build a model without first understanding your data. EDA gives you the insight you need to clean, prepare, and model your data wisely.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## What is EDA?
 

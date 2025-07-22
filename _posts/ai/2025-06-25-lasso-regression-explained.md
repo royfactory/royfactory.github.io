@@ -20,7 +20,14 @@ toc: true
 
 Lasso Regression is an extension of linear regression designed to reduce **overfitting** and improve **model simplicity**. It’s especially helpful when dealing with high-dimensional data by automatically **eliminating irrelevant features**, making the model more interpretable and efficient.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## Concept of Lasso Regression
 

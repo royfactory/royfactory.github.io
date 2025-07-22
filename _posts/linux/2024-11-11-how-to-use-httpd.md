@@ -21,6 +21,12 @@ toc: true
 Apache HTTP Server(`httpd`)는 리눅스에서 널리 사용되는 웹 서버입니다. `httpd.conf` 설정 파일을 통해 다양한 서버 옵션을 조정할 수 있는데, 이번 글에서는 서버를 설정할 때 자주 사용하는 주요 항목들과 그 예시를 소개하겠습니다.
 
 ---
+## Table of Contents
+
+* TOC
+{:toc}
+
+---
 
 ## 1. ServerRoot
 서버의 루트 디렉토리를 지정하는 설정입니다. Apache는 이 데릭토리에서 로그 파일이나 설정 파일을 찾습니다.

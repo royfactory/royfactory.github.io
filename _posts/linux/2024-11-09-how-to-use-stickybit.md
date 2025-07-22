@@ -20,6 +20,12 @@ toc: true
 리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여 특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다.
 
 ---
+## Table of Contents
+
+* TOC
+{:toc}
+
+---
 
 ## 1. Sticky Bit
 

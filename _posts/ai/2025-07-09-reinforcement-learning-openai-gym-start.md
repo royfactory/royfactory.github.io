@@ -18,7 +18,14 @@ Reinforcement Learning (RL) might sound like an advanced topic reserved for rese
 
 This guide will walk you through RL in the simplest terms, using the powerful and easy-to-use **OpenAI Gym** framework. With just a bit of Python knowledge, you'll build your **first AI agent** that interacts with an environment, makes decisions, and learns from rewards — just like a human learning to ride a bike.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is Reinforcement Learning?
 

@@ -25,7 +25,14 @@ In this post, you’ll learn:
 
 Let’s get started!
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Is Q-Learning?
 

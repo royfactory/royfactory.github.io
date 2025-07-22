@@ -21,7 +21,14 @@ In this tutorial, we’ll explore **Monte Carlo Prediction (MCP)** — a fundame
 
 We’ll apply MCP to the **Blackjack-v1** environment from the `gymnasium` library and walk through the core logic with clear Python code.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What is Monte Carlo Prediction?
 

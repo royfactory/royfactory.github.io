@@ -21,7 +21,14 @@ At small scale, maybe not. But as your systems grow — more users, more service
 
 In this post, we’ll explore **10 major benefits of Kubernetes** and explain **why it's become the backbone of modern DevOps and cloud-native development**.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Automated Management for Hundreds of Containers
 

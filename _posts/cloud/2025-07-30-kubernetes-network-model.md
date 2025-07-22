@@ -29,15 +29,9 @@ In this post, you’ll learn:
 ---
 
 ## Table of Contents
-1. [What Is the Kubernetes Network Model?](#1-what-is-the-kubernetes-network-model)
-2. [Pod-to-Pod Communication](#2-pod-to-pod-communication)
-3. [Node-to-Node Networking](#3-node-to-node-networking)
-4. [What Is CNI (Container Network Interface)?](#4-what-is-cni-container-network-interface)
-5. [Services and DNS Integration](#5-services-and-dns-integration)
-6. [Hands-On: Testing Pod Communication](#6-hands-on-testing-pod-communication)
-7. [FAQ (Answer Engine Optimization)](#7-faq-answer-engine-optimization)
-8. [Key Takeaways](#8-key-takeaways)
-9. [Final Thoughts](#9-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

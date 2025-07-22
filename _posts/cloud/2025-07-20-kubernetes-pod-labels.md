@@ -25,7 +25,14 @@ In this post, you'll learn:
 - Best practices for designing labels
 - FAQs for common real-world scenarios
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What Are Kubernetes Labels?
 

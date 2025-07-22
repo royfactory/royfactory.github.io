@@ -22,16 +22,9 @@ In this post, we will explore **ClusterIP, NodePort, LoadBalancer, and ExternalN
 ---
 
 ## Table of Contents
-1. [What Are Service Types?](#1-what-are-service-types)
-2. [ClusterIP: Internal-Only Communication](#2-clusterip-internal-only-communication)
-3. [NodePort: External Access via Node Ports](#3-nodeport-external-access-via-node-ports)
-4. [LoadBalancer: Cloud-Based Load Balancing](#4-loadbalancer-cloud-based-load-balancing)
-5. [ExternalName: DNS Mapping to External Services](#5-externalname-dns-mapping-to-external-services)
-6. [Service Type Comparison Table](#6-service-type-comparison-table)
-7. [YAML Examples](#7-yaml-examples)
-8. [FAQ (Answer Engine Optimization)](#8-faq-answer-engine-optimization)
-9. [Key Takeaways](#9-key-takeaways)
-10. [Final Thoughts](#10-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

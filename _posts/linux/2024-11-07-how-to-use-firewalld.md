@@ -18,7 +18,14 @@ toc: true
 
 Linux에서 네트워크 보안을 위해 자주 사용되는 방화벽 서비스 중 하나가 **firewalld**입니다. `firewalld`는 동적 방화벽 관리 도구로, 실시간으로 방화벽 설정을 적용할 수 있으며 iptables의 대체 도구로 많이 사용됩니다. 이번 포스팅에서는 `firewalld`의 기본 개념, 주요 기능, 설치 방법, 사용법 등에 대해 알아보겠습니다.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. Firewalld란?
 

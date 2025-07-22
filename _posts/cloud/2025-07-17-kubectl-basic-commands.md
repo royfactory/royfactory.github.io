@@ -20,7 +20,14 @@ If you want to work with Kubernetes, learning `kubectl` is non-negotiable.
 
 In this post, we’ll walk through **the most important `kubectl` commands** you need to know as a beginner, along with practical examples and real use cases.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. kubectl Syntax Overview
 

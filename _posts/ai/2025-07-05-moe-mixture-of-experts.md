@@ -18,7 +18,14 @@ toc: true
 
 In recent years, **model scaling** has become a major driver in the evolution of deep learning performance. However, increasing model size comes with computational and memory costs. **Mixture of Experts (MoE)** provides a solution to this: enabling **massive models with efficient inference** by activating only a small subset of parameters per input.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## 1. What is Mixture of Experts?
 

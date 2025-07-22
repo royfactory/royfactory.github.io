@@ -21,15 +21,9 @@ If resource limits are not set, a single Pod can consume excessive CPU or memory
 ---
 
 ## Table of Contents
-1. [What Are Requests and Limits?](#1-what-are-requests-and-limits)
-2. [Requests vs Limits: Key Differences](#2-requests-vs-limits-key-differences)
-3. [What Are QoS Classes in Kubernetes?](#3-what-are-qos-classes-in-kubernetes)
-4. [Understanding Resource Units](#4-understanding-resource-units)
-5. [Example: Pod Without vs. With Resource Limits](#5-example-pod-without-vs-with-resource-limits)
-6. [Best Practices for Resource Management](#6-best-practices-for-resource-management)
-7. [FAQ (Answer Engine Optimization)](#7-faq-answer-engine-optimization)
-8. [Key Takeaways](#8-key-takeaways)
-9. [Final Thoughts](#9-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

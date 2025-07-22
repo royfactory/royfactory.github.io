@@ -29,15 +29,9 @@ In this post, we’ll cover:
 ---
 
 ## Table of Contents
-1. [The Core Role of a Service](#1-the-core-role-of-a-service)
-2. [What Is the Role of kube-proxy?](#2-what-is-the-role-of-kube-proxy)
-3. [How Services Use Endpoints](#3-how-services-use-endpoints)
-4. [Service and DNS Integration](#4-service-and-dns-integration)
-5. [Service Traffic Flow](#5-service-traffic-flow)
-6. [Hands-On: Checking Services and Endpoints](#6-hands-on-checking-services-and-endpoints)
-7. [FAQ (Answer Engine Optimization)](#7-faq-answer-engine-optimization)
-8. [Key Takeaways](#8-key-takeaways)
-9. [Final Thoughts](#9-final-thoughts)
+
+* TOC
+{:toc}
 
 ---
 

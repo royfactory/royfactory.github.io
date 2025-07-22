@@ -21,6 +21,12 @@ toc: true
 리눅스에서 Samba 서버를 설정하려면, 파일 공유 서비스를 설정하는 방법을 따라야 합니다. Samba를 통해 Windows와 Linux 간 파일 공유가 가능합니다. 다음은 기본적인 Samba 서버 설정 방법입니다.
 
 ---
+## Table of Contents
+
+* TOC
+{:toc}
+
+---
 
 ## 1. Samba 설치
 

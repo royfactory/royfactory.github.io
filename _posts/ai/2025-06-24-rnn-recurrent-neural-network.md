@@ -18,7 +18,14 @@ toc: true
 # What is RNN (Recurrent Neural Network)?
 In many real-world applications, especially in natural language processing and time series prediction, data comes in sequences. Unlike traditional neural networks, which treat each input independently, RNNs are designed to handle sequential data by maintaining memory of previous inputs. This makes them useful for understanding the context in tasks like speech recognition, language modeling, and more.
 
+--
+## Table of Contents
+
+* TOC
+{:toc}
+
 ---
+
 
 ## Concept of RNN
 
