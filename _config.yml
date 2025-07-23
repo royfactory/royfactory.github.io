@@ -1,67 +1,32 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: Roy's Factory
-email: royzero0717@gmail.com
-country: Korea
-description: >-
-  AI and Data Analysis blog featuring Python tutorials, Machine Learning insights, and Stock Analysis guides. 
-  GitHub Pages powered tech blog with EDA examples, AutoML tutorials, and programming tips.
-baseurl: ""
+title: "Royfactory"
+description: "개발, AI, Kubernetes, 백엔드 기술 블로그"
 url: "https://royfactory.github.io"
-twitter_username: royfactory
-github_username: royfactory
+baseurl: ""
+lang: "ko"
 
-# SEO 개선 설정 추가
-locale: en_US
-timezone: Asia/Seoul
-author:
-  name: Royfactory
-  email: royzero0717@gmail.com
-  twitter: royfactory
-
-# Social Media
-social:
-  twitter: royfactory
-  github: royfactory
-
-# Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-archives
 
-# 미래 포스트 제외 설정
-future: false
+paginate: 10
+paginate_path: "/page:num/"
 
-# SEO 및 포스트 기본 설정
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Royfactory"
-      show_excerpts: true
-      
-# Jekyll SEO Tag 설정
-twitter:
-  username: royfactory
-  card: summary_large_image
+author:
+  name: "Roy"
+  email: "worry1318@naver.com"
 
-facebook:
-  app_id: # Facebook App ID
-  publisher: # Facebook Page URL
+social:
+  name: "Royfactory Blog"
+  links:
+    - "https://github.com/royfactory"
+    - "https://royzero.tistory.com/"
 
-# TOC 설정 (jekyll-toc 플러그인 대신)
-kramdown:
-  parse_block_html: true
-  toc_levels: 1..3
+sitemap:
+  exclude:
+    - /assets/
+    - /_sass/
+  include_posts: true
