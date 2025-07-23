@@ -23,7 +23,8 @@ FAISS는 특히 고차원 벡터를 다루는 머신러닝 및 딥러닝 응용 
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

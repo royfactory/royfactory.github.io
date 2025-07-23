@@ -23,7 +23,8 @@ Linux 서버에서 메일 별칭(Mail Alias)을 설정하면, 특정 이메일 �
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

@@ -23,7 +23,8 @@ AutoML (Automated Machine Learning) refers to technologies that **automate the e
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

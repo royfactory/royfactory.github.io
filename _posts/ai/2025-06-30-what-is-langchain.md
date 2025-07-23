@@ -59,7 +59,8 @@ Whether you’re building a chatbot, a document search tool, or an agent that us
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

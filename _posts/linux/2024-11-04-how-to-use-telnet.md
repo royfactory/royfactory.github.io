@@ -22,7 +22,8 @@ Telnet은 원격 서버에 접속할 수 있는 네트워크 프로토콜입니�
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

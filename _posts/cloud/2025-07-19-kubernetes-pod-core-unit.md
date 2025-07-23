@@ -28,7 +28,8 @@ In this post, we’ll explore:
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

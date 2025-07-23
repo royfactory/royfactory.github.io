@@ -23,7 +23,8 @@ Apache HTTP Server(`httpd`)는 리눅스에서 널리 사용되는 웹 서버입
 ---
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

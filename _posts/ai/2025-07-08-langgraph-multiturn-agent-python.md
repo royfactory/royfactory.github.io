@@ -21,7 +21,8 @@ Built on top of **LangChain**, LangGraph brings structure, clarity, and flexibil
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

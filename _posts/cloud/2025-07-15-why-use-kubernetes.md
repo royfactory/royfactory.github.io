@@ -24,7 +24,8 @@ In this post, we’ll explore **10 major benefits of Kubernetes** and explain **
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

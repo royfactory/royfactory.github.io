@@ -24,7 +24,8 @@ We’ll apply MCP to the **Blackjack-v1** environment from the `gymnasium` libra
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

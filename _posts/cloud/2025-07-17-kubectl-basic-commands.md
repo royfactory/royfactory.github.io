@@ -23,7 +23,8 @@ In this post, we’ll walk through **the most important `kubectl` commands** you
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

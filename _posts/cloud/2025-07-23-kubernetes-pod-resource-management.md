@@ -22,7 +22,8 @@ If resource limits are not set, a single Pod can consume excessive CPU or memory
 
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

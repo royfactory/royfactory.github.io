@@ -24,7 +24,8 @@ Whether you're analyzing customer churn or predicting sales, H2O AutoML can help
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

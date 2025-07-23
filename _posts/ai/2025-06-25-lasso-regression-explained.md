@@ -23,7 +23,8 @@ Lasso Regression is an extension of linear regression designed to reduce **overf
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

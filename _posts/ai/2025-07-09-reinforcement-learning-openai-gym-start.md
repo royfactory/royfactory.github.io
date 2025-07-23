@@ -21,7 +21,8 @@ This guide will walk you through RL in the simplest terms, using the powerful an
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 

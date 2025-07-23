@@ -21,7 +21,8 @@ If terms like Pod, Node, Deployment, or Namespace sound confusing — don’t wo
 --
 ## Table of Contents
 
-{% toc %}
+* ToC
+{:toc}
 
 ---
 
