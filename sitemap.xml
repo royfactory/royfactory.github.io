@@ -1,0 +1,38 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url | default: "https://royfactory.github.io" }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  {% assign today = site.time | date: "%s" | plus: 0 %}
+  {% for post in site.posts %}
+    {% assign post_date = post.date | date: "%s" | plus: 0 %}
+    {% if post_date <= today %}
+  <url>
+    <loc>{{ site.url | default: "https://royfactory.github.io" }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    {% endif %}
+  {% endfor %}
+  
+  {% for page in site.pages %}
+    {% unless page.url contains '/assets/' or page.url contains '/css/' or page.url contains '/js/' or page.url contains '/_site/' or page.url contains '/img/' or page.url contains '/vendor/' %}
+    {% if page.layout and page.url != '/404.html' and page.sitemap != false %}
+  <url>
+    <loc>{{ site.url | default: "https://royfactory.github.io" }}{{ page.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    {% endif %}
+    {% endunless %}
+  {% endfor %}
+</urlset>
