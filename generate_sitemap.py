@@ -98,36 +98,30 @@ def main():
     sitemap_content = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://royfactory.github.io/</loc>
+    <loc>https://royfactory.github.io</loc>
     <lastmod>{current_date}</lastmod>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-'''.format(current_date=datetime.now().isoformat())
+'''.format(current_date=datetime.now().strftime('%Y-%m-%dT%H:%M:%S+09:00'))
 
     # Add posts
     for post in posts:
         sitemap_content += f'''  <url>
     <loc>https://royfactory.github.io{post['url']}</loc>
-    <lastmod>{post['date'].isoformat()}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>{post['date'].strftime('%Y-%m-%dT%H:%M:%S+09:00')}</lastmod>
   </url>
 '''
 
     # Add static pages
     static_pages = [
-        ('/about/', '0.6'),
-        ('/archive/', '0.7'),
-        ('/apps/', '0.6'),
+        '/about/',
+        '/archive/',
+        '/apps/',
     ]
     
-    for page_url, priority in static_pages:
+    for page_url in static_pages:
         sitemap_content += f'''  <url>
     <loc>https://royfactory.github.io{page_url}</loc>
-    <lastmod>{datetime.now().isoformat()}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>{priority}</priority>
   </url>
 '''
 

@@ -7,7 +7,6 @@ lang: "ko"
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-archives
@@ -26,7 +25,16 @@ social:
     - "https://royzero.tistory.com/"
 
 sitemap:
+  priority: 
+    "index.html": 1.0
+    "/": 1.0
+  changefreq:
+    "index.html": "daily"
+    "/": "daily"
   exclude:
     - /assets/
     - /_sass/
-  include_posts: true
+    - /vendor/
+    - "*.json"
+    - "*.txt"
+    - "*.py"
