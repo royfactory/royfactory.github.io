@@ -6,6 +6,7 @@ lang: "ko"
 
 theme: minima
 plugins:
+  - jekyll-toc
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
