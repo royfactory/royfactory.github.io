@@ -1,6 +1,31 @@
+# Hugo
+public/
+.hugo_build.lock
+resources/
+
+# Jekyll (legacy)
 _site
 .posts
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Node modules
+node_modules/
