@@ -1,0 +1,104 @@
+baseURL = 'https://royfactory.github.io'
+languageCode = 'ko'
+title = 'Royfactory'
+description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
+
+# Theme
+theme = 'PaperMod'
+
+# Params
+[params]
+  author = 'Roy'
+  description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
+  keywords = ['AI', 'Kubernetes', '백엔드', '개발', 'Blog']
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  TocOpen = true
+  comments = false
+
+[params.homeInfoParams]
+  Title = "Welcome to Royfactory"
+  Content = "개발, AI, Kubernetes, 백엔드 기술 관련 최신 글을 다룹니다."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/royfactory"
+
+[[params.socialIcons]]
+  name = "tistory"
+  url = "https://royzero.tistory.com/"
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "apps"
+    name = "Apps"
+    url = "/apps/"
+    weight = 30
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "github"
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+# Outputs
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+# Sitemap
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+# Privacy
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true

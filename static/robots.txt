@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /_site/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
+User-agent: bingbot
+Crawl-deplay20
