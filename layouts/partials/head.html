@@ -1,0 +1,62 @@
+{{- /* Title */ -}}
+<title>
+{{- if .IsHome -}}
+  {{- .Site.Title -}}
+{{- else -}}
+  {{- .Title }} - {{ .Site.Title -}}
+{{- end -}}
+</title>
+
+{{- /* Meta */ -}}
+{{- if .IsHome -}}
+  <meta name="description" content="{{ .Site.Params.description }}">
+{{- else if .Description -}}
+  <meta name="description" content="{{ .Description }}">
+{{- end -}}
+
+{{- if .Keywords -}}
+  <meta name="keywords" content="{{ delimit .Keywords "," }}">
+{{- else if .Site.Params.keywords -}}
+  <meta name="keywords" content="{{ delimit .Site.Params.keywords "," }}">
+{{- end -}}
+
+<meta name="author" content="{{ .Site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink | replaceRE "^http:" "https:" }}">
+
+{{- /* Force HTTPS Favicon */ -}}
+<link rel="icon" type="image/x-icon" href="https://royfactory.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://royfactory.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://royfactory.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://royfactory.github.io/apple-touch-icon.png">
+
+{{- /* RSS */ -}}
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type (.Permalink | replaceRE "^http:" "https:") $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{- /* Generator */ -}}
+{{ hugo.Generator }}
+
+{{- /* HTTPS Force Script */ -}}
+<script>
+if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+    location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+}
+</script>
+
+{{- /* AdSense */ -}}
+{{- if .Site.Params.googleAdsense -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ .Site.Params.googleAdsense }}"
+     crossorigin="anonymous"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-{{ .Site.Params.googleAdsense }}",
+    enable_page_level_ads: true
+  });
+</script>
+{{- end -}}
+
+{{- /* Custom Head */ -}}
+{{- if templates.Exists "partials/custom/head.html" -}}
+  {{- partial "custom/head.html" . -}}
+{{- end -}}
