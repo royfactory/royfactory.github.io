@@ -1,0 +1,72 @@
+{{- define "main" }}
+
+{{- if .Site.Params.homeInfoParams }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- /* AdSense Banner on Homepage */ -}}
+{{- partial "adsense-banner.html" . -}}
+
+{{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+{{- if and .Site.Params.homeInfoParams $paginator.HasPrev }}
+{{- end }}
+<div id="searchbox"></div>
+{{- range $index, $page := $paginator.Pages }}
+
+{{- /* Insert In-feed Ad every 3 posts */ -}}
+{{- if and (gt $index 0) (eq (mod $index 3) 0) -}}
+  {{- partial "adsense-infeed.html" $ -}}
+{{- end -}}
+
+<article class="post-entry"> 
+  {{- $class := "entry-cover" }}
+  {{- $subclass := "global" }}
+  {{- $cover := $page.Params.cover }}
+  {{- if $cover.hidden }}
+  {{- $class = "entry-cover hidden" }}
+  {{- $subclass = "hidden" }}
+  {{- end }}
+
+  {{- partial "cover.html" (dict "cxt" . "IsHome" true "class" $class "subclass" $subclass) }}
+  <header class="entry-header">
+    <h2>
+      {{- .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h2>
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" | default "Prev" }}</a>
+    {{- end }}
+    {{- range $paginator.Pagers }}
+    {{- if eq . $paginator }}
+    <span class="pager current">{{ .PageNumber }}</span>
+    {{- else }}
+    <a class="pager" href="{{ .URL | absURL }}">{{ .PageNumber }}</a>
+    {{- end }}
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" | default "Next" }}&nbsp;»</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{/*- end main -*/}}

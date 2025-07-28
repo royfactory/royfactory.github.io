@@ -1,0 +1,14 @@
+{{- if .Site.Params.googleAdsense -}}
+<!-- AdSense In-feed Ad -->
+<div class="adsense-infeed" style="text-align: center; margin: 30px 0; padding: 15px;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-format="fluid"
+       data-ad-layout-key="-6t+ed+2i-1n-4w"
+       data-ad-client="ca-pub-{{ .Site.Params.googleAdsense }}"
+       data-ad-slot="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{{- end -}}

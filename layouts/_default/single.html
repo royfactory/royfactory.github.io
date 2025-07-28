@@ -1,0 +1,85 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+  
+  {{- /* AdSense Banner After Title */ -}}
+  {{- partial "adsense-banner.html" . -}}
+  
+  {{- $isHidden := .Params.disableShare | default (.Site.Params.disableShare | default false) }}
+  {{- if (and (.Param "ShowToc") (gt .WordCount 400) (not .Params.disableToc)) }}
+  <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+      <details {{if (.Param "TocOpen") | default (.Site.Params.TocOpen) }} open{{ end }}>
+        <summary>
+          <span class="details-summary">{{ i18n "toc" | default "Table of Contents" }}</span>
+        </summary>
+        <div class="details-content">
+          <nav id="TableOfContents">
+            {{ .TableOfContents }}
+          </nav>
+        </div>
+      </details>
+    </div>
+  </aside>
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+  
+  {{- /* AdSense In-feed After Content */ -}}
+  {{- partial "adsense-infeed.html" . -}}
+
+  <footer class="post-footer">
+    {{- $tags := .GetTerms "tags" }}
+    {{- if $tags }}
+    <nav class="paginav">
+      <span class="buttons">
+        {{- range $tags }}
+        <a class="btn" href="{{ .Permalink }}" title="{{ .LinkTitle }}">
+          {{- .LinkTitle -}}
+        </a>
+        {{- end }}
+      </span>
+    </nav>
+    {{- end }}
+
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . -}}
+    {{- end }}
+
+    {{- if (not $isHidden) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . -}}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

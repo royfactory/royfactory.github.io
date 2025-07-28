@@ -20,6 +20,9 @@ theme = 'PaperMod'
   ShowToc = true
   TocOpen = true
   comments = false
+  
+  # Google AdSense
+  googleAdsense = "pub-7151406524991928"
 
 [params.homeInfoParams]
   Title = "Welcome to Royfactory"
