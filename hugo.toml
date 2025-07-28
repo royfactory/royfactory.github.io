@@ -2,6 +2,8 @@ baseURL = 'https://royfactory.github.io'
 languageCode = 'ko'
 title = 'Royfactory'
 description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
+canonifyURLs = true
+relativeURLs = false
 
 # Theme
 theme = 'PaperMod'

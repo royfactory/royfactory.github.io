@@ -1,8 +1,15 @@
-{{- /* Favicon Meta Tags */ -}}
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}">
-<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
+{{- /* Force HTTPS */ -}}
+<script>
+if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+    location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+}
+</script>
+
+{{- /* Favicon Meta Tags with forced HTTPS */ -}}
+<link rel="icon" type="image/x-icon" href="https://royfactory.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://royfactory.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://royfactory.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://royfactory.github.io/apple-touch-icon.png">
 
 {{- /* AdSense Script */ -}}
 {{- if .Site.Params.googleAdsense -}}
