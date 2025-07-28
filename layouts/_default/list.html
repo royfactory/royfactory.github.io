@@ -4,8 +4,8 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
-{{- /* AdSense Banner on Homepage */ -}}
-{{- partial "adsense-banner.html" . -}}
+{{- /* AdSense Large Banner on Homepage */ -}}
+{{- partial "adsense-large.html" . -}}
 
 {{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 {{- if and .Site.Params.homeInfoParams $paginator.HasPrev }}

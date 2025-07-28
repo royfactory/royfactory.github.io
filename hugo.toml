@@ -22,7 +22,7 @@ theme = 'PaperMod'
   comments = false
   
   # Google AdSense
-  googleAdsense = "pub-7151406524991928"
+  googleAdsense = "7151406524991928"
 
 [params.homeInfoParams]
   Title = "Welcome to Royfactory"

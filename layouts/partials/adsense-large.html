@@ -1,0 +1,12 @@
+{{- if .Site.Params.googleAdsense -}}
+<!-- AdSense Large Rectangle Ad -->
+<div class="adsense-large" style="text-align: center; margin: 30px 0; padding: 20px;">
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-{{ .Site.Params.googleAdsense }}"
+       data-ad-slot="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{{- end -}}
