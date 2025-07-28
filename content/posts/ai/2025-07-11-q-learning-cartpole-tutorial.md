@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/qlearning-cartpole-cover.jpg
 date: 2025-07-11
 description: Q-Learning is one of the foundational reinforcement learning algorithms. In this beginner-friendly guide, you'll learn how it works and how to apply it to the CartPole environment using OpenAI Gym and Python.
 keywords: Q-learning, reinforcement learning, CartPole, OpenAI Gym, Python, RL tutorial, beginner-friendly AI, epsilon greedy, tabular RL

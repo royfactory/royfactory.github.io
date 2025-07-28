@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-03
 description: '`iptables`는 Linux의 강력한 방화벽 툴로, 네트워크 트래픽을 제어하는 데 사용됩니다. 각 항목과 설정 방법을
   이해하는 것이 네트워크 보안 및 관리에 필수적입니다. --- - **iptables**는 **Netfilter** 프레임워크의 사용자 공간에서

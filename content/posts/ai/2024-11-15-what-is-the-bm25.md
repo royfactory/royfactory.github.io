@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-15
 description: BM25는 정보 검색(IR, Information Retrieval) 분야에서 널리 사용되는 **가중치 기반 검색 알고리즘**입니다.
   검색 쿼리와 문서 간의 유사도를 계산하여 관련도가 높은 문서를 반환하는 데 사용됩니다. BM25는 TF-IDF를 기반으로 확장된 모델로, 특히

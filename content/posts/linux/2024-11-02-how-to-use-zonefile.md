@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-02
 description: 리눅스 서버에서 DNS 서버를 설정할 때, **zone 파일**은 도메인의 각종 정보(IP 주소, 도메인 정보 등)를 정의하는
   중요한 파일입니다. 이 글에서는 zone 파일의 설정 방법과 각 항목의 의미에 대해 자세히 설명하겠습니다. --- 리눅스에서 DNS 서버는 보통

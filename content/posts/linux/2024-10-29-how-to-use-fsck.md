@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-29
 description: 파일 시스템은 데이터를 저장하고 관리하는 중요한 구성 요소입니다. 그러나 갑작스러운 시스템 종료, 디스크 오류, 하드웨어 문제
   등으로 인해 파일 시스템이 손상될 수 있습니다. 이러한 경우 파일 시스템의 무결성을 검사하고, 문제를 수정하기 위해 Linux에서는 `fsck`

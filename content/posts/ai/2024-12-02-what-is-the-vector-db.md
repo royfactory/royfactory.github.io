@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-02
 description: 벡터 데이터베이스 완벽 가이드. 고차원 벡터 데이터 저장, 유사도 검색, 최근접 이웃 탐색 등 벡터 DB의 핵심 개념과 활용법을
   상세히 설명합니다.

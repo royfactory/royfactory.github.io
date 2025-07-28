@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-02
 description: 리눅스에서는 파일의 속성을 설정하여 삭제, 수정, 추가 등을 제어할 수 있습니다. 이때 사용하는 명령어가 바로 `lsattr`와
   `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다. --- `lsattr` 명령어는 파일에 설정된 속성을

@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-08
 description: 리눅스 커널은 시스템의 핵심을 이루며, 다양한 기능과 성능을 제어할 수 있는 여러 매개변수를 제공합니다. 이러한 커널 매개변수를
   조정하여 시스템 성능을 최적화하거나 특정 기능을 활성화할 수 있습니다. 이번 글에서는 리눅스 커널 매개변수를 조회하고 변경하는 방법을 다룹니다.

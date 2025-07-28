@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-02
 description: Complete guide to exploratory data analysis (EDA) on ZIM shipping stock
   using Python, Yahoo Finance API, pandas, and data visualization. Learn stock market

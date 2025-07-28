@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/cover-h2o-automl.jpg
 date: 2025-07-01
 description: Learn H2O AutoML for automated machine learning without coding. Complete
   guide covering data science automation, model training, ensemble methods, and practical

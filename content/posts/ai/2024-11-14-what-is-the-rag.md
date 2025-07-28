@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-14
 description: RAG (Retrieval-Augmented Generation) 완벽 가이드. 대규모 언어모델의 한계를 극복하는 정보 검색
   증강 생성 기술과 실제 구현 방법을 학습하세요.

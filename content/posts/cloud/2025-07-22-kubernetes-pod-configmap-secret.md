@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubernetes-pod-configmap-secret.jpg
 date: 2025-07-22
 description: Learn how to pass configuration and sensitive data to Kubernetes Pods using ConfigMaps and Secrets. This guide explains the differences, YAML examples, and best practices for secure information management.
 keywords: kubernetes configmap, kubernetes secret, pass data to pods, pod environment variables, kubectl create configmap, kubectl create secret, k8s configuration, devops

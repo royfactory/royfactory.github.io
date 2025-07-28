@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-03
 description: Learn Monte Carlo Prediction in Reinforcement Learning with Python. Complete
   tutorial covering MCP algorithm, Blackjack simulation, value estimation, and practical

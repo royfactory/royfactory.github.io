@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-04
 description: 리눅스에서 사용자 관리란 단순히 사용자 계정을 생성하거나 삭제하는 것 이상의 작업입니다. 보안 강화를 위해 비밀번호 정책을
   제어하는 것도 중요한데, `chage` 명령어는 이러한 비밀번호 수명 및 만료 정책을 사용자의 계정에 맞춰 설정할 수 있는 강력한 도구입니다.

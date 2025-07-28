@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-01
 description: 리눅스 시스템에서 디스크와 파티션을 관리할 때, 특히 마운트 정보를 확인하거나 파티션을 식별하기 위해 UUID나 파일시스템
   타입을 조회하는 경우가 많습니다. 이때 유용하게 사용할 수 있는 명령어 중 하나가 바로 `blkid`입니다. 이번 글에서는 `blkid` 명령어의

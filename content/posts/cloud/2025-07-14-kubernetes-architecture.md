@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubernetes-architecture-cover.jpg
 date: 2025-07-14
 description: Kubernetes is a powerful system, but how does it actually work? In this post, we explore the full architecture of Kubernetes — from Control Plane to Worker Nodes — with simple diagrams and real-world analogies.
 keywords: kubernetes, k8s, kubernetes architecture, cluster, nodes, control plane, api server, kubelet, scheduler, etcd, cloud native

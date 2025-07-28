@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubernetes-pod-volumes.jpg
 date: 2025-07-21
 description: Learn how to persist data in Kubernetes using Volumes, PersistentVolumes (PV), and PersistentVolumeClaims (PVC). This guide explains volume types, YAML examples, and best practices.
 keywords: kubernetes volumes, kubernetes pod volume, persistentvolume, pvc, k8s storage, kubectl volume, pod storage, cloud-native storage

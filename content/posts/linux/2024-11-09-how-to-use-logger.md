@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-09
 description: '`logger`는 Linux 및 Unix 시스템에서 시스템 로그에 메시지를 기록하는 명령입니다. 이 명령은 스크립트나 명령의
   출력을 syslog에 남길 때 유용합니다. `logger`를 사용하면 /var/log/에 저장된 다양한 로그 파일에 메시지를 기록할 수 있으며,

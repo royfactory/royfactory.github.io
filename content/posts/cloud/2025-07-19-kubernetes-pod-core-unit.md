@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubernetes-pod-core-unit.jpg
 date: 2025-07-19
 description: In Kubernetes, the Pod is the smallest deployable unit. This post covers what a Pod is, why it's needed, and how to create and inspect Pods with practical examples.
 keywords: Kubernetes, Pod, container, cluster, k8s basics, DevOps, kubectl, yaml, sidecar

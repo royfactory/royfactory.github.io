@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-03
 description: 엘라스틱서치(Elasticsearch)는 대규모 데이터의 검색과 분석을 지원하는 오픈소스 분산 검색 엔진입니다. 일반적으로
   데이터의 빠른 검색과 실시간 로그 분석 등에 자주 사용됩니다. 설치와 간단한 사용 방법에 대해 단계별로 설명해드릴게요. --- - Ubuntu

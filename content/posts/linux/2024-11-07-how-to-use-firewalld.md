@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-07
 description: Linux에서 네트워크 보안을 위해 자주 사용되는 방화벽 서비스 중 하나가 **firewalld**입니다. `firewalld`는
   동적 방화벽 관리 도구로, 실시간으로 방화벽 설정을 적용할 수 있으며 iptables의 대체 도구로 많이 사용됩니다. 이번 포스팅에서는 `firewal...

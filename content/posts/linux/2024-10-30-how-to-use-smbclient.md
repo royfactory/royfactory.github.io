@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-30
 description: Windows 파일 공유는 많은 회사와 가정에서 사용하는 중요한 기능입니다. 리눅스에서도 윈도우 파일 서버와 쉽게 연동하여
   파일을 관리할 수 있는데, smbclient는 이러한 작업에 유용한 도구입니다. 이 글에서는 리눅스에서 smbclient를 사용하여 SMB 프로토콜을

@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubernetes-basic-concepts-cover.jpg
 date: 2025-07-13
 description: Learn the core concepts of Kubernetes in simple terms. This post breaks down Pods, Nodes, Services, Deployments, Volumes, Namespaces, and more — with analogies and examples for absolute beginners.
 keywords: kubernetes, k8s, pods, nodes, cluster, services, deployments, volumes, yaml, cloud-native, beginner kubernetes tutorial

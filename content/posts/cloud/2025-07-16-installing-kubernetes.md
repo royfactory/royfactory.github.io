@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/installing-kubernetes-cover.jpg
 date: 2025-07-16
 description: Ready to install Kubernetes? In this beginner-friendly guide, we walk through how to install Kubernetes on your local machine using Minikube, and how to build production-grade clusters with kubeadm.
 keywords: kubernetes, k8s, install kubernetes, minikube, kubeadm, cluster setup, local kubernetes, beginner kubernetes installation, cloud-native devops

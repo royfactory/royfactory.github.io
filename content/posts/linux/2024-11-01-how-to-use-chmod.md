@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-01
 description: 파일 및 디렉토리 접근 권한은 Linux나 Unix 환경에서 중요한 역할을 합니다. `chmod`는 이러한 접근 권한을 설정하거나
   변경할 수 있는 중요한 명령어입니다. 이번 글에서는 `chmod` 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다. --- Linux나...

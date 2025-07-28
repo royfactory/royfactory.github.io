@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-07
 description: Linux 서버에서 메일 별칭(Mail Alias)을 설정하면, 특정 이메일 주소로 오는 메일을 다른 사용자나 외부 주소로
   전달할 수 있습니다. 특히 많은 사용자에게 메일을 전달해야 하는 경우, 별도의 파일로 사용자 목록을 관리하는 것이 편리합니다. 이 글에서는 Mail

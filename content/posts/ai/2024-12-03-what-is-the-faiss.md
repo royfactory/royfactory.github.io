@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-03
 description: FAISS(Facebook AI Similarity Search)는 Facebook AI Research에서 개발한 **고차원
   벡터 유사성 검색과 최근접 이웃 탐색(Nearest Neighbor Search, NNS)**을 위한 라이브러리입니다. 벡터 데이터를 효율적으로

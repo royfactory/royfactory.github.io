@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/cover-automl-mlpipeline.jpg
 date: 2025-06-29
 description: AutoML (Automated Machine Learning) refers to technologies that **automate
   the entire machine learning pipeline**, including data preprocessing, model select...

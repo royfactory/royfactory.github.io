@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-06
 description: '`rsync`는 Linux에서 파일과 디렉토리를 빠르고 효율적으로 동기화하거나 백업할 수 있는 강력한 명령어입니다. 네트워크를
   통해 원격 서버와 파일을 동기화할 수 있어 서버 관리 및 백업 작업에 자주 사용됩니다. 이 글에서는 `rsync`의 기본 개념과 주요 옵션들을

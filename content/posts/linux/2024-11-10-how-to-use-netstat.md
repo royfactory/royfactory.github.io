@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-10
 description: 오늘은 리눅스에서 네트워크 상태를 모니터링하고 다양한 네트워크 관련 정보를 확인할 수 있는 유용한 명령어, `netstat`에
   대해 알아보겠습니다. 네트워크 문제 해결이나 서버 상태 모니터링에 자주 사용되는데요, `netstat`의 주요 옵션과 함께 활용법을 차근차근 설명해드릴게요...

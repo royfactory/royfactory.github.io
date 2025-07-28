@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-05
 description: 디스크 공간을 효율적으로 관리하고 각 사용자별로 사용할 수 있는 용량을 제한하고자 할 때, 리눅스에서는 디스크 쿼터(Disk
   Quota)를 사용할 수 있습니다. 이 글에서는 리눅스에서 디스크 쿼터를 설정하고 관리하는 방법을 단계별로 설명하겠습니다. --- 디스크 쿼터는

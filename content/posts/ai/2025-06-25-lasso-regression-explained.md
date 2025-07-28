@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-25
 description: Lasso Regression is an extension of linear regression designed to reduce
   **overfitting** and improve **model simplicity**. It’s especially helpful when deali...

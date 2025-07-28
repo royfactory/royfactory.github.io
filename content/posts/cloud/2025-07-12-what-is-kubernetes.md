@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/what-is-kubernetes-cover.jpg
 date: 2025-07-11
 description: Kubernetes is the most popular container orchestration system. In this beginner-friendly guide, you'll learn what Kubernetes is, why it's needed, how it works, and what problems it solves in modern cloud-native environments.
 keywords: kubernetes, k8s, container orchestration, cloud native, devops, pods, cluster, node, docker, yaml

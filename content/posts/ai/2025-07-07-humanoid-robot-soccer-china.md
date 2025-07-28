@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-05
 description: China launched its first humanoid robot soccer league, pushing the boundaries of robotics and AI through real-world sports applications. Learn how robot soccer is shaping smarter, safer machines.
 keywords: humanoid robots, robot soccer, AI robotics, China AI, Booster Robotics, machine learning, real-world AI, robot injuries, future of robotics

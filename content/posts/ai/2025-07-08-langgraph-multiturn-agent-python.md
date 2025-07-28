@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/langgraph-cover-graph-ai.jpg
 date: 2025-07-08
 description: LangGraph is a powerful new framework for building multi-turn, branching AI workflows based on LangChain. Learn how it works, why it matters, and how to use it with a Python example.
 keywords: LangGraph, LangChain, AI agents, workflow automation, multi-turn dialog, Python LLM, stateful agents, graph-based AI

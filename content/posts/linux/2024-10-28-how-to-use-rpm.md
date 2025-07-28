@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-28
 description: RPM(Red Hat Package Manager)은 Red Hat 계열의 리눅스 배포판에서 사용하는 패키지 관리 도구로,
   소프트웨어의 설치, 업그레이드, 제거, 쿼리 등을 쉽게 수행할 수 있습니다. 이 블로그에서는 RPM의 기본 개념부터 설치 및 관리 방법까지 알아보겠습니다.

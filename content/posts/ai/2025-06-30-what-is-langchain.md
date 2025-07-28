@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/cover-langchain-llm.jpg
 date: 2025-06-30
 description: Complete guide to LangChain framework for building LLM applications with
   Python. Learn prompt engineering, agents, memory management, and ChatGPT integration

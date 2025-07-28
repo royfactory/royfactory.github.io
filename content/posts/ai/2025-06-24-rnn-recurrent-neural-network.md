@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-24
 description: In many real-world applications, especially in natural language processing
   and time series prediction, data comes in sequences. Unlike traditional neural net...

@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-26
 description: Scikit-learn, often imported as `sklearn`, is one of the most popular
   and powerful **machine learning libraries in Python**. It provides a wide range

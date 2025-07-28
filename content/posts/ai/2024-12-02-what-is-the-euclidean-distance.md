@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-02
 description: 유클리디안 거리(Euclidean Distance)는 두 점 사이의 "직선 거리"를 측정하는 수학적 척도입니다. 이는 우리가
   일상적으로 사용하는 "직선 거리" 개념과 동일하며, 가장 간단하고 직관적인 거리 계산 방법 중 하나입니다. 이 개념은 **피타고라스의 정리**에서

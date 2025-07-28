@@ -1,7 +1,5 @@
 ---
 categories: ["kubernetes"]
-cover:
-  image: /img/kubectl-basic-commands-cover.jpg
 date: 2025-07-17
 description: Learn the most essential kubectl commands every Kubernetes beginner must know. This guide covers how to get, create, edit, and delete Kubernetes resources — all with real examples and tips.
 keywords: kubectl, kubernetes, k8s, basic kubectl commands, kubectl cheatsheet, devops, beginner kubectl, kubectl get, kubectl apply

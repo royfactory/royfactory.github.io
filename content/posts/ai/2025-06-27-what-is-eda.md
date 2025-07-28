@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-27
 description: Analyzing data is a lot like cooking. **EDA (Exploratory Data Analysis)**
   is the part where you unpack your ingredients, check what’s fresh, what’s expired,

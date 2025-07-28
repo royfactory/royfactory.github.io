@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-09
 description: '리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여
   특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다. --- - **설명** :

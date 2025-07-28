@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-31
 description: 리눅스 시스템에서 DNS 서버를 설정할 때, 가장 중요한 설정 파일 중 하나가 바로 `named.conf`입니다. 이 파일은
   BIND (Berkeley Internet Name Domain) DNS 서버의 설정 파일로, 네임 서버의 동작 방식을 정의하는 다양한 옵션을

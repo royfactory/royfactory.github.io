@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-29
 description: '`logrotate`는 서버 및 애플리케이션 로그 파일의 용량을 효과적으로 관리하기 위해 사용되는 Linux 유틸리티입니다.
   로그 파일이 일정 크기에 도달하거나 일정 기간이 경과했을 때, `logrotate`를 통해 로그를 자동으로 순환(rotating)하고 필요 시

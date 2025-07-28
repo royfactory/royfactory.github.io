@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-08
 description: '`cpio`는 리눅스에서 파일을 백업하고 복원하거나, 패키징하는 데 사용되는 유틸리티입니다. `cpio`는 주로 파일 아카이브를
   만들거나 해제할 때 사용되며, 특히 `find`나 `ls`와 함께 조합하여 특정 파일을 대상으로 작업할 때 유용합니다. 다음은 `cpio`의 기본

@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-28
 description: 리눅스에서는 사용자를 생성, 수정 및 삭제하는 다양한 명령어를 제공합니다. 그 중 가장 기본이 되는 `useradd`, `usermod`,
   `userdel` 명령어에 대해 알아보겠습니다. --- `useradd` 명령어는 새로운 사용자를 생성할 때 사용합니다. 사용자의 홈 디렉토리...

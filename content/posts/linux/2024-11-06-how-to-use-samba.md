@@ -1,7 +1,5 @@
 ---
 categories: ["linux"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-06
 description: 리눅스에서 Samba 서버를 설정하려면, 파일 공유 서비스를 설정하는 방법을 따라야 합니다. Samba를 통해 Windows와
   Linux 간 파일 공유가 가능합니다. 다음은 기본적인 Samba 서버 설정 방법입니다. --- 대부분의 배포판에서 Samba는 패키지 관리자

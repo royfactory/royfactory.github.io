@@ -1,7 +1,5 @@
 ---
 categories: ["ai"]
-cover:
-  image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-04
 description: Learn how Mixture of Experts (MoE) works in deep learning to scale models efficiently.
   This post covers gating, routing, expert modules, real-world examples, and implementation in PyTorch.
