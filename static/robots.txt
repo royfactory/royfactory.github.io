@@ -1,8 +1,7 @@
 User-agent: *
-Disallow: /_site/
-Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
+Allow: /
+
+Sitemap: https://royfactory.github.io/sitemap.xml
 
 User-agent: bingbot
-Crawl-deplay20
+Crawl-delay: 20
