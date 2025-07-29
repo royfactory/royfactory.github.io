@@ -25,11 +25,6 @@ In this post, you will learn:
 - Service types: **ClusterIP, NodePort, and LoadBalancer**  
 - YAML configuration examples
 
----
-
-
----
-
 ## 1. What Is a Kubernetes Service?
 
 A **Service** is a stable networking abstraction that provides **a fixed endpoint for a group of Pods**, even if Pod IP addresses change.
@@ -73,7 +68,7 @@ spec:
       port: 80
       targetPort: 8080
   type: ClusterIP
-````
+```
 
 ---
 

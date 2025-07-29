@@ -20,7 +20,7 @@ theme = 'PaperMod'
   ShowCodeCopyButtons = true
   ShowWordCount = true
   ShowToc = true
-  TocOpen = true
+  TocOpen = false
   comments = false
   
   # Google AdSense
