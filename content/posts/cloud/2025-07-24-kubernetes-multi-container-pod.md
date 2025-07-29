@@ -1,6 +1,6 @@
 ---
 categories: ["kubernetes"]
-date: 2025-07-20
+date: 2025-07-24
 description: Learn why multi-container Pods are essential in Kubernetes and how patterns like Sidecar, Ambassador, and Adapter can enhance your workloads with practical YAML examples.
 keywords: kubernetes multi-container pod, sidecar pattern, ambassador pattern, adapter pattern, k8s pod architecture, pod design
 author: Royfactory

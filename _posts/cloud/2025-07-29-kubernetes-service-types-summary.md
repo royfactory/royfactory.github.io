@@ -1,7 +1,7 @@
 ---
 categories: kubernetes
 cover: /img/kubernetes-service-types-summary.jpg
-date: 2025-07-15
+date: 2025-07-29
 description: A complete summary of Kubernetes Service types, including ClusterIP, NodePort, LoadBalancer, and ExternalName. Learn when to use each type with examples and best practices.
 image: /img/kubernetes-service-types-summary.jpg
 keywords: kubernetes service types summary, clusterip vs nodeport, kubernetes loadbalancer, externalname service, k8s networking

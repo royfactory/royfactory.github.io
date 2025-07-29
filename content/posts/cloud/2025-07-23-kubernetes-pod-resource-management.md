@@ -1,6 +1,6 @@
 ---
 categories: ["kubernetes"]
-date: 2025-07-21
+date: 2025-07-23
 description: Learn how to manage CPU and memory resources for Kubernetes Pods using Requests, Limits, and QoS classes. This guide explains resource control, YAML examples, and best practices.
 keywords: kubernetes pod resources, k8s cpu limits, memory requests, QoS classes, resource management, kubectl, pod performance
 author: Royfactory

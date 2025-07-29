@@ -1,7 +1,7 @@
 ---
 categories: kubernetes
 cover: /img/kubernetes-service-role.jpg
-date: 2025-07-17
+date: 2025-07-27
 description: Discover the core role of Kubernetes Services, how kube-proxy and Endpoints work together, and how DNS enables stable networking. Includes examples and key takeaways.
 image: /img/kubernetes-service-role.jpg
 keywords: kubernetes service role, kube-proxy, k8s endpoints, kubernetes dns, k8s networking, service discovery, kubectl service
