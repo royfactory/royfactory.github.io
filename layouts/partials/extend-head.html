@@ -1,15 +1,18 @@
-{{- /* Force HTTPS */ -}}
-<script>
-if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
-    location.replace('https:' + window.location.href.substring(window.location.protocol.length));
-}
-</script>
+{{- /* Force HTTPS Meta Tags */ -}}
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 {{- /* Favicon Meta Tags with forced HTTPS */ -}}
 <link rel="icon" type="image/x-icon" href="https://royfactory.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://royfactory.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://royfactory.github.io/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://royfactory.github.io/apple-touch-icon.png">
+
+{{- /* HTTPS Force Script */ -}}
+<script>
+if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+    location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+}
+</script>
 
 {{- /* AdSense Script */ -}}
 {{- if .Site.Params.googleAdsense -}}
