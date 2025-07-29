@@ -12,6 +12,23 @@
 if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
     location.replace('https:' + window.location.href.substring(window.location.protocol.length));
 }
+
+// Force HTTPS for all resource links after page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Force HTTPS for stylesheets
+    var links = document.querySelectorAll('link[rel*="stylesheet"]');
+    links.forEach(function(link) {
+        if (link.href && link.href.startsWith('http://')) {
+            link.href = link.href.replace('http://', 'https://');
+        }
+    });
+    
+    // Force HTTPS for all other links
+    var allLinks = document.querySelectorAll('a[href^="http://royfactory.github.io"]');
+    allLinks.forEach(function(link) {
+        link.href = link.href.replace('http://', 'https://');
+    });
+});
 </script>
 
 {{- /* AdSense Script */ -}}
