@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         
+        // 기본적으로 접힌 상태로 시작
+        toc.classList.add('collapsed');
+        
         // 토글 기능 추가
         const tocHeader = toc.querySelector('.toc-header');
         if (tocHeader) {
@@ -55,9 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // 저장된 상태 복원
     function restoreTocState() {
         const savedState = localStorage.getItem('tocCollapsed');
-        if (savedState === 'true') {
-            toc.classList.add('collapsed');
+        
+        // 저장된 상태가 없으면 기본적으로 접힌 상태 유지
+        // 저장된 상태가 'false'인 경우에만 펼치기
+        if (savedState === 'false') {
+            toc.classList.remove('collapsed');
         }
+        // 다른 모든 경우 (null, 'true', 기타)는 접힌 상태 유지
     }
     
     // TOC 위치 업데이트
@@ -79,10 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             tocContainer.classList.remove('sticky');
             
-            // 원래 위치로 돌아올 때 자동 펼치기
-            if (toc.classList.contains('collapsed') && localStorage.getItem('tocCollapsed') !== 'true') {
-                toc.classList.remove('collapsed');
-            }
+            // 원래 위치로 돌아올 때는 사용자 설정 존중
+            // 자동 펼치기 하지 않음 (사용자가 수동으로 펼쳐야 함)
         }
     }
     
