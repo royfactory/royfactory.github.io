@@ -8,7 +8,7 @@ description: Learn about Kubernetes Service types, including ClusterIP, NodePort
 draft: false
 keywords: kubernetes service types, clusterip, nodeport, loadbalancer, externalname,
   k8s networking, kubectl service
-tags: [kubernetes k8s networking service-types clusterip nodeport loadbalancer externalname]devops cloud-native
+tags: [kubernetes, k8s, networking, service-types, clusterip, nodeport, loadbalancer, externalname, devops, cloud-native]
 title: 'Kubernetes Networking: Exploring Service Types'
 ---
 

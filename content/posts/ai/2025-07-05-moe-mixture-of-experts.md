@@ -7,9 +7,8 @@ description: Learn how Mixture of Experts (MoE) works in deep learning to scale 
   and implementation in PyTorch.
 draft: false
 image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
-keywords: MoE, mixture of experts, deep learning, expert model, switch transformer,
-  gshard, routing, gating network, pytorch, model parallelism
-tags: [ai deep-learning moe mixture-of-experts gshard switch-transformer routing gating-model]tensorflow pytorch
+keywords: MoE, mixture of experts, deep learning, expert model, switch transformer, gshard, routing, gating network, pytorch, model parallelism
+tags: [ai, deep-learning, moe, mixture-of-experts, gshard, switch-transformer, routing, gating-model, tensorflow, pytorch]
 title: 'Understanding MoE (Mixture of Experts): Scalable Deep Learning Models'
 ---
 

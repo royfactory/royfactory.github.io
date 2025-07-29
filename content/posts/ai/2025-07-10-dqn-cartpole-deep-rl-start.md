@@ -8,9 +8,8 @@ description: DQN (Deep Q-Network) is one of the most fundamental deep reinforcem
   PyTorch and OpenAI Gym.
 draft: false
 image: /img/dqn-cartpole-cover.jpg
-keywords: DQN, Deep Reinforcement Learning, CartPole, OpenAI Gym, PyTorch, Q-Learning,
-  RL tutorial, AI agents, machine learning beginner
-tags: [ai reinforcement-learning dqn gym pytorch q-learning deep-rl cartpole ml-tutorial]ai-agents
+keywords: DQN, Deep Reinforcement Learning, CartPole, OpenAI Gym, PyTorch, Q-Learning, RL tutorial, AI agents, machine learning beginner
+tags: [ai, reinforcement-learning, dqn, gym, pytorch, q-learning, deep-rl, cartpole, ml-tutorial, ai-agents]
 title: 'Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners'
 ---
 

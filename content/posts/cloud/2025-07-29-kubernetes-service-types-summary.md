@@ -9,7 +9,7 @@ draft: false
 image: /img/kubernetes-service-types-summary.jpg
 keywords: kubernetes service types summary, clusterip vs nodeport, kubernetes loadbalancer,
   externalname service, k8s networking
-tags: [kubernetes k8s service-types clusterip nodeport loadbalancer externalname devops]cloud-native
+tags: [kubernetes, k8s, service-types, clusterip, nodeport, loadbalancer, externalname, devops, cloud-native]
 title: 'Kubernetes Networking: Service Types Summary'
 ---
 
