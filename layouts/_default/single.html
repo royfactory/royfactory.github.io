@@ -22,9 +22,6 @@
     {{- end }}
   </header>
   
-  {{- /* AdSense Large Banner After Title */ -}}
-  {{- partial "adsense-large.html" . -}}
-  
   {{- $isHidden := .Params.disableShare | default (.Site.Params.disableShare | default false) }}
   {{- if (and (.Param "ShowToc") (gt .WordCount 400) (not .Params.disableToc)) }}
   <aside id="toc-container" class="toc-container wide">
@@ -51,9 +48,6 @@
   </div>
   {{- end }}
   
-  {{- /* AdSense In-feed After Content */ -}}
-  {{- partial "adsense-infeed.html" . -}}
-
   <footer class="post-footer">
     {{- $tags := .GetTerms "tags" }}
     {{- if $tags }}

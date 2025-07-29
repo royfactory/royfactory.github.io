@@ -4,19 +4,11 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
-{{- /* AdSense Large Banner on Homepage */ -}}
-{{- partial "adsense-large.html" . -}}
-
 {{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 {{- if and .Site.Params.homeInfoParams $paginator.HasPrev }}
 {{- end }}
 <div id="searchbox"></div>
 {{- range $index, $page := $paginator.Pages }}
-
-{{- /* Insert In-feed Ad every 3 posts */ -}}
-{{- if and (gt $index 0) (eq (mod $index 3) 0) -}}
-  {{- partial "adsense-infeed.html" $ -}}
-{{- end -}}
 
 <article class="post-entry"> 
   {{- $class := "entry-cover" }}
