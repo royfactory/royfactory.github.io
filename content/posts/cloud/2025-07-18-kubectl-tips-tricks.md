@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubectl-tips-cover.jpg
 date: 2025-07-18
 description: Take your kubectl skills to the next level with these essential productivity tips. From command aliases to auto-completion and advanced filtering, these tricks will boost your Kubernetes workflow.
 keywords: kubectl tips, kubectl tricks, kubernetes, k8s, kubectl shortcuts, kubectl automation, kubectl cheat sheet, cli tips
-author: Royfactory
-tags: ["kubernetes", "k8s", "kubectl", "cli", "tips", "devops", "productivity", "kubectl-shortcuts"]
+tags: kubernetes k8s kubectl cli tips devops productivity kubectl-shortcuts
 title: 'kubectl Tips and Tricks: Boost Your Productivity on Kubernetes'
 ShowToc: true
 draft: false
 ---
-
 # kubectl Tips and Tricks: Boost Your Productivity on Kubernetes
 
 Once you’re familiar with the basics of `kubectl`, it’s time to work smarter — not harder.
@@ -23,9 +22,8 @@ This post introduces **real-world kubectl productivity tips** that will:
 
 Let’s dive in.
 
---
 ## Table of Contents
-
+---
 ## 1. Enable Auto-Completion
 
 Auto-completion helps you avoid typos and speeds up CLI usage.

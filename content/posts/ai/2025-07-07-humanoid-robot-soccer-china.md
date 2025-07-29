@@ -1,22 +1,20 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-05
 description: China launched its first humanoid robot soccer league, pushing the boundaries of robotics and AI through real-world sports applications. Learn how robot soccer is shaping smarter, safer machines.
 keywords: humanoid robots, robot soccer, AI robotics, China AI, Booster Robotics, machine learning, real-world AI, robot injuries, future of robotics
-author: Royfactory
-tags: ["ai", "robotics", "china", "machine-learning", "future-of-work", "humanoid-robots", "real-world-ai", "robot-soccer"]
+tags: ai robotics china machine-learning future-of-work humanoid-robots real-world-ai robot-soccer
 title: 'China Launches Humanoid Robot Soccer League: Where AI Meets the Field'
 ShowToc: true
 draft: false
 ---
-
 # China Launches Humanoid Robot Soccer League: Where AI Meets the Field
 
 **In a bold move blending entertainment and engineering**, China has kicked off its first **humanoid robot soccer league**, showcasing what happens when AI-controlled machines hit the field. The matches are chaotic, clumsy, and oddly captivating — and they reveal the growing potential of robotics in real-world environments.
 
---
 ## Table of Contents
-
+---
 ## 1. The Players: AI-Powered Humanoid Robots
 
 The league features humanoid robots developed by **Booster Robotics**, a Chinese AI and robotics firm. These machines are fully AI-controlled, navigating the game autonomously — and their skills roughly match that of **5- to 6-year-old children**.

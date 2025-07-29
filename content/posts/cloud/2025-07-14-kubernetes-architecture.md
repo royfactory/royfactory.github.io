@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubernetes-architecture-cover.jpg
 date: 2025-07-14
 description: Kubernetes is a powerful system, but how does it actually work? In this post, we explore the full architecture of Kubernetes — from Control Plane to Worker Nodes — with simple diagrams and real-world analogies.
 keywords: kubernetes, k8s, kubernetes architecture, cluster, nodes, control plane, api server, kubelet, scheduler, etcd, cloud native
-author: Royfactory
-tags: ["kubernetes", "k8s", "architecture", "cluster", "node", "pod", "control-plane", "beginner", "devops", "cloud-native"]
+tags: kubernetes k8s architecture cluster node pod control-plane beginner devops cloud-native
 title: 'Kubernetes Architecture: How It All Works Behind the Scenes'
 ShowToc: true
 draft: false
 ---
-
 # Kubernetes Architecture: How It All Works Behind the Scenes
 
 If you've already learned the basic concepts of Kubernetes — like Pods, Nodes, and Services — the next big step is understanding **how all these pieces come together**.
@@ -23,9 +22,8 @@ This post will guide you through the complete architecture of a Kubernetes clust
 
 Let’s get started.
 
---
 ## Table of Contents
-
+---
 ## 1. Kubernetes Is Cluster-Based
 
 At its core, Kubernetes is a **cluster** — a group of computers that act as one big system. These machines (called **nodes**) can be physical servers or virtual machines.
@@ -91,8 +89,7 @@ The **entry point** to Kubernetes. All requests — from `kubectl`, dashboards, 
 > **Analogy**: The reception desk of a company
 
 ---
-
-### 2) etcd
+draft: false### 2) etcd
 
 A **key-value store** that acts as the **single source of truth** for your cluster. Stores configuration, states, secrets, and metadata.
 
@@ -103,8 +100,7 @@ A **key-value store** that acts as the **single source of truth** for your clust
 > **Analogy**: Central filing cabinet or ERP system
 
 ---
-
-### 3) Scheduler
+draft: false### 3) Scheduler
 
 Decides **which Node** should run a new Pod, based on available resources, affinity rules, and policies.
 
@@ -114,8 +110,7 @@ Decides **which Node** should run a new Pod, based on available resources, affin
 > **Analogy**: Manager assigning tasks to available workers
 
 ---
-
-### 4) Controller Manager
+draft: false### 4) Controller Manager
 
 Ensures that the cluster’s **desired state** (as defined by YAML files) matches the **actual state**.
 
@@ -139,8 +134,7 @@ The **primary agent** on each Worker Node. Takes instructions from the Control P
 > **Analogy**: Team leader on the factory floor
 
 ---
-
-### 2) kube-proxy
+draft: false### 2) kube-proxy
 
 Handles **network communication** between Pods, across Nodes, and through Services.
 
@@ -150,8 +144,7 @@ Handles **network communication** between Pods, across Nodes, and through Servic
 > **Analogy**: The switchboard operator or mailroom
 
 ---
-
-### 3) Container Runtime
+draft: false### 3) Container Runtime
 
 The software that actually runs containers. Examples include:
 

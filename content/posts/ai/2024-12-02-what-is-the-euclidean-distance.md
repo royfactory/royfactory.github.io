@@ -1,5 +1,6 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-02
 description: 유클리디안 거리(Euclidean Distance)는 두 점 사이의 "직선 거리"를 측정하는 수학적 척도입니다. 이는 우리가
   일상적으로 사용하는 "직선 거리" 개념과 동일하며, 가장 간단하고 직관적인 거리 계산 방법 중 하나입니다. 이 개념은 **피타고라스의 정리**에서
@@ -8,19 +9,16 @@ keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, da
   science, deep learning, distance, educlidean, educlidean-distance, euclidean, machine
   learning, neural networks, python, search, vector-database, vector-db, 거리, 란, 무엇인가,
   유클리디안
-author: Royfactory
-tags: ["ai", "vector-db", "vector-database", "educlidean", "educlidean-distance", "algorithm", "search"]
+tags: ai vector-db vector-database educlidean educlidean-distance algorithm search
 title: 유클리디안 거리(Euclidean Distance)란 무엇인가?
 ShowToc: true
 draft: false
 ---
-
 ## 1. 유클리디안 거리란?
 유클리디안 거리(Euclidean Distance)는 두 점 사이의 "직선 거리"를 측정하는 수학적 척도입니다. 이는 우리가 일상적으로 사용하는 "직선 거리" 개념과 동일하며, 가장 간단하고 직관적인 거리 계산 방법 중 하나입니다. 이 개념은 **피타고라스의 정리**에서 유래하며, 2차원뿐만 아니라 n차원 공간에서도 적용됩니다.
 
---
 ## Table of Contents
-
+---
 ## 2. 유클리디안 거리 공식
 두 점 $𝑃(𝑥_1, 𝑦_1)$와 $𝑄(𝑥_2, 𝑦_2)$ 사이의 유클리디안 거리는 다음과 같이 계산됩니다:
 
@@ -96,5 +94,3 @@ $$
 
 ## 결론
 유클리디안 거리는 가장 단순하면서도 강력한 거리 측정 방법 중 하나입니다. 특히 데이터 간의 유사성을 빠르게 계산하고, 다양한 애플리케이션에서 유용하게 사용됩니다. 그러나 데이터의 스케일이나 고차원 문제를 다룰 때는 추가적인 전처리나 다른 거리 척도와의 조합이 필요할 수 있습니다.
-
----

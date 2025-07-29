@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubernetes-pod-core-unit.jpg
 date: 2025-07-19
 description: In Kubernetes, the Pod is the smallest deployable unit. This post covers what a Pod is, why it's needed, and how to create and inspect Pods with practical examples.
 keywords: Kubernetes, Pod, container, cluster, k8s basics, DevOps, kubectl, yaml, sidecar
-author: Royfactory
-tags: ["kubernetes", "pod", "k8s", "containers", "devops", "beginner", "guide", "kubectl", "yaml"]
+tags: kubernetes pod k8s containers devops beginner guide kubectl yaml
 title: 'Understanding Pods: The Core Unit of Kubernetes'
 ShowToc: true
 draft: false
 ---
-
 # Understanding Pods: The Core Unit of Kubernetes
 
 If you're learning Kubernetes, you'll quickly encounter the term **Pod** — it's not just another buzzword.  
@@ -23,9 +22,8 @@ In this post, we’ll explore:
 - How to create and inspect a Pod
 - Differences between single and multi-container Pods
 
---
 ## Table of Contents
-
+---
 ## 1. What Is a Pod?
 
 A **Pod** is a logical wrapper around one or more containers.

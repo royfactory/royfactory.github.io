@@ -1,5 +1,6 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-09
 description: '`logger`는 Linux 및 Unix 시스템에서 시스템 로그에 메시지를 기록하는 명령입니다. 이 명령은 스크립트나 명령의
   출력을 syslog에 남길 때 유용합니다. `logger`를 사용하면 /var/log/에 저장된 다양한 로그 파일에 메시지를 기록할 수 있으며,
@@ -7,20 +8,17 @@ description: '`logger`는 Linux 및 Unix 시스템에서 시스템 로그에 메
 keywords: bash, command line, equota, grpquota, linux, quota, quotacheck, quotaoff,
   quotaon, repquota, server management, shell scripting, system administration, terminal,
   unix, usrquota, warnquota, 기록하는, 로그에, 리눅스에서, 메시지를, 방법
-author: Royfactory
-tags: ["linux", "quota", "usrquota", "grpquota", "quotacheck", "quotaon", "equota", "repquota", "quotaoff", "warnquota"]
+tags: linux quota usrquota grpquota quotacheck quotaon equota repquota quotaoff warnquota
 title: 리눅스에서 로그에 메시지를 기록하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 로그에 메시지를 기록하는 방법
 
 `logger`는 Linux 및 Unix 시스템에서 시스템 로그에 메시지를 기록하는 명령입니다. 이 명령은 스크립트나 명령의 출력을 syslog에 남길 때 유용합니다. `logger`를 사용하면 /var/log/에 저장된 다양한 로그 파일에 메시지를 기록할 수 있으며, 로그의 우선순위, 태그 등을 지정할 수도 있습니다.
 
---
 ## Table of Contents
-
+---
 ## 기본 사용법
 
 ```bash
@@ -84,5 +82,3 @@ logger -i "프로세스 ID와 함께 기록되는 메시지입니다."
 ```
 
 이렇게 `logger`를 활용하면 다양한 형태의 로그 메시지를 시스템에 기록할 수 있어 관리 및 모니터링에 유용합니다.
-
----

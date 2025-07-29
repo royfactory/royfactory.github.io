@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubernetes-service-resource.jpg
 date: 2025-07-26
 description: Learn the fundamentals of Kubernetes Services, including ClusterIP, NodePort, and LoadBalancer types, with practical YAML examples and networking concepts.
 keywords: kubernetes service, clusterip, nodeport, loadbalancer, k8s networking, kubectl service, kubernetes service types
-author: Royfactory
-tags: ["kubernetes", "k8s", "networking", "service", "clusterip", "nodeport", "loadbalancer", "devops", "cloud-native"]
+tags: kubernetes k8s networking service clusterip nodeport loadbalancer devops cloud-native
 title: 'Kubernetes Networking: Exploring Service Resources'
 ShowToc: true
 draft: false
 ---
-
 # Kubernetes Networking: Exploring Service Resources
 
 **Question:** *“How do you expose Pods to stable network endpoints in Kubernetes?”*
@@ -22,22 +21,6 @@ In this post, you will learn:
 - How Services communicate with Pods  
 - Service types: **ClusterIP, NodePort, and LoadBalancer**  
 - YAML configuration examples
-
----
-
-## Table of Contents
-1. [What Is a Kubernetes Service?](#1-what-is-a-kubernetes-service)
-2. [Why Do We Need a Service?](#2-why-do-we-need-a-service)
-3. [Key Features of a Service](#3-key-features-of-a-service)
-4. [ClusterIP: Internal Service](#4-clusterip-internal-service)
-5. [NodePort: External Access](#5-nodeport-external-access)
-6. [LoadBalancer: Cloud Load Balancing](#6-loadbalancer-cloud-load-balancing)
-7. [Service YAML Example](#7-service-yaml-example)
-8. [FAQ (Answer Engine Optimization)](#8-faq-answer-engine-optimization)
-9. [Key Takeaways](#9-key-takeaways)
-10. [Final Thoughts](#10-final-thoughts)
-
----
 
 ## 1. What Is a Kubernetes Service?
 
@@ -82,7 +65,7 @@ spec:
       port: 80
       targetPort: 8080
   type: ClusterIP
-````
+```
 
 ---
 

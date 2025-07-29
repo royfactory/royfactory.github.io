@@ -1,27 +1,25 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-07-03
 description: Learn Monte Carlo Prediction in Reinforcement Learning with Python. Complete
   tutorial covering MCP algorithm, Blackjack simulation, value estimation, and practical
   implementation using OpenAI Gym.
 keywords: monte carlo prediction, reinforcement learning, python, MCP, blackjack simulation,
   value estimation, OpenAI gym, RL tutorial, machine learning
-author: Royfactory
-tags: ["ai", "reinforcement-learning", "mcp", "montecarlo", "python", "gym", "rl", "blackjacksimulation", "value-estimation"]
+tags: ai reinforcement-learning mcp montecarlo python gym rl blackjacksimulation value-estimation
 title: 'Monte Carlo Prediction: Reinforcement Learning with Python (MCP Tutorial)'
 ShowToc: true
 draft: false
 ---
-
 # Monte Carlo Prediction: Reinforcement Learning with Python (MCP Tutorial)
 
 In this tutorial, we’ll explore **Monte Carlo Prediction (MCP)** — a fundamental method in **Reinforcement Learning** used to estimate the value of states using experience.
 
 We’ll apply MCP to the **Blackjack-v1** environment from the `gymnasium` library and walk through the core logic with clear Python code.
 
---
 ## Table of Contents
-
+---
 ## 1. What is Monte Carlo Prediction?
 
 Monte Carlo Prediction estimates the **value of a state** as the **average return** (total reward) received after visiting that state across multiple episodes.

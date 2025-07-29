@@ -1,5 +1,6 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-03
 description: 코사인 유사도(Cosine Similarity)는 두 벡터 간의 **각도(Cosine of the Angle)**를 기반으로
   유사성을 측정하는 방법입니다. 벡터의 크기(길이)가 아니라 방향에 초점을 맞추기 때문에, 데이터의 크기가 다르더라도 유사성을 계산하는 데 유용합니다.
@@ -7,13 +8,11 @@ description: 코사인 유사도(Cosine Similarity)는 두 벡터 간의 **각�
 keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, cos-similarity,
   cosine-similarity, data science, deep learning, machine learning, neural networks,
   python, vector-database, vector-db, 무엇인가, 유사도란, 코사인
-author: Royfactory
-tags: ["ai", "vector-db", "vector-database", "cos-similarity", "cosine-similarity", "algorithm"]
+tags: ai vector-db vector-database cos-similarity cosine-similarity algorithm
 title: 코사인 유사도란 무엇인가?
 ShowToc: true
 draft: false
 ---
-
 ## 1. 코사인 유사도란?
 코사인 유사도(Cosine Similarity)는 두 벡터 간의 **각도(Cosine of the Angle)**를 기반으로 유사성을 측정하는 방법입니다. 벡터의 크기(길이)가 아니라 방향에 초점을 맞추기 때문에, 데이터의 크기가 다르더라도 유사성을 계산하는 데 유용합니다.
 코사인 유사도의 값은 -1부터 1 사이의 범위를 가지며:
@@ -21,9 +20,8 @@ draft: false
 - 0: 두 벡터가 서로 직각(독립적).
 - -1: 두 벡터가 반대 방향을 가짐 (가장 비유사).
 
---
 ## Table of Contents
-
+---
 ## 2. 코사인 유사도 공식
 두 벡터 $𝐴$와 $𝐵$의 코사인 유사도는 다음과 같이 계산됩니다:
 
@@ -71,8 +69,6 @@ $$
 $$
 \vec{A} \cdot \vec{B} = (3 \cdot 4) + (4 \cdot 3) = 12 + 12 = 24
 $$
-
-
 **2. 벡터 크기 계산**:
 
 $$
@@ -132,5 +128,3 @@ $$
 
 ## 8. 결론
 코사인 유사도는 데이터 크기에 민감하지 않고, 방향 기반의 유사성을 측정하는 데 강력한 도구입니다. 텍스트, 이미지, 추천 시스템 등 다양한 분야에서 널리 사용되며, 특히 고차원 데이터에서 효과적입니다. 하지만, 특정 데이터 유형(예: 희소 벡터)에서는 보완적 방법과 함께 사용하는 것이 좋습니다.
-
----

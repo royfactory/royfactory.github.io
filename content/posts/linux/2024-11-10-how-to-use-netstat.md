@@ -1,24 +1,22 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-10
 description: 오늘은 리눅스에서 네트워크 상태를 모니터링하고 다양한 네트워크 관련 정보를 확인할 수 있는 유용한 명령어, `netstat`에
   대해 알아보겠습니다. 네트워크 문제 해결이나 서버 상태 모니터링에 자주 사용되는데요, `netstat`의 주요 옵션과 함께 활용법을 차근차근 설명해드릴게요...
 keywords: bash, command line, linux, monitoring, netstat, netstat를, network, server
   management, shell scripting, system administration, terminal, unix, 리눅스에서, 방법, 사용하는
-author: Royfactory
-tags: ["linux", "netstat", "network", "monitoring"]
+tags: linux netstat network monitoring
 title: 리눅스에서 netstat를 사용하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 `netstat` 명령어 사용법
 
 오늘은 리눅스에서 네트워크 상태를 모니터링하고 다양한 네트워크 관련 정보를 확인할 수 있는 유용한 명령어, `netstat`에 대해 알아보겠습니다. 네트워크 문제 해결이나 서버 상태 모니터링에 자주 사용되는데요, `netstat`의 주요 옵션과 함께 활용법을 차근차근 설명해드릴게요.
 
---
 ## Table of Contents
-
+---
 ## `netstat` 명령이란?
 
 `netstat`는 네트워크 연결 상태, 라우팅 테이블, 인터페이스 통계 등 네트워크 관련 정보를 한눈에 확인할 수 있게 해주는 명령입니다. `netstat`을 사용하면 현재 어떤 포트가 열려 있는지, 어떤 프로세스가 특정 포트를 사용 중인지, 네트워크 인터페이스가 어떻게 구성되어 있는지 등을 쉽게 파악할 수 있습니다.
@@ -114,6 +112,3 @@ ss -tuln
 ## 마무리
 
 오늘은 이렇게 리눅스에서 `netstat` 명령어를 사용하는 방법과 주요 옵션을 알아보았습니다. 네트워크 모니터링이나 문제 해결에 `netstat`은 필수적인 도구이지, 자주 사용하면서 익숙해져 보시길 바랍니다.
-
----
-

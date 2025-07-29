@@ -1,24 +1,27 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-08
 description: 리눅스 커널은 시스템의 핵심을 이루며, 다양한 기능과 성능을 제어할 수 있는 여러 매개변수를 제공합니다. 이러한 커널 매개변수를
   조정하여 시스템 성능을 최적화하거나 특정 기능을 활성화할 수 있습니다. 이번 글에서는 리눅스 커널 매개변수를 조회하고 변경하는 방법을 다룹니다.
-  --- ...
+---
+draft: false ...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, kernel, linux, server management, shell scripting, sysctl,
   system administration, terminal, unix, 리눅스에서, 매개변수를, 방법, 제어하는, 커널
-author: Royfactory
-tags: ["linux", "kernel", "sysctl"]
+tags: linux kernel sysctl
 title: 리눅스에서 커널 매개변수를 제어하는 방법
 ShowToc: true
 draft: false
 ---
-
-# 리눅스 커널 매개변수 제어 방법
+draft: false# 리눅스 커널 매개변수 제어 방법
 
 리눅스 커널은 시스템의 핵심을 이루며, 다양한 기능과 성능을 제어할 수 있는 여러 매개변수를 제공합니다. 이러한 커널 매개변수를 조정하여 시스템 성능을 최적화하거나 특정 기능을 활성화할 수 있습니다. 이번 글에서는 리눅스 커널 매개변수를 조회하고 변경하는 방법을 다룹니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. 커널 매개변수 확인
 
@@ -108,6 +111,3 @@ sudo sysctl -w net.ipv4.ip_forward=1
 ## 결론
 
 리눅스 커널 매개변수를 제어함으로써 시스템 성능을 최적화하고 요구에 맞게 시스템 환경을 조정할 수 있습니다. 이 글에서는 커널 매개변수를 확인하고 일시적 및 영구적으로 설정하는 방법에 대해 다뤄보았습니다. 필요한 경우 `sysctl`  명령어를 활용하여 편리하게 설정을 변경할 수 있으며, `/etc/sysctl.conf` 파일을 수정하여 영구적인 설정도 가능합니다.
-
----
-

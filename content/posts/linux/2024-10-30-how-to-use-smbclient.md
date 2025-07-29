@@ -1,25 +1,23 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-30
 description: Windows 파일 공유는 많은 회사와 가정에서 사용하는 중요한 기능입니다. 리눅스에서도 윈도우 파일 서버와 쉽게 연동하여
   파일을 관리할 수 있는데, smbclient는 이러한 작업에 유용한 도구입니다. 이 글에서는 리눅스에서 smbclient를 사용하여 SMB 프로토콜을
   통해 파...
 keywords: bash, command line, linux, samba, server management, shell scripting, smbclient,
   smbclient를, system administration, terminal, unix, 리눅스에서, 방법, 사용하는
-author: Royfactory
-tags: ["linux", "smbclient", "samba"]
+tags: linux smbclient samba
 title: 리눅스에서 smbclient를 사용하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 smbclient를 사용하는 방법
 
 Windows 파일 공유는 많은 회사와 가정에서 사용하는 중요한 기능입니다. 리눅스에서도 윈도우 파일 서버와 쉽게 연동하여 파일을 관리할 수 있는데, smbclient는 이러한 작업에 유용한 도구입니다. 이 글에서는 리눅스에서 smbclient를 사용하여 SMB 프로토콜을 통해 파일 서버에 접근하고 파일을 전송하는 방법을 안내합니다.
 
---
 ## Table of Contents
-
+---
 ## smbclient란?
 
 `smbclient`는 SMB/CIFS 프로토콜을 통해 네트워크 상에서 윈도우 파일 서버에 접근할 수 있게 해주는 CLI 기반 클라이언트입니다. SMB는 Server Message Block의 약자로, Microsoft 네트워크에서 널리 사용되는 파일 공유 프로토콜입니다. `smbclient`는 이를 지원하여 리눅스 환경에서도 윈도우와 호환되는 파일 공유를 할 수 있도록 도와줍니다.
@@ -143,5 +141,3 @@ smbclient //192.168.1.100/shared -U user -m SMB2
 ## 마무리
 
 `smbclient`는 리눅스 환경에서 윈도우 파일 서버와 통신할 수 있는 강력한 도구입니다. 다양한 명령어를 활용하여 파일 다운로드, 업로드, 삭제 등 여러 작업을 수행할 수 있으며, 스크립트를 통해 자동화할 수도 있습니다. `smbclient`를 잘 활용하면 리눅스와 윈도우 간의 파일 공유가 훨씬 수월해집니다.
-
----

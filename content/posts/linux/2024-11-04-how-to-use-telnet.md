@@ -1,25 +1,23 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-04
 description: Telnet은 원격 서버에 접속할 수 있는 네트워크 프로토콜입니다. 보안이 필요한 환경에서는 SSH를 사용하지만, 테스트 환경이나
   특수한 용도로 여전히 Telnet을 사용하는 경우가 있습니다. 이번 글에서는 리눅스에서 Telnet 서버를 설정하는 방법을 단계별로 설명하겠습니다.
   -...
 keywords: bash, command line, linux, server management, setting, shell scripting,
   system administration, telnet, terminal, unix, 리눅스에서, 방법, 서버, 설정하는
-author: Royfactory
-tags: ["linux", "telnet", "setting"]
+tags: linux telnet setting
 title: 리눅스에서 Telnet 서버 설정하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 Telnet 서버 설정하기
 
 Telnet은 원격 서버에 접속할 수 있는 네트워크 프로토콜입니다. 보안이 필요한 환경에서는 SSH를 사용하지만, 테스트 환경이나 특수한 용도로 여전히 Telnet을 사용하는 경우가 있습니다. 이번 글에서는 리눅스에서 Telnet 서버를 설정하는 방법을 단계별로 설명하겠습니다.
 
---
 ## Table of Contents
-
+---
 ## 1. Telnet 서버 설치하기
 
 Telnet 서버를 설정하려면 먼저 패키지를 설치해야 합니다. 다음 명령어를 사용하여 Telnet 서버를 설치할 수 있습니다.
@@ -138,6 +136,3 @@ sudo systemctl disable telnet.socket
 이상으로 리눅스에서 Telnet 서버를 설정하고 관리하는 방법을 알아보았습니다. Telnet은 SSH에 비해 보안이 취약하므로, 운영 환경에서는 SSH를 사용하는 것이 바람직합니다. Telnet은 주로 테스트 용도로 활용되며, 사용 시에는 보안 조치를 꼭 확인하시기 바랍니다.
 
 ---
-
-
-

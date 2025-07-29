@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubectl-basic-commands-cover.jpg
 date: 2025-07-17
 description: Learn the most essential kubectl commands every Kubernetes beginner must know. This guide covers how to get, create, edit, and delete Kubernetes resources — all with real examples and tips.
 keywords: kubectl, kubernetes, k8s, basic kubectl commands, kubectl cheatsheet, devops, beginner kubectl, kubectl get, kubectl apply
-author: Royfactory
-tags: ["kubernetes", "k8s", "kubectl", "cli", "devops", "cloud-native", "beginner", "kubernetes-commands"]
+tags: kubernetes k8s kubectl cli devops cloud-native beginner kubernetes-commands
 title: 'Basic kubectl Commands: Your First Step to Mastering Kubernetes'
 ShowToc: true
 draft: false
 ---
-
 # Basic kubectl Commands: Your First Step to Mastering Kubernetes
 
 If you want to work with Kubernetes, learning `kubectl` is non-negotiable.
@@ -18,9 +17,8 @@ If you want to work with Kubernetes, learning `kubectl` is non-negotiable.
 
 In this post, we’ll walk through **the most important `kubectl` commands** you need to know as a beginner, along with practical examples and real use cases.
 
---
 ## Table of Contents
-
+---
 ## 1. kubectl Syntax Overview
 
 The basic format of a `kubectl` command is:
@@ -65,8 +63,7 @@ worker-01   Ready    <none>          10d   v1.29.0
 ```
 
 ---
-
-### 2) List Pods
+draft: false### 2) List Pods
 
 ```bash
 kubectl get pods
@@ -74,8 +71,7 @@ kubectl get pods -A  # All namespaces
 ```
 
 ---
-
-### 3) List Services
+draft: false### 3) List Services
 
 ```bash
 kubectl get svc
@@ -84,8 +80,7 @@ kubectl get svc
 Shows Service names, IPs, types (ClusterIP, NodePort, etc.)
 
 ---
-
-### 4) List Deployments
+draft: false### 4) List Deployments
 
 ```bash
 kubectl get deployments
@@ -107,8 +102,7 @@ kubectl describe node my-node
 This shows detailed info like labels, events, environment variables, and logs.
 
 ---
-
-### 2) View Resource YAML
+draft: false### 2) View Resource YAML
 
 ```bash
 kubectl get pod my-pod -o yaml
@@ -129,8 +123,7 @@ kubectl apply -f deployment.yaml
 Most real-world deployments are done this way — declarative, repeatable.
 
 ---
-
-### 2) Create a Pod Manually
+draft: false### 2) Create a Pod Manually
 
 ```bash
 kubectl run nginx --image=nginx
@@ -151,8 +144,7 @@ kubectl edit deployment my-deploy
 This opens the resource’s YAML in your default editor (e.g. Vim).
 
 ---
-
-### 2) Reapply with New YAML
+draft: false### 2) Reapply with New YAML
 
 ```bash
 kubectl apply -f updated-deployment.yaml
@@ -184,8 +176,7 @@ kubectl get pods --watch
 Live updates as Pods start/stop.
 
 ---
-
-### 2) View Logs
+draft: false### 2) View Logs
 
 ```bash
 kubectl logs my-pod

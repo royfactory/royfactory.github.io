@@ -1,15 +1,14 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/dqn-cartpole-cover.jpg
 date: 2025-07-10
 description: DQN (Deep Q-Network) is one of the most fundamental deep reinforcement learning algorithms. In this beginner-friendly tutorial, you'll learn what DQN is, why it matters, and how to use it to solve the classic CartPole environment using PyTorch and OpenAI Gym.
 keywords: DQN, Deep Reinforcement Learning, CartPole, OpenAI Gym, PyTorch, Q-Learning, RL tutorial, AI agents, machine learning beginner
-author: Royfactory
-tags: ["ai", "reinforcement-learning", "dqn", "gym", "pytorch", "q-learning", "deep-rl", "cartpole", "ml-tutorial", "ai-agents"]
+tags: ai reinforcement-learning dqn gym pytorch q-learning deep-rl cartpole ml-tutorial ai-agents
 title: 'Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners'
 ShowToc: true
 draft: false
 ---
-
 # Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners
 
 If you've played with reinforcement learning (RL) before, you've probably seen the classic CartPole balancing problem. And if you've tried solving it with traditional **Q-learning**, you might have run into some limitations.
@@ -18,9 +17,8 @@ That’s where **DQN** — Deep Q-Network — comes in.
 
 In this guide, we’ll explain what DQN is, why it was a breakthrough in RL, and how to implement it step-by-step to solve the CartPole-v1 environment using **OpenAI Gym** and **PyTorch**. Whether you're new to RL or ready to level up from Q-tables, this tutorial is for you.
 
---
 ## Table of Contents
-
+---
 ## 1. What is DQN?
 
 Q-Learning works well for problems with small, discrete state spaces. But in the real world — or even a simple simulation like CartPole — the **state is continuous**, and creating a Q-table for every possible state is infeasible.
@@ -94,8 +92,7 @@ class DQN(nn.Module):
 ````
 
 ---
-
-### 2. Experience Replay Buffer
+draft: false### 2. Experience Replay Buffer
 
 Stores past experiences and samples them randomly to break temporal correlation.
 
@@ -118,8 +115,7 @@ class ReplayBuffer:
 ```
 
 ---
-
-### 3. Epsilon-Greedy Action Selection
+draft: false### 3. Epsilon-Greedy Action Selection
 
 The agent explores randomly at first, then gradually exploits what it has learned.
 

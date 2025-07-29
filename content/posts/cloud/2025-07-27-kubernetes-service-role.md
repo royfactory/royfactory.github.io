@@ -1,17 +1,13 @@
 ---
 categories: kubernetes
-cover: /img/kubernetes-service-role.jpg
+image: /img/kubernetes-service-role.jpg
 date: 2025-07-17
 description: Discover the core role of Kubernetes Services, how kube-proxy and Endpoints work together, and how DNS enables stable networking. Includes examples and key takeaways.
-image: /img/kubernetes-service-role.jpg
 keywords: kubernetes service role, kube-proxy, k8s endpoints, kubernetes dns, k8s networking, service discovery, kubectl service
-layout: post
-organiser: Royfactory
 tags: kubernetes k8s service role kube-proxy endpoints dns devops cloud-native
 title: 'Kubernetes Networking: Understanding the Role of Services'
-toc: true
+draft: false
 ---
-
 # Kubernetes Networking: Understanding the Role of Services
 
 **Question:** *“Is a Kubernetes Service just a load balancer?”*
@@ -25,9 +21,6 @@ In this post, we’ll cover:
 - How kube-proxy and Endpoints work behind the scenes  
 - Service and DNS integration  
 - A detailed look at how Service traffic flows
-
----
-
 
 ---
 
@@ -133,5 +126,3 @@ A. No, you can use the ClusterIP directly, but DNS names make it easier and more
 ## 9. Final Thoughts
 
 Kubernetes Services are more than just load balancers; they are the **foundation of stable networking and service discovery**.
-
----

@@ -1,23 +1,24 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-29
 description: 파일 시스템은 데이터를 저장하고 관리하는 중요한 구성 요소입니다. 그러나 갑작스러운 시스템 종료, 디스크 오류, 하드웨어 문제
   등으로 인해 파일 시스템이 손상될 수 있습니다. 이러한 경우 파일 시스템의 무결성을 검사하고, 문제를 수정하기 위해 Linux에서는 `fsck`
   명령어를 ...
 keywords: bash, command line, filesystem, fsck, linux, server management, shell scripting,
   system administration, terminal, unix, 검사, 도구, 리눅스, 시스템, 파일
-author: Royfactory
-tags: ["linux", "filesystem", "fsck"]
+tags: linux filesystem fsck
 title: 리눅스 파일 시스템 검사 도구
-ShowToc: true
 draft: false
 ---
-# 리눅스 파일 시스템 검사 도구 :
+draft: false# 리눅스 파일 시스템 검사 도구 :
 
 파일 시스템은 데이터를 저장하고 관리하는 중요한 구성 요소입니다. 그러나 갑작스러운 시스템 종료, 디스크 오류, 하드웨어 문제 등으로 인해 파일 시스템이 손상될 수 있습니다. 이러한 경우 파일 시스템의 무결성을 검사하고, 문제를 수정하기 위해 Linux에서는 `fsck` 명령어를 사용합니다. 이 글에서는 `fsck` 명령어의 개념, 사용 방법, 다양한 옵션을 다뤄보겠습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. fsck란 무엇인가?
 
@@ -98,5 +99,3 @@ UUID=... /    ext4    default    1    1
 ## 7. 결론
 
 `fsck`는 파일 시스템의 무결성을 유지하는 데 필수적인 도구입니다. 시스템 오류나 예기치 않은 종료로 인해 파일 시스템이 손상될 때 `fsck`를 사용하여 문제를 해결할 수 있습니다. 주의 사항을 잘 숙지하고 적절한 옵션을 사용하여 파일 시스템을 점검하고 복구해 보세요.
-
----

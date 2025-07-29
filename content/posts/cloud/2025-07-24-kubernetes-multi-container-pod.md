@@ -1,27 +1,20 @@
 ---
-categories: ["kubernetes"]
-date: 2025-07-24
+categories: kubernetes
+image: /img/kubernetes-multi-container-pod.jpg
+date: 2025-07-20
 description: Learn why multi-container Pods are essential in Kubernetes and how patterns like Sidecar, Ambassador, and Adapter can enhance your workloads with practical YAML examples.
 keywords: kubernetes multi-container pod, sidecar pattern, ambassador pattern, adapter pattern, k8s pod architecture, pod design
-author: Royfactory
-tags: ["kubernetes", "k8s", "pod", "multi-container", "sidecar", "ambassador", "adapter", "devops", "cloud-native"]
+tags: kubernetes k8s pod multi-container sidecar ambassador adapter devops cloud-native
 title: 'Kubernetes Multi-Container Pods: Why One Container Isn’t Enough'
 ShowToc: true
 draft: false
 ---
-
 # Kubernetes Multi-Container Pods: Why One Container Isn’t Enough
 
 **Question:** *“Why would I need multiple containers inside a single Pod?”*
 
 While most Pods have just **one container**, real-world applications often require **additional helper containers for logging, monitoring, proxying, or data transformation**.  
 Kubernetes supports this pattern with **multi-container Pods**.
-
----
-
-## Table of Contents
-
-{% toc %}
 
 ---
 

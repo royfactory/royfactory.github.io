@@ -1,17 +1,16 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-12-02
 description: 벡터 데이터베이스 완벽 가이드. 고차원 벡터 데이터 저장, 유사도 검색, 최근접 이웃 탐색 등 벡터 DB의 핵심 개념과 활용법을
   상세히 설명합니다.
 keywords: 벡터 데이터베이스, vector database, 유사도 검색, 최근접 이웃 탐색, 벡터 인덱스, 임베딩, AI 검색, NNS,
   벡터 저장소
-author: Royfactory
-tags: ["ai", "vector-db", "vector-database", "database", "vector", "search", "index"]
+tags: ai vector-db vector-database database vector search index
 title: 벡터 데이터베이스란 무엇인가?
 ShowToc: true
 draft: false
 ---
-
 ## 1. 벡터 데이터베이스란?
 벡터 데이터베이스(Vector Database)는 고차원 벡터 데이터를 저장하고 빠르게 검색할 수 있도록 설계된 데이터베이스입니다. 전통적인 관계형 데이터베이스(RDBMS)나 NoSQL 데이터베이스와는 달리, 벡터 데이터베이스는 유사도 검색과 **최근접 이웃 탐색(Nearest Neighbor Search, NNS)**을 최적화하여 대량의 벡터 데이터에서 가장 유사한 항목을 빠르게 찾는 데 특화되어 있습니다.
 
@@ -23,9 +22,8 @@ draft: false
 - 텍스트: "I love AI" → [0.78, 0.56, 0.89, ...]
 - 오디오: 특정 소리 패턴 → [0.34, 0.67, 0.23, ...]
 
---
 ## Table of Contents
-
+---
 ## 2. 왜 벡터 데이터베이스가 필요한가?
 현대 애플리케이션은 단순한 키-값 검색이나 관계형 데이터 쿼리를 넘어, 더 복잡한 유사성 기반 검색 요구를 가지고 있습니다. 이런 요구를 충족하기 위해 벡터 데이터베이스가 등장했습니다.
 
@@ -100,5 +98,3 @@ draft: false
 
 ## 결론
 벡터 데이터베이스는 딥러닝과 머신러닝 모델이 생성한 고차원 벡터를 활용하여, 현대 애플리케이션의 유사성 검색 및 추천 시스템을 구현하는 데 필수적인 기술입니다. 적절한 벡터 데이터베이스를 선택하고 활용하면, 더욱 개인화되고 강력한 사용자 경험을 제공할 수 있습니다.
-
----

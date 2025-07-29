@@ -1,25 +1,29 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-06
 description: 리눅스에서 Samba 서버를 설정하려면, 파일 공유 서비스를 설정하는 방법을 따라야 합니다. Samba를 통해 Windows와
-  Linux 간 파일 공유가 가능합니다. 다음은 기본적인 Samba 서버 설정 방법입니다. --- 대부분의 배포판에서 Samba는 패키지 관리자
+  Linux 간 파일 공유가 가능합니다. 다음은 기본적인 Samba 서버 설정 방법입니다.
+---
+draft: false 대부분의 배포판에서 Samba는 패키지 관리자
   통해 설치할...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, linux, samba, sambaserver, server management, setting,
   shell scripting, smbpasswd, system administration, terminal, unix, 리눅스에서, 방법, 서버,
   설정하는
-author: Royfactory
-tags: ["linux", "samba", "sambaserver", "setting", "smbpasswd"]
+tags: linux samba sambaserver setting smbpasswd
 title: 리눅스에서 Samba 서버 설정하는 방법
 ShowToc: true
 draft: false
 ---
-
-# 리눅스에서 Samba 서버 설정하기
+draft: false# 리눅스에서 Samba 서버 설정하기
 
 리눅스에서 Samba 서버를 설정하려면, 파일 공유 서비스를 설정하는 방법을 따라야 합니다. Samba를 통해 Windows와 Linux 간 파일 공유가 가능합니다. 다음은 기본적인 Samba 서버 설정 방법입니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. Samba 설치
 
@@ -139,6 +143,3 @@ testparm
 - 보안을 강화하기 위해, 필요에 따라 `security` 옵션을 `user`가 아닌 다른 옵션으로 설정하건, `hosts allow`와 `hosts deny` 옵션을 사용해 접근 가능한 IP를 제한할 수 있습니다.
 
 ---
-
-
-

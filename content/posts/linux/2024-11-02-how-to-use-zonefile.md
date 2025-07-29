@@ -1,25 +1,29 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-02
 description: 리눅스 서버에서 DNS 서버를 설정할 때, **zone 파일**은 도메인의 각종 정보(IP 주소, 도메인 정보 등)를 정의하는
-  중요한 파일입니다. 이 글에서는 zone 파일의 설정 방법과 각 항목의 의미에 대해 자세히 설명하겠습니다. --- 리눅스에서 DNS 서버는 보통
+  중요한 파일입니다. 이 글에서는 zone 파일의 설정 방법과 각 항목의 의미에 대해 자세히 설명하겠습니다.
+---
+draft: false 리눅스에서 DNS 서버는 보통
   **BIN...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: BIND, bash, command line, dns, dnsserver, linux, server management, setting,
   shell scripting, system administration, terminal, unix, zone, 리눅스에서, 방법, 사용되는, 서버에,
   작성하는, 파일
-author: Royfactory
-tags: ["linux", "dnsserver", "dns", "zone", "setting", "BIND"]
+tags: linux dnsserver dns zone setting BIND
 title: 리눅스에서 DNS 서버에 사용되는 Zone 파일 작성하는 방법
 ShowToc: true
 draft: false
 ---
-
-# 리눅스에서 DNS Zone 파일 설정 방법
+draft: false# 리눅스에서 DNS Zone 파일 설정 방법
 
 리눅스 서버에서 DNS 서버를 설정할 때, **zone 파일**은 도메인의 각종 정보(IP 주소, 도메인 정보 등)를 정의하는 중요한 파일입니다. 이 글에서는 zone 파일의 설정 방법과 각 항목의 의미에 대해 자세히 설명하겠습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. Zone 파일의 위치와 기본 형식
 
@@ -119,5 +123,3 @@ sudo named-checkzone example.com /etc/bind/db.example.com
 ## 결론
 
 이 글에서는 리눅스에서 DNS 서버를 설정할 때 중요한 역할을 하는 zone 파일의 설정 방법과 각 항목의 의미에 대해 알아보았습니다. zone 파일은 도메인의 DNS 정보를 관리하는 핵심 파일이므로, 설정 시 정확한 구성이 필요합니다. 이를 통해 DNS 서버가 제대로 작동하도록 설정할 수 있습니다.
-
----

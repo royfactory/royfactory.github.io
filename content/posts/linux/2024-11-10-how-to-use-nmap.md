@@ -1,24 +1,28 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-10
 description: '`nmap`(Network Mapper)은 네트워크의 IP, 포트, 서비스 등을 스캔하여 네트워크 구조를 이해하고 보안 점검을
-  할 수 있는 강력한 도구입니다. 다음은 `nmap`의 주요 옵션과 그 사용 예시입니다. --- 1. **기본 스캔** nmap <IP 주소> 기본
+  할 수 있는 강력한 도구입니다. 다음은 `nmap`의 주요 옵션과 그 사용 예시입니다.
+---
+draft: false 1. **기본 스캔** nmap <IP 주소> 기본
   스캔 명...'
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, linux, monitoring, network, nmap, nmap으로, server management,
   shell scripting, system administration, terminal, topology, unix, 네트워크, 리눅스에서, 분석하기
-author: Royfactory
-tags: ["linux", "nmap", "network", "monitoring", "topology"]
+tags: linux nmap network monitoring topology
 title: 리눅스에서 nmap으로 네트워크 분석하기
 ShowToc: true
 draft: false
 ---
-
-# 리눅스에서 `nmap`으로 네트워크 분석하기
+draft: false# 리눅스에서 `nmap`으로 네트워크 분석하기
 
 `nmap`(Network Mapper)은 네트워크의 IP, 포트, 서비스 등을 스캔하여 네트워크 구조를 이해하고 보안 점검을 할 수 있는 강력한 도구입니다. 다음은 `nmap`의 주요 옵션과 그 사용 예시입니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## `nmap` 의 주요 옵션
 
@@ -53,6 +57,3 @@ nmap -sP 192.168.1.0/24 -oN scan_results.txt
 ```
 
 ---
-
-
-

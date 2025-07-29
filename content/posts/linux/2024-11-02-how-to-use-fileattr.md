@@ -1,24 +1,28 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-02
 description: 리눅스에서는 파일의 속성을 설정하여 삭제, 수정, 추가 등을 제어할 수 있습니다. 이때 사용하는 명령어가 바로 `lsattr`와
-  `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다. --- `lsattr` 명령어는 파일에 설정된 속성을
+  `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다.
+---
+draft: false `lsattr` 명령어는 파일에 설정된 속성을
   확인...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, chattr, command line, fileattr, linux, lsattr, server management,
   shell scripting, system administration, terminal, unix, 관리하는, 리눅스에서, 방법, 속성을, 파일
-author: Royfactory
-tags: ["linux", "lsattr", "chattr", "fileattr"]
+tags: linux lsattr chattr fileattr
 title: 리눅스에서 파일 속성을 관리하는 방법
 ShowToc: true
 draft: false
 ---
-
-# 리눅스 파일 속성 관리 - `lsattr`와 `chattr`
+draft: false# 리눅스 파일 속성 관리 - `lsattr`와 `chattr`
 
 리눅스에서는 파일의 속성을 설정하여 삭제, 수정, 추가 등을 제어할 수 있습니다. 이때 사용하는 명령어가 바로 `lsattr`와 `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. `lsattr` - 파일 속성 확인하기
 `lsattr` 명령어는 파일에 설정된 속성을 확인할 때 사용됩니다. 기본적으로 리눅스에서는 파일의 읽기, 쓰기, 실행 권한 외에도 특별한 속성들을 부여할 수 있으며, lsattr 명령어는 이런 속성을 확인할 수 있습니다.
@@ -130,5 +134,3 @@ $> lsattr myfile.txt
 ## 마무리
 
 `lsattr`와 `chattr` 명령어를 통해 파일 속성을 확인하고 설정하여 보다 안전하게 파일을 관리할 수 있습니다. 특히 중요한 파일에 대해 `i` 속성을 활용하여 실수로 삭제되지 않도록 하는 것이 유용합니다.
-
----

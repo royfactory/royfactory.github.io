@@ -1,24 +1,25 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-28
 description: '`/etc/default/useradd` 리눅스 시스템에서 `useradd` 명령어를 통해 사용자를 생성할 때 기본적으로
   적용되는 설정값을 지정할 수 있는 파일이 바로 `/etc/default/useradd`입니다. 이 파일을 통해 사용자 계정 생성 시 기본 옵션을
   설정할 수 있어...'
 keywords: bash, command line, config, linux, server management, shell scripting, system
   administration, terminal, unix, useradd, 리눅스, 사용자, 설정, 파일
-author: Royfactory
-tags: ["linux", "useradd", "config"]
+tags: linux useradd config
 title: 리눅스 사용자 설정 파일
-ShowToc: true
 draft: false
 ---
-# 리눅스 사용자 설정 파일 :
+draft: false# 리눅스 사용자 설정 파일 :
 
 `/etc/default/useradd`
 리눅스 시스템에서 `useradd` 명령어를 통해 사용자를 생성할 때 기본적으로 적용되는 설정값을 지정할 수 있는 파일이 바로 `/etc/default/useradd`입니다. 이 파일을 통해 사용자 계정 생성 시 기본 옵션을 설정할 수 있어, 일관성 있고 효율적인 사용자 계정 관리를 할 수 있습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 파일의 역할
 
@@ -142,5 +143,3 @@ CREATE_MAIL_SPOOL=yes
 |`CREATE_MAIL_SPOOL`|메일 스풀 생성 여부 설정|
 
 `/etc/default/useradd` 파일을 통해 기본 설정을 고나리하면, 사용자를 생성할 때 별도의 옵션 없이도 일관된 설정을 적용할 수 있어 시스템 관리가 더욱 효율적입니다.
-
----

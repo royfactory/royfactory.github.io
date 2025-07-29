@@ -1,5 +1,6 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-12
 description: Apache 웹 서버를 운영하다 보면 특정 디렉토리나 파일에 대해 접근을 제한해야 할 때가 있습니다. 이럴 때 많이 사용하는
   방법이 `.htpasswd`와 `.htaccess` 파일을 이용하는 것입니다. 이 글에서는 htpasswd, htaccess 명령어와 각 옵션들을
@@ -7,20 +8,17 @@ description: Apache 웹 서버를 운영하다 보면 특정 디렉토리나 파
 keywords: access, apache, apahce의, bash, command line, htaccess, htpasswd, linux,
   server management, shell scripting, system administration, terminal, unix, 리눅스에서,
   방법, 설정하는, 웹사이트, 접근제한을
-author: Royfactory
-tags: ["linux", "apache", "htaccess", "htpasswd", "access"]
+tags: linux apache htaccess htpasswd  access
 title: 리눅스에서 Apahce의 웹사이트 접근제한을 설정하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 Apahce의 웹사이트 접근제한을 설정하는 방법
 
 Apache 웹 서버를 운영하다 보면 특정 디렉토리나 파일에 대해 접근을 제한해야 할 때가 있습니다. 이럴 때 많이 사용하는 방법이 `.htpasswd`와 `.htaccess` 파일을 이용하는 것입니다. 이 글에서는 htpasswd, htaccess 명령어와 각 옵션들을 다루며, 예제를 통해 설정 방법을 안내해드리겠습니다.
 
---
 ## Table of Contents
-
+---
 ## 1. .htpasswd 파일: 사용자 인증 파일
 `.htpasswd` 파일은 사용자 이름과 비밀번호가 암호화되어 저장된 파일입니다. Apache는 이 파일을 참조해 특정 사용자의 인증을 요구할 수 있습니다.
 
@@ -101,5 +99,3 @@ Allow from 192.168.1.100
 
 ## 마무리
 이와 같이 Apache 서버에서 `.htpasswd`와 `.htaccess` 파일을 이용하면 웹사이트의 특정 디렉토리나 파일에 대해 간편하게 접근 제한을 설정할 수 있습니다. 서버 보안을 가오하하고, 특정 사용자에게만 접근 권한을 부여할 때 유용하게 사용하실 수 있습니다.
-
----

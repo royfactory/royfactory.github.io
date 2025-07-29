@@ -1,24 +1,27 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-03
 description: 엘라스틱서치(Elasticsearch)는 대규모 데이터의 검색과 분석을 지원하는 오픈소스 분산 검색 엔진입니다. 일반적으로
-  데이터의 빠른 검색과 실시간 로그 분석 등에 자주 사용됩니다. 설치와 간단한 사용 방법에 대해 단계별로 설명해드릴게요. --- - Ubuntu
+  데이터의 빠른 검색과 실시간 로그 분석 등에 자주 사용됩니다. 설치와 간단한 사용 방법에 대해 단계별로 설명해드릴게요.
+---
+draft: false - Ubuntu
   22.04.1 ...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, elasticsearch, install, linux, server management, setting,
   shell scripting, system administration, terminal, unix, 방법, 사용하는, 서치, 엘라스틱
-author: Royfactory
-tags: ["elasticsearch", "install", "setting"]
+tags: elasticsearch install setting
 title: 엘라스틱 서치 사용하는 방법
-ShowToc: true
 draft: false
 ---
-
-# 엘라스틱 서치 사용하는 방법
+draft: false# 엘라스틱 서치 사용하는 방법
 
 엘라스틱서치(Elasticsearch)는 대규모 데이터의 검색과 분석을 지원하는 오픈소스 분산 검색 엔진입니다. 일반적으로 데이터의 빠른 검색과 실시간 로그 분석 등에 자주 사용됩니다. 설치와 간단한 사용 방법에 대해 단계별로 설명해드릴게요.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. 설치하기
 
@@ -146,5 +149,3 @@ Elasticsearch와 시각화 도구인 Kibana를 연동하면 데이터를 쉽게 
 - **분산 처리 및 확장성** : 데이터가 많아지면 노드를 추가하여 확장할 수 있습니다.
 
 이 과정을 통해 기본적인 Elasticsearch 사용법을 익힐 수 있습니다.
-
----

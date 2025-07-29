@@ -1,12 +1,15 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-10-28
 description: 리눅스에서는 사용자를 생성, 수정 및 삭제하는 다양한 명령어를 제공합니다. 그 중 가장 기본이 되는 `useradd`, `usermod`,
-  `userdel` 명령어에 대해 알아보겠습니다. --- `useradd` 명령어는 새로운 사용자를 생성할 때 사용합니다. 사용자의 홈 디렉토리...
+  `userdel` 명령어에 대해 알아보겠습니다.
+---
+draft: false `useradd` 명령어는 새로운 사용자를 생성할 때 사용합니다. 사용자의 홈 디렉토리...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: account, bash, command line, linux, server management, shell scripting,
   system administration, terminal, unix, useradd, userdel, usermod, 관리, 리눅스, 사용자
-author: Royfactory
-tags: ["linux", "account", "useradd", "usermod", "userdel"]
+tags: linux account useradd usermod userdel
 title: 리눅스 사용자 관리
 ShowToc: true
 draft: false
@@ -15,7 +18,9 @@ draft: false
 리눅스에서는 사용자를 생성, 수정 및 삭제하는 다양한 명령어를 제공합니다. 그 중 가장 기본이 되는 `useradd`, `usermod`, `userdel` 명령어에 대해 알아보겠습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## useradd - 사용자 생성
 
@@ -107,5 +112,3 @@ userdel -r user1
 |`userdel`|사용자 삭제|
 
 각 명령어의 옵션을 적절히 활용하면 사용자 계정 관리가 훨씬 수월해집니다.
-
----

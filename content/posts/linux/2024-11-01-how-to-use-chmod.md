@@ -1,14 +1,16 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-01
 description: 파일 및 디렉토리 접근 권한은 Linux나 Unix 환경에서 중요한 역할을 합니다. `chmod`는 이러한 접근 권한을 설정하거나
-  변경할 수 있는 중요한 명령어입니다. 이번 글에서는 `chmod` 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다. --- Linux나...
+  변경할 수 있는 중요한 명령어입니다. 이번 글에서는 `chmod` 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다.
+---
+draft: false Linux나...
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, chmod, command line, linux, permission, rwx, server management, shell
   scripting, system administration, terminal, umask, unix, 관리하는, 권한, 리눅스에서, 방법, 접근
-author: Royfactory
-tags: ["linux", "chmod", "permission", "umask", "rwx"]
+tags: linux chmod permission umask rwx
 title: 리눅스에서 접근 권한 관리하는 방법
-ShowToc: true
 draft: false
 ---
 # 리눅스에서 접근 권한 관리하는 방법
@@ -16,7 +18,9 @@ draft: false
 파일 및 디렉토리 접근 권한은 Linux나 Unix 환경에서 중요한 역할을 합니다. `chmod`는 이러한 접근 권한을 설정하거나 변경할 수 있는 중요한 명령어입니다. 이번 글에서는 `chmod` 명령어의 기초 개념부터 심화적인 사용법까지 상세히 알아보겠습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. 파일 시스템 권한의 기본 개념
 
@@ -165,5 +169,3 @@ chmod 600 sensitive_data.txt
 ## 6. 마무리
 
 `chmod`는 Linux/Unix 시스템에서 필수적인 파일 권한을 설정하는 도구입니다. 각 상황에 맞는 적절한 권한을 설정하고, 보안에 유의하여 사용함으로써 시스템의 안전성을 높일 수 있습니다. `chmod` 명령어에 익숙해지면 더욱 효율적이고 안전하게 파일 시스템을 관리할 수 있습니다.
-
----

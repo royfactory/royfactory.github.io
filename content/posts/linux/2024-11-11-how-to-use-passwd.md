@@ -1,5 +1,6 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-11
 description: '`passwd` 명령어는 리눅스에서 사용자 계정의 비밀번호를 설정하거나 변경할 때 사용하는 명령어입니다. 특히 시스템 관리자가
   여러 계정의 비밀번호를 설정하거나 정책을 관리할 때 유용합니다. 이번 글에서는 `passwd` 명령어의 다양한 옵션과 실제 사용 예시를 살펴보겠습니다.
@@ -7,19 +8,16 @@ description: '`passwd` 명령어는 리눅스에서 사용자 계정의 비밀�
 keywords: bash, command line, linux, passwd를, samba, sambaserver, server management,
   setting, shell scripting, smbpasswd, system administration, terminal, unix, 리눅스에서,
   방법, 사용하는
-author: Royfactory
-tags: ["linux", "samba", "sambaserver", "setting", "smbpasswd"]
+tags: linux samba sambaserver setting smbpasswd
 title: 리눅스에서 passwd를 사용하는 방법
 ShowToc: true
 draft: false
 ---
-
 # 리눅스에서 `passwd`를 사용하는 방법
 `passwd` 명령어는 리눅스에서 사용자 계정의 비밀번호를 설정하거나 변경할 때 사용하는 명령어입니다. 특히 시스템 관리자가 여러 계정의 비밀번호를 설정하거나 정책을 관리할 때 유용합니다. 이번 글에서는 `passwd` 명령어의 다양한 옵션과 실제 사용 예시를 살펴보겠습니다.
 
---
 ## Table of Contents
-
+---
 ## 1. 기본 사용법
 기본적으로 `passwd` 명령어를 입력하면 현재 로그인한 사용자의 비밀번호를 변경할 수 있습니다. `passwd` 명령어만 입력하면 아래와 같은 프롬프트가 나타나며, 새 비밀번호를 입력하라는 요청이 뜹니다.
 ```bash
@@ -127,6 +125,3 @@ sudo passwd -S roy
 `passwd` 명령어는 시스템 관리자가 사용자 비밀번호와 보안을 관리하는 데 필수적인 도구입니다. 각 옵션을 적절히 사용하면 사용자 계정에 대한 강력한 보안 설정을 할 수 있습니다.
 
 ---
-
-
-

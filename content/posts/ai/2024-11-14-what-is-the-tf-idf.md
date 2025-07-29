@@ -1,5 +1,6 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-14
 description: 텍스트 데이터를 처리하고 분석할 때 자주 등장하는 용어 중 하나가 바로 `TF-IDF`입니다. 이는 문서 내 단어의 중요도를
   측정하기 위한 통계적 방법으로, 정보 검색, 텍스트 마이닝, 자연어 처리 등 다양한 분야에서 널리 사용됩니다. 이번 포스트에서는 TF-IDF의
@@ -7,19 +8,16 @@ description: 텍스트 데이터를 처리하고 분석할 때 자주 등장하�
 keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, data
   science, deep learning, idf란, machine learning, neural networks, python, rag, tf,
   tf-idf, 무엇인가
-author: Royfactory
-tags: ["ai", "rag", "tf-idf", "algorithm"]
+tags: ai rag tf-idf algorithm
 title: TF-IDF란 무엇인가?
 ShowToc: true
 draft: false
 ---
-
 # TF-IDF란 무엇인가?
 텍스트 데이터를 처리하고 분석할 때 자주 등장하는 용어 중 하나가 바로 `TF-IDF`입니다. 이는 문서 내 단어의 중요도를 측정하기 위한 통계적 방법으로, 정보 검색, 텍스트 마이닝, 자연어 처리 등 다양한 분야에서 널리 사용됩니다. 이번 포스트에서는 TF-IDF의 개념과 계산 방법, 그리고 실제 활용 사례에 대해 알아보겠습니다.
 
---
 ## Table of Contents
-
+---
 ## TF-IDF의 정의
 TF-IDF는 **Term Frequency-Inverse Document Frequency**의 약자로, 단어의 빈도(TF)와 역문서 빈도(IDF)를 결합하여 특정 단어가 얼마나 중요한지를 측정하는 지표입니다.
 
@@ -93,5 +91,3 @@ TF와 IDF를 곱하여 최종 TF-IDF 값을 계산합니다:
 
 ## 결론
 TF-IDF는 간단하지만 강력한 도구로, 텍스트 데이터를 분석하고 중요한 정보를 추출하는 데 매우 유용합니다. 문서 검색, 키워드 추출, 자연어 처리 등 다양한 응용 분야에서 그 가치를 입증하고 있으며, Sparse Retrieval 방식(BM25 등)에서도 핵심적인 역할을 합니다. 텍스트 데이터를 다룰 때 TF-IDF를 적극 활용해 보시길 바랍니다.
-
----

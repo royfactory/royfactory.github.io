@@ -1,16 +1,15 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/cover-langchain-llm.jpg
 date: 2025-06-30
 description: Complete guide to LangChain framework for building LLM applications with
   Python. Learn prompt engineering, agents, memory management, and ChatGPT integration
   with practical examples.
 keywords: LangChain, LLM framework, Python, ChatGPT, large language models, prompt
   engineering, AI agents, memory management, OpenAI integration
-author: Royfactory
-tags: ["ai", "langchain", "llm", "framework", "chatgpt", "python", "prompt-engineering", "agent", "memory"]
+tags: ai langchain llm framework chatgpt python prompt-engineering agent memory
 title: What is LangChain? Build LLM Apps Easily with Python
-ShowToc: true
-# HowTo Schema for SEO
+ShowToc: true# HowTo Schema for SEO
 howto:
   totalTime: "PT45M"
   cost: "0"
@@ -25,22 +24,34 @@ howto:
   steps:
     - name: "Install LangChain"
       text: "Install LangChain library using pip install langchain"
+    - name: "Set Up API Key"
+      text: "Configure OpenAI API key for LLM access"
+    - name: "Create PromptTemplate"
+      text: "Build reusable prompt templates for your application"
+    - name: "Implement Chains"
+      text: "Create chains to connect prompts with LLM responses"
+    - name: "Add Memory"
+      text: "Implement conversation memory for chat applications"
+
 # FAQ Schema for SEO
 faq:
   - question: "What is LangChain used for?"
     answer: "LangChain is used to build applications powered by large language models (LLMs) like ChatGPT. It simplifies creating chatbots, document search tools, and AI agents."
-draft: false
+  - question: "Is LangChain free to use?"
+    answer: "Yes, LangChain is open-source and free to use. However, you'll need API keys for LLM services like OpenAI, which have their own pricing."
+  - question: "What programming language does LangChain support?"
+    answer: "LangChain primarily supports Python, with a JavaScript/TypeScript version also available called LangChain.js."
+  - question: "Can LangChain work with ChatGPT?"
+    answer: "Yes, LangChain has built-in integration with OpenAI's GPT models including ChatGPT through the OpenAI API."
 ---
-
 # What is LangChain? Build LLM Apps Easily with Python
 
 LangChain is an open-source Python framework designed to make it easy to build applications powered by **large language models (LLMs)** like ChatGPT. It provides components to manage prompts, chain logic, memory, tools, and more.
 
 Whether you’re building a chatbot, a document search tool, or an agent that uses tools like calculators or web search, **LangChain simplifies the process**.
 
---
 ## Table of Contents
-
+---
 ## Why LangChain?
 
 Imagine you want to build a customer support chatbot that can:
@@ -70,8 +81,7 @@ print(prompt.format(question="What is Python?"))
 ````
 
 ---
-
-### 2. LLMChain
+draft: false### 2. LLMChain
 
 Combine a prompt and a model to process user input.
 
@@ -87,8 +97,7 @@ print(response)
 ```
 
 ---
-
-### 3. Memory
+draft: false### 3. Memory
 
 Enable multi-turn conversations by storing chat history.
 
@@ -106,8 +115,7 @@ print(conversation.run("What did I just say?"))
 ```
 
 ---
-
-### 4. Tools and Agents
+draft: false### 4. Tools and Agents
 
 Let LLMs use external tools like calculators or APIs with decision-making.
 

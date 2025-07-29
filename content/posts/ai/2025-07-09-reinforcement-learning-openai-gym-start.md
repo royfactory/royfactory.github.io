@@ -1,24 +1,22 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/openai-gym-cover.jpg
 date: 2025-07-09
 description: Reinforcement Learning can seem intimidating, but it's easier than you think. In this beginner-friendly guide, learn what RL is and how to build your first AI agent using OpenAI Gym and Python.
 keywords: reinforcement learning, OpenAI Gym, AI agent, Python, CartPole, RL tutorial, Q-learning, DQN, machine learning beginner
-author: Royfactory
-tags: ["ai", "reinforcement-learning", "openai-gym", "python", "cartpole", "ai-agents", "ml-tutorial", "beginner-friendly"]
+tags: ai reinforcement-learning openai-gym python cartpole ai-agents ml-tutorial beginner-friendly
 title: 'Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym'
 ShowToc: true
 draft: false
 ---
-
 # Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym
 
 Reinforcement Learning (RL) might sound like an advanced topic reserved for researchers and PhDs — but the truth is, **you can start today**, even as a beginner.
 
 This guide will walk you through RL in the simplest terms, using the powerful and easy-to-use **OpenAI Gym** framework. With just a bit of Python knowledge, you'll build your **first AI agent** that interacts with an environment, makes decisions, and learns from rewards — just like a human learning to ride a bike.
 
---
 ## Table of Contents
-
+---
 ## 1. What Is Reinforcement Learning?
 
 Reinforcement Learning is a machine learning paradigm where an **agent** learns by interacting with an **environment**, taking **actions**, and receiving **rewards** based on the outcome.
@@ -193,9 +191,6 @@ Stay tuned for the next post:
 * **“Exploration vs. Exploitation: How AI Makes Decisions”**
 
 ---
-
-If you’re new to AI or just exploring reinforcement learning, **this is a great place to begin**. With just Python and OpenAI Gym, you can start building intelligent systems that learn by interacting with their environment — just like us.
+draft: falseIf you’re new to AI or just exploring reinforcement learning, **this is a great place to begin**. With just Python and OpenAI Gym, you can start building intelligent systems that learn by interacting with their environment — just like us.
 
 Let your AI agent take its first steps today.
-
----

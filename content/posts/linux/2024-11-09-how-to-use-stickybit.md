@@ -1,24 +1,28 @@
 ---
-categories: ["linux"]
+categories: linux
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2024-11-09
 description: '리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여
-  특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다. --- - **설명** :
+  특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다.
+---
+draft: false - **설명** :
   Sticky ...'
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: SetGID, SetUID, StickyBit, bash, command line, linux, server management,
   shell scripting, system administration, terminal, unix, 리눅스에서, 방법, 부여하는, 특수권한을
-author: Royfactory
-tags: ["linux", "StickyBit", "SetUID", "SetGID"]
+tags: linux StickyBit SetUID SetGID
 title: 리눅스에서 특수권한을 부여하는 방법
 ShowToc: true
 draft: false
 ---
-
-# 리눅스에서 특수권한을 부여하는 방법
+draft: false# 리눅스에서 특수권한을 부여하는 방법
 
 리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여 특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다.
 
 ---
+draft: false
 ## Table of Contents
+---
 
 ## 1. Sticky Bit
 
@@ -66,5 +70,3 @@ ls -l /some_directory
 - Sticky Bit : 디렉토리 권한의 끝에 `t`로 표시됩니다(예: `drwxrwxrwt`).
 - SetUID : 사용자 권한 위치에 `s`로 표시됩니다(예: `-rwsr-xr-x`).
 - SetGID : 그룹 권한 위치에 `s`로 표시됩니다(예: `drwxrwsr-x`).
-
----

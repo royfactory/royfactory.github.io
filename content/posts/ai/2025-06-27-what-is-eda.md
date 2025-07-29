@@ -1,5 +1,6 @@
 ---
-categories: ["ai"]
+categories: ai
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 date: 2025-06-27
 description: Analyzing data is a lot like cooking. **EDA (Exploratory Data Analysis)**
   is the part where you unpack your ingredients, check what’s fresh, what’s expired,
@@ -7,13 +8,11 @@ description: Analyzing data is a lot like cooking. **EDA (Exploratory Data Analy
 keywords: AI tutorial, ML algorithms, a, ai, analysis, artificial intelligence, beginner,
   data, data science, data-analysis, datavisualization, deep learning, eda, exploratory,
   guide, in, machine learning, matplotlib, neural networks, pandas, python, s, seaborn
-author: Royfactory
-tags: ["ai", "eda", "data-analysis", "pandas", "matplotlib", "seaborn", "datavisualization", "python"]
+tags: ai eda data-analysis pandas matplotlib seaborn datavisualization python
 title: 'Exploratory Data Analysis in Python: A Beginner’s Guide'
 ShowToc: true
 draft: false
 ---
-
 # What is EDA (Exploratory Data Analysis)?
 
 Analyzing data is a lot like cooking.
@@ -24,9 +23,8 @@ Another real-life analogy? A health check-up.
 
 Just like you wouldn’t prescribe medicine without first examining a patient’s condition, you shouldn’t build a model without first understanding your data. EDA gives you the insight you need to clean, prepare, and model your data wisely.
 
---
 ## Table of Contents
-
+---
 ## What is EDA?
 
 **Exploratory Data Analysis (EDA)** is the process of analyzing and visualizing datasets to:

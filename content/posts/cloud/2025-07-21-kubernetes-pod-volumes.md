@@ -1,15 +1,14 @@
 ---
-categories: ["kubernetes"]
+categories: kubernetes
+image: /img/kubernetes-pod-volumes.jpg
 date: 2025-07-21
 description: Learn how to persist data in Kubernetes using Volumes, PersistentVolumes (PV), and PersistentVolumeClaims (PVC). This guide explains volume types, YAML examples, and best practices.
 keywords: kubernetes volumes, kubernetes pod volume, persistentvolume, pvc, k8s storage, kubectl volume, pod storage, cloud-native storage
-author: Royfactory
-tags: ["kubernetes", "k8s", "volumes", "pod", "persistentvolume", "pvc", "storage", "devops", "cloud"]
+tags: kubernetes k8s volumes pod persistentvolume pvc storage devops cloud
 title: 'Kubernetes Volumes Explained: How Pods Store and Share Data'
 ShowToc: true
 draft: false
 ---
-
 # Kubernetes Volumes Explained: How Pods Store and Share Data
 
 **Question:** *“How do Pods keep their data persistent in Kubernetes?”*  
@@ -24,9 +23,8 @@ In this post, you will learn:
 - How to configure PersistentVolumes (PV) and PersistentVolumeClaims (PVC)
 - Practical YAML examples for Pod storage
 
---
 ## Table of Contents
-
+---
 ## 1. What Is a Volume in Kubernetes?
 
 A **Volume** is a storage abstraction that can be mounted to one or more containers inside a Pod.
@@ -65,8 +63,7 @@ volumes:
 ````
 
 ---
-
-### (2) hostPath
+draft: false### (2) hostPath
 
 * Mounts a directory from the **Node's filesystem** into the Pod.
 * Useful for local development, **not recommended in production**.
@@ -79,8 +76,7 @@ volumes:
 ```
 
 ---
-
-### (3) PersistentVolume (PV) & PersistentVolumeClaim (PVC)
+draft: false### (3) PersistentVolume (PV) & PersistentVolumeClaim (PVC)
 
 * Provides **cluster-wide persistent storage**.
 * PVC acts as a request for storage, while PV represents the actual storage resource.
@@ -132,8 +128,7 @@ spec:
 ```
 
 ---
-
-### (2) Define a PVC
+draft: false### (2) Define a PVC
 
 ```yaml
 apiVersion: v1
@@ -149,8 +144,7 @@ spec:
 ```
 
 ---
-
-### (3) Use the PVC in a Pod
+draft: false### (3) Use the PVC in a Pod
 
 ```yaml
 apiVersion: v1
