@@ -1,16 +1,25 @@
 ---
-categories: ai
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- ai
 date: 2024-12-02
 description: 벡터 데이터베이스 완벽 가이드. 고차원 벡터 데이터 저장, 유사도 검색, 최근접 이웃 탐색 등 벡터 DB의 핵심 개념과 활용법을
   상세히 설명합니다.
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: 벡터 데이터베이스, vector database, 유사도 검색, 최근접 이웃 탐색, 벡터 인덱스, 임베딩, AI 검색, NNS,
   벡터 저장소
-tags: ai vector-db vector-database database vector search index
+tags:
+- ai
+- vector-db
+- vector-database
+- database
+- vector
+- search
+- index
 title: 벡터 데이터베이스란 무엇인가?
-ShowToc: true
-draft: false
 ---
+
 ## 1. 벡터 데이터베이스란?
 벡터 데이터베이스(Vector Database)는 고차원 벡터 데이터를 저장하고 빠르게 검색할 수 있도록 설계된 데이터베이스입니다. 전통적인 관계형 데이터베이스(RDBMS)나 NoSQL 데이터베이스와는 달리, 벡터 데이터베이스는 유사도 검색과 **최근접 이웃 탐색(Nearest Neighbor Search, NNS)**을 최적화하여 대량의 벡터 데이터에서 가장 유사한 항목을 빠르게 찾는 데 특화되어 있습니다.
 

@@ -1,14 +1,28 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-pod-volumes.jpg
-date: 2025-07-21
-description: Learn how to persist data in Kubernetes using Volumes, PersistentVolumes (PV), and PersistentVolumeClaims (PVC). This guide explains volume types, YAML examples, and best practices.
-keywords: kubernetes volumes, kubernetes pod volume, persistentvolume, pvc, k8s storage, kubectl volume, pod storage, cloud-native storage
-tags: kubernetes k8s volumes pod persistentvolume pvc storage devops cloud
-title: 'Kubernetes Volumes Explained: How Pods Store and Share Data'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-21
+description: Learn how to persist data in Kubernetes using Volumes, PersistentVolumes
+  (PV), and PersistentVolumeClaims (PVC). This guide explains volume types, YAML examples,
+  and best practices.
 draft: false
+image: /img/kubernetes-pod-volumes.jpg
+keywords: kubernetes volumes, kubernetes pod volume, persistentvolume, pvc, k8s storage,
+  kubectl volume, pod storage, cloud-native storage
+tags:
+- kubernetes
+- k8s
+- volumes
+- pod
+- persistentvolume
+- pvc
+- storage
+- devops
+- cloud
+title: 'Kubernetes Volumes Explained: How Pods Store and Share Data'
 ---
+
 # Kubernetes Volumes Explained: How Pods Store and Share Data
 
 **Question:** *“How do Pods keep their data persistent in Kubernetes?”*  
@@ -63,7 +77,6 @@ volumes:
 ````
 
 ---
-draft: false### (2) hostPath
 
 * Mounts a directory from the **Node's filesystem** into the Pod.
 * Useful for local development, **not recommended in production**.
@@ -76,7 +89,6 @@ volumes:
 ```
 
 ---
-draft: false### (3) PersistentVolume (PV) & PersistentVolumeClaim (PVC)
 
 * Provides **cluster-wide persistent storage**.
 * PVC acts as a request for storage, while PV represents the actual storage resource.
@@ -128,7 +140,6 @@ spec:
 ```
 
 ---
-draft: false### (2) Define a PVC
 
 ```yaml
 apiVersion: v1
@@ -144,7 +155,6 @@ spec:
 ```
 
 ---
-draft: false### (3) Use the PVC in a Pod
 
 ```yaml
 apiVersion: v1
@@ -205,4 +215,4 @@ A. Cloud-specific volumes like AWS EBS, GCP Persistent Disk, and Azure Disk are 
 ## Final Thoughts
 
 Persistent data is essential for stateful workloads.
-By understanding **Volumes, PV, and PVC**, you can configure Pods to retain and share data across 
+By understanding **Volumes, PV, and PVC**, you can configure Pods to retain and share data across

@@ -1,13 +1,18 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-service-types-summary.jpg
+ShowToc: true
+categories: [kubernetes]
 date: 2025-07-29
-description: A complete summary of Kubernetes Service types, including ClusterIP, NodePort, LoadBalancer, and ExternalName. Learn when to use each type with examples and best practices.
-keywords: kubernetes service types summary, clusterip vs nodeport, kubernetes loadbalancer, externalname service, k8s networking
-tags: kubernetes k8s service-types clusterip nodeport loadbalancer externalname devops cloud-native
-title: 'Kubernetes Networking: Service Types Summary'
+description: A complete summary of Kubernetes Service types, including ClusterIP,
+  NodePort, LoadBalancer, and ExternalName. Learn when to use each type with examples
+  and best practices.
 draft: false
+image: /img/kubernetes-service-types-summary.jpg
+keywords: kubernetes service types summary, clusterip vs nodeport, kubernetes loadbalancer,
+  externalname service, k8s networking
+tags: [kubernetes k8s service-types clusterip nodeport loadbalancer externalname devops]cloud-native
+title: 'Kubernetes Networking: Service Types Summary'
 ---
+
 # Kubernetes Networking: Service Types Summary
 
 **Question:** *“Which Kubernetes Service type should I use for my application?”*

@@ -1,18 +1,28 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-07
 description: Linux 서버에서 메일 별칭(Mail Alias)을 설정하면, 특정 이메일 주소로 오는 메일을 다른 사용자나 외부 주소로
   전달할 수 있습니다. 특히 많은 사용자에게 메일을 전달해야 하는 경우, 별도의 파일로 사용자 목록을 관리하는 것이 편리합니다. 이 글에서는 Mail
   Alias...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: alias, aliases, bash, command line, include, linux, mail, newaliases, postfix,
   sendmail, server management, shell scripting, system administration, terminal, unix,
   리눅스에서, 방법, 설정하는
-tags: linux mail alias aliases sendmail postfix newaliases include
+tags:
+- linux
+- mail
+- alias
+- aliases
+- sendmail
+- postfix
+- newaliases
+- include
 title: 리눅스에서 Mail Alias 설정하는 방법
-ShowToc: true
-draft: false
 ---
+
 #  Linux에서 Mail Alias 설정 및 Include 사용하기
 
 Linux 서버에서 메일 별칭(Mail Alias)을 설정하면, 특정 이메일 주소로 오는 메일을 다른 사용자나 외부 주소로 전달할 수 있습니다. 특히 많은 사용자에게 메일을 전달해야 하는 경우, 별도의 파일로 사용자 목록을 관리하는 것이 편리합니다. 이 글에서는 Mail Alias 설정 방법과 **include** 기능을 사용하여 별도의 파일에서 사용자 목록을 관리하는 방법을 설명합니다.

@@ -1,26 +1,35 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-09
-description: '리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여
+description: 리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여
   특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다.
----
-draft: false - **설명** :
-  Sticky ...'
+draft: false
 image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: bash, command line, linux, permissions, setgid, setuid, shell scripting,
+  sticky bit, system administration, terminal, unix
+tags:
+- linux
+- permissions
+- sticky-bit
+- setuid
+- setgid
+title: 리눅스에서 stickybit 사용하는 방법
+---
 keywords: SetGID, SetUID, StickyBit, bash, command line, linux, server management,
   shell scripting, system administration, terminal, unix, 리눅스에서, 방법, 부여하는, 특수권한을
-tags: linux StickyBit SetUID SetGID
+tags: [linux StickyBit SetUID SetGID]
 title: 리눅스에서 특수권한을 부여하는 방법
 ShowToc: true
-draft: false
+
 ---
 draft: false# 리눅스에서 특수권한을 부여하는 방법
 
 리눅스에서 **Sticky Bit**, **SetUID**, **SetGID**는 파일이나 디렉토리에 특수 권한을 설정하여 특정한 조건에서 사용자 권한을 조정할 수 있는 기능입니다. 각 특수 권한의 사용 방법과 동작 방식은 다음과 같습니다.
 
 ---
-draft: false
+
 ## Table of Contents
 ---
 

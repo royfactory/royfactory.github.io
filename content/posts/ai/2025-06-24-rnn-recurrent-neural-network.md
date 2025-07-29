@@ -1,17 +1,26 @@
 ---
-categories: ai
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- ai
 date: 2025-06-24
 description: In many real-world applications, especially in natural language processing
   and time series prediction, data comes in sequences. Unlike traditional neural net...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: AI tutorial, ML algorithms, ai, artificial intelligence, data science, deep
   learning, deep-learning, is, lstm, machine learning, network, neural, neural networks,
   nlp, python, recurrent, recurrent-neural-network, rnn, sequence-modeling, what
-tags: ai rnn recurrent-neural-network deep-learning sequence-modeling lstm nlp
+tags:
+- ai
+- rnn
+- recurrent-neural-network
+- deep-learning
+- sequence-modeling
+- lstm
+- nlp
 title: What is RNN (Recurrent Neural Network)?
-ShowToc: true
-draft: false
 ---
+
 # What is RNN (Recurrent Neural Network)?
 In many real-world applications, especially in natural language processing and time series prediction, data comes in sequences. Unlike traditional neural networks, which treat each input independently, RNNs are designed to handle sequential data by maintaining memory of previous inputs. This makes them useful for understanding the context in tasks like speech recognition, language modeling, and more.
 

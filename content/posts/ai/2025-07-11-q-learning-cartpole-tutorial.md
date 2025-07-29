@@ -1,14 +1,18 @@
 ---
-categories: ai
-image: /img/qlearning-cartpole-cover.jpg
-date: 2025-07-11
-description: Q-Learning is one of the foundational reinforcement learning algorithms. In this beginner-friendly guide, you'll learn how it works and how to apply it to the CartPole environment using OpenAI Gym and Python.
-keywords: Q-learning, reinforcement learning, CartPole, OpenAI Gym, Python, RL tutorial, beginner-friendly AI, epsilon greedy, tabular RL
-tags: ai reinforcement-learning q-learning openai-gym python ai-agents ml-tutorial cartpole beginner
-title: 'Q-Learning and CartPole: Your First Reinforcement Learning Agent'
 ShowToc: true
+categories: [ai]
+date: 2025-07-11
+description: Q-Learning is one of the foundational reinforcement learning algorithms.
+  In this beginner-friendly guide, you'll learn how it works and how to apply it to
+  the CartPole environment using OpenAI Gym and Python.
 draft: false
+image: /img/qlearning-cartpole-cover.jpg
+keywords: Q-learning, reinforcement learning, CartPole, OpenAI Gym, Python, RL tutorial,
+  beginner-friendly AI, epsilon greedy, tabular RL
+tags: [ai reinforcement-learning q-learning openai-gym python ai-agents ml-tutorial]cartpole beginner
+title: 'Q-Learning and CartPole: Your First Reinforcement Learning Agent'
 ---
+
 # Q-Learning and CartPole: Your First Reinforcement Learning Agent
 
 If you’ve dipped your toes into reinforcement learning, chances are you’ve encountered **Q-Learning** — a classic, foundational algorithm that’s simple to understand yet powerful enough to teach you how AI agents can learn from rewards.
@@ -121,7 +125,7 @@ min_bounds[3] = -math.radians(50)
 ```python
 def discretize(obs):
     ratios = [(obs[i] - min_bounds[i]) / (max_bounds[i] - min_bounds[i]) for i in range(len(obs))]
-    new_obs = [int(round((buckets[i] - 1) * min(max(ratios[i], 0), 1))) for i in range(len(obs))]
+    new_obs = [int(round((buckets[i] - 1) * min(max(ratios[i]0), 1))) for i in range(len(obs))]
     return tuple(new_obs)
 ```
 

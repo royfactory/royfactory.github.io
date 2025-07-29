@@ -1,26 +1,23 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-10-30
 description: VSFTP(Very Secure FTP)는 빠르고 안전한 FTP 서버 프로그램으로, Linux에서 손쉽게 설정할 수 있습니다.
   이 글에서는 Linux 환경에서 VSFTP 서버를 설치하고 설정하는 방법을 다룹니다.
----
-draft: false 먼저, 터미널에서 VSFTP를 설치합니다. sudo
-  apt u...
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
-keywords: bash, command line, linux, server management, shell scripting, system administration,
-  terminal, unix, vsftp, 리눅스에서, 방법, 서버를, 설정하는
-tags: linux vsftp
-title: 리눅스에서 VSFTP 서버를 설정하는 방법
-ShowToc: true
 draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 ---
-draft: false# 리눅스에서 VSFTP 서버를 설정하는 방법
+
+  apt u...
+  terminal, unix, vsftp, 리눅스에서, 방법, 서버를, 설정하는
+
+---
 
 VSFTP(Very Secure FTP)는 빠르고 안전한 FTP 서버 프로그램으로, Linux에서 손쉽게 설정할 수 있습니다. 이 글에서는 Linux 환경에서 VSFTP 서버를 설치하고 설정하는 방법을 다룹니다.
 
 ---
-draft: false
+
 ## Table of Contents
 ---
 

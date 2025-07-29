@@ -1,14 +1,28 @@
 ---
-categories: kubernetes
-image: /img/what-is-kubernetes-cover.jpg
-date: 2025-07-11
-description: Kubernetes is the most popular container orchestration system. In this beginner-friendly guide, you'll learn what Kubernetes is, why it's needed, how it works, and what problems it solves in modern cloud-native environments.
-keywords: kubernetes, k8s, container orchestration, cloud native, devops, pods, cluster, node, docker, yaml
-tags: kubernetes k8s containers devops cloud-native orchestration cluster pod beginner
-title: 'What Is Kubernetes? The Beginner’s Guide to Container Orchestration'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-11
+description: Kubernetes is the most popular container orchestration system. In this
+  beginner-friendly guide, you'll learn what Kubernetes is, why it's needed, how it
+  works, and what problems it solves in modern cloud-native environments.
 draft: false
+image: /img/what-is-kubernetes-cover.jpg
+keywords: kubernetes, k8s, container orchestration, cloud native, devops, pods, cluster,
+  node, docker, yaml
+tags:
+- kubernetes
+- k8s
+- containers
+- devops
+- cloud-native
+- orchestration
+- cluster
+- pod
+- beginner
+title: What Is Kubernetes? The Beginner’s Guide to Container Orchestration
 ---
+
 # What Is Kubernetes? The Beginner’s Guide to Container Orchestration
 
 If you're new to the world of cloud-native applications, containers, and DevOps, chances are you've come across the term **Kubernetes** (often abbreviated as **K8s**). But what exactly is Kubernetes, and why does everyone seem to be talking about it?
@@ -176,5 +190,4 @@ In the next post, we’ll look at the **fundamental concepts of Kubernetes** —
 Stay tuned!
 
 ---
-draft: false필요하시면 이 파일을 `.md` 마크다운 형식으로 저장해서 제공드릴 수 있어요.  
 다음 포스트인 “Kubernetes 기본 개념”의 영문 버전도 작성해드릴까요?

@@ -1,14 +1,27 @@
 ---
-categories: cloud-native
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
-date: 2025-07-04
-description: Learn how to install, use, and monitor Longhorn — an open-source distributed block storage system for Kubernetes. Easy setup with Helm, built-in dashboard access, and Prometheus integration.
-keywords: longhorn, kubernetes storage, persistent volume, helm, longhorn monitoring, grafana, prometheus, cloud native, block storage
-tags: cloud-native kubernetes storage longhorn helm grafana prometheus persistent-volume
-title: 'Longhorn Tutorial: Kubernetes Storage Made Simple (Install & Monitor Guide)'
 ShowToc: true
+categories:
+- cloud-native
+date: 2025-07-04
+description: Learn how to install, use, and monitor Longhorn — an open-source distributed
+  block storage system for Kubernetes. Easy setup with Helm, built-in dashboard access,
+  and Prometheus integration.
 draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+keywords: longhorn, kubernetes storage, persistent volume, helm, longhorn monitoring,
+  grafana, prometheus, cloud native, block storage
+tags:
+- cloud-native
+- kubernetes
+- storage
+- longhorn
+- helm
+- grafana
+- prometheus
+- persistent-volume
+title: 'Longhorn Tutorial: Kubernetes Storage Made Simple (Install & Monitor Guide)'
 ---
+
 # Longhorn Tutorial: Kubernetes Storage Made Simple (Install & Monitor Guide)
 
 In this guide, we’ll explore **Longhorn**, a lightweight, reliable, and open-source **distributed block storage system** for Kubernetes.

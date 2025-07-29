@@ -1,16 +1,21 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-07
 description: Linux에서 네트워크 보안을 위해 자주 사용되는 방화벽 서비스 중 하나가 **firewalld**입니다. `firewalld`는
   동적 방화벽 관리 도구로, 실시간으로 방화벽 설정을 적용할 수 있으며 iptables의 대체 도구로 많이 사용됩니다. 이번 포스팅에서는 `firewal...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, firewall, firewalld, linux, server management, shell
   scripting, system administration, terminal, unix, 리눅스에서, 방법, 사용하는
-tags: linux firewalld firewall
+tags:
+- linux
+- firewalld
+- firewall
 title: 리눅스에서 firewalld 사용하는 방법
-ShowToc: true
-draft: false
 ---
+
 # Firewalld 이해 및 사용법 가이드
 
 Linux에서 네트워크 보안을 위해 자주 사용되는 방화벽 서비스 중 하나가 **firewalld**입니다. `firewalld`는 동적 방화벽 관리 도구로, 실시간으로 방화벽 설정을 적용할 수 있으며 iptables의 대체 도구로 많이 사용됩니다. 이번 포스팅에서는 `firewalld`의 기본 개념, 주요 기능, 설치 방법, 사용법 등에 대해 알아보겠습니다.

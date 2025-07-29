@@ -1,27 +1,24 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-11
 description: Apache HTTP Server(`httpd`)는 리눅스에서 널리 사용되는 웹 서버입니다. `httpd.conf` 설정 파일을
   통해 다양한 서버 옵션을 조정할 수 있는데, 이번 글에서는 서버를 설정할 때 자주 사용하는 주요 항목들과 그 예시를 소개하겠습니다.
----
-draft: false 서버의
-  루트 ...
+draft: false
 image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
-keywords: apache, bash, command line, config, http, httpd, httpd.conf, linux, server,
+---
+
+  루트 ...
   server management, shell scripting, system administration, terminal, unix, 리눅스에서,
   방법, 설정하는
-tags: linux apache http httpd config httpd.conf
-title: 리눅스에서 Apache HTTP Server 설정하는 방법
-ShowToc: true
-draft: false
+
 ---
-draft: false# 리눅스에서 Apache HTTP Server 설정하는 방법
 
 Apache HTTP Server(`httpd`)는 리눅스에서 널리 사용되는 웹 서버입니다. `httpd.conf` 설정 파일을 통해 다양한 서버 옵션을 조정할 수 있는데, 이번 글에서는 서버를 설정할 때 자주 사용하는 주요 항목들과 그 예시를 소개하겠습니다.
 
 ---
-draft: false
+
 ## Table of Contents
 ---
 
@@ -155,6 +152,5 @@ KeepAlive On
 ```
 
 ---
-draft: falseApache 설정을 제대로 이해하고 사용하면 웹 서버의 성능을 최적화하고 보안을 가오하할 수 있습니다. 위의 설정 항목들을 적절히 조합하여 본인 서버 환경에 맞게 설정해보시길 바랍니다.
 
 ---

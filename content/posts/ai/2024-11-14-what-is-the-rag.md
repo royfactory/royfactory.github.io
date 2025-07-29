@@ -1,16 +1,20 @@
 ---
-categories: ai
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- ai
 date: 2024-11-14
 description: RAG (Retrieval-Augmented Generation) 완벽 가이드. 대규모 언어모델의 한계를 극복하는 정보 검색
   증강 생성 기술과 실제 구현 방법을 학습하세요.
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: RAG, Retrieval-Augmented Generation, 정보검색 증강생성, 대규모언어모델, LLM, 자연어처리, NLP,
   벡터데이터베이스, 임베딩
-tags: ai rag
+tags:
+- ai
+- rag
 title: RAG (Retrieval-Augmented Generation)란 무엇인가?
-ShowToc: true
-draft: false
 ---
+
 # RAG (Retrieval-Augmented Generation)란 무엇인가?
 최근 몇 년간 자연어 처리(NLP) 기술이 급격히 발전하면서, 대규모 언어 모델(LLM)들이 다양한 문제를 해결하는 데 사용되고 있습니다. 그러나 LLM은 모든 정보를 내부에 저장하고 추론하는 방식으로 설계되어 있어, 최신 정보나 방대한 외부 데이터를 활용하는 데 한계가 있습니다. 이러한 한계를 극복하기 위해 등장한 기술이 바로 RAG (Retrieval-Augmented Generation) 입니다.
 

@@ -1,17 +1,23 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-10-29
 description: '`logrotate`는 서버 및 애플리케이션 로그 파일의 용량을 효과적으로 관리하기 위해 사용되는 Linux 유틸리티입니다.
   로그 파일이 일정 크기에 도달하거나 일정 기간이 경과했을 때, `logrotate`를 통해 로그를 자동으로 순환(rotating)하고 필요 시
   압축, 삭제할...'
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, linux, log, logging, logrotate, server management, shell
   scripting, system administration, terminal, unix, 관리하는, 로그를, 리눅스에서, 방법
-tags: linux logrotate logging log
+tags:
+- linux
+- logrotate
+- logging
+- log
 title: 리눅스에서 로그를 관리하는 방법
-ShowToc: true
-draft: false
 ---
+
 # Logrotate: 로그 관리를 위한 자동화 도구
 
 `logrotate`는 서버 및 애플리케이션 로그 파일의 용량을 효과적으로 관리하기 위해 사용되는 Linux 유틸리티입니다. 로그 파일이 일정 크기에 도달하거나 일정 기간이 경과했을 때, `logrotate`를 통해 로그를 자동으로 순환(rotating)하고 필요 시 압축, 삭제할 수 있습니다. 이를 통해 시스템의 로그 저장 공간을 절약하고, 로그 관리에 대한 부담을 줄일 수 있습니다.

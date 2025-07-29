@@ -1,14 +1,28 @@
 ---
-categories: ai
-image: /img/openai-gym-cover.jpg
-date: 2025-07-09
-description: Reinforcement Learning can seem intimidating, but it's easier than you think. In this beginner-friendly guide, learn what RL is and how to build your first AI agent using OpenAI Gym and Python.
-keywords: reinforcement learning, OpenAI Gym, AI agent, Python, CartPole, RL tutorial, Q-learning, DQN, machine learning beginner
-tags: ai reinforcement-learning openai-gym python cartpole ai-agents ml-tutorial beginner-friendly
-title: 'Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym'
 ShowToc: true
+categories:
+- ai
+date: 2025-07-09
+description: Reinforcement Learning can seem intimidating, but it's easier than you
+  think. In this beginner-friendly guide, learn what RL is and how to build your first
+  AI agent using OpenAI Gym and Python.
 draft: false
+image: /img/openai-gym-cover.jpg
+keywords: reinforcement learning, OpenAI Gym, AI agent, Python, CartPole, RL tutorial,
+  Q-learning, DQN, machine learning beginner
+tags:
+- ai
+- reinforcement-learning
+- openai-gym
+- python
+- cartpole
+- ai-agents
+- ml-tutorial
+- beginner-friendly
+title: 'Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI
+  Gym'
 ---
+
 # Reinforcement Learning for Beginners: Build Your First AI Agent with OpenAI Gym
 
 Reinforcement Learning (RL) might sound like an advanced topic reserved for researchers and PhDs — but the truth is, **you can start today**, even as a beginner.
@@ -191,6 +205,5 @@ Stay tuned for the next post:
 * **“Exploration vs. Exploitation: How AI Makes Decisions”**
 
 ---
-draft: falseIf you’re new to AI or just exploring reinforcement learning, **this is a great place to begin**. With just Python and OpenAI Gym, you can start building intelligent systems that learn by interacting with their environment — just like us.
 
 Let your AI agent take its first steps today.

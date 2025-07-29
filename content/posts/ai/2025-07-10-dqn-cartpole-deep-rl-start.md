@@ -1,14 +1,19 @@
 ---
-categories: ai
-image: /img/dqn-cartpole-cover.jpg
-date: 2025-07-10
-description: DQN (Deep Q-Network) is one of the most fundamental deep reinforcement learning algorithms. In this beginner-friendly tutorial, you'll learn what DQN is, why it matters, and how to use it to solve the classic CartPole environment using PyTorch and OpenAI Gym.
-keywords: DQN, Deep Reinforcement Learning, CartPole, OpenAI Gym, PyTorch, Q-Learning, RL tutorial, AI agents, machine learning beginner
-tags: ai reinforcement-learning dqn gym pytorch q-learning deep-rl cartpole ml-tutorial ai-agents
-title: 'Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners'
 ShowToc: true
+categories: [ai]
+date: 2025-07-10
+description: DQN (Deep Q-Network) is one of the most fundamental deep reinforcement
+  learning algorithms. In this beginner-friendly tutorial, you'll learn what DQN is,
+  why it matters, and how to use it to solve the classic CartPole environment using
+  PyTorch and OpenAI Gym.
 draft: false
+image: /img/dqn-cartpole-cover.jpg
+keywords: DQN, Deep Reinforcement Learning, CartPole, OpenAI Gym, PyTorch, Q-Learning,
+  RL tutorial, AI agents, machine learning beginner
+tags: [ai reinforcement-learning dqn gym pytorch q-learning deep-rl cartpole ml-tutorial]ai-agents
+title: 'Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners'
 ---
+
 # Mastering CartPole with DQN: Deep Reinforcement Learning for Beginners
 
 If you've played with reinforcement learning (RL) before, you've probably seen the classic CartPole balancing problem. And if you've tried solving it with traditional **Q-learning**, you might have run into some limitations.
@@ -92,7 +97,6 @@ class DQN(nn.Module):
 ````
 
 ---
-draft: false### 2. Experience Replay Buffer
 
 Stores past experiences and samples them randomly to break temporal correlation.
 
@@ -115,7 +119,6 @@ class ReplayBuffer:
 ```
 
 ---
-draft: false### 3. Epsilon-Greedy Action Selection
 
 The agent explores randomly at first, then gradually exploits what it has learned.
 

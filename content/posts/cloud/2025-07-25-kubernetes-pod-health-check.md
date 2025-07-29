@@ -1,13 +1,29 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-pod-health-check.jpg
+ShowToc: true
+categories:
+- kubernetes
 date: 2025-07-19
-description: Learn how to monitor the health of Kubernetes Pods using Liveness, Readiness, and Startup Probes. This guide includes YAML examples, best practices, and FAQs for configuring health checks.
-keywords: kubernetes pod health, liveness probe, readiness probe, startup probe, k8s health check, pod monitoring, kubectl probes
-tags: kubernetes k8s pod health liveness readiness startup probes devops cloud-native
-title: 'Kubernetes Pod Health Checks: Liveness, Readiness, and Startup Probes'
+description: Learn how to monitor the health of Kubernetes Pods using Liveness, Readiness,
+  and Startup Probes. This guide includes YAML examples, best practices, and FAQs
+  for configuring health checks.
 draft: false
+image: /img/kubernetes-pod-health-check.jpg
+keywords: kubernetes pod health, liveness probe, readiness probe, startup probe, k8s
+  health check, pod monitoring, kubectl probes
+tags:
+- kubernetes
+- k8s
+- pod
+- health
+- liveness
+- readiness
+- startup
+- probes
+- devops
+- cloud-native
+title: 'Kubernetes Pod Health Checks: Liveness, Readiness, and Startup Probes'
 ---
+
 # Kubernetes Pod Health Checks: Liveness, Readiness, and Startup Probes
 
 **Question:** *“How can I ensure my Pod is healthy and ready to serve traffic?”*

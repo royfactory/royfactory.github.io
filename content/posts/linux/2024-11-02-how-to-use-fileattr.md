@@ -1,26 +1,23 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-02
 description: 리눅스에서는 파일의 속성을 설정하여 삭제, 수정, 추가 등을 제어할 수 있습니다. 이때 사용하는 명령어가 바로 `lsattr`와
   `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다.
----
-draft: false `lsattr` 명령어는 파일에 설정된 속성을
-  확인...
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
-keywords: bash, chattr, command line, fileattr, linux, lsattr, server management,
-  shell scripting, system administration, terminal, unix, 관리하는, 리눅스에서, 방법, 속성을, 파일
-tags: linux lsattr chattr fileattr
-title: 리눅스에서 파일 속성을 관리하는 방법
-ShowToc: true
 draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 ---
-draft: false# 리눅스 파일 속성 관리 - `lsattr`와 `chattr`
+
+  확인...
+  shell scripting, system administration, terminal, unix, 관리하는, 리눅스에서, 방법, 속성을, 파일
+
+---
 
 리눅스에서는 파일의 속성을 설정하여 삭제, 수정, 추가 등을 제어할 수 있습니다. 이때 사용하는 명령어가 바로 `lsattr`와 `chattr`입니다. 이 글에서는 이 두 명령어의 사용법과 주요 옵션에 대해 알아보겠습니다.
 
 ---
-draft: false
+
 ## Table of Contents
 ---
 

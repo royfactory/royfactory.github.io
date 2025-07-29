@@ -1,14 +1,27 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-service-resource.jpg
-date: 2025-07-26
-description: Learn the fundamentals of Kubernetes Services, including ClusterIP, NodePort, and LoadBalancer types, with practical YAML examples and networking concepts.
-keywords: kubernetes service, clusterip, nodeport, loadbalancer, k8s networking, kubectl service, kubernetes service types
-tags: kubernetes k8s networking service clusterip nodeport loadbalancer devops cloud-native
-title: 'Kubernetes Networking: Exploring Service Resources'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-26
+description: Learn the fundamentals of Kubernetes Services, including ClusterIP, NodePort,
+  and LoadBalancer types, with practical YAML examples and networking concepts.
 draft: false
+image: /img/kubernetes-service-resource.jpg
+keywords: kubernetes service, clusterip, nodeport, loadbalancer, k8s networking, kubectl
+  service, kubernetes service types
+tags:
+- kubernetes
+- k8s
+- networking
+- service
+- clusterip
+- nodeport
+- loadbalancer
+- devops
+- cloud-native
+title: 'Kubernetes Networking: Exploring Service Resources'
 ---
+
 # Kubernetes Networking: Exploring Service Resources
 
 **Question:** *“How do you expose Pods to stable network endpoints in Kubernetes?”*

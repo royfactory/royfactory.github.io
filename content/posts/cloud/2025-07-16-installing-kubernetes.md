@@ -1,14 +1,28 @@
 ---
-categories: kubernetes
-image: /img/installing-kubernetes-cover.jpg
-date: 2025-07-16
-description: Ready to install Kubernetes? In this beginner-friendly guide, we walk through how to install Kubernetes on your local machine using Minikube, and how to build production-grade clusters with kubeadm.
-keywords: kubernetes, k8s, install kubernetes, minikube, kubeadm, cluster setup, local kubernetes, beginner kubernetes installation, cloud-native devops
-tags: kubernetes k8s install minikube kubeadm devops local-cluster cloud-native beginner
-title: 'Installing Kubernetes: Minikube and kubeadm Setup for Beginners'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-16
+description: Ready to install Kubernetes? In this beginner-friendly guide, we walk
+  through how to install Kubernetes on your local machine using Minikube, and how
+  to build production-grade clusters with kubeadm.
 draft: false
+image: /img/installing-kubernetes-cover.jpg
+keywords: kubernetes, k8s, install kubernetes, minikube, kubeadm, cluster setup, local
+  kubernetes, beginner kubernetes installation, cloud-native devops
+tags:
+- kubernetes
+- k8s
+- install
+- minikube
+- kubeadm
+- devops
+- local-cluster
+- cloud-native
+- beginner
+title: 'Installing Kubernetes: Minikube and kubeadm Setup for Beginners'
 ---
+
 # Installing Kubernetes: Minikube and kubeadm Setup for Beginners
 
 So far, we’ve explored what Kubernetes is, how it works, and why it matters.
@@ -66,7 +80,6 @@ Minikube creates a single-node Kubernetes cluster on your local machine. Perfect
 - `kubectl` installed
 
 ---
-draft: false### Installing Minikube (macOS example)
 
 Using Homebrew:
 
@@ -83,7 +96,6 @@ sudo mv minikube-darwin-amd64 /usr/local/bin/minikube
 ```
 
 ---
-draft: false### Start the Cluster
 
 ```bash
 minikube start
@@ -96,7 +108,6 @@ Minikube will:
 * Deploy system components (DNS, dashboard, etc.)
 
 ---
-draft: false### Verify the Node
 
 ```bash
 kubectl get nodes
@@ -110,7 +121,6 @@ minikube   Ready    control-plane   1m    v1.29.0
 ```
 
 ---
-draft: false### Launch the Dashboard
 
 ```bash
 minikube dashboard
@@ -127,7 +137,6 @@ This opens a GUI in your browser to view and manage your cluster visually.
 `kubeadm` is the **official tool** to bootstrap a production-ready Kubernetes cluster. It’s more complex than Minikube but more realistic.
 
 ---
-draft: false### Recommended Environment
 
 * 2 or more Linux servers (Ubuntu 22.04)
 
@@ -136,7 +145,6 @@ draft: false### Recommended Environment
 * `kubelet`, `kubeadm`, `kubectl` installed
 
 ---
-draft: false### Installation Summary
 
 #### 1) Prepare the OS
 
@@ -166,14 +174,12 @@ sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
 ---
-draft: false### 4) Initialize the Control Plane
 
 ```bash
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
 
 ---
-draft: false### 5) Set Up `kubectl` Access
 
 ```bash
 mkdir -p $HOME/.kube
@@ -181,14 +187,12 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 ```
 
 ---
-draft: false### 6) Install Network Plugin (e.g. Flannel)
 
 ```bash
 kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
 ```
 
 ---
-draft: false### 7) Join Worker Nodes
 
 Run the `kubeadm join` command shown after initialization on each worker node.
 

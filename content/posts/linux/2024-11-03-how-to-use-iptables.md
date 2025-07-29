@@ -1,27 +1,30 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-03
 description: '`iptables`는 Linux의 강력한 방화벽 툴로, 네트워크 트래픽을 제어하는 데 사용됩니다. 각 항목과 설정 방법을
-  이해하는 것이 네트워크 보안 및 관리에 필수적입니다.
----
-draft: false - **iptables**는 **Netfilter** 프레임워크의 사용자 공간에서
-  네트워크 패킷을 ...'
+  이해하는 것이 네트워크 보안 및 관리에 필수적입니다.'
+draft: false
 image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, firewall, iptables-restore, iptables-save, itbales,
   linux, server management, shell scripting, system administration, terminal, unix,
   관리하는, 리눅스에서, 방법, 방화벽을
-tags: linux firewall itbales iptables-save iptables-restore
+tags:
+- linux
+- firewall
+- itbales
+- iptables-save
+- iptables-restore
 title: 리눅스에서 방화벽을 관리하는 방법
-ShowToc: true
-draft: false
 ---
-draft: false# 리눅스에서 방화벽을 관리하는 방법 : `iptables`
+
+# 리눅스에서 방화벽을 관리하는 방법 : `iptables`
 
 `iptables`는 Linux의 강력한 방화벽 툴로, 네트워크 트래픽을 제어하는 데 사용됩니다. 각 항목과 설정 방법을 이해하는 것이 네트워크 보안 및 관리에 필수적입니다.
 
 ---
-draft: false
+
 ## Table of Contents
 ---
 
@@ -158,6 +161,5 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 ---
-draft: false이제 `iptables` 설정과 구성이 완료되었습니다. 네트워크 트래픽을 효과적으로 관리하려면 필요에 따라 규칙을 추가하거나 삭제하고, 기본 정책을 신중하게 설정해야 합니다.
 
 ---

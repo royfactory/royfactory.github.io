@@ -1,14 +1,28 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-basic-concepts-cover.jpg
-date: 2025-07-13
-description: Learn the core concepts of Kubernetes in simple terms. This post breaks down Pods, Nodes, Services, Deployments, Volumes, Namespaces, and more — with analogies and examples for absolute beginners.
-keywords: kubernetes, k8s, pods, nodes, cluster, services, deployments, volumes, yaml, cloud-native, beginner kubernetes tutorial
-tags: kubernetes k8s cluster pod devops yaml containers cloud-native beginner
-title: 'Kubernetes Basic Concepts: The Foundations of Cloud-Native Infrastructure'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-13
+description: Learn the core concepts of Kubernetes in simple terms. This post breaks
+  down Pods, Nodes, Services, Deployments, Volumes, Namespaces, and more — with analogies
+  and examples for absolute beginners.
 draft: false
+image: /img/kubernetes-basic-concepts-cover.jpg
+keywords: kubernetes, k8s, pods, nodes, cluster, services, deployments, volumes, yaml,
+  cloud-native, beginner kubernetes tutorial
+tags:
+- kubernetes
+- k8s
+- cluster
+- pod
+- devops
+- yaml
+- containers
+- cloud-native
+- beginner
+title: 'Kubernetes Basic Concepts: The Foundations of Cloud-Native Infrastructure'
 ---
+
 # Kubernetes Basic Concepts: The Foundations of Cloud-Native Infrastructure
 
 In the first post, we explored what Kubernetes is and why it's such a big deal in the world of cloud-native development. Now, it’s time to understand the **core building blocks** that make up Kubernetes.

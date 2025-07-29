@@ -1,17 +1,24 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-10-31
 description: TCP Wrapper는 Linux와 Unix 시스템에서 네트워크 서비스 접근을 제어하는 보안 도구입니다. 보통 **inetd(super-server)**와
   같은 서비스 관리자가 관리하는 네트워크 서비스의 접근을 제한하기 위해 사용됩니다. TCP Wrapper는 허가된 IP 주소나 ...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, hosts.allow, hosts.deny, linux, server management, shell
   scripting, system administration, tcp, terminal, unix, wrapper, wrapper를, 리눅스에서,
   방법, 사용하는
-tags: tcp wrapper linux hosts.allow hosts.deny
+tags:
+- tcp
+- wrapper
+- linux
+- hosts.allow
+- hosts.deny
 title: 리눅스에서 TCP Wrapper를 사용하는 방법
-ShowToc: true
-draft: false
 ---
+
 # Linux에서 TCP Wrapper란 무엇인가?
 
 TCP Wrapper는 Linux와 Unix 시스템에서 네트워크 서비스 접근을 제어하는 보안 도구입니다. 보통 **inetd(super-server)**와 같은 서비스 관리자가 관리하는 네트워크 서비스의 접근을 제한하기 위해 사용됩니다. TCP Wrapper는 허가된 IP 주소나 호스트 이름을 바탕으로 서비스 접근을 제어할 수 있어, 네트워크 보안의 기본적인 계층을 제공합니다.

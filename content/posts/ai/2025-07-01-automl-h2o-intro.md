@@ -1,17 +1,28 @@
 ---
-categories: ai
-image: /img/cover-h2o-automl.jpg
+ShowToc: true
+categories:
+- ai
 date: 2025-07-01
 description: Learn H2O AutoML for automated machine learning without coding. Complete
   guide covering data science automation, model training, ensemble methods, and practical
   implementation.
+draft: false
+image: /img/cover-h2o-automl.jpg
 keywords: H2O AutoML, automated machine learning, no-code ML, data science automation,
   ensemble methods, XGBoost, GBM, model training, H2O.ai
-tags: ai automl h2o machine-learning no-code data-science gbm xgboost ensemble
+tags:
+- ai
+- automl
+- h2o
+- machine-learning
+- no-code
+- data-science
+- gbm
+- xgboost
+- ensemble
 title: What is H2O AutoML? Train ML Models Without Coding
-ShowToc: true
-draft: false
 ---
+
 # What is H2O AutoML? Train ML Models Without Coding
 
 **H2O AutoML** is an open-source tool that automates the machine learning process—from data preprocessing to model training, tuning, and selection. It’s built by [H2O.ai](https://www.h2o.ai/) and is designed for both beginners and experts who want to save time and get powerful models without diving deep into code.
@@ -47,7 +58,7 @@ from h2o.automl import H2OAutoML
 h2o.init()
 data = h2o.import_file("customer_data.csv")
 
-train, test = data.split_frame(ratios=[.8], seed=1)
+train, test = data.split_frame(ratios=[.8]seed=1)
 aml = H2OAutoML(max_models=10, seed=1)
 aml.train(y="target", training_frame=train)
 ````

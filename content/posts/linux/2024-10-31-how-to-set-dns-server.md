@@ -1,18 +1,26 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-10-31
 description: 리눅스 시스템에서 DNS 서버를 설정할 때, 가장 중요한 설정 파일 중 하나가 바로 `named.conf`입니다. 이 파일은
   BIND (Berkeley Internet Name Domain) DNS 서버의 설정 파일로, 네임 서버의 동작 방식을 정의하는 다양한 옵션을
   포함하고 있습...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: BIND, bash, command line, dns, linux, named, named.conf, server management,
   setting, shell scripting, system administration, terminal, unix, 리눅스에서, 방법, 서버,
   설정하는
-tags: linux dns setting named.conf named BIND
+tags:
+- linux
+- dns
+- setting
+- named.conf
+- named
+- BIND
 title: 리눅스에서 DNS 서버 설정하는 방법
-ShowToc: true
-draft: false
 ---
+
 # 리눅스에서 `named.conf` 설정하기
 
 리눅스 시스템에서 DNS 서버를 설정할 때, 가장 중요한 설정 파일 중 하나가 바로 `named.conf`입니다. 이 파일은 BIND (Berkeley Internet Name Domain) DNS 서버의 설정 파일로, 네임 서버의 동작 방식을 정의하는 다양한 옵션을 포함하고 있습니다. `named.conf` 파일을 설정하는 방법과 주요 설정 요소들을 하나씩 살펴보겠습니다.

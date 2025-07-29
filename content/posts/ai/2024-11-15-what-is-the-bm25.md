@@ -1,18 +1,26 @@
 ---
-categories: ai
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- ai
 date: 2024-11-15
 description: BM25는 정보 검색(IR, Information Retrieval) 분야에서 널리 사용되는 **가중치 기반 검색 알고리즘**입니다.
   검색 쿼리와 문서 간의 유사도를 계산하여 관련도가 높은 문서를 반환하는 데 사용됩니다. BM25는 TF-IDF를 기반으로 확장된 모델로, 특히
   텍스...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: AI tutorial, ML algorithms, ai, algorithm, artificial intelligence, bm25,
   bm25란, data science, deep learning, machine learning, neural networks, python, rag,
   similarity, tf-idf, 무엇인가
-tags: ai rag tf-idf bm25 algorithm similarity
+tags:
+- ai
+- rag
+- tf-idf
+- bm25
+- algorithm
+- similarity
 title: BM25란 무엇인가?
-ShowToc: true
-draft: false
 ---
+
 # BM25란 무엇인가?
 BM25는 정보 검색(IR, Information Retrieval) 분야에서 널리 사용되는 **가중치 기반 검색 알고리즘**입니다. 검색 쿼리와 문서 간의 유사도를 계산하여 관련도가 높은 문서를 반환하는 데 사용됩니다. BM25는 TF-IDF를 기반으로 확장된 모델로, 특히 텍스트 검색 시스템에서 효율성과 정확도를 높이는 데 매우 효과적입니다.
 

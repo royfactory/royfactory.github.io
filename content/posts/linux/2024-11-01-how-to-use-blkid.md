@@ -1,17 +1,24 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-01
 description: 리눅스 시스템에서 디스크와 파티션을 관리할 때, 특히 마운트 정보를 확인하거나 파티션을 식별하기 위해 UUID나 파일시스템
   타입을 조회하는 경우가 많습니다. 이때 유용하게 사용할 수 있는 명령어 중 하나가 바로 `blkid`입니다. 이번 글에서는 `blkid` 명령어의
   사용법과 옵...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, blkid, blkid를, command line, filesystem, filetype, linux, server management,
   shell scripting, system administration, terminal, unix, uuid, 리눅스에서, 방법, 사용하는
-tags: linux blkid uuid filesystem filetype
+tags:
+- linux
+- blkid
+- uuid
+- filesystem
+- filetype
 title: 리눅스에서 blkid를 사용하는 방법
-ShowToc: true
-draft: false
 ---
+
 # blkid - 리눅스 파일시스템 UUID와 타입 확인 명령어
 
 리눅스 시스템에서 디스크와 파티션을 관리할 때, 특히 마운트 정보를 확인하거나 파티션을 식별하기 위해 UUID나 파일시스템 타입을 조회하는 경우가 많습니다. 이때 유용하게 사용할 수 있는 명령어 중 하나가 바로 `blkid`입니다. 이번 글에서는 `blkid` 명령어의 사용법과 옵션들에 대해 자세히 설명하겠습니다.

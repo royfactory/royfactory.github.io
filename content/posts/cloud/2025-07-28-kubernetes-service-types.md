@@ -1,13 +1,17 @@
 ---
-categories: kubernetes
-date: 2025-07-16
-description: Learn about Kubernetes Service types, including ClusterIP, NodePort, LoadBalancer, and ExternalName. Understand their use cases with YAML examples and a detailed comparison.
-keywords: kubernetes service types, clusterip, nodeport, loadbalancer, externalname, k8s networking, kubectl service
-tags: kubernetes k8s networking service-types clusterip nodeport loadbalancer externalname devops cloud-native
-title: 'Kubernetes Networking: Exploring Service Types'
 ShowToc: true
+categories: [kubernetes]
+date: 2025-07-16
+description: Learn about Kubernetes Service types, including ClusterIP, NodePort,
+  LoadBalancer, and ExternalName. Understand their use cases with YAML examples and
+  a detailed comparison.
 draft: false
+keywords: kubernetes service types, clusterip, nodeport, loadbalancer, externalname,
+  k8s networking, kubectl service
+tags: [kubernetes k8s networking service-types clusterip nodeport loadbalancer externalname]devops cloud-native
+title: 'Kubernetes Networking: Exploring Service Types'
 ---
+
 # Kubernetes Networking: Exploring Service Types
 
 **Question:** *“How do I expose my Kubernetes Pods to internal or external traffic?”*

@@ -1,18 +1,29 @@
 ---
-categories: ai
-image: /img/cover-automl-mlpipeline.jpg
+ShowToc: true
+categories:
+- ai
 date: 2025-06-29
 description: AutoML (Automated Machine Learning) refers to technologies that **automate
   the entire machine learning pipeline**, including data preprocessing, model select...
+draft: false
+image: /img/cover-automl-mlpipeline.jpg
 keywords: AI tutorial, ML algorithms, ai, artificial intelligence, automated, automl,
   autosklearn, data science, deep learning, h2o, is, learn, learning, machine, machine
   learning, machine-learning, mlops, model-automation, neural networks, python, tpot,
   what, with
-tags: ai automl machine-learning mlops model-automation python h2o tpot autosklearn
+tags:
+- ai
+- automl
+- machine-learning
+- mlops
+- model-automation
+- python
+- h2o
+- tpot
+- autosklearn
 title: What is AutoML? Learn Automated Machine Learning with Python
-ShowToc: true
-draft: false
 ---
+
 # What is AutoML? Learn Automated Machine Learning with Python
 
 AutoML (Automated Machine Learning) refers to technologies that **automate the entire machine learning pipeline**, including data preprocessing, model selection, hyperparameter tuning, and evaluation. With AutoML, even beginners can build accurate ML models without deep technical expertise.
@@ -92,7 +103,7 @@ x = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
 y = 'Survived'
 
 # Split into training and testing
-train, test = h2o_df.split_frame(ratios=[0.8], seed=1)
+train, test = h2o_df.split_frame(ratios=[0.8]seed=1)
 
 # Run AutoML
 aml = H2OAutoML(max_models=10, max_runtime_secs=60, seed=1)

@@ -1,14 +1,29 @@
 ---
-categories: kubernetes
-image: /img/kubernetes-pod-labels.jpg
-date: 2025-07-20
-description: Learn how Kubernetes Pod labels work, why they matter, and how to use selectors for service routing and resource management. This guide includes best practices, YAML examples, and common FAQs.
-keywords: kubernetes pod labels, k8s labels, kubectl label command, pod labeling, kubernetes selectors, devops, k8s best practices
-tags: kubernetes k8s pod labels kubectl yaml devops beginner selectors cloud-native
-title: 'Kubernetes Pod Labels: A Complete Guide with Selectors and Examples'
 ShowToc: true
+categories:
+- kubernetes
+date: 2025-07-20
+description: Learn how Kubernetes Pod labels work, why they matter, and how to use
+  selectors for service routing and resource management. This guide includes best
+  practices, YAML examples, and common FAQs.
 draft: false
+image: /img/kubernetes-pod-labels.jpg
+keywords: kubernetes pod labels, k8s labels, kubectl label command, pod labeling,
+  kubernetes selectors, devops, k8s best practices
+tags:
+- kubernetes
+- k8s
+- pod
+- labels
+- kubectl
+- yaml
+- devops
+- beginner
+- selectors
+- cloud-native
+title: 'Kubernetes Pod Labels: A Complete Guide with Selectors and Examples'
 ---
+
 # Kubernetes Pod Labels: A Complete Guide with Selectors and Examples
 
 **What are labels in Kubernetes and why are they so important?**  

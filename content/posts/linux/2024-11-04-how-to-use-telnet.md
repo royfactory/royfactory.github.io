@@ -1,17 +1,22 @@
 ---
-categories: linux
-image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
+ShowToc: true
+categories:
+- linux
 date: 2024-11-04
 description: Telnet은 원격 서버에 접속할 수 있는 네트워크 프로토콜입니다. 보안이 필요한 환경에서는 SSH를 사용하지만, 테스트 환경이나
   특수한 용도로 여전히 Telnet을 사용하는 경우가 있습니다. 이번 글에서는 리눅스에서 Telnet 서버를 설정하는 방법을 단계별로 설명하겠습니다.
   -...
+draft: false
+image: /img/blur-background-1680x1050-spectrum-electromagnetic-4k-901-1.jpg
 keywords: bash, command line, linux, server management, setting, shell scripting,
   system administration, telnet, terminal, unix, 리눅스에서, 방법, 서버, 설정하는
-tags: linux telnet setting
+tags:
+- linux
+- telnet
+- setting
 title: 리눅스에서 Telnet 서버 설정하는 방법
-ShowToc: true
-draft: false
 ---
+
 # 리눅스에서 Telnet 서버 설정하기
 
 Telnet은 원격 서버에 접속할 수 있는 네트워크 프로토콜입니다. 보안이 필요한 환경에서는 SSH를 사용하지만, 테스트 환경이나 특수한 용도로 여전히 Telnet을 사용하는 경우가 있습니다. 이번 글에서는 리눅스에서 Telnet 서버를 설정하는 방법을 단계별로 설명하겠습니다.
