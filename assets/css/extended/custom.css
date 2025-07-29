@@ -1,0 +1,17 @@
+/* Custom CSS for TOC details element */
+.toc details summary {
+    list-style: none;
+}
+
+.toc details summary::-webkit-details-marker {
+    display: none;
+}
+
+.toc details summary::marker {
+    display: none;
+}
+
+/* Remove the default browser "Details" text for Korean browsers */
+.toc details summary::before {
+    content: "";
+}
