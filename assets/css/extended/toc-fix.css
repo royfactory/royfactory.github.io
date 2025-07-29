@@ -1,11 +1,83 @@
-/* TOC 스타일 개선 */
+/* TOC 스타일 개선 - Sticky & Collapsible */
+.toc-container {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    margin: 0 0 40px 0;
+    transition: all 0.3s ease;
+}
+
 .toc {
-    margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
     background: var(--code-bg);
     border-radius: var(--radius);
     padding: 0.4em;
-    overflow: hidden; /* 박스 밖으로 나가는 요소 숨기기 */
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Sticky 상태에서 컴팩트한 스타일 */
+.toc-container.sticky {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 300px;
+    max-width: calc(100vw - 40px);
+    z-index: 1000;
+}
+
+.toc-container.sticky .toc {
+    background: rgba(var(--code-bg-rgb), 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* 접힌 상태 */
+.toc.collapsed .toc-content {
+    display: none;
+}
+
+.toc.collapsed {
+    padding: 0.2em 0.4em;
+}
+
+/* TOC 헤더 (항상 보이는 부분) */
+.toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+}
+
+.toc.collapsed .toc-header {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.toc-title {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.toc-toggle {
+    color: var(--secondary);
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.toc.collapsed .toc-toggle {
+    transform: rotate(180deg);
+}
+
+/* TOC 컨텐츠 */
+.toc-content {
+    transition: all 0.3s ease;
 }
 
 .toc .inner {
@@ -16,14 +88,14 @@
 
 /* TOC 리스트 스타일 수정 */
 .toc ul {
-    list-style: none; /* 기본 불릿 제거 */
+    list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
 .toc li {
     position: relative;
-    padding-left: 20px; /* 들여쓰기 */
+    padding-left: 20px;
     margin: 4px 0;
 }
 
@@ -68,10 +140,18 @@
     display: block;
     padding: 2px 0;
     transition: color 0.3s ease;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 .toc a:hover {
     color: var(--primary);
+}
+
+/* 활성 링크 표시 */
+.toc a.active {
+    color: var(--primary);
+    font-weight: 500;
 }
 
 /* 다크 모드 대응 */
@@ -79,6 +159,57 @@
     background: var(--entry);
 }
 
+.dark .toc-container.sticky .toc {
+    background: rgba(46, 46, 51, 0.95);
+}
+
 .dark .toc li::before {
     color: var(--primary);
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 768px) {
+    .toc-container.sticky {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        max-width: none;
+    }
+    
+    .toc-container.sticky .toc {
+        padding: 0.3em;
+    }
+    
+    .toc-title {
+        font-size: 13px;
+    }
+    
+    .toc a {
+        font-size: 12px;
+    }
+}
+
+/* 스크롤바 스타일 */
+.toc-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.toc-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.toc-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.toc-content::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 2px;
+}
+
+.toc-content::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
 }
