@@ -1,0 +1,84 @@
+/* TOC 스타일 개선 */
+.toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em;
+    overflow: hidden; /* 박스 밖으로 나가는 요소 숨기기 */
+}
+
+.toc .inner {
+    margin: 5px 20px 0;
+    padding: 0 10px;
+    opacity: 0.9;
+}
+
+/* TOC 리스트 스타일 수정 */
+.toc ul {
+    list-style: none; /* 기본 불릿 제거 */
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc li {
+    position: relative;
+    padding-left: 20px; /* 들여쓰기 */
+    margin: 4px 0;
+}
+
+/* 커스텀 불릿 포인트 */
+.toc li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 8px;
+    top: 0;
+}
+
+/* 중첩된 리스트 스타일 */
+.toc li ul {
+    margin-top: 4px;
+    padding-left: 0;
+}
+
+.toc li li {
+    padding-left: 16px;
+}
+
+.toc li li::before {
+    content: "◦";
+    left: 4px;
+}
+
+/* 3단계 중첩 */
+.toc li li li {
+    padding-left: 12px;
+}
+
+.toc li li li::before {
+    content: "▪";
+    left: 0;
+}
+
+/* TOC 링크 스타일 */
+.toc a {
+    color: var(--secondary);
+    text-decoration: none;
+    display: block;
+    padding: 2px 0;
+    transition: color 0.3s ease;
+}
+
+.toc a:hover {
+    color: var(--primary);
+}
+
+/* 다크 모드 대응 */
+.dark .toc {
+    background: var(--entry);
+}
+
+.dark .toc li::before {
+    color: var(--primary);
+}
