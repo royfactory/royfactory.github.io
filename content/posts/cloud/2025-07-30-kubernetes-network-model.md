@@ -1,15 +1,13 @@
 ---
-categories: kubernetes
-cover: /img/kubernetes-network-model.jpg
-date: 2025-07-19
+ShowToc: true
+categories: [kubernetes]
+date: 2025-07-30
 description: Learn the fundamentals of the Kubernetes network model, including Pod-to-Pod communication, node networking, and CNI plugins like Flannel and Calico, with practical examples.
+draft: false
 image: /img/kubernetes-network-model.jpg
 keywords: kubernetes network model, pod communication, k8s cni, kubernetes networking, flannel, calico, kubectl networking
-layout: post
-organiser: Royfactory
-tags: kubernetes k8s networking network-model cni flannel calico pod-communication devops cloud-native
+tags: [kubernetes, k8s, networking, network-model, cni, flannel, calico, pod-communication, devops, cloud-native]
 title: 'Kubernetes Networking: Understanding the Network Model'
-toc: true
 ---
 
 # Kubernetes Networking: Understanding the Network Model
