@@ -4,5 +4,7 @@ Disallow: /assets/
 Disallow: /css/
 Disallow: /js/
 
-User-agent: bingbot
-Crawl-deplay20
+User-agent: *
+Crawl-delay: 20
+
+Sitemap: https://royfactory.github.io/sitemap.xml
