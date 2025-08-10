@@ -6,6 +6,7 @@ canonifyURLs = true
 relativeURLs = false
 enableRobotsTXT = true
 enableGitInfo = true
+disablePathToLower = true
 
 # Theme
 theme = 'PaperMod'
