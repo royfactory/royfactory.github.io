@@ -4,6 +4,7 @@ title = 'Royfactory'
 description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
 canonifyURLs = false
 relativeURLs = false
+enableRobotsTXT = false
 
 # Theme
 theme = 'PaperMod'
