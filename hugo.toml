@@ -2,12 +2,17 @@ baseURL = 'https://royfactory.github.io'
 languageCode = 'ko'
 title = 'Royfactory'
 description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
-enableRobotsTXT = false
+enableRobotsTXT = true
+enableGitInfo = true
 
 # Theme
 theme = 'PaperMod'
+
+# Frontmatter lastmod 우선순위 설정
+[frontmatter]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
 
 # Params
 [params]
@@ -87,15 +92,17 @@ theme = 'PaperMod'
     ordered = false
     startLevel = 2
 
-# Outputs
+# Outputs - 태그/카테고리 페이지 사이트맵에서 제외
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 # Sitemap
 [sitemap]
-  changefreq = 'daily'
+  changefreq = 'weekly'
   filename = 'sitemap.xml'
   priority = 0.5
 
