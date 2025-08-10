@@ -1,15 +1,15 @@
 ---
 ShowToc: true
-categories: \[kubernetes]
+categories: [kubernetes]
 date: 2025-08-09
 description: Learn how to securely store and manage sensitive data like passwords, API keys, and TLS certificates in Kubernetes using Secrets. Includes examples, best practices, and FAQs.
 draft: false
 image: /img/kubernetes-secret-guide.jpg
 keywords: kubernetes secret, k8s secret, kubernetes store passwords, kubernetes API keys, kubernetes TLS, kubernetes security, sealed secrets
-tags: \[kubernetes, k8s, secret, security, vault, rbac, cloudnative, devops, sealedsecrets]
+tags: [kubernetes, k8s, secret, security, vault, rbac, cloudnative, devops, sealedsecrets]
 title: 'Kubernetes Secret Guide: Securely Store and Manage Sensitive Data'
 slug: kubernetes-secret-guide
------------------------------
+---
 
 # Kubernetes Secret Guide: Securely Store and Manage Sensitive Data
 

@@ -1,13 +1,13 @@
 ---
 ShowToc: true
-categories: \[kubernetes]
+categories: [kubernetes]
 date: 2025-08-08
 description: Learn how Kubernetes Job ensures reliable completion of one-time batch processes, with YAML examples, failure handling strategies, and key differences from CronJob.
 draft: false
 image: /img/kubernetes-job-guide.jpg
 keywords: kubernetes job tutorial, k8s one-time task, job vs cronjob, batch processing kubernetes, backoffLimit, completions, parallelism
 slug: kubernetes-job-completion-guide
-tags: \[kubernetes, k8s, job, batch, cloud-native, devops, automation, completion, backoffLimit, tutorial]
+tags: [kubernetes, k8s, job, batch, cloud-native, devops, automation, completion, backoffLimit, tutorial]
 title: "Kubernetes Job Guide: Run and Complete One-Time Batch Tasks"
 ---
 
