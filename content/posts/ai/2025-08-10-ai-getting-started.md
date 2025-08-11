@@ -1,0 +1,199 @@
+---
+ShowToc: true
+categories: [ai]
+date: 2025-08-10
+description: A beginner-friendly introduction to Artificial Intelligence (AI)—what it is, how we got here, where it's used today, and a hands-on lab you can run locally. Includes history, key subfields, pitfalls, FAQs, and a verified example.
+draft: false
+image: /img/ai-introduction-cover.jpg
+keywords: ai basics, artificial intelligence tutorial, machine learning for beginners, deep learning vs machine learning, generative ai, ai use cases, ml tutorial, sklearn iris example
+tags: [ai, machine-learning, deep-learning, generative-ai, tutorial, sklearn, beginners]
+title: 'AI 101: From Concepts to a Working Example (Lecture 1)'
+slug: ai-101-introduction
+---
+
+# AI 101: From Concepts to a Working Example (Lecture 1)
+
+This is Lecture 1 of a 20-part series. We'll cover **what AI is**, a short **history**, **where it's used**, and finish with a **hands-on lab** you can run locally without any external downloads.
+
+---
+
+## Table of Contents
+
+{% toc %}
+
+---
+
+## 1) What Is AI?
+
+**Artificial Intelligence (AI)** enables computers to perform tasks that typically require human intelligence—**learning**, **reasoning**, **perception**, and **language understanding**.
+
+* **Narrow AI**: Expert at a specific task (translation, face recognition).
+* **General AI (AGI)**: Human-level intelligence across tasks (not available today).
+
+**Everyday examples**
+
+* Search query suggestions, spam filters, photo categorization.
+* Voice assistants understanding and responding to commands.
+* Product recommendations tailored to your behavior.
+
+---
+
+## 2) A Short History of AI
+
+* **1950s**: Turing asks, *"Can machines think?"* → **Turing Test**.
+* **1980s–1990s**: Rule-based **expert systems** in medicine and industry.
+* **2000s**: **Machine Learning** accelerates as data and compute grow.
+* **2010s**: **Deep Learning** breakthroughs in vision, speech, translation.
+* **2020s**: **Generative AI** (large language and diffusion models) produce text, images, audio, and video at scale.
+
+---
+
+## 3) Core Subfields (With Plain-Language Intuition)
+
+* **Machine Learning (ML)**: Finds patterns from data to make predictions.
+  *Think: learning a rule from examples rather than hand-coding the rule.*
+* **Deep Learning (DL)**: ML with multi-layer neural networks for complex patterns (images, audio, text).
+* **Natural Language Processing (NLP)**: Understanding and generating human language.
+* **Computer Vision (CV)**: Understanding images and video (classification, detection, segmentation).
+* **Generative AI**: Produces new content—text (LLMs), images (diffusion), audio/video.
+
+---
+
+## 4) Real-World Use Cases
+
+* **Manufacturing**: Defect detection, predictive maintenance.
+* **Healthcare**: Diagnosis support, drug discovery.
+* **Finance**: Fraud detection, risk scoring, algorithmic trading.
+* **Retail/Marketing**: Personalization, demand forecasting, price optimization.
+* **Content**: Copywriting, image/video generation, subtitle creation.
+
+---
+
+## 5) Hands-On Lab: A Verified, No-Network Example
+
+To keep things beginner-friendly and robust, this lab uses **scikit-learn**'s built-in **Iris** dataset (no internet needed). It trains a simple classifier and reports accuracy. The example is chosen to avoid network/download failures and is known to run under common Python setups.
+
+> **Environment notes**
+>
+> * Python ≥ 3.9, scikit-learn ≥ 1.0, NumPy ≥ 1.20, matplotlib optional (only for the confusion matrix).
+> * Install: `pip install scikit-learn numpy matplotlib`
+
+```python
+# Iris classification with scikit-learn (beginner-safe, no network needed)
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+# 1) Load data
+X, y = load_iris(return_X_y=True)  # 150 samples, 4 features, 3 classes
+
+# 2) Train/test split (hold-out validation)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.25, random_state=42, stratify=y
+)
+
+# 3) Build a pipeline: scaling + logistic regression classifier
+clf = make_pipeline(
+    StandardScaler(),
+    LogisticRegression(max_iter=1000, multi_class="auto")
+)
+
+# 4) Train
+clf.fit(X_train, y_train)
+
+# 5) Evaluate
+y_pred = clf.predict(X_test)
+print("Accuracy:", f"{accuracy_score(y_test, y_pred)*100:.2f}%")
+print("\nClassification report:\n", classification_report(y_test, y_pred, digits=3))
+
+# 6) Visualize confusion matrix (optional)
+disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred)
+plt.title("Iris Confusion Matrix")
+plt.show()
+```
+
+**Why this example?**
+
+* **No external downloads** → fewer errors for beginners.
+* **Transparent, short pipeline** (scaling + logistic regression).
+* **Reproducible** results with `random_state`.
+
+---
+
+## 6) Evaluation Basics You Should Know
+
+* **Accuracy**: Overall correctness (good when classes are balanced).
+* **Precision/Recall/F1**: Prefer when class imbalance exists.
+* **Confusion Matrix**: Where and how the model is wrong.
+
+---
+
+## 7) Common Pitfalls (and How to Avoid Them)
+
+* **Overfitting**: Model memorizes training data.
+  *Fix*: Separate validation set; use cross-validation; regularization.
+* **Data Leakage**: Test info sneaks into training.
+  *Fix*: Fit scalers/encoders **only** on training data (pipelines help).
+* **Imbalanced Classes**: Skewed accuracy.
+  *Fix*: Use stratified splits, adjust class weights, use recall/F1.
+
+---
+
+## 8) Mini-Glossary
+
+* **Feature**: Input variable (e.g., petal length).
+* **Label/Target**: What you predict (e.g., Iris species).
+* **Training/Validation/Test**: Learn/tune/assess phases.
+* **Hyperparameter**: Settings you choose (e.g., learning rate, depth).
+
+---
+
+## 9) FAQ (Answer Engine Optimization)
+
+**Q1. Is AI the same as Machine Learning?**
+A. ML is a **subset** of AI. AI is the broader goal; ML is one way to achieve it.
+
+**Q2. Do I need a GPU for this course?**
+A. No. Most early lessons (including this one) run fine on CPU.
+
+**Q3. What's the difference between ML and Deep Learning?**
+A. DL uses multi-layer neural networks and shines on complex data (images, audio, language).
+
+**Q4. Are Generative AI models just bigger ML models?**
+A. They're typically **large neural networks** trained on massive data, specialized for generation.
+
+**Q5. Can I deploy this Iris model to a web app later?**
+A. Yes. We'll cover simple deployment patterns in later lectures (e.g., FastAPI).
+
+---
+
+## 10) Summary Table
+
+| Topic      | Key Points                                                      |
+| ---------- | --------------------------------------------------------------- |
+| What is AI | Machines performing tasks needing human-like intelligence       |
+| History    | Rules → ML → DL → Generative AI                                 |
+| Subfields  | ML, DL, NLP, CV, Generative AI                                  |
+| Use Cases  | Manufacturing, Healthcare, Finance, Retail, Content             |
+| Hands-on   | scikit-learn Iris classifier, no network, reproducible pipeline |
+| Evaluation | Accuracy, Precision/Recall/F1, Confusion Matrix                 |
+| Pitfalls   | Overfitting, Leakage, Imbalanced Classes                        |
+
+---
+
+## 11) Further Reading
+
+* *The Hundred-Page Machine Learning Book* (Burkov)
+* *Deep Learning* (Goodfellow, Bengio, Courville)
+* scikit-learn user guide: model evaluation and selection
+
+---
+
+## 12) What's Next?
+
+In Lecture 2, we'll build your mental model for **Supervised vs. Unsupervised vs. Reinforcement Learning**, then implement a simple supervised learning pipeline from scratch.
