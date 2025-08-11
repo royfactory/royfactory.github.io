@@ -1,4 +1,4 @@
-baseURL = 'https://royfactory.github.io'
+baseURL = 'https://royfactory.net'
 languageCode = 'ko'
 title = 'Royfactory'
 description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
