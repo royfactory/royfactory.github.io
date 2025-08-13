@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://royfactory.github.io/sitemap.xml
+Sitemap: https://royfactory.net/sitemap.xml
 
 User-agent: bingbot
 Crawl-delay: 20

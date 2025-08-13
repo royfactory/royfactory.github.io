@@ -1,0 +1,76 @@
+# Legacy URL redirects for migrated content
+
+# Kotlin related posts redirect to AI development posts
+/2023/06/29/kotlin-use-vibrator/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/07/01/kotlin-jointostring/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/06/29/kotlin-ringtone-use/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/07/02/kotlin-contentvalues-putnull/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/06/30/kotlin-array-function/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/07/06/kotlin-to-handle-event-in-edittext/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/07/06/kotlin-to-use-kakao-navigation/ /posts/ai/2025-08-13-ai-development-environment/ 301
+/2023/07/02/kotlin-overlay-framelayout/ /posts/ai/2025-08-13-ai-development-environment/ 301
+
+# SwiftUI related posts redirect to AI basics
+/2023/07/12/swiftui-binded-view-preview/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/07/09/swiftui-xcode-playground-project-and-workspace/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/09/21/swiftui-how-to-add-google-ads-plugins/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/07/11/swiftui-toggle/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/07/10/swiftui-liststyle/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/07/12/swiftui-ternary-operator/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+/2023/07/16/swiftui-how-to-use-for-loop/ /posts/ai/2025-08-11-machine-learning-basics/ 301
+
+# Database related posts redirect to AI basics
+/2023/07/05/sqlite-to-get-last-the-last-inserted-id/ /posts/ai/2025-08-12-deep-learning-basics/ 301
+
+# Application pages redirects
+/application/ipalnk /apps/ 301
+/application/emergency/privacy /apps/privacy/ 301
+/application/boxing-timer /apps/boxingtimer/ 301
+
+# Privacy pages redirects
+/iscoreboard/privacy /apps/scoreboard/privacy/ 301
+/findPwd /apps/ 301
+
+# Tag and category pages redirect to relevant sections
+/tag/pdf변환/amp/ /posts/ai/ 301
+/tag/startactivityforresult/ /posts/ai/ 301
+/tag/dynamic-list/ /posts/ai/ 301
+/tag/plank-efficiently/ /apps/planktime/ 301
+/tag/pastebutton/ /posts/ai/ 301
+/tag/고정ip/ /posts/linux/ 301
+/tag/시간지정/ /apps/ 301
+/tag/웹뷰/ /posts/ai/ 301
+/tag/bg/ /posts/ai/ 301
+/tag/내림차순/ /posts/ai/ 301
+/tag/벨소리/ /apps/ 301
+/tag/lpq/ /posts/linux/ 301
+/tag/스택/ /posts/ai/ 301
+/tag/배열/ /posts/ai/ 301
+/tag/install/ /posts/linux/ 301
+
+# Category pages
+/category/database/sqlite/ /posts/ai/ 301
+
+# Old blog subdomain redirects
+http://blog.royfactory.net/tableclock/ https://royfactory.net/apps/tableclock/ 301
+http://blog.royfactory.net/tag/plank-efficiently/ https://royfactory.net/apps/planktime/ 301
+http://blog.royfactory.net/privacy/ https://royfactory.net/apps/privacy/ 301
+https://blog.royfactory.net/tableclock/ https://royfactory.net/apps/tableclock/ 301
+https://blog.royfactory.net/tableclock/privacy/ https://royfactory.net/apps/tableclock/privacy/ 301
+https://blog.royfactory.net/scoreboard/privacy/ https://royfactory.net/apps/scoreboard/privacy/ 301
+https://blog.royfactory.net/planktime/privacy/ https://royfactory.net/apps/planktime/privacy/ 301
+
+# App subdomain redirects  
+http://app.royfactory.net/findId https://royfactory.net/apps/ 301
+https://app.royfactory.net/* https://royfactory.net/apps/:splat 301
+
+# Legacy form pages
+/signUp /apps/ 301
+
+# Wildcard redirects for remaining patterns
+/tag/* /posts/ 301
+/category/* /posts/ 301
+/*/amp/ / 301
+
+# Default fallback for any other 404s
+/* /404.html 404
