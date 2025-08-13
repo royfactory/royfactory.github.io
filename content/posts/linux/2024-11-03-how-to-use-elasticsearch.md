@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 엘라스틱서치 사용하는 방법"
 categories:
 - linux
 date: 2024-11-03

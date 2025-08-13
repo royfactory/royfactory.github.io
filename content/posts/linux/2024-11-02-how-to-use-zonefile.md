@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 DNS Zone 파일 설정하는 방법"
 categories:
 - linux
 date: 2024-11-02

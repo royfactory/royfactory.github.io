@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 디스크 쿼터 설정하는 방법"
 categories:
 - linux
 date: 2024-11-05

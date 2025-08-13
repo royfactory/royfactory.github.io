@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 Apache HTTP 서버 설정하는 방법"
 categories:
 - linux
 date: 2024-11-11

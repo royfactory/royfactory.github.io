@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 VSFTP 서버를 설정하는 방법"
 categories:
 - linux
 date: 2024-10-30

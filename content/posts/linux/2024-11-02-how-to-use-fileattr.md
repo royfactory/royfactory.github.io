@@ -1,5 +1,6 @@
 ---
 ShowToc: true
+title: "리눅스에서 파일 속성 관리하는 방법"
 categories:
 - linux
 date: 2024-11-02
