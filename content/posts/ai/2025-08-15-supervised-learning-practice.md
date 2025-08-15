@@ -1,5 +1,4 @@
 ---
-
 ShowToc: true
 categories: [ai]
 date: 2025-08-13
