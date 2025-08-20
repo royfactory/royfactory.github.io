@@ -39,3 +39,7 @@ url: "/apps/"
 ### [Table Clock](/apps/tableclock/)
 테이블 시계 애플리케이션
 - [개인정보처리방침](/apps/tableclock/privacy/)
+
+### [Auto Clicker](/apps/autoclicker/)
+자동 클릭 애플리케이션
+- [개인정보처리방침](/apps/autoclicker/privacy/)

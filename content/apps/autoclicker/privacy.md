@@ -1,7 +1,7 @@
 ---
 layout: apps
 title:  "개인정보처리방침"
-permalink: /apps/autoclicker/privacy
+permalink: /autoclicker/privacy
 ---
 
 # Privacy
