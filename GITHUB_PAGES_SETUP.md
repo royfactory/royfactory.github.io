@@ -23,7 +23,7 @@
 다음 파일들이 올바르게 설정되어 있는지 확인:
 
 ```
-royfactory.net/
+royfactory.github.io/
 ├── .github/workflows/hugo.yml    # Hugo 배포 워크플로우
 ├── .nojekyll                     # Jekyll 비활성화
 ├── hugo.toml                     # Hugo 설정
@@ -40,7 +40,7 @@ royfactory.net/
 
 #### `hugo.toml`
 - Hugo 사이트 설정
-- baseURL이 올바른 GitHub Pages URL로 설정되어야 함: `https://royfactory.net`
+- baseURL이 올바른 GitHub Pages URL로 설정되어야 함: `https://royfactory.github.io`
 
 #### `.github/workflows/hugo.yml`
 - Hugo 빌드 및 배포 자동화
@@ -56,7 +56,7 @@ royfactory.net/
 
 ### 배포 상태 확인
 - **Actions 탭**: https://github.com/royfactory/royfactory.github.io/actions
-- **배포된 사이트**: https://royfactory.net
+- **배포된 사이트**: https://royfactory.github.io
 
 ## 문제 해결
 

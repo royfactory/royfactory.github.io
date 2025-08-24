@@ -109,7 +109,7 @@ title: "성장캐 유비 - 개인정보 처리방침"
 **연락처 정보:**
 - 이메일: royzero0717@gmail.com
 - 개발자: Roy's Factory
-- 웹사이트: https://royfactory.net
+- 웹사이트: https://royfactory.github.io
 
 ---
 
