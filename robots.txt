@@ -7,4 +7,7 @@ Disallow: /js/
 User-agent: bingbot
 Crawl-delay: 20
 
-Sitemap: https://royfactory.net/sitemap.xml
+User-agent: Google-adstxt
+Disallow:
+
+Sitemap: https://royfactory.github.io/sitemap.xml
