@@ -1,7 +1,7 @@
 baseURL = 'https://royfactory.net'
 languageCode = 'ko'
 title = 'Royfactory'
-description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
+description = 'Development, AI, Kubernetes, and Backend Technology Blog'
 canonifyURLs = true
 relativeURLs = false
 enableRobotsTXT = true
@@ -18,8 +18,8 @@ theme = 'PaperMod'
 # Params
 [params]
   author = 'Roy'
-  description = '개발, AI, Kubernetes, 백엔드 기술 블로그'
-  keywords = ['AI', 'Kubernetes', '백엔드', '개발', 'Blog']
+  description = 'Development, AI, Kubernetes, and Backend Technology Blog'
+  keywords = ['AI', 'Kubernetes', 'Backend', 'Development', 'Blog']
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -42,7 +42,7 @@ theme = 'PaperMod'
 
 [params.homeInfoParams]
   Title = "Welcome to Royfactory"
-  Content = "개발, AI, Kubernetes, 백엔드 기술 관련 최신 글을 다룹니다."
+  Content = "Latest articles on Development, AI, Kubernetes, and Backend Technologies."
 
 [[params.socialIcons]]
   name = "github"
