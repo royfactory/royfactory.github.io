@@ -1,16 +1,13 @@
 ---
 categories: [AI, Computer Vision, Developer Tools]
-cover: /img/nano-banana-cover.jpg
 date: 2025-08-30
 description: Nano Banana(Gemini 2.5 Flash Image)의 핵심 기능, 최신 뉴스, 가격과 접근 방법, 실전 프롬프트·API 예제까지 한 번에 정리합니다.
 image: /img/nano-banana-cover.jpg
 keywords: nano banana,Gemini 2.5 Flash Image,AI image editing,Google GenAI,character consistency,SynthID
-layout: post
 organiser: Royfactory
 tags: [nano-banana, gemini, image-editing, genai, google]
 title: "Nano Banana (Gemini 2.5 Flash Image): A Field Guide for Builders"
 slug: nano-banana-gemini-25-flash-image
-toc: true
 ---
 
 ## Introduction
