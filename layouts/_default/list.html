@@ -14,7 +14,7 @@
   {{- $class := "entry-cover" }}
   {{- $subclass := "global" }}
   {{- $cover := $page.Params.cover }}
-  {{- if $cover.hidden }}
+  {{- if and (isset $cover "hidden") (index $cover "hidden") }}
   {{- $class = "entry-cover hidden" }}
   {{- $subclass = "hidden" }}
   {{- end }}
