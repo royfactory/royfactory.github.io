@@ -5,7 +5,7 @@ date: 2025-09-20
 description: "An easy-to-understand guide on Dynamic Provisioning in Kubernetes. Learn how StorageClass, PVC, and PV work together to automate storage management, and see the difference from static provisioning.
 image: /img/kubernetes-dynamic-provisioning-cover.jpg"
 draft: false
-image:/img/kubernetes-dynamic-provisioning-cover.jpg
+image: /img/kubernetes-dynamic-provisioning-cover.jpg
 keywords: "kubernetes, dynamic provisioning, storageclass, persistentvolumeclaim, pvc, pv, storage"
 tags: ["kubernetes", "dynamic provisioning", "storageclass", "devops", "cloud native", "automation"]
 title: "Understanding Kubernetes Dynamic Provisioning: An Easy Guide"
