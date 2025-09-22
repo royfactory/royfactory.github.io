@@ -2,11 +2,10 @@
 ShowToc: true
 categories: [cloud]
 date: 2025-09-21
-description: "A comprehensive guide to the Kubernetes NodePort service. Learn what NodePort is, how "
+description: "A comprehensive guide to the Kubernetes NodePort service. Learn what NodePort is, how"
 image: /img/kubernetes-nodeport-explained-cover.jpg
 draft: false
-image: /img/kubernetes-dynamic-provisioning-cover.jpg
-keywords: "ubernetes, NodePort, Service, K8s, Networking, ClusterIP, LoadBalancer"
+keywords: "Kubernetes, NodePort, Service, K8s, Networking, ClusterIP, LoadBalancer"
 tags: ["kubernetes", "nodeport", "service", "networking", "k8s"]
 title: "What is Kubernetes NodePort? A Deep Dive into Exposing Services"
 slug: "kubernetes-nodeport-explained"
