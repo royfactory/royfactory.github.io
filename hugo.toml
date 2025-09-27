@@ -30,6 +30,10 @@ theme = 'PaperMod'
   TocOpen = false
   comments = false
   
+  # Archive settings - 모든 포스트를 archive 페이지에 표시
+  ShowAllPagesInArchive = true
+  mainSections = ["posts"]
+  
   # Google AdSense
   googleAdsense = "7151406524991928"
   
