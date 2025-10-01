@@ -18,17 +18,15 @@
     </div>
   </div>
   
-  <!-- 하단 AdSense 광고 -->
-  <div class="bottom-ad">
-    <!-- Clock Page Bottom Banner -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-7151406524991928"
-         data-ad-slot="1234567890"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <!-- 자동 AdSense 광고 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
+       crossorigin="anonymous"></script>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({
+         google_ad_client: "ca-pub-7151406524991928",
+         enable_page_level_ads: true
+       });
+  </script>
 </div>
 
 <style>
@@ -106,35 +104,6 @@
   font-size: inherit;
 }
 
-/* 하단 광고 스타일 */
-.bottom-ad {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border-radius: 8px 8px 0 0;
-  z-index: 1002;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.bottom-ad .adsbygoogle {
-  max-width: 728px;
-  height: 90px;
-}
-
-/* 전체 화면 광고 차단 */
-.adsbygoogle[data-ad-format="fluid"],
-.adsbygoogle[data-ad-format="autorelaxed"] {
-  display: none !important;
-}
-
-/* 인터스티셜(전체 화면) 광고 차단 */
-.google-auto-placed {
-  display: none !important;
-}
-
 /* 모바일 반응형 */
 @media (max-width: 768px) {
   .time-display {
@@ -153,17 +122,6 @@
   .logo img {
     width: 40px;
     height: 40px;
-  }
-  
-  .bottom-ad {
-    padding: 6px 8px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .bottom-ad .adsbygoogle {
-    max-width: 320px;
-    height: 50px;
   }
 }
 
@@ -223,36 +181,6 @@ function updateClock() {
 document.addEventListener('DOMContentLoaded', function() {
   updateClock(); // 즉시 시간 표시
   setInterval(updateClock, 1000); // 1초마다 업데이트
-  
-  // 전체 화면 광고 차단
-  const observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (mutation.type === 'childList') {
-        mutation.addedNodes.forEach(function(node) {
-          if (node.nodeType === 1) { // Element node
-            // 인터스티셜 광고 제거
-            if (node.classList && (
-                node.classList.contains('google-auto-placed') ||
-                node.classList.contains('adsbygoogle') && 
-                (node.getAttribute('data-ad-format') === 'fluid' || 
-                 node.getAttribute('data-ad-format') === 'autorelaxed')
-            )) {
-              node.style.display = 'none';
-            }
-            
-            // 하위 요소에서도 검사
-            const autoPlacedAds = node.querySelectorAll('.google-auto-placed, .adsbygoogle[data-ad-format="fluid"], .adsbygoogle[data-ad-format="autorelaxed"]');
-            autoPlacedAds.forEach(ad => ad.style.display = 'none');
-          }
-        });
-      }
-    });
-  });
-  
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
 });
 </script>
 
