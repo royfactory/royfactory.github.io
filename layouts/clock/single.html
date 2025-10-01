@@ -18,15 +18,27 @@
     </div>
   </div>
   
-  <!-- 자동 AdSense 광고 -->
+  <!-- 자동 AdSense 광고 비활성화 -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
        crossorigin="anonymous"></script>
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({
          google_ad_client: "ca-pub-7151406524991928",
-         enable_page_level_ads: true
+         enable_page_level_ads: false
        });
   </script>
+  
+  <!-- 하단 광고 -->
+  <div class="bottom-ad">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="ca-pub-7151406524991928"
+         data-ad-slot="5154092744"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </div>
 
 <style>
@@ -102,6 +114,22 @@
 
 .day-display {
   font-size: inherit;
+}
+
+/* 하단 광고 스타일 */
+.bottom-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  text-align: center;
+}
+
+.bottom-ad .adsbygoogle {
+  max-height: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
 }
 
 /* 모바일 반응형 */
