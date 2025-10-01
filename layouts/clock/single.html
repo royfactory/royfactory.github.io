@@ -1,0 +1,127 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ .Title }}
+    </h1>
+    <div class="post-meta">
+      {{ .Date.Format "2006년 1월 2일" }}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+    
+    <!-- 시계 컨테이너 -->
+    <div class="clock-container">
+      <div class="clock-display">
+        <div id="current-time" class="time-display">00:00:00</div>
+        <div id="current-date" class="date-display">2025년 10월 1일</div>
+        <div id="day-of-week" class="day-display">화요일</div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin: 2rem 0;
+}
+
+.clock-display {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+.time-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 0.1em;
+}
+
+.date-display {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.day-display {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .time-display {
+    font-size: 2.5rem;
+  }
+  
+  .date-display {
+    font-size: 1.2rem;
+  }
+  
+  .day-display {
+    font-size: 1rem;
+  }
+  
+  .clock-display {
+    padding: 2rem;
+  }
+}
+
+/* 깜빡이는 콜론 효과 */
+.time-display.blink .colon {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+</style>
+
+<script>
+function updateClock() {
+  const now = new Date();
+  
+  // 시간 포맷팅 (HH:MM:SS)
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  
+  // 날짜 포맷팅
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const date = now.getDate();
+  const dateString = `${year}년 ${month}월 ${date}일`;
+  
+  // 요일 포맷팅
+  const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+  const dayString = days[now.getDay()];
+  
+  // DOM 업데이트
+  document.getElementById('current-time').textContent = timeString;
+  document.getElementById('current-date').textContent = dateString;
+  document.getElementById('day-of-week').textContent = dayString;
+}
+
+// 페이지 로드 시 시계 시작
+document.addEventListener('DOMContentLoaded', function() {
+  updateClock(); // 즉시 시간 표시
+  setInterval(updateClock, 1000); // 1초마다 업데이트
+});
+</script>
+
+{{- end }}
