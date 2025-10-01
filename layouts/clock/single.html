@@ -17,6 +17,22 @@
       <span id="day-of-week" class="day-display">화요일</span>
     </div>
   </div>
+  
+  <!-- 하단 AdSense 광고 -->
+  <div class="bottom-ad">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-PUBLISHER-ID"
+         crossorigin="anonymous"></script>
+    <!-- Clock Page Bottom Banner -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR-PUBLISHER-ID"
+         data-ad-slot="YOUR-AD-SLOT-ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 </div>
 
 <style>
@@ -94,6 +110,35 @@
   font-size: inherit;
 }
 
+/* 하단 광고 스타일 */
+.bottom-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  text-align: center;
+  z-index: 1002;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottom-ad .adsbygoogle {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+/* 전체 화면 광고 차단 */
+.adsbygoogle[data-ad-format="fluid"],
+.adsbygoogle[data-ad-format="autorelaxed"] {
+  display: none !important;
+}
+
+/* 인터스티셜(전체 화면) 광고 차단 */
+.google-auto-placed {
+  display: none !important;
+}
+
 /* 모바일 반응형 */
 @media (max-width: 768px) {
   .time-display {
@@ -112,6 +157,10 @@
   .logo img {
     width: 40px;
     height: 40px;
+  }
+  
+  .bottom-ad {
+    padding: 8px;
   }
 }
 
@@ -171,6 +220,36 @@ function updateClock() {
 document.addEventListener('DOMContentLoaded', function() {
   updateClock(); // 즉시 시간 표시
   setInterval(updateClock, 1000); // 1초마다 업데이트
+  
+  // 전체 화면 광고 차단
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach(function(node) {
+          if (node.nodeType === 1) { // Element node
+            // 인터스티셜 광고 제거
+            if (node.classList && (
+                node.classList.contains('google-auto-placed') ||
+                node.classList.contains('adsbygoogle') && 
+                (node.getAttribute('data-ad-format') === 'fluid' || 
+                 node.getAttribute('data-ad-format') === 'autorelaxed')
+            )) {
+              node.style.display = 'none';
+            }
+            
+            // 하위 요소에서도 검사
+            const autoPlacedAds = node.querySelectorAll('.google-auto-placed, .adsbygoogle[data-ad-format="fluid"], .adsbygoogle[data-ad-format="autorelaxed"]');
+            autoPlacedAds.forEach(ad => ad.style.display = 'none');
+          }
+        });
+      }
+    });
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
 });
 </script>
 
