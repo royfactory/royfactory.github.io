@@ -20,15 +20,11 @@
   
   <!-- 하단 AdSense 광고 -->
   <div class="bottom-ad">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-PUBLISHER-ID"
-         crossorigin="anonymous"></script>
     <!-- Clock Page Bottom Banner -->
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-YOUR-PUBLISHER-ID"
-         data-ad-slot="YOUR-AD-SLOT-ID"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-7151406524991928"
+         data-ad-slot="1234567890"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
@@ -114,18 +110,18 @@
 .bottom-ad {
   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 10px;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 12px;
+  border-radius: 8px 8px 0 0;
   z-index: 1002;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bottom-ad .adsbygoogle {
-  max-height: 100px;
-  overflow: hidden;
+  max-width: 728px;
+  height: 90px;
 }
 
 /* 전체 화면 광고 차단 */
@@ -160,7 +156,14 @@
   }
   
   .bottom-ad {
-    padding: 8px;
+    padding: 6px 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bottom-ad .adsbygoogle {
+    max-width: 320px;
+    height: 50px;
   }
 }
 
