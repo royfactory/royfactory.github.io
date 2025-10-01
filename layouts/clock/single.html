@@ -18,18 +18,10 @@
     </div>
   </div>
   
-  <!-- 자동 AdSense 광고 비활성화 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
-       crossorigin="anonymous"></script>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({
-         google_ad_client: "ca-pub-7151406524991928",
-         enable_page_level_ads: false
-       });
-  </script>
-  
   <!-- 하단 광고 -->
   <div class="bottom-ad">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
+         crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-format="autorelaxed"
@@ -44,16 +36,15 @@
 <style>
 /* 전체 화면을 사용하는 시계 컨테이너 */
 .fullscreen-clock-container {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  min-height: 100vh;
   width: 100vw;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #000000;
-  z-index: 1000;
+  padding: 2rem 0;
 }
 
 /* 로고 스타일 */
@@ -84,6 +75,7 @@
   text-align: center;
   color: white;
   font-family: 'Courier New', monospace;
+  padding: 0 2rem;
 }
 
 .time-display {
@@ -118,18 +110,20 @@
 
 /* 하단 광고 스타일 */
 .bottom-ad {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  z-index: 1002;
+  margin-top: 3rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .bottom-ad .adsbygoogle {
-  max-height: 100px;
+  min-height: 50px;
   background: rgba(0, 0, 0, 0.8);
   padding: 10px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 /* 모바일 반응형 */
@@ -171,7 +165,7 @@
 
 /* 네비게이션과 다른 요소들 숨기기 */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header, nav, footer, .top-link {
