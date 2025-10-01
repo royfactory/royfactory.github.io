@@ -2,10 +2,18 @@
 
 <!-- 전체 화면 시계 컨테이너 -->
 <div class="fullscreen-clock-container">
+  <!-- 로고 -->
+  <div class="logo">
+    <img src="/img/ic_logo.png" alt="Royfactory Logo" />
+  </div>
+  
   <div class="clock-display">
     <div id="current-time" class="time-display">00:00:00</div>
-    <div id="current-date" class="date-display">2025년 10월 1일</div>
-    <div id="day-of-week" class="day-display">화요일</div>
+    <div class="date-day-container">
+      <span id="current-date" class="date-display">2025년 10월 1일</span>
+      <span class="separator"> | </span>
+      <span id="day-of-week" class="day-display">화요일</span>
+    </div>
   </div>
 </div>
 
@@ -20,8 +28,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #000000;
   z-index: 1000;
+}
+
+/* 로고 스타일 */
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1001;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.8;
 }
 
 .clock-display {
@@ -34,19 +56,30 @@
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  text-shadow: 3px 3px 6px rgba(255,255,255,0.1);
   letter-spacing: 0.1em;
 }
 
-.date-display {
+/* 날짜와 요일을 한 줄에 배치 */
+.date-day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
-  margin-bottom: 1rem;
   opacity: 0.9;
 }
 
+.date-display {
+  font-size: inherit;
+}
+
+.separator {
+  margin: 0 1rem;
+  opacity: 0.6;
+}
+
 .day-display {
-  font-size: 1.5rem;
-  opacity: 0.8;
+  font-size: inherit;
 }
 
 /* 모바일 반응형 */
@@ -55,12 +88,18 @@
     font-size: 3.5rem;
   }
   
-  .date-display {
+  .date-day-container {
     font-size: 1.5rem;
   }
   
-  .day-display {
-    font-size: 1.2rem;
+  .logo {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -69,12 +108,14 @@
     font-size: 2.8rem;
   }
   
-  .date-display {
-    font-size: 1.3rem;
+  .date-day-container {
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
-  .day-display {
-    font-size: 1rem;
+  .separator {
+    display: none;
   }
 }
 
