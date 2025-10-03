@@ -18,18 +18,12 @@
     </div>
   </div>
   
-  <!-- 하단 광고 -->
-  <div class="bottom-ad">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
-         crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block;width:100%;min-width:320px;"
-         data-ad-client="ca-pub-7151406524991928"
-         data-ad-slot="5154092744"
-         data-ad-format="horizontal"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+  <!-- 하단 배너 영역 -->
+  <div class="bottom-banner">
+    <div class="banner-content">
+      <span>🚀 더 많은 유용한 도구들을 확인해보세요!</span>
+      <a href="/apps" class="banner-link">앱 모음 보기</a>
+    </div>
   </div>
 </div>
 
@@ -109,33 +103,43 @@
   font-size: inherit;
 }
 
-/* 하단 광고 스타일 */
-.bottom-ad {
+/* 하단 배너 스타일 */
+.bottom-banner {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 12px;
   z-index: 1002;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bottom-ad .adsbygoogle {
-  width: 100%;
-  max-width: 728px;
-  min-height: 50px;
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-/* 광고가 로드되지 않을 경우 대체 표시 */
-.bottom-ad:empty::after {
-  content: "광고 영역";
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
+.banner-link {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.banner-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
 }
 
 /* 모바일 반응형 */
@@ -158,13 +162,19 @@
     height: 40px;
   }
   
-  .bottom-ad {
-    padding: 6px 8px;
+  .bottom-banner {
+    padding: 8px;
   }
   
-  .bottom-ad .adsbygoogle {
-    max-width: 320px;
-    height: 50px;
+  .banner-content {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+  }
+  
+  .banner-link {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
 
