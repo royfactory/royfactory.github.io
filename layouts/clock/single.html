@@ -23,10 +23,10 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
          crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-format="autorelaxed"
+         style="display:block;width:100%;min-width:320px;"
          data-ad-client="ca-pub-7151406524991928"
-         data-ad-slot="5154092744"></ins>
+         data-ad-slot="5154092744"
+         data-ad-format="horizontal"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
@@ -113,14 +113,12 @@
 .bottom-ad {
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
   background: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border-radius: 8px 8px 0 0;
+  padding: 8px;
   z-index: 1002;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 90%;
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -128,6 +126,7 @@
 }
 
 .bottom-ad .adsbygoogle {
+  width: 100%;
   max-width: 728px;
   min-height: 50px;
 }
