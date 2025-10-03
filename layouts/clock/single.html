@@ -20,17 +20,15 @@
   
   <!-- 하단 광고 -->
   <div class="bottom-ad">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7151406524991928"
+         crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-format="autorelaxed"
          data-ad-client="ca-pub-7151406524991928"
          data-ad-slot="5154092744"></ins>
     <script>
-         // AdSense 스크립트가 이미 로드되어 있는지 확인
-         if (typeof window.adsbygoogle === 'undefined') {
-           window.adsbygoogle = [];
-         }
-         window.adsbygoogle.push({});
+         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 </div>
@@ -123,11 +121,22 @@
   z-index: 1002;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 90%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom-ad .adsbygoogle {
   max-width: 728px;
   min-height: 50px;
+}
+
+/* 광고가 로드되지 않을 경우 대체 표시 */
+.bottom-ad:empty::after {
+  content: "광고 영역";
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
 }
 
 /* 모바일 반응형 */
