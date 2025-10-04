@@ -3,7 +3,7 @@
 개발자 ROY의 개인 기술 블로그입니다.  
 Jekyll 기반으로 제작되었으며, 리눅스 시스템 관리, AI/머신러닝, 개발 관련 다양한 기술 포스팅을 제공합니다.
 
-**사이트**: https://royfactory.github.io
+**사이트**: https://royfactory.net
 
 ## 프로젝트 개요
 
@@ -18,7 +18,7 @@ Roy's Factory는 개발자를 위한 기술 블로그로, 실무에서 활용할
 ## 프로젝트 구조
 
 ```
-royfactory.github.io/
+royfactory.net/
 ├── _config.yml                 # Jekyll 설정 파일
 ├── _data/
 │   └── organisers.yml          # 작성자 정보
@@ -77,7 +77,7 @@ royfactory.github.io/
 ### 1. 저장소 클론
 ```bash
 git clone https://github.com/royfactory/royfactory.github.io.git
-cd royfactory.github.io
+cd royfactory.net
 ```
 
 ### 2. Ruby 및 Jekyll 설치
@@ -169,7 +169,7 @@ http://localhost:4000
 
 ## 관련 링크
 
-- **메인 사이트**: https://royfactory.github.io
+- **메인 사이트**: https://royfactory.net
 - **개인 블로그**: https://royzero.tistory.com
 - **GitHub**: https://github.com/royfactory
 - **이메일**: worry1318@naver.com

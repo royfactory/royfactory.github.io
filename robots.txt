@@ -10,4 +10,4 @@ Crawl-delay: 20
 User-agent: Google-adstxt
 Disallow:
 
-Sitemap: https://royfactory.github.io/sitemap.xml
+Sitemap: https://royfactory.net/sitemap.xml

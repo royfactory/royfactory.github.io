@@ -40,7 +40,7 @@ royfactory.github.io/
 
 #### `hugo.toml`
 - Hugo 사이트 설정
-- baseURL이 올바른 GitHub Pages URL로 설정되어야 함: `https://royfactory.github.io`
+- baseURL이 올바른 커스텀 도메인 URL로 설정되어야 함: `https://royfactory.net`
 
 #### `.github/workflows/hugo.yml`
 - Hugo 빌드 및 배포 자동화
@@ -56,7 +56,7 @@ royfactory.github.io/
 
 ### 배포 상태 확인
 - **Actions 탭**: https://github.com/royfactory/royfactory.github.io/actions
-- **배포된 사이트**: https://royfactory.github.io
+- **배포된 사이트**: https://royfactory.net
 
 ## 문제 해결
 

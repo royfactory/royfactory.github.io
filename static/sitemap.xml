@@ -1,285 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://royfactory.github.io</loc>
+    <loc>https://royfactory.net</loc>
     <lastmod>2025-07-23T23:56:30+09:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/22/kubernetes-pod-configmap-secret.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/22/kubernetes-pod-configmap-secret.html</loc>
     <lastmod>2025-07-22T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/23/kubernetes-pod-resource-management.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/23/kubernetes-pod-resource-management.html</loc>
     <lastmod>2025-07-21T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/21/kubernetes-pod-volumes.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/21/kubernetes-pod-volumes.html</loc>
     <lastmod>2025-07-21T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/20/kubernetes-pod-labels.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/20/kubernetes-pod-labels.html</loc>
     <lastmod>2025-07-20T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/19/kubernetes-pod-core-unit.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/19/kubernetes-pod-core-unit.html</loc>
     <lastmod>2025-07-19T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/18/kubectl-tips-tricks.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/18/kubectl-tips-tricks.html</loc>
     <lastmod>2025-07-18T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/17/kubectl-basic-commands.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/17/kubectl-basic-commands.html</loc>
     <lastmod>2025-07-17T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/16/installing-kubernetes.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/16/installing-kubernetes.html</loc>
     <lastmod>2025-07-16T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/15/why-use-kubernetes.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/15/why-use-kubernetes.html</loc>
     <lastmod>2025-07-15T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/14/kubernetes-architecture.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/14/kubernetes-architecture.html</loc>
     <lastmod>2025-07-14T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/13/kubernetes-basic-concepts.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/13/kubernetes-basic-concepts.html</loc>
     <lastmod>2025-07-13T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/11/q-learning-cartpole-tutorial.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/11/q-learning-cartpole-tutorial.html</loc>
     <lastmod>2025-07-11T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/12/what-is-kubernetes.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/12/what-is-kubernetes.html</loc>
     <lastmod>2025-07-11T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/10/dqn-cartpole-deep-rl-start.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/10/dqn-cartpole-deep-rl-start.html</loc>
     <lastmod>2025-07-10T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/09/reinforcement-learning-openai-gym-start.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/09/reinforcement-learning-openai-gym-start.html</loc>
     <lastmod>2025-07-09T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/08/langgraph-multiturn-agent-python.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/08/langgraph-multiturn-agent-python.html</loc>
     <lastmod>2025-07-08T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/07/humanoid-robot-soccer-china.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/07/humanoid-robot-soccer-china.html</loc>
     <lastmod>2025-07-05T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/05/moe-mixture-of-experts.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/05/moe-mixture-of-experts.html</loc>
     <lastmod>2025-07-04T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/cloud/2025/07/04/kubernetes-longhorn-storage-guide.html</loc>
+    <loc>https://royfactory.net/cloud/2025/07/04/kubernetes-longhorn-storage-guide.html</loc>
     <lastmod>2025-07-04T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/03/monte-carlo-prediction-python.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/03/monte-carlo-prediction-python.html</loc>
     <lastmod>2025-07-03T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/02/zim-stock-eda-yfinance.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/02/zim-stock-eda-yfinance.html</loc>
     <lastmod>2025-07-02T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/07/01/automl-h2o-intro.html</loc>
+    <loc>https://royfactory.net/ai/2025/07/01/automl-h2o-intro.html</loc>
     <lastmod>2025-07-01T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/30/what-is-langchain.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/30/what-is-langchain.html</loc>
     <lastmod>2025-06-30T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/29/what-is-automl.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/29/what-is-automl.html</loc>
     <lastmod>2025-06-29T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/27/what-is-eda.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/27/what-is-eda.html</loc>
     <lastmod>2025-06-27T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/26/what-is-scikit-learn.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/26/what-is-scikit-learn.html</loc>
     <lastmod>2025-06-26T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/25/lasso-regression-explained.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/25/lasso-regression-explained.html</loc>
     <lastmod>2025-06-25T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2025/06/24/rnn-recurrent-neural-network.html</loc>
+    <loc>https://royfactory.net/ai/2025/06/24/rnn-recurrent-neural-network.html</loc>
     <lastmod>2025-06-24T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/12/03/what-is-the-cos-similarity.html</loc>
+    <loc>https://royfactory.net/ai/2024/12/03/what-is-the-cos-similarity.html</loc>
     <lastmod>2024-12-03T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/12/03/what-is-the-faiss.html</loc>
+    <loc>https://royfactory.net/ai/2024/12/03/what-is-the-faiss.html</loc>
     <lastmod>2024-12-03T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/12/02/what-is-the-vector-db.html</loc>
+    <loc>https://royfactory.net/ai/2024/12/02/what-is-the-vector-db.html</loc>
     <lastmod>2024-12-02T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/12/02/what-is-the-euclidean-distance.html</loc>
+    <loc>https://royfactory.net/ai/2024/12/02/what-is-the-euclidean-distance.html</loc>
     <lastmod>2024-12-02T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/11/15/what-is-the-bm25.html</loc>
+    <loc>https://royfactory.net/ai/2024/11/15/what-is-the-bm25.html</loc>
     <lastmod>2024-11-15T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/11/14/what-is-the-tf-idf.html</loc>
+    <loc>https://royfactory.net/ai/2024/11/14/what-is-the-tf-idf.html</loc>
     <lastmod>2024-11-14T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/ai/2024/11/14/what-is-the-rag.html</loc>
+    <loc>https://royfactory.net/ai/2024/11/14/what-is-the-rag.html</loc>
     <lastmod>2024-11-14T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/12/how-to-use-apache-access.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/12/how-to-use-apache-access.html</loc>
     <lastmod>2024-11-12T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/11/how-to-use-httpd.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/11/how-to-use-httpd.html</loc>
     <lastmod>2024-11-11T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/11/how-to-use-passwd.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/11/how-to-use-passwd.html</loc>
     <lastmod>2024-11-11T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/10/how-to-use-netstat.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/10/how-to-use-netstat.html</loc>
     <lastmod>2024-11-10T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/10/how-to-use-nmap.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/10/how-to-use-nmap.html</loc>
     <lastmod>2024-11-10T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/09/how-to-use-logger.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/09/how-to-use-logger.html</loc>
     <lastmod>2024-11-09T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/09/how-to-use-stickybit.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/09/how-to-use-stickybit.html</loc>
     <lastmod>2024-11-09T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/08/how-to-use-sysctl.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/08/how-to-use-sysctl.html</loc>
     <lastmod>2024-11-08T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/08/how-to-use-cpio.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/08/how-to-use-cpio.html</loc>
     <lastmod>2024-11-08T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/07/how-to-use-mail-aliases.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/07/how-to-use-mail-aliases.html</loc>
     <lastmod>2024-11-07T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/07/how-to-use-firewalld.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/07/how-to-use-firewalld.html</loc>
     <lastmod>2024-11-07T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/06/how-to-use-rsync.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/06/how-to-use-rsync.html</loc>
     <lastmod>2024-11-06T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/06/how-to-use-samba.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/06/how-to-use-samba.html</loc>
     <lastmod>2024-11-06T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/05/how-to-use-quota.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/05/how-to-use-quota.html</loc>
     <lastmod>2024-11-05T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/05/how-to-use-print.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/05/how-to-use-print.html</loc>
     <lastmod>2024-11-05T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/04/how-to-use-telnet.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/04/how-to-use-telnet.html</loc>
     <lastmod>2024-11-04T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/04/how-to-use-chage.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/04/how-to-use-chage.html</loc>
     <lastmod>2024-11-04T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/03/how-to-use-iptables.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/03/how-to-use-iptables.html</loc>
     <lastmod>2024-11-03T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/03/how-to-use-elasticsearch.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/03/how-to-use-elasticsearch.html</loc>
     <lastmod>2024-11-03T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/02/how-to-use-fileattr.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/02/how-to-use-fileattr.html</loc>
     <lastmod>2024-11-02T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/02/how-to-use-zonefile.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/02/how-to-use-zonefile.html</loc>
     <lastmod>2024-11-02T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/01/how-to-use-chmod.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/01/how-to-use-chmod.html</loc>
     <lastmod>2024-11-01T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/11/01/how-to-use-blkid.html</loc>
+    <loc>https://royfactory.net/linux/2024/11/01/how-to-use-blkid.html</loc>
     <lastmod>2024-11-01T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/31/how-to-use-tcp-wrapper.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/31/how-to-use-tcp-wrapper.html</loc>
     <lastmod>2024-10-31T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/31/how-to-set-dns-server.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/31/how-to-set-dns-server.html</loc>
     <lastmod>2024-10-31T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/30/how-to-use-vsftp.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/30/how-to-use-vsftp.html</loc>
     <lastmod>2024-10-30T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/30/how-to-use-smbclient.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/30/how-to-use-smbclient.html</loc>
     <lastmod>2024-10-30T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/29/how-to-use-logrotate.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/29/how-to-use-logrotate.html</loc>
     <lastmod>2024-10-29T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/29/how-to-use-fsck.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/29/how-to-use-fsck.html</loc>
     <lastmod>2024-10-29T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/28/how-to-use-rpm.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/28/how-to-use-rpm.html</loc>
     <lastmod>2024-10-28T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/28/how-to-use-account.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/28/how-to-use-account.html</loc>
     <lastmod>2024-10-28T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/linux/2024/10/28/how-to-use-useradd-config.html</loc>
+    <loc>https://royfactory.net/linux/2024/10/28/how-to-use-useradd-config.html</loc>
     <lastmod>2024-10-28T00:00:00+09:00</lastmod>
   </url>
   <url>
-    <loc>https://royfactory.github.io/about/</loc>
+    <loc>https://royfactory.net/about/</loc>
   </url>
   <url>
-    <loc>https://royfactory.github.io/archive/</loc>
+    <loc>https://royfactory.net/archive/</loc>
   </url>
   <url>
-    <loc>https://royfactory.github.io/apps/</loc>
+    <loc>https://royfactory.net/apps/</loc>
   </url>
 </urlset>
