@@ -51,15 +51,3 @@ document.addEventListener('DOMContentLoaded', function() {
 {{- /* TOC Sticky JavaScript */ -}}
 {{- $tocJS := resources.Get "js/toc-sticky.js" | resources.Minify | resources.Fingerprint -}}
 <script src="{{ $tocJS.RelPermalink }}" defer></script>
-
-{{- /* AdSense Script */ -}}
-{{- if and .Site.Params.googleAdsense (ne .Type "clock") -}}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ .Site.Params.googleAdsense }}"
-     crossorigin="anonymous"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-{{ .Site.Params.googleAdsense }}",
-    enable_page_level_ads: true
-  });
-</script>
-{{- end -}}
