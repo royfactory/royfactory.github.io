@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script src="{{ $tocJS.RelPermalink }}" defer></script>
 
 {{- /* AdSense Script */ -}}
-{{- if .Site.Params.googleAdsense -}}
+{{- if and .Site.Params.googleAdsense (ne .Type "clock") -}}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-{{ .Site.Params.googleAdsense }}"
      crossorigin="anonymous"></script>
 <script>
