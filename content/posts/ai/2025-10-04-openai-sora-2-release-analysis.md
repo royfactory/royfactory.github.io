@@ -3,7 +3,6 @@ ShowToc: true
 categories: [ai]
 date: 2025-10-04
 description: "A conservative analysis of OpenAI's Sora 2, announced on Sep 30, 2025. We delve into its core new features like enhanced physical realism, synchronized audio generation, and its integration with a new social app."
-image: /img/openai-sora-2-cover.jpg
 draft: false
 keywords: "Sora 2, OpenAI, text-to-video, AI video generation, physical realism"
 tags: ["sora", "openai", "ai", "video-generation", "multimodal-ai"]
