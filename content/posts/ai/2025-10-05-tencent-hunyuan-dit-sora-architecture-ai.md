@@ -1,7 +1,7 @@
 ---
 ShowToc: true
 categories: [ai]
-date: 2025-10-05
+date: 2025-10-04
 description: "A conservative analysis of Tencent's Hunyuan-DiT, an advanced text-to-image model. We explore its Diffusion Transformer (DiT) architecture, which it shares with OpenAI's Sora, and its exceptional compositional and bilingual abilities."
 draft: false
 keywords: "Hunyuan-DiT, Tencent, AI, text-to-image, Diffusion Transformer, DiT, Sora"
